@@ -65,9 +65,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "XStakUp is your dedicated engineering partner. We architect scalable web, mobile, AI, and Web3 systems for market-leading businesses. Based in Lagos, Nigeria." },
       { name: "author", content: "XStakUp" },
       { property: "og:title", content: "XStakUp — Custom Enterprise Software Development" },
-      { property: "og:description", content: "Dedicated engineering team building scalable web, mobile, AI, and Web3 infrastructure." },
+      { property: "og:description", content: "XStakUp is your dedicated engineering partner. We architect scalable web, mobile, AI, and Web3 systems for market-leading businesses. Based in Lagos, Nigeria." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "XStakUp — Custom Enterprise Software Development" },
+      { name: "twitter:description", content: "XStakUp is your dedicated engineering partner. We architect scalable web, mobile, AI, and Web3 systems for market-leading businesses. Based in Lagos, Nigeria." },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
