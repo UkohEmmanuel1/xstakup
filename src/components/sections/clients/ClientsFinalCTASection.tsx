@@ -1,4 +1,6 @@
-import { Link } from "@tanstack/react-router";
+"use client";
+
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 export function ClientsFinalCTASection() {
@@ -29,7 +31,7 @@ export function ClientsFinalCTASection() {
             </p>
             <div className="mt-10">
               <Link
-                to="/contact"
+                href="/contact"
                 className="inline-flex items-center gap-2 rounded-md bg-white px-6 py-3 text-sm font-semibold text-[color:var(--deep-core)] hover:bg-signal hover:text-white transition-all"
               >
                 Initialize Your Build <span>→</span>

@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { staggerItem } from "@/components/common";
 import type { PipelineStep } from "@/types";

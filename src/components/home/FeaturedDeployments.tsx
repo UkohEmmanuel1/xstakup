@@ -1,4 +1,6 @@
-import { Link } from "@tanstack/react-router";
+"use client";
+
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { SectionLabel, AnimatedSection, staggerContainer } from "@/components/common";
 import { DeploymentCard } from "./DeploymentCard";
@@ -16,7 +18,7 @@ export function FeaturedDeployments() {
                 High-Performance Systems We&apos;ve Engineered.
               </h2>
             </div>
-            <Link to="/clients" className="text-sm text-signal hover:underline font-mono">
+            <Link href="/clients" className="text-sm text-signal hover:underline font-mono">
               VIEW ALL DEPLOYMENTS →
             </Link>
           </div>

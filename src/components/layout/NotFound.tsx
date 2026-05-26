@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import Link from "next/link";
 
 export function NotFoundPage() {
   return (
@@ -11,7 +11,7 @@ export function NotFoundPage() {
         </p>
         <div className="mt-8">
           <Link
-            to="/"
+            href="/"
             className="inline-flex items-center justify-center rounded-md bg-quantum-gradient px-5 py-2.5 text-sm font-medium text-white shadow-quantum"
           >
             Return to Home

@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { PrimaryCTA, OutlineCTA, SectionLabel } from "@/components/common";
 import { StatsStrip } from "./StatsStrip";
@@ -55,7 +57,7 @@ export function HeroSection() {
             className="mt-10 flex flex-wrap items-center justify-center gap-4"
           >
             <PrimaryCTA>Initialize Your Build</PrimaryCTA>
-            <OutlineCTA to="/clients">View Client Success</OutlineCTA>
+            <OutlineCTA href="/clients">View Client Success</OutlineCTA>
           </motion.div>
 
           <StatsStrip items={stats} />

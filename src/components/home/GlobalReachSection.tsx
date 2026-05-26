@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { SectionLabel, PrimaryCTA, AnimatedSection } from "@/components/common";
 

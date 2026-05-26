@@ -1,4 +1,7 @@
-import { Link } from "@tanstack/react-router";
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { NavLink } from "@/types";
@@ -20,7 +23,7 @@ const menuVariants = {
 
 function Logo() {
   return (
-    <Link to="/" className="flex items-center gap-3 z-50" onClick={() => setOpen(false)}>
+    <Link href="/" className="flex items-center gap-3 z-50" onClick={() => setOpen(false)}>
       <motion.div
         whileHover={{ scale: 1.05, rotate: -3 }}
         className="relative h-12 w-12 flex-shrink-0"
@@ -46,14 +49,18 @@ function Logo() {
 }
 
 function DesktopNav() {
+  const pathname = usePathname();
   return (
     <nav className="hidden md:flex items-center gap-1">
       {links.map((l) => (
         <Link
           key={l.to}
-          to={l.to}
-          className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors relative group"
-          activeProps={{ className: "text-foreground font-medium" }}
+          href={l.to}
+          className={`px-3 py-2 text-sm transition-colors relative group ${
+            pathname === l.to
+              ? "text-foreground font-medium"
+              : "text-muted-foreground hover:text-foreground"
+          }`}
         >
           {l.label}
           <span className="absolute bottom-0 left-3 right-3 h-px bg-signal scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
@@ -64,6 +71,7 @@ function DesktopNav() {
 }
 
 function MobileNav({ open, onClose }: { open: boolean; onClose: () => void }) {
+  const pathname = usePathname();
   return (
     <AnimatePresence>
       {open && (
@@ -83,12 +91,13 @@ function MobileNav({ open, onClose }: { open: boolean; onClose: () => void }) {
                 transition={{ delay: 0.05 * i }}
               >
                 <Link
-                  to={l.to}
+                  href={l.to}
                   onClick={onClose}
-                  className="py-2.5 text-base text-muted-foreground hover:text-foreground border-b border-border/10 last:border-0 transition-colors block"
-                  activeProps={{
-                    className: "text-foreground font-semibold border-l-2 border-signal pl-3",
-                  }}
+                  className={`py-2.5 text-base border-b border-border/10 last:border-0 transition-colors block ${
+                    pathname === l.to
+                      ? "text-foreground font-semibold border-l-2 border-signal pl-3"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
                 >
                   {l.label}
                 </Link>
@@ -100,7 +109,7 @@ function MobileNav({ open, onClose }: { open: boolean; onClose: () => void }) {
               transition={{ delay: 0.3 }}
             >
               <Link
-                to="/contact"
+                href="/contact"
                 onClick={onClose}
                 className="mt-4 inline-flex w-full justify-center items-center gap-2 rounded-md bg-quantum-gradient px-4 py-3 text-sm font-medium text-white shadow-quantum"
               >
@@ -170,7 +179,7 @@ export function Navbar() {
             whileTap={{ scale: 0.97 }}
           >
             <Link
-              to="/contact"
+              href="/contact"
               className="hidden sm:inline-flex items-center gap-2 rounded-md bg-quantum-gradient px-4 py-2 text-sm font-medium text-white shadow-quantum hover:shadow-glow transition-shadow relative overflow-hidden group"
             >
               <span className="relative z-10">Initialize Your Build</span>

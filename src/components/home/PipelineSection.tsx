@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { SectionLabel, AnimatedSection, staggerContainer } from "@/components/common";
 import { PipelineCard } from "./PipelineCard";

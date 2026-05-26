@@ -1,8 +1,7 @@
-import { useRouter } from "@tanstack/react-router";
+"use client";
 
 export function ErrorPage({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
-  const router = useRouter();
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
@@ -10,7 +9,7 @@ export function ErrorPage({ error, reset }: { error: Error; reset: () => void })
         <p className="mt-2 text-sm text-muted-foreground">Something went wrong. Try again.</p>
         <div className="mt-6 flex justify-center gap-2">
           <button
-            onClick={() => { router.invalidate(); reset(); }}
+            onClick={() => reset()}
             className="rounded-md bg-quantum-gradient px-4 py-2 text-sm text-white"
           >
             Try again

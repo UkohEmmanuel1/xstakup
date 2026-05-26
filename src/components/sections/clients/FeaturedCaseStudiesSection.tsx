@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { OutlineCTA } from "@/components/common";
 import { slideFromLeft, slideFromRight } from "@/components/common";
@@ -80,7 +82,7 @@ function CaseStudyContent({ c, reverse }: { c: FeaturedCase; reverse: boolean })
         </div>
       </div>
       <div className="mt-8">
-        <OutlineCTA to="/contact">View Architecture Details</OutlineCTA>
+        <OutlineCTA href="/contact">View Architecture Details</OutlineCTA>
       </div>
     </motion.div>
   );

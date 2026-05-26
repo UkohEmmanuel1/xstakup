@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { ContactInfoPanel, ContactForm } from "@/components/sections/contact";
 

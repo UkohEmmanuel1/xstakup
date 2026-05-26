@@ -1,4 +1,6 @@
-import { Link } from "@tanstack/react-router";
+"use client";
+
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 const staggerColVariants = {
@@ -50,7 +52,7 @@ function FooterBrand() {
       viewport={{ once: true }}
       className="lg:col-span-2"
     >
-      <Link to="/" className="flex items-center gap-2">
+      <Link href="/" className="flex items-center gap-2">
         <motion.div
           whileHover={{ rotate: 5, scale: 1.05 }}
           className="relative h-8 w-8"
@@ -98,7 +100,7 @@ function FooterColumn({ col, index }: { col: typeof columns[number]; index: numb
         {col.links.map((l, i) => (
           <li key={i}>
             <Link
-              to={l.to}
+              href={l.to}
               className="text-sm text-foreground/80 hover:text-signal transition-colors relative group inline-block"
             >
               {l.label}

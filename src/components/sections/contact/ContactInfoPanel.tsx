@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { SectionLabel } from "@/components/common";
 import type { ContactInfo } from "@/types";
