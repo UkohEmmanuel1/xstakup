@@ -20,24 +20,10 @@ export function PrimaryCTA({ children = "Initialize Your Build", to = "/contact"
           transition={{ duration: 0.6 }}
         />
         <span className="relative z-10">{children}</span>
-        <motion.svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="14"
-          height="14"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="relative z-10"
-          initial={{ x: 0 }}
-          whileHover={{ x: 4 }}
-          transition={{ type: "spring", stiffness: 300 }}
-        >
+        
           <path d="M5 12h14" />
           <path d="m12 5 7 7-7 7" />
-        </motion.svg>
+        
       </Link>
     </motion.div>
   );
@@ -55,23 +41,10 @@ export function OutlineCTA({ children, to }: { children: ReactNode; to: "/client
         className="inline-flex items-center gap-2 rounded-md border border-border bg-transparent px-6 py-3 text-sm font-medium text-foreground hover:border-signal hover:text-signal transition-colors group"
       >
         <span>{children}</span>
-        <motion.svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="14"
-          height="14"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          initial={{ x: 0 }}
-          whileHover={{ x: 4 }}
-          transition={{ type: "spring", stiffness: 300 }}
-        >
+       
           <path d="M5 12h14" />
           <path d="m12 5 7 7-7 7" />
-        </motion.svg>
+      
       </Link>
     </motion.div>
   );

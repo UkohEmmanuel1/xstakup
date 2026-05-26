@@ -41,29 +41,34 @@ export function Navbar() {
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
         {/* LOGO SECTION */}
-        <Link to="/" className="flex items-center gap-2 z-50" onClick={() => setOpen(false)}>
-          <motion.div
-            whileHover={{ scale: 1.05, rotate: -3 }}
-            className="relative h-8 w-8 flex-shrink-0"
-          >
-            <motion.div
-              animate={{ opacity: [0.6, 1, 0.6] }}
-              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute inset-0 rounded-md bg-quantum-gradient shadow-glow"
-            />
-            <div className="absolute inset-[3px] rounded-[5px] bg-background flex items-center justify-center">
-              <img
-                src="/assets/logo.png"
-                alt="XStakUp Logo"
-                className="h-full w-full object-contain p-0.5"
-              />
-            </div>
-          </motion.div>
+       <Link to="/" className="flex items-center gap-3 z-50" onClick={() => setOpen(false)}>
+  {/* Upscaled Logo Container (Changed from h-8 w-8 to h-12 w-12) */}
+  <motion.div
+    whileHover={{ scale: 1.05, rotate: -3 }}
+    className="relative h-12 w-12 flex-shrink-0"
+  >
+    {/* Animated Gradient Background Wrapper */}
+    <motion.div
+      animate={{ opacity: [0.6, 1, 0.6] }}
+      transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+      className="absolute inset-0 rounded-lg bg-quantum-gradient shadow-glow"
+    />
+    
+    {/* Inner Frame Box (Adjusted positioning for balanced borders) */}
+    <div className="absolute inset-[4px] rounded-[6px] bg-background flex items-center justify-center">
+      <img
+        src="/assets/logo.png"
+        alt="XStakUp Logo"
+        className="h-full w-full object-contain p-1"
+      />
+    </div>
+  </motion.div>
 
-          <span className="hidden sm:inline font-mono text-[10px] uppercase tracking-widest text-muted-foreground border border-border rounded px-1.5 py-0.5 ml-1">
-            FTRX Group
-          </span>
-        </Link>
+  {/* Sub-branding Badge */}
+  <span className="hidden sm:inline font-mono text-[10px] uppercase tracking-widest text-muted-foreground border border-border rounded px-1.5 py-0.5 ml-1">
+    FTRX Group
+  </span>
+</Link>
 
         {/* DESKTOP NAVIGATION */}
         <nav className="hidden md:flex items-center gap-1">
