@@ -1,5 +1,8 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { OutlineCTA, SectionLabel, FinalCTA } from "@/components/Shared";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { motion } from "framer-motion";
+import { OutlineCTA, SectionLabel } from "@/components/Shared";
+import { AnimatedSection } from "@/components/AnimatedSection";
+import { staggerContainer, staggerItem, slideFromLeft, slideFromRight, fadeUp } from "@/components/animations";
 
 export const Route = createFileRoute("/clients")({
   head: () => ({
@@ -70,18 +73,38 @@ function ClientsPage() {
       {/* HERO */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 grid-pattern opacity-40" />
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[400px] w-[700px] rounded-full bg-quantum/25 blur-[120px]" />
+        <motion.div
+          animate={{ scale: [1, 1.08, 1], opacity: [0.2, 0.35, 0.2] }}
+          transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute top-0 left-1/2 -translate-x-1/2 h-[400px] w-[700px] rounded-full bg-quantum/25 blur-[120px]"
+        />
         <div className="relative mx-auto max-w-7xl px-6 pt-24 pb-28 md:pt-32 text-center">
-          <SectionLabel>Client Deployments</SectionLabel>
-          <h1 className="mt-6 text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
+            <SectionLabel>Client Deployments</SectionLabel>
+          </motion.div>
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="mt-6 text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight max-w-4xl mx-auto"
+          >
             <span className="text-gradient-quantum">High-Performance Systems</span>{" "}
             Built for Scale.
-          </h1>
-          <p className="mt-6 max-w-2xl mx-auto text-lg text-muted-foreground">
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.35 }}
+            className="mt-6 max-w-2xl mx-auto text-lg text-muted-foreground"
+          >
             We don't just write code; we architect market-leading platforms.
             Explore the enterprise software, fintech infrastructure, and AI
             applications engineered by XStakUp.
-          </p>
+          </motion.p>
         </div>
       </section>
 
@@ -91,17 +114,31 @@ function ClientsPage() {
           {featured.map((c, i) => {
             const reverse = i % 2 === 1;
             return (
-              <div
+              <motion.div
                 key={c.name}
+                initial={{ opacity: 0, y: 60 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: i * 0.15 }}
                 className={`grid md:grid-cols-2 gap-12 lg:gap-20 items-center ${reverse ? "md:[&>*:first-child]:order-2" : ""}`}
               >
                 {/* Mockup */}
-                <div className="relative">
-                  <div className="absolute -inset-6 rounded-3xl blur-3xl opacity-40" style={{ background: c.gradient }} />
+                <motion.div
+                  variants={reverse ? slideFromRight : slideFromLeft}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  className="relative"
+                >
+                  <motion.div
+                    animate={{ scale: [1, 1.03, 1], opacity: [0.4, 0.5, 0.4] }}
+                    transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                    className="absolute -inset-6 rounded-3xl blur-3xl opacity-40"
+                    style={{ background: c.gradient }}
+                  />
                   <div className="relative rounded-2xl glass-strong overflow-hidden aspect-[4/3]">
                     <div className="absolute inset-0" style={{ background: c.gradient, opacity: 0.85 }} />
                     <div className="absolute inset-0 grid-pattern opacity-30" />
-                    {/* Mock interface */}
                     <div className="absolute inset-6 rounded-lg bg-[color:var(--void-main)]/85 backdrop-blur-sm p-4 flex flex-col gap-3">
                       <div className="flex items-center gap-2">
                         <div className="h-2.5 w-2.5 rounded-full bg-red-400/60" />
@@ -130,10 +167,15 @@ function ClientsPage() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
 
                 {/* Content */}
-                <div>
+                <motion.div
+                  variants={reverse ? slideFromLeft : slideFromRight}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                >
                   <span className="inline-block font-mono text-xs uppercase tracking-widest text-signal border border-signal/30 rounded-full px-3 py-1">
                     {c.tag}
                   </span>
@@ -164,68 +206,88 @@ function ClientsPage() {
                   <div className="mt-8">
                     <OutlineCTA to="/contact">View Architecture Details</OutlineCTA>
                   </div>
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
             );
           })}
         </div>
       </section>
 
       {/* ECOSYSTEM GRID */}
-      <section className="py-24 bg-[color:var(--void-section)] border-y border-border mt-24">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
-            <div>
-              <SectionLabel>The Broader Ecosystem</SectionLabel>
-              <h2 className="mt-4 text-3xl md:text-5xl font-bold">Other Notable Deployments</h2>
+      <AnimatedSection>
+        <section className="py-24 bg-[color:var(--void-section)] border-y border-border mt-24">
+          <div className="mx-auto max-w-7xl px-6">
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+              <div>
+                <SectionLabel>The Broader Ecosystem</SectionLabel>
+                <h2 className="mt-4 text-3xl md:text-5xl font-bold">Other Notable Deployments</h2>
+              </div>
+              <p className="max-w-md text-muted-foreground">
+                Sleek systems shipped across Web3, healthcare, EdTech, and
+                enterprise logistics.
+              </p>
             </div>
-            <p className="max-w-md text-muted-foreground">
-              Sleek systems shipped across Web3, healthcare, EdTech, and
-              enterprise logistics.
-            </p>
+            <motion.div
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4"
+            >
+              {ecosystem.map((e) => (
+                <motion.a
+                  key={e.t}
+                  href="#"
+                  variants={staggerItem}
+                  whileHover={{ y: -4, borderColor: "rgba(30, 43, 255, 0.6)" }}
+                  className="group rounded-xl glass p-6 transition-colors"
+                >
+                  <div className="flex items-start justify-between">
+                    <div className="font-mono text-2xl text-signal">{e.i}</div>
+                    <span className="text-muted-foreground group-hover:text-signal group-hover:translate-x-1 transition-all">→</span>
+                  </div>
+                  <h3 className="mt-5 text-lg font-semibold">{e.t}</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">{e.d}</p>
+                </motion.a>
+              ))}
+            </motion.div>
           </div>
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {ecosystem.map((e) => (
-              <a
-                key={e.t}
-                href="#"
-                className="group rounded-xl glass p-6 hover:border-quantum hover:shadow-quantum transition-all"
-              >
-                <div className="flex items-start justify-between">
-                  <div className="font-mono text-2xl text-signal">{e.i}</div>
-                  <span className="text-muted-foreground group-hover:text-signal group-hover:translate-x-1 transition-all">→</span>
-                </div>
-                <h3 className="mt-5 text-lg font-semibold">{e.t}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{e.d}</p>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
+        </section>
+      </AnimatedSection>
 
       {/* IMPACT MARQUEE */}
-      <section className="py-16 overflow-hidden border-b border-border">
-        <div className="relative">
-          <div className="flex animate-marquee-fast gap-8 w-max font-mono text-2xl md:text-4xl font-bold">
-            {[...metrics, ...metrics, ...metrics].map((m, i) => (
-              <div key={i} className="flex items-center gap-8 whitespace-nowrap">
-                <span className="text-signal">{m}</span>
-                <span className="text-muted-foreground">•</span>
-              </div>
-            ))}
+      <AnimatedSection>
+        <section className="py-16 overflow-hidden border-b border-border">
+          <div className="relative">
+            <div className="flex animate-marquee-fast gap-8 w-max font-mono text-2xl md:text-4xl font-bold group hover:[animation-play-state:paused]">
+              {[...metrics, ...metrics, ...metrics].map((m, i) => (
+                <div key={i} className="flex items-center gap-8 whitespace-nowrap">
+                  <span className="text-signal">{m}</span>
+                  <span className="text-muted-foreground">•</span>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </AnimatedSection>
 
       {/* FINAL CTA — custom variant */}
       <section className="relative overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 py-24">
-          <div
-            className="relative overflow-hidden rounded-2xl p-12 md:p-20 text-center"
-            style={{ background: "linear-gradient(135deg, #0F1A7A 0%, #0F1A7A 60%, #1E2BFF 100%)" }}
+          <motion.div
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="relative overflow-hidden rounded-2xl p-12 md:p-20 text-center animate-gradient-shift"
+            style={{ background: "linear-gradient(135deg, #0F1A7A 0%, #0F1A7A 30%, #1E2BFF 60%, #0F1A7A 100%)" }}
           >
             <div className="absolute inset-0 grid-pattern opacity-30" />
-            <div className="absolute -top-20 -right-20 h-72 w-72 rounded-full bg-signal/30 blur-3xl" />
+            <motion.div
+              animate={{ scale: [1, 1.1, 1], opacity: [0.3, 0.5, 0.3] }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute -top-20 -right-20 h-72 w-72 rounded-full bg-signal/30 blur-3xl"
+            />
             <div className="relative">
               <h2 className="text-3xl md:text-5xl font-bold text-white max-w-3xl mx-auto">
                 Your Product Deserves Elite Engineering.
@@ -235,15 +297,15 @@ function ClientsPage() {
                 dedicated engineers at XStakUp.
               </p>
               <div className="mt-10">
-                <a
-                  href="/contact"
+                <Link
+                  to="/contact"
                   className="inline-flex items-center gap-2 rounded-md bg-white px-6 py-3 text-sm font-semibold text-[color:var(--deep-core)] hover:bg-signal hover:text-white transition-all"
                 >
                   Initialize Your Build <span>→</span>
-                </a>
+                </Link>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
     </>
