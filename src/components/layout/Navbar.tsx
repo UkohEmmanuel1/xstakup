@@ -24,27 +24,28 @@ const menuVariants = {
 function Logo() {
   return (
     <Link href="/" className="flex items-center gap-3 z-50" onClick={() => setOpen(false)}>
-      <motion.div
-        whileHover={{ scale: 1.05, rotate: -3 }}
-        className="relative h-12 w-12 flex-shrink-0"
-      >
-        <motion.div
-          animate={{ opacity: [0.6, 1, 0.6] }}
-          transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute inset-0 rounded-lg bg-quantum-gradient shadow-glow"
-        />
-        <div className="absolute inset-[4px] rounded-[6px] bg-background flex items-center justify-center">
-          <img
-            src="/assets/logo.png"
-            alt="XStakUp Logo"
-            className="h-full w-full object-contain p-1"
-          />
-        </div>
-      </motion.div>
-      <span className="hidden sm:inline font-mono text-[10px] uppercase tracking-widest text-muted-foreground border border-border rounded px-1.5 py-0.5 ml-1">
-        FTRX Group
-      </span>
-    </Link>
+  {/* The core bounding box (h-16 w-16 gives it an explicitly large size) */}
+  <motion.div
+    whileHover={{ scale: 1.05, rotate: -2 }}
+    className="relative h-16 w-16 flex-shrink-0"
+  >
+    {/* Inner Image Wrapper - Absolute positioning makes it fill 100% of the h-16 container */}
+    <div className="absolute inset-0 flex items-center justify-center overflow-hidden rounded-xl">
+      <img
+        src="/assets/logo.png"
+        alt="XStakUp Logo"
+        className="h-full w-full object-cover block select-none" 
+      />
+    </div>
+  </motion.div>
+
+  {/* Sub-branding text badge sitting cleanly beside the large image */}
+  <span className="hidden sm:inline-block font-mono text-[10px] uppercase tracking-widest text-muted-foreground border border-border rounded px-1.5 py-0.5 self-center">
+    FTRX Group
+  </span>
+</Link>
+
+
   );
 }
 
