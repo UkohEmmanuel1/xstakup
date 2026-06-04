@@ -121,7 +121,7 @@ function FooterBottom() {
       </p>
       <div className="flex gap-6 text-xs text-muted-foreground font-mono">
         <span>
-          SYSTEM STATUS: <span className="text-signal animate-pulse-glow">● OPERATIONAL</span>
+          Terms & Conditions <span className="text-signal animate-pulse-glow">● Privacy Policy</span>
         </span>
         <span>UPTIME: 99.99%</span>
       </div>
