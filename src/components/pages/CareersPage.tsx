@@ -35,8 +35,8 @@ export function CareersPage() {
             transition={{ duration: 0.6, delay: 0.35 }}
             className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto"
           >
-            We&apos;re building Africa&apos;s premier engineering team. Open roles across
-            backend, AI, Web3, and DevSecOps.
+            We&apos;re building Africa&apos;s premier engineering team. Open roles across backend,
+            AI, Web3, and DevSecOps.
           </motion.p>
           <motion.a
             initial={{ opacity: 0, y: 20 }}

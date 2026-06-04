@@ -16,9 +16,14 @@ export function MarqueeSection() {
           <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-background to-transparent z-10" />
           <div className="flex animate-marquee gap-12 w-max group hover:[animation-play-state:paused]">
             {[...marqueeItems, ...marqueeItems].map((item, i) => (
-              <div key={i} className="flex items-center gap-3 px-6 py-3 rounded-lg glass">
+              <div
+                key={i}
+                className="flex items-center gap-3 px-6 py-3 rounded-lg bg-white/10 backdrop-blur-md border border-white/15"
+              >
                 <span className="h-2 w-2 rounded-full bg-signal" />
-                <span className="font-mono text-sm whitespace-nowrap">{item}</span>
+                <span className="font-mono text-sm whitespace-nowrap text-foreground/80">
+                  {item}
+                </span>
               </div>
             ))}
           </div>

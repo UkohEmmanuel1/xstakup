@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About XStakUp — Engineering for Scale",
     description:
-    "Dedicated engineering partners specializing in fintech, AI, and scalable cloud architecture.",
+      "Dedicated engineering partners specializing in fintech, AI, and scalable cloud architecture.",
   },
 };
 

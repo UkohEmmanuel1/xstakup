@@ -35,8 +35,8 @@ export function ExpertisePage() {
             transition={{ duration: 0.6, delay: 0.35 }}
             className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto"
           >
-            Eight specialized practices powering custom enterprise software.
-            Detailed capability pages coming soon.
+            Eight specialized practices powering custom enterprise software. Detailed capability
+            pages coming soon.
           </motion.p>
         </div>
       </section>

@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { NavLink } from "@/types";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
 const links: NavLink[] = [
   { to: "/about", label: "About" },
@@ -17,35 +18,34 @@ const links: NavLink[] = [
 
 const menuVariants = {
   hidden: { opacity: 0, y: -12, scaleY: 0.95 },
-  visible: { opacity: 1, y: 0, scaleY: 1, transition: { duration: 0.25, ease: [0.25, 0.1, 0.25, 1] } },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scaleY: 1,
+    transition: { duration: 0.25, ease: [0.25, 0.1, 0.25, 1] },
+  },
   exit: { opacity: 0, y: -12, scaleY: 0.95, transition: { duration: 0.2 } },
 };
 
-function Logo() {
+function Logo({ onNavigate }: { onNavigate: () => void }) {
   return (
-    <Link href="/" className="flex items-center gap-3 z-50" onClick={() => setOpen(false)}>
-  {/* The core bounding box (h-16 w-16 gives it an explicitly large size) */}
-  <motion.div
-    whileHover={{ scale: 1.05, rotate: -2 }}
-    className="relative h-16 w-16 flex-shrink-0"
-  >
-    {/* Inner Image Wrapper - Absolute positioning makes it fill 100% of the h-16 container */}
-    <div className="absolute inset-0 flex items-center justify-center overflow-hidden rounded-xl">
-      <img
-        src="/assets/logo.png"
-        alt="XStakUp Logo"
-        className="h-full w-full object-cover block select-none" 
-      />
-    </div>
-  </motion.div>
-
-  {/* Sub-branding text badge sitting cleanly beside the large image */}
-  <span className="hidden sm:inline-block font-mono text-[10px] uppercase tracking-widest text-muted-foreground border border-border rounded px-1.5 py-0.5 self-center">
-    FTRX Group
-  </span>
-</Link>
-
-
+    <Link href="/" className="flex items-center gap-3 z-50" onClick={onNavigate}>
+      <motion.div
+        whileHover={{ scale: 1.05, rotate: -2 }}
+        className="relative h-16 w-16 flex-shrink-0"
+      >
+        <div className="absolute inset-0 flex items-center justify-center overflow-hidden rounded-xl">
+          <img
+            src="/assets/logo.png"
+            alt="XStakUp Logo"
+            className="h-full w-full object-cover block select-none"
+          />
+        </div>
+      </motion.div>
+      <span className="hidden sm:inline-block font-mono text-[10px] uppercase tracking-widest text-muted-foreground border border-border rounded px-1.5 py-0.5 self-center">
+        FTRX Group
+      </span>
+    </Link>
   );
 }
 
@@ -171,14 +171,12 @@ export function Navbar() {
       }`}
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
-        <Logo />
+        <Logo onNavigate={() => setOpen(false)} />
         <DesktopNav />
 
         <div className="flex items-center gap-3 z-50">
-          <motion.div
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.97 }}
-          >
+          <ThemeToggle /> 
+          <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
             <Link
               href="/contact"
               className="hidden sm:inline-flex items-center gap-2 rounded-md bg-quantum-gradient px-4 py-2 text-sm font-medium text-white shadow-quantum hover:shadow-glow transition-shadow relative overflow-hidden group"

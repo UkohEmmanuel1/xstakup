@@ -8,7 +8,12 @@ interface FieldProps {
 export function Field({ label, name, type = "text", placeholder }: FieldProps) {
   return (
     <div>
-      <label htmlFor={name} className="font-mono text-xs uppercase tracking-widest text-muted-foreground">{label}</label>
+      <label
+        htmlFor={name}
+        className="font-mono text-xs uppercase tracking-widest text-muted-foreground"
+      >
+        {label}
+      </label>
       <input
         id={name}
         name={name}

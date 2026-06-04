@@ -5,9 +5,18 @@ import { SectionLabel, AnimatedSection, staggerContainer, staggerItem } from "@/
 import type { Differentiator } from "@/types";
 
 const differentiators: Differentiator[] = [
-  { t: "Client-First Architecture", d: "Your business goals dictate our technical stack. We build for your specific scale, not ours." },
-  { t: "Uncompromising Security", d: "From fintech gateways to Web3 dApps, security isn't a feature — it's the foundation of every line of code we ship." },
-  { t: "99.9% Engineering Rigor", d: "We utilize DevSecOps and automated QA pipelines to ensure your system remains stable and high-performing 24/7." },
+  {
+    t: "Client-First Architecture",
+    d: "Your business goals dictate our technical stack. We build for your specific scale, not ours.",
+  },
+  {
+    t: "Uncompromising Security",
+    d: "From fintech gateways to Web3 dApps, security isn't a feature — it's the foundation of every line of code we ship.",
+  },
+  {
+    t: "99.9% Engineering Rigor",
+    d: "We utilize DevSecOps and automated QA pipelines to ensure your system remains stable and high-performing 24/7.",
+  },
 ];
 
 export function DifferentiatorsSection() {

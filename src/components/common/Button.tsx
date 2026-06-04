@@ -11,11 +11,7 @@ interface ButtonProps {
 
 export function PrimaryCTA({ children = "Initialize Your Build", href = "/contact" }: ButtonProps) {
   return (
-    <motion.div
-      whileHover={{ scale: 1.04 }}
-      whileTap={{ scale: 0.96 }}
-      className="inline-block"
-    >
+    <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }} className="inline-block">
       <Link
         href={href}
         className="inline-flex items-center gap-2 rounded-md bg-quantum-gradient px-6 py-3 text-sm font-medium text-white shadow-quantum hover:shadow-glow transition-shadow relative overflow-hidden group"
@@ -34,11 +30,7 @@ export function PrimaryCTA({ children = "Initialize Your Build", href = "/contac
 
 export function OutlineCTA({ children, href }: ButtonProps) {
   return (
-    <motion.div
-      whileHover={{ scale: 1.03 }}
-      whileTap={{ scale: 0.97 }}
-      className="inline-block"
-    >
+    <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} className="inline-block">
       <Link
         href={href}
         className="inline-flex items-center gap-2 rounded-md border border-border bg-transparent px-6 py-3 text-sm font-medium text-foreground hover:border-signal hover:text-signal transition-colors group"

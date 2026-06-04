@@ -13,7 +13,10 @@ export function ClientsFinalCTASection() {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
           className="relative overflow-hidden rounded-2xl p-12 md:p-20 text-center animate-gradient-shift"
-          style={{ background: "linear-gradient(135deg, #0F1A7A 0%, #0F1A7A 30%, #1E2BFF 60%, #0F1A7A 100%)" }}
+          style={{
+            background:
+              "linear-gradient(135deg, #0F1A7A 0%, #0F1A7A 30%, #1E2BFF 60%, #0F1A7A 100%)",
+          }}
         >
           <div className="absolute inset-0 grid-pattern opacity-30" />
           <motion.div
@@ -26,8 +29,8 @@ export function ClientsFinalCTASection() {
               Your Product Deserves Elite Engineering.
             </h2>
             <p className="mt-5 text-white/70 max-w-xl mx-auto">
-              Don&apos;t risk your launch on outsourced templates. Partner with the
-              dedicated engineers at XStakUp.
+              Don&apos;t risk your launch on outsourced templates. Partner with the dedicated
+              engineers at XStakUp.
             </p>
             <div className="mt-10">
               <Link

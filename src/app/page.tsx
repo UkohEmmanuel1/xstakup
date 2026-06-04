@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "XStakUp — Custom Enterprise Software Development",
     description:
-    "Dedicated engineering team building scalable web, mobile, AI, and Web3 infrastructure.",
+      "Dedicated engineering team building scalable web, mobile, AI, and Web3 infrastructure.",
   },
 };
 

@@ -5,10 +5,26 @@ import { SectionLabel, AnimatedSection, staggerContainer, staggerItem } from "@/
 import type { Leader } from "@/types";
 
 const leaders: Leader[] = [
-  { name: "Glory Umukoro", role: "Founder & CEO", bio: "Vision-led founder driving XStakUp's growth and engineering culture across Africa and global markets." },
-  { name: "[Placeholder]", role: "Creative Director", bio: "Leads the design language and product experience across all XStakUp deployments." },
-  { name: "[Placeholder]", role: "Operations & Growth", bio: "Architects the operational backbone that keeps every client deployment on time and on budget." },
-  { name: "[Placeholder]", role: "Engineering Lead", bio: "Heads the technical architecture practice across fintech, AI, and Web3 verticals." },
+  {
+    name: "Glory Umukoro",
+    role: "Founder & CEO",
+    bio: "Vision-led founder driving XStakUp's growth and engineering culture across Africa and global markets.",
+  },
+  {
+    name: "[Placeholder]",
+    role: "Creative Director",
+    bio: "Leads the design language and product experience across all XStakUp deployments.",
+  },
+  {
+    name: "[Placeholder]",
+    role: "Operations & Growth",
+    bio: "Architects the operational backbone that keeps every client deployment on time and on budget.",
+  },
+  {
+    name: "[Placeholder]",
+    role: "Engineering Lead",
+    bio: "Heads the technical architecture practice across fintech, AI, and Web3 verticals.",
+  },
 ];
 
 const gradients = [
@@ -57,7 +73,9 @@ export function LeadershipSection() {
                 </motion.div>
                 <div className="p-5">
                   <h3 className="font-semibold text-foreground">{l.name}</h3>
-                  <p className="mt-1 font-mono text-xs uppercase tracking-widest text-signal">{l.role}</p>
+                  <p className="mt-1 font-mono text-xs uppercase tracking-widest text-signal">
+                    {l.role}
+                  </p>
                   <p className="mt-3 text-sm text-muted-foreground">{l.bio}</p>
                 </div>
               </motion.div>

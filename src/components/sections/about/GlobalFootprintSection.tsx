@@ -31,17 +31,40 @@ export function GlobalFootprintSection() {
                   "M80,120 Q120,80 180,100 T280,140 Q300,180 260,210 T160,200 Q100,180 80,120",
                   "M320,90 Q380,70 440,100 T520,140 Q510,200 450,210 T350,180 Q310,140 320,90",
                 ].map((d, i) => (
-                  <path key={i} d={d} fill="#1E2BFF" fillOpacity="0.15" stroke="#1E2BFF" strokeOpacity="0.4" />
+                  <path
+                    key={i}
+                    d={d}
+                    fill="#1E2BFF"
+                    fillOpacity="0.15"
+                    stroke="#1E2BFF"
+                    strokeOpacity="0.4"
+                  />
                 ))}
                 <circle cx="200" cy="170" r="6" fill="#00D1FF">
                   <animate attributeName="r" values="6;12;6" dur="2s" repeatCount="indefinite" />
                 </circle>
                 <circle cx="200" cy="170" r="3" fill="#fff" />
-                <text x="210" y="168" fill="#F9FAFB" fontSize="11" fontFamily="monospace">LAGOS</text>
-                {[[120, 100], [280, 140], [380, 110], [460, 160], [500, 200]].map(([x, y], i) => (
+                <text x="210" y="168" fill="#F9FAFB" fontSize="11" fontFamily="monospace">
+                  LAGOS
+                </text>
+                {[
+                  [120, 100],
+                  [280, 140],
+                  [380, 110],
+                  [460, 160],
+                  [500, 200],
+                ].map(([x, y], i) => (
                   <g key={i}>
                     <circle cx={x} cy={y} r="3" fill="#7A5CFF" />
-                    <line x1="200" y1="170" x2={x} y2={y} stroke="#00D1FF" strokeOpacity="0.2" strokeDasharray="2 3" />
+                    <line
+                      x1="200"
+                      y1="170"
+                      x2={x}
+                      y2={y}
+                      stroke="#00D1FF"
+                      strokeOpacity="0.2"
+                      strokeDasharray="2 3"
+                    />
                   </g>
                 ))}
               </motion.svg>

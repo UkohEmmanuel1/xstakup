@@ -6,9 +6,17 @@ import type { ValueItem } from "@/types";
 
 const values: ValueItem[] = [
   { i: "✦", t: "Excellence", d: "We don't ship 'good enough.' We ship elite." },
-  { i: "◇", t: "Transparency", d: "Open communication and clear technical roadmaps at every sprint." },
+  {
+    i: "◇",
+    t: "Transparency",
+    d: "Open communication and clear technical roadmaps at every sprint.",
+  },
   { i: "⬡", t: "Ownership", d: "We treat your product like it's our own internal infrastructure." },
-  { i: "⟁", t: "Innovation", d: "Constantly evolving our stack — AI, Blockchain, Edge — to keep you ahead." },
+  {
+    i: "⟁",
+    t: "Innovation",
+    d: "Constantly evolving our stack — AI, Blockchain, Edge — to keep you ahead.",
+  },
 ];
 
 export function ValuesSection() {

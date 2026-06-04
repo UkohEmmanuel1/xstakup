@@ -1,7 +1,8 @@
 "use client";
 
+import Link from "next/link";
+
 export function ErrorPage({ error, reset }: { error: Error; reset: () => void }) {
-  console.error(error);
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
@@ -14,7 +15,9 @@ export function ErrorPage({ error, reset }: { error: Error; reset: () => void })
           >
             Try again
           </button>
-          <a href="/" className="rounded-md border border-border px-4 py-2 text-sm">Go home</a>
+          <Link href="/" className="rounded-md border border-border px-4 py-2 text-sm">
+            Go home
+          </Link>
         </div>
       </div>
     </div>

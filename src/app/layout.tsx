@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "../styles.css";
+import "../globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Providers } from "./providers";
@@ -12,20 +12,20 @@ export const metadata: Metadata = {
   openGraph: {
     title: "XStakUp — Custom Enterprise Software Development",
     description:
-    "XStakUp is your dedicated engineering partner. We architect scalable web, mobile, AI, and Web3 systems for market-leading businesses. Based in Lagos, Nigeria.",
+      "XStakUp is your dedicated engineering partner. We architect scalable web, mobile, AI, and Web3 systems for market-leading businesses. Based in Lagos, Nigeria.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "XStakUp — Custom Enterprise Software Development",
     description:
-    "XStakUp is your dedicated engineering partner. We architect scalable web, mobile, AI, and Web3 systems for market-leading businesses. Based in Lagos, Nigeria.",
+      "XStakUp is your dedicated engineering partner. We architect scalable web, mobile, AI, and Web3 systems for market-leading businesses. Based in Lagos, Nigeria.",
   },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

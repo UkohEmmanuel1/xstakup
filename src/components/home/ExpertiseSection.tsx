@@ -9,7 +9,6 @@ import { expertise } from "@/data/home";
 export function ExpertiseSection() {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  // Slice the 8 items to show only 6 initially
   const visibleExpertise = isExpanded ? expertise : expertise.slice(0, 6);
 
   return (
@@ -22,8 +21,8 @@ export function ExpertiseSection() {
               <h2 className="mt-4 text-3xl md:text-5xl font-bold">Explore Our Expertise</h2>
             </div>
             <p className="max-w-md text-muted-foreground">
-              Eight specialized practice areas, one accountable engineering team.
-              Custom-built for the scale your business demands.
+              Eight specialized practice areas, one accountable engineering team. Custom-built for
+              the scale your business demands.
             </p>
           </div>
 
@@ -32,7 +31,7 @@ export function ExpertiseSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid gap-5 md:grid-cols-2 lg:grid-cols-4"
+            className="grid gap-5 md:grid-cols-2 lg:grid-cols-3"
           >
             <AnimatePresence mode="popLayout">
               {visibleExpertise.map((e) => (

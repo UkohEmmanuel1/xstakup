@@ -34,12 +34,10 @@ export function StatsStrip({ items }: StatsStripProps) {
   );
 }
 
-// Internal component to handle individual dynamic number counters
 function Counter({ value }: { value: string }) {
   const ref = useRef<HTMLParagraphElement>(null);
   const inView = useInView(ref, { once: true, margin: "-50px" });
 
-  // Extract digits, decimals, and surrounding text characters (e.g., "$100M+" -> prefix: "$", number: "100", suffix: "M+")
   const match = value.match(/^([^0-9.-]*)([0-9.-]+)(.*)$/);
 
   const prefix = match ? match[1] : "";
@@ -47,8 +45,7 @@ function Counter({ value }: { value: string }) {
   const suffix = match ? match[3] : value;
 
   const count = useMotionValue(0);
-  
-  // Format numbers to keep layout stable (adds commas back during animation)
+
   const rounded = useTransform(count, (latest) => {
     const formattedNumber = Math.floor(latest).toLocaleString();
     return `${prefix}${formattedNumber}${suffix}`;
@@ -58,7 +55,7 @@ function Counter({ value }: { value: string }) {
     if (inView && !isNaN(numericTarget)) {
       const controls = animate(count, numericTarget, {
         duration: 2,
-        ease: [0.25, 0.1, 0.25, 1], // Smooth premium ease-out curve
+        ease: [0.25, 0.1, 0.25, 1],
         delay: 0.4,
       });
       return () => controls.stop();
@@ -66,8 +63,8 @@ function Counter({ value }: { value: string }) {
   }, [inView, numericTarget, count]);
 
   return (
-    <motion.p 
-      ref={ref} 
+    <motion.p
+      ref={ref}
       className="font-mono text-2xl md:text-3xl font-bold text-foreground inline-block"
     >
       {isNaN(numericTarget) ? value : rounded}

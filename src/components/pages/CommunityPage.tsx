@@ -35,8 +35,8 @@ export function CommunityPage() {
             transition={{ duration: 0.6, delay: 0.35 }}
             className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto"
           >
-            Meetups, technical talks, and open-source contributions powering
-            Africa&apos;s next generation of builders.
+            Meetups, technical talks, and open-source contributions powering Africa&apos;s next
+            generation of builders.
           </motion.p>
         </div>
       </section>

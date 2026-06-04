@@ -10,7 +10,12 @@ interface AnimatedSectionProps {
   once?: boolean;
 }
 
-export function AnimatedSection({ children, className, delay = 0, once = true }: AnimatedSectionProps) {
+export function AnimatedSection({
+  children,
+  className,
+  delay = 0,
+  once = true,
+}: AnimatedSectionProps) {
   return (
     <motion.div
       className={className}

@@ -26,8 +26,7 @@ export function EcosystemGridSection() {
               <h2 className="mt-4 text-3xl md:text-5xl font-bold">Other Notable Deployments</h2>
             </div>
             <p className="max-w-md text-muted-foreground">
-              Sleek systems shipped across Web3, healthcare, EdTech, and
-              enterprise logistics.
+              Sleek systems shipped across Web3, healthcare, EdTech, and enterprise logistics.
             </p>
           </div>
           <motion.div
@@ -47,7 +46,9 @@ export function EcosystemGridSection() {
               >
                 <div className="flex items-start justify-between">
                   <div className="font-mono text-2xl text-signal">{e.i}</div>
-                  <span className="text-muted-foreground group-hover:text-signal group-hover:translate-x-1 transition-all">→</span>
+                  <span className="text-muted-foreground group-hover:text-signal group-hover:translate-x-1 transition-all">
+                    →
+                  </span>
                 </div>
                 <h3 className="mt-5 text-lg font-semibold">{e.t}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{e.d}</p>

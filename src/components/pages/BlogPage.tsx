@@ -35,8 +35,8 @@ export function BlogPage() {
             transition={{ duration: 0.6, delay: 0.35 }}
             className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto"
           >
-            Technical deep-dives, post-mortems, and engineering perspectives.
-            First articles dropping soon.
+            Technical deep-dives, post-mortems, and engineering perspectives. First articles
+            dropping soon.
           </motion.p>
         </div>
       </section>

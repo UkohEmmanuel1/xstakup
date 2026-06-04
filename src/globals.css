@@ -6,7 +6,7 @@
 
 @theme inline {
   --font-sans: "space mono";
-  --font-mono: "fira code", ;
+  --font-mono: "fira code";
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -48,16 +48,16 @@
   --radius: 0.75rem;
 
   /* Quantum palette (oklch equivalents of hex) */
-  --void-main: oklch(0.135 0.018 270);        /* #0A0B10 */
-  --void-section: oklch(0.18 0.025 268);       /* #121420 */
-  --void-surface: oklch(0.225 0.04 268);       /* #1A1D2E */
-  --quantum: oklch(0.45 0.27 268);             /* #1E2BFF */
-  --deep-core: oklch(0.28 0.2 268);            /* #0F1A7A */
-  --signal: oklch(0.82 0.16 220);              /* #00D1FF */
-  --violet: oklch(0.62 0.22 290);              /* #7A5CFF */
+  --void-main: oklch(0.135 0.018 270); /* #0A0B10 */
+  --void-section: oklch(0.18 0.025 268); /* #121420 */
+  --void-surface: oklch(0.225 0.04 268); /* #1A1D2E */
+  --quantum: oklch(0.45 0.27 268); /* #1E2BFF */
+  --deep-core: oklch(0.28 0.2 268); /* #0F1A7A */
+  --signal: oklch(0.82 0.16 220); /* #00D1FF */
+  --violet: oklch(0.62 0.22 290); /* #7A5CFF */
 
   --background: var(--void-main);
-  --foreground: oklch(0.985 0.002 250);        /* #F9FAFB */
+  --foreground: oklch(0.985 0.002 250); /* #F9FAFB */
   --card: var(--void-surface);
   --card-foreground: oklch(0.985 0.002 250);
   --popover: var(--void-surface);
@@ -67,7 +67,7 @@
   --secondary: var(--void-section);
   --secondary-foreground: oklch(0.985 0.002 250);
   --muted: var(--void-section);
-  --muted-foreground: oklch(0.72 0.012 270);   /* #A1A1AA */
+  --muted-foreground: oklch(0.72 0.012 270); /* #A1A1AA */
   --accent: var(--signal);
   --accent-foreground: oklch(0.135 0.018 270);
   --destructive: oklch(0.65 0.22 25);
@@ -88,8 +88,12 @@
 }
 
 @layer base {
-  * { border-color: var(--color-border); }
-  html { color-scheme: dark; }
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    color-scheme: dark;
+  }
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
@@ -100,7 +104,12 @@
       radial-gradient(ellipse 60% 50% at 100% 100%, oklch(0.62 0.22 290 / 0.12), transparent);
     background-attachment: fixed;
   }
-  h1, h2, h3, h4 { letter-spacing: -0.02em; }
+  h1,
+  h2,
+  h3,
+  h4 {
+    letter-spacing: -0.02em;
+  }
 }
 
 @layer utilities {
@@ -117,16 +126,26 @@
     border: 1px solid oklch(1 0 0 / 0.08);
   }
   .text-gradient-quantum {
-    background: linear-gradient(135deg, #F9FAFB 0%, #00D1FF 60%, #7A5CFF 100%);
+    background: linear-gradient(135deg, #f9fafb 0%, #00d1ff 60%, #7a5cff 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
-  .bg-quantum-gradient { background: var(--gradient-quantum); }
-  .bg-hero-glow { background: var(--gradient-hero); }
-  .shadow-quantum { box-shadow: var(--shadow-quantum); }
-  .shadow-glow { box-shadow: var(--shadow-glow); }
-  .font-mono { font-family: var(--font-mono); }
+  .bg-quantum-gradient {
+    background: var(--gradient-quantum);
+  }
+  .bg-hero-glow {
+    background: var(--gradient-hero);
+  }
+  .shadow-quantum {
+    box-shadow: var(--shadow-quantum);
+  }
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  .font-mono {
+    font-family: var(--font-mono);
+  }
 
   .grid-pattern {
     background-image:
@@ -136,28 +155,58 @@
   }
 
   @keyframes marquee {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
   }
-  .animate-marquee { animation: marquee 40s linear infinite; }
-  .animate-marquee-fast { animation: marquee 20s linear infinite; }
+  .animate-marquee {
+    animation: marquee 40s linear infinite;
+  }
+  .animate-marquee-fast {
+    animation: marquee 20s linear infinite;
+  }
 
   @keyframes pulse-glow {
-    0%, 100% { opacity: 0.6; transform: scale(1); }
-    50% { opacity: 1; transform: scale(1.05); }
+    0%,
+    100% {
+      opacity: 0.6;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
   }
-  .animate-pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
+  .animate-pulse-glow {
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
 
   @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-12px); }
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-12px);
+    }
   }
-  .animate-float { animation: float 5s ease-in-out infinite; }
-  .animate-float-slow { animation: float 7s ease-in-out infinite; }
+  .animate-float {
+    animation: float 5s ease-in-out infinite;
+  }
+  .animate-float-slow {
+    animation: float 7s ease-in-out infinite;
+  }
 
   @keyframes shimmer {
-    0% { background-position: -200% 0; }
-    100% { background-position: 200% 0; }
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
   }
   .animate-shimmer {
     background: linear-gradient(90deg, transparent, oklch(1 0 0 / 0.06), transparent);
@@ -166,16 +215,30 @@
   }
 
   @keyframes orbit {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
-  .animate-orbit { animation: orbit 20s linear infinite; }
-  .animate-orbit-slow { animation: orbit 40s linear infinite; }
+  .animate-orbit {
+    animation: orbit 20s linear infinite;
+  }
+  .animate-orbit-slow {
+    animation: orbit 40s linear infinite;
+  }
 
   @keyframes gradient-shift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
   .animate-gradient-shift {
     background-size: 200% 200%;
@@ -183,9 +246,20 @@
   }
 
   @keyframes ping-slow {
-    0% { transform: scale(1); opacity: 0.8; }
-    50% { transform: scale(1.5); opacity: 0; }
-    100% { transform: scale(1.5); opacity: 0; }
+    0% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
   }
-  .animate-ping-slow { animation: ping-slow 3s ease-in-out infinite; }
+  .animate-ping-slow {
+    animation: ping-slow 3s ease-in-out infinite;
+  }
 }

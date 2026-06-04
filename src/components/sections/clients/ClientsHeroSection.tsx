@@ -26,8 +26,7 @@ export function ClientsHeroSection() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="mt-6 text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight max-w-4xl mx-auto"
         >
-          <span className="text-gradient-quantum">High-Performance Systems</span>{" "}
-          Built for Scale.
+          <span className="text-gradient-quantum">High-Performance Systems</span> Built for Scale.
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -35,9 +34,8 @@ export function ClientsHeroSection() {
           transition={{ duration: 0.6, delay: 0.35 }}
           className="mt-6 max-w-2xl mx-auto text-lg text-muted-foreground"
         >
-          We don&apos;t just write code; we architect market-leading platforms.
-          Explore the enterprise software, fintech infrastructure, and AI
-          applications engineered by XStakUp.
+          We don&apos;t just write code; we architect market-leading platforms. Explore the
+          enterprise software, fintech infrastructure, and AI applications engineered by XStakUp.
         </motion.p>
       </div>
     </section>

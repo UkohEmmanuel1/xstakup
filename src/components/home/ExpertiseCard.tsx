@@ -12,7 +12,7 @@ export function ExpertiseCard({ item }: ExpertiseCardProps) {
   return (
     <motion.div
       variants={staggerItem}
-      whileHover={{ y: -6, borderColor: "rgba(0, 209, 255, 0.6)" }}
+      whileHover={{ y: -6, scale: 1.05, borderColor: "rgba(0, 209, 255, 0.6)" }}
       className="group relative rounded-xl glass p-6 transition-colors cursor-pointer"
     >
       <motion.div

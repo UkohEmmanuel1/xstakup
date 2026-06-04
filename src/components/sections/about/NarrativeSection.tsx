@@ -20,16 +20,15 @@ export function NarrativeSection() {
             </h2>
             <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                XStakUp was founded on a simple premise: businesses deserve
-                better than &quot;off-the-shelf&quot; solutions. We saw the gap between
-                ambitious product ideas and the technical infrastructure
-                required to sustain them.
+                XStakUp was founded on a simple premise: businesses deserve better than
+                &quot;off-the-shelf&quot; solutions. We saw the gap between ambitious product ideas
+                and the technical infrastructure required to sustain them.
               </p>
               <p>
                 Today, we bridge that gap. As the engineering engine within the{" "}
-                <span className="text-foreground font-medium">FTRX Group</span>{" "}
-                ecosystem, we bring specialized expertise in fintech, AI, and
-                scalable cloud architecture to every client partner.
+                <span className="text-foreground font-medium">FTRX Group</span> ecosystem, we bring
+                specialized expertise in fintech, AI, and scalable cloud architecture to every
+                client partner.
               </p>
             </div>
           </motion.div>
@@ -55,7 +54,7 @@ export function NarrativeSection() {
                       <stop offset="100%" stopColor="#1E2BFF" />
                     </linearGradient>
                   </defs>
-                  {[20, 40, 60, 80].map(r => (
+                  {[20, 40, 60, 80].map((r) => (
                     <polygon
                       key={r}
                       points={`100,${100 - r} ${100 + r * 0.866},${100 + r * 0.5} ${100 - r * 0.866},${100 + r * 0.5}`}
@@ -65,7 +64,10 @@ export function NarrativeSection() {
                     />
                   ))}
                   <motion.circle
-                    cx="100" cy="100" r="4" fill="#00D1FF"
+                    cx="100"
+                    cy="100"
+                    r="4"
+                    fill="#00D1FF"
                     animate={{ r: [4, 6, 4] }}
                     transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
                   />

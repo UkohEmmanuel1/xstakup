@@ -5,8 +5,14 @@ import { SectionLabel, AnimatedSection, staggerContainer, staggerItem } from "@/
 
 export function MissionVisionSection() {
   const items = [
-    { t: "Our Mission", d: "To provide world-class technical infrastructure and engineering expertise that empowers businesses to scale without limits." },
-    { t: "Our Vision", d: "To be the most trusted global engineering partner for high-scale digital platforms, setting the standard for uptime, security, and innovation." },
+    {
+      t: "Our Mission",
+      d: "To provide world-class technical infrastructure and engineering expertise that empowers businesses to scale without limits.",
+    },
+    {
+      t: "Our Vision",
+      d: "To be the most trusted global engineering partner for high-scale digital platforms, setting the standard for uptime, security, and innovation.",
+    },
   ];
 
   return (

@@ -10,8 +10,10 @@ const featured: FeaturedCase[] = [
     name: "XPay",
     tag: "Fintech & Web3 Infrastructure",
     headline: "Bridging Crypto, Gift Cards, and Fiat Payments.",
-    challenge: "Building a high-liquidity, zero-latency payment gateway capable of processing traditional and digital assets seamlessly across borders.",
-    solution: "We engineered a highly secure, scalable payment architecture featuring real-time transaction ledgers, enterprise-grade fraud protection, and instant multi-currency settlements.",
+    challenge:
+      "Building a high-liquidity, zero-latency payment gateway capable of processing traditional and digital assets seamlessly across borders.",
+    solution:
+      "We engineered a highly secure, scalable payment architecture featuring real-time transaction ledgers, enterprise-grade fraud protection, and instant multi-currency settlements.",
     stack: ["React", "Node.js", "Web3.js", "AWS Secure Enclave", "PostgreSQL"],
     gradient: "linear-gradient(135deg, #1E2BFF, #0F1A7A)",
   },
@@ -19,8 +21,10 @@ const featured: FeaturedCase[] = [
     name: "Quik",
     tag: "AI & Machine Learning",
     headline: "The Intelligent AI Booking Engine.",
-    challenge: "Traditional scheduling apps require manual data entry. The market needed an autonomous agent capable of handling natural language requests and complex calendar integrations.",
-    solution: "XStakUp developed a custom NLP booking application that intelligently syncs availability, manages conflicts, and automates client communication without human intervention.",
+    challenge:
+      "Traditional scheduling apps require manual data entry. The market needed an autonomous agent capable of handling natural language requests and complex calendar integrations.",
+    solution:
+      "XStakUp developed a custom NLP booking application that intelligently syncs availability, manages conflicts, and automates client communication without human intervention.",
     stack: ["Python", "OpenAI API", "React Native", "GraphQL", "Redis"],
     gradient: "linear-gradient(135deg, #7A5CFF, #1E2BFF)",
   },
@@ -28,8 +32,32 @@ const featured: FeaturedCase[] = [
     name: "Cashflow Africa",
     tag: "Enterprise SaaS & Trade Finance",
     headline: "Powering Intra-African Trade.",
-    challenge: "Cross-border B2B trade in Africa suffers from fragmented financial data and slow liquidity cycles.",
-    solution: "We deployed an enterprise-grade trade finance platform that digitizes invoicing, secures B2B lending, and provides real-time financial dashboards for high-volume merchants.",
+    challenge:
+      "Cross-border B2B trade in Africa suffers from fragmented financial data and slow liquidity cycles.",
+    solution:
+      "We deployed an enterprise-grade trade finance platform that digitizes invoicing, secures B2B lending, and provides real-time financial dashboards for high-volume merchants.",
+    stack: ["Vue.js", "GoLang", "Kubernetes", "Snowflake", "Docker"],
+    gradient: "linear-gradient(135deg, #00D1FF, #0F1A7A)",
+  },
+  {
+    name: "Diction Masters",
+    tag: "Diction masters",
+    headline: "Education Technology.",
+    challenge:
+      "Cross-border B2B trade in Africa suffers from fragmented financial data and slow liquidity cycles.",
+    solution:
+      "We deployed an enterprise-grade trade finance platform that digitizes invoicing, secures B2B lending, and provides real-time financial dashboards for high-volume merchants.",
+    stack: ["Vue.js", "GoLang", "Kubernetes", "Snowflake", "Docker"],
+    gradient: "linear-gradient(135deg, #00D1FF, #0F1A7A)",
+  },
+  {
+    name: "Waterpro LLC",
+    tag: "Waterpro LLC",
+    headline: "Waterpro LLC.",
+    challenge:
+      "Cross-border B2B trade in Africa suffers from fragmented financial data and slow liquidity cycles.",
+    solution:
+      "We deployed an enterprise-grade trade finance platform that digitizes invoicing, secures B2B lending, and provides real-time financial dashboards for high-volume merchants.",
     stack: ["Vue.js", "GoLang", "Kubernetes", "Snowflake", "Docker"],
     gradient: "linear-gradient(135deg, #00D1FF, #0F1A7A)",
   },
@@ -63,18 +91,27 @@ function CaseStudyContent({ c, reverse }: { c: FeaturedCase; reverse: boolean })
       </h2>
       <div className="mt-6 space-y-5">
         <div>
-          <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">The Challenge</p>
+          <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
+            The Challenge
+          </p>
           <p className="mt-2 text-muted-foreground leading-relaxed">{c.challenge}</p>
         </div>
         <div>
-          <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">The Solution</p>
+          <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
+            The Solution
+          </p>
           <p className="mt-2 text-muted-foreground leading-relaxed">{c.solution}</p>
         </div>
         <div>
-          <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Tech Stack</p>
+          <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
+            Tech Stack
+          </p>
           <div className="mt-3 flex flex-wrap gap-2">
             {c.stack.map((s) => (
-              <span key={s} className="font-mono text-xs px-2.5 py-1 rounded border border-border bg-[color:var(--void-surface)]">
+              <span
+                key={s}
+                className="font-mono text-xs px-2.5 py-1 rounded border border-border bg-[color:var(--void-surface)]"
+              >
                 {s}
               </span>
             ))}
@@ -98,7 +135,9 @@ function CaseStudyMockupPanel({ c }: { c: FeaturedCase }) {
           <div className="h-2.5 w-2.5 rounded-full bg-red-400/60" />
           <div className="h-2.5 w-2.5 rounded-full bg-yellow-400/60" />
           <div className="h-2.5 w-2.5 rounded-full bg-green-400/60" />
-          <span className="ml-2 font-mono text-[10px] text-muted-foreground">{c.name.toLowerCase()}.xstakup.io</span>
+          <span className="ml-2 font-mono text-[10px] text-muted-foreground">
+            {c.name.toLowerCase()}.xstakup.io
+          </span>
         </div>
         <div className="flex-1 grid grid-cols-3 gap-2">
           <div className="col-span-2 rounded bg-white/5 p-3 flex flex-col gap-2">
@@ -114,8 +153,12 @@ function CaseStudyMockupPanel({ c }: { c: FeaturedCase }) {
           </div>
           <div className="rounded bg-white/5 p-3 flex flex-col gap-2">
             <div className="h-2 w-2/3 rounded bg-signal/60" />
-            {[1, 2, 3, 4].map(k => (
-              <div key={k} className="h-1.5 rounded bg-white/10" style={{ width: `${50 + k * 10}%` }} />
+            {[1, 2, 3, 4].map((k) => (
+              <div
+                key={k}
+                className="h-1.5 rounded bg-white/10"
+                style={{ width: `${50 + k * 10}%` }}
+              />
             ))}
           </div>
         </div>

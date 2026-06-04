@@ -8,14 +8,10 @@ import { pipeline } from "@/data/home";
 export function PipelineSection() {
   return (
     <AnimatedSection>
-      <section 
+      <section
         className="relative py-24 bg-[color:var(--void-section)] border-y border-border bg-cover bg-center bg-no-repeat overflow-hidden"
-        style={{ backgroundImage: `url('/assets/PipelineSection.png')` }}
+        style={{ backgroundImage: `url('')` }}
       >
-        {/* Subtle dark overlay to ensure text contrast over the glowing circuit lines */}
-        <div className="absolute inset-0 bg-[color:var(--void-section)]/80 backdrop-blur-sm pointer-events-none" />
-
-        {/* Relative z-index to pull content above the overlay */}
         <div className="relative z-10 mx-auto max-w-7xl px-6">
           <div className="max-w-2xl">
             <SectionLabel>The Engineering Pipeline</SectionLabel>
@@ -23,7 +19,7 @@ export function PipelineSection() {
               Build confidently with a team that puts your product first.
             </h2>
           </div>
-          
+
           <motion.div
             variants={staggerContainer}
             initial="hidden"

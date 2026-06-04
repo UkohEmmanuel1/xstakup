@@ -53,10 +53,7 @@ function FooterBrand() {
       className="lg:col-span-2"
     >
       <Link href="/" className="flex items-center gap-2">
-        <motion.div
-          whileHover={{ rotate: 5, scale: 1.05 }}
-          className="relative h-8 w-8"
-        >
+        <motion.div whileHover={{ rotate: 5, scale: 1.05 }} className="relative h-8 w-8">
           <div className="absolute inset-0 rounded-md bg-quantum-gradient" />
           <div className="absolute inset-[3px] rounded-[5px] bg-background flex items-center justify-center">
             <span className="font-mono text-xs font-bold text-signal">X</span>
@@ -65,18 +62,15 @@ function FooterBrand() {
         <span className="font-semibold text-foreground">XStakUp</span>
       </Link>
       <p className="mt-4 text-sm text-muted-foreground max-w-sm">
-        Custom enterprise software development. We architect scalable web,
-        mobile, AI, and Web3 systems for market-leading businesses.
+        Custom enterprise software development. We architect scalable web, mobile, AI, and Web3
+        systems for market-leading businesses.
       </p>
       <div className="mt-6 space-y-1 text-sm">
         <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
           Engineering HQ
         </p>
         <p className="text-foreground">Lagos, Nigeria</p>
-        <a
-          href="mailto:partnerships@xstakup.com"
-          className="text-signal hover:underline"
-        >
+        <a href="mailto:partnerships@xstakup.com" className="text-signal hover:underline">
           partnerships@xstakup.com
         </a>
       </div>
@@ -84,7 +78,7 @@ function FooterBrand() {
   );
 }
 
-function FooterColumn({ col, index }: { col: typeof columns[number]; index: number }) {
+function FooterColumn({ col, index }: { col: (typeof columns)[number]; index: number }) {
   return (
     <motion.div
       custom={index + 1}
@@ -126,7 +120,9 @@ function FooterBottom() {
         © 2026 XStakUp. An FTRX Group Company. All rights reserved.
       </p>
       <div className="flex gap-6 text-xs text-muted-foreground font-mono">
-        <span>SYSTEM STATUS: <span className="text-signal animate-pulse-glow">● OPERATIONAL</span></span>
+        <span>
+          SYSTEM STATUS: <span className="text-signal animate-pulse-glow">● OPERATIONAL</span>
+        </span>
         <span>UPTIME: 99.99%</span>
       </div>
     </motion.div>
@@ -148,7 +144,10 @@ export function Footer() {
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
         className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-signal/50 to-transparent origin-left"
-        style={{ background: "linear-gradient(90deg, transparent, oklch(0.82 0.16 220 / 0.4), transparent)" }}
+        style={{
+          background:
+            "linear-gradient(90deg, transparent, oklch(0.82 0.16 220 / 0.4), transparent)",
+        }}
       />
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-12 lg:grid-cols-5">

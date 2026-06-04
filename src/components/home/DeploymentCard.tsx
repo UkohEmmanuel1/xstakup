@@ -30,7 +30,10 @@ export function DeploymentCard({ caseStudy: c, gradient }: DeploymentCardProps) 
         <span className="font-mono text-xs uppercase tracking-widest text-signal">{c.tag}</span>
         <h3 className="mt-3 text-xl font-semibold">{c.t}</h3>
         <p className="mt-2 text-sm text-muted-foreground">{c.d}</p>
-        <Link href="/clients" className="mt-5 inline-flex items-center gap-2 text-sm text-foreground hover:text-signal transition-colors">
+        <Link
+          href="/clients"
+          className="mt-5 inline-flex items-center gap-2 text-sm text-foreground hover:text-signal transition-colors"
+        >
           View Architecture <span>→</span>
         </Link>
       </div>

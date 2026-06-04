@@ -26,8 +26,8 @@ export function AboutHeroSection() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="mt-6 text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight max-w-4xl mx-auto"
         >
-          Engineering the Future of{" "}
-          <span className="text-gradient-quantum">Digital Commerce</span> and Enterprise.
+          Engineering the Future of <span className="text-gradient-quantum">Digital Commerce</span>{" "}
+          and Enterprise.
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -35,9 +35,8 @@ export function AboutHeroSection() {
           transition={{ duration: 0.6, delay: 0.35 }}
           className="mt-6 max-w-2xl mx-auto text-lg text-muted-foreground"
         >
-          We are a team of dedicated engineers, architects, and strategists
-          committed to building the robust infrastructure that powers
-          market-leading businesses across Africa and beyond.
+          We are a team of dedicated engineers, architects, and strategists committed to building
+          the robust infrastructure that powers market-leading businesses across Africa and beyond.
         </motion.p>
       </div>
     </section>

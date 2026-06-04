@@ -5,7 +5,11 @@ import { SectionLabel } from "@/components/common";
 import type { ContactInfo } from "@/types";
 
 const contactItems: ContactInfo[] = [
-  { label: "Direct Contact", value: "partnerships@xstakup.com", href: "mailto:partnerships@xstakup.com" },
+  {
+    label: "Direct Contact",
+    value: "partnerships@xstakup.com",
+    href: "mailto:partnerships@xstakup.com",
+  },
   { label: "Engineering HQ", value: "Lagos, Nigeria" },
   { label: "Response Time", value: "< 24 hours" },
 ];
@@ -22,8 +26,8 @@ export function ContactInfoPanel() {
         Let's <span className="text-gradient-quantum">engineer your solution.</span>
       </h1>
       <p className="mt-6 text-muted-foreground">
-        Tell us about your product. A senior engineer will respond within 24
-        hours with a technical roadmap proposal.
+        Tell us about your product. A senior engineer will respond within 24 hours with a technical
+        roadmap proposal.
       </p>
       <motion.div
         initial="hidden"
@@ -43,7 +47,10 @@ export function ContactInfoPanel() {
           >
             <p className="font-mono text-xs uppercase tracking-widest text-signal">{item.label}</p>
             {item.href ? (
-              <a href={item.href} className="mt-2 block text-lg text-foreground hover:text-signal transition-colors">
+              <a
+                href={item.href}
+                className="mt-2 block text-lg text-foreground hover:text-signal transition-colors"
+              >
                 {item.value}
               </a>
             ) : (
