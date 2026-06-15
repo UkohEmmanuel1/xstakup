@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SectionLabel } from "@/components/common";
 import type { ContactInfo } from "@/types";
 
 const contactItems: ContactInfo[] = [
@@ -11,7 +10,7 @@ const contactItems: ContactInfo[] = [
     href: "mailto:partnerships@xstakup.com",
   },
   { label: "Engineering HQ", value: "Lagos, Nigeria" },
-  { label: "Response Time", value: "< 24 hours" },
+  { label: "Response Time", value: "less then 24 hours" },
 ];
 
 export function ContactInfoPanel() {
@@ -21,13 +20,13 @@ export function ContactInfoPanel() {
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.7 }}
     >
-      <SectionLabel>Initialize Your Build</SectionLabel>
+      
       <h1 className="mt-6 text-4xl md:text-5xl font-bold tracking-tight">
-        Let's <span className="text-gradient-quantum">engineer your solution.</span>
+        Let's <span className="text-gradient-quantum">Engineer Your Custom Software Solution</span>
       </h1>
       <p className="mt-6 text-muted-foreground">
-        Tell us about your product. A senior engineer will respond within 24 hours with a technical
-        roadmap proposal.
+        Tell us about your enterprise software project. A senior engineer will respond within 24
+        hours with a technical roadmap and development proposal.
       </p>
       <motion.div
         initial="hidden"

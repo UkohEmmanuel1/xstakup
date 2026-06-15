@@ -11,17 +11,17 @@ export default function ErrorPage({
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
-        <h1 className="text-xl font-semibold text-foreground">System fault detected</h1>
-        <p className="mt-2 text-sm text-muted-foreground">Something went wrong. Try again.</p>
+        <h1 className="text-xl font-semibold text-foreground">Something went wrong</h1>
+        <p className="mt-2 text-sm text-muted-foreground">An unexpected error occurred. Please try again.</p>
         <div className="mt-6 flex justify-center gap-2">
           <button
             onClick={() => reset()}
-            className="rounded-md bg-quantum-gradient px-4 py-2 text-sm text-white"
+            className="rounded-md bg-quantum-gradient px-4 py-2 text-sm text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
             Try again
           </button>
           <Link href="/" className="rounded-md border border-border px-4 py-2 text-sm">
-            Go home
+            Return home
           </Link>
         </div>
       </div>

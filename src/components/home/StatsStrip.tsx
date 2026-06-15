@@ -19,15 +19,15 @@ export function StatsStrip({ items }: StatsStripProps) {
     >
       {items.map((s, i) => (
         <motion.div
-          key={s.l}
+          key={s.label}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
           className="px-6 py-6 bg-[color:var(--void-surface)]/50"
         >
-          <Counter value={s.v} />
-          <p className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">{s.l}</p>
+          <Counter value={s.value} />
+          <p className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">{s.label}</p>
         </motion.div>
       ))}
     </motion.div>

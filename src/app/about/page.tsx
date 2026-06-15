@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import { AboutPage } from "@/components/pages";
 
 export const metadata: Metadata = {
-  title: "About XStakUp — Engineering the Future of Digital Enterprise",
+  title: "About XStakUp | Enterprise Software Engineering Team",
   description:
-    "XStakUp is a team of engineers, architects, and strategists building the technical infrastructure that powers market-leading businesses. Part of the FTRX Group.",
+    "Learn about XStakUp, a team of dedicated software engineers, architects, and strategists building enterprise technical infrastructure. Part of the FTRX Group, specializing in fintech, AI, Web3, and scalable cloud architecture.",
   openGraph: {
-    title: "About XStakUp — Engineering for Scale",
+    title: "About XStakUp | Enterprise Software Engineering Team",
     description:
-      "Dedicated engineering partners specializing in fintech, AI, and scalable cloud architecture.",
+      "Dedicated engineering partners building market-leading enterprise software. Specializing in fintech, AI, and scalable cloud architecture.",
   },
 };
 

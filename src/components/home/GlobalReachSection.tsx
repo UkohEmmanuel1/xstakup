@@ -16,11 +16,12 @@ export function GlobalReachSection() {
           >
             <SectionLabel>Global Reach</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
-              We build impactful technology for businesses worldwide.
+              Global Software Engineering Services — From Lagos to the World
             </h2>
             <p className="mt-6 text-lg text-muted-foreground">
-              Let&apos;s build yours. Headquartered in Lagos, deploying systems across Africa,
-              Europe, and the Americas.
+              Headquartered in Lagos, Nigeria, we deploy enterprise software systems across Africa,
+              Europe, and the Americas. Your distributed engineering team for global-scale
+              applications.
             </p>
             <div className="mt-8">
               <PrimaryCTA>Initialize Your Build</PrimaryCTA>

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SectionLabel, AnimatedSection, staggerContainer, staggerItem } from "@/components/common";
+import {AnimatedSection, staggerContainer, staggerItem } from "@/components/common";
 
 export function MissionVisionSection() {
   const items = [
@@ -20,8 +20,10 @@ export function MissionVisionSection() {
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center max-w-2xl mx-auto mb-14">
-            <SectionLabel>The Blueprint</SectionLabel>
-            <h2 className="mt-4 text-3xl md:text-5xl font-bold">Mission & Vision</h2>
+            
+            <h2 className="mt-4 text-3xl md:text-5xl font-bold">
+              Software Company Mission & Vision
+            </h2>
           </div>
           <motion.div
             variants={staggerContainer}
@@ -35,9 +37,9 @@ export function MissionVisionSection() {
                 key={c.t}
                 variants={staggerItem}
                 className="relative rounded-2xl p-10 glass"
-                style={{ borderColor: "rgba(0, 209, 255, 0.4)" }}
+                style={{ borderColor: "oklch(0.65 0.18 230 / 0.4)" }}
               >
-                <div className="font-mono text-xs uppercase tracking-widest text-signal">{c.t}</div>
+                <h3 className="font-mono text-xs uppercase tracking-widest text-signal">{c.t}</h3>
                 <p className="mt-5 text-xl md:text-2xl text-foreground leading-relaxed font-medium">
                   {c.d}
                 </p>

@@ -1,8 +1,6 @@
 "use client";
 
-import Link from "next/link";
-import { motion } from "framer-motion";
-import { staggerItem } from "@/components/common";
+import Image from "next/image";
 import type { CaseStudy } from "@/types";
 
 interface DeploymentCardProps {
@@ -10,33 +8,28 @@ interface DeploymentCardProps {
   gradient: string;
 }
 
-export function DeploymentCard({ caseStudy: c, gradient }: DeploymentCardProps) {
+export function DeploymentCard({ caseStudy, gradient }: DeploymentCardProps) {
   return (
-    <motion.div
-      variants={staggerItem}
-      whileHover={{ y: -6 }}
-      className="group rounded-xl glass overflow-hidden transition-shadow hover:shadow-glow"
-    >
-      <motion.div
-        className="aspect-[4/3] relative overflow-hidden"
-        style={{ background: gradient }}
-      >
-        <div className="absolute inset-0 grid-pattern opacity-30" />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <span className="font-mono text-5xl font-bold text-white/90">{c.t}</span>
-        </div>
-      </motion.div>
-      <div className="p-6">
-        <span className="font-mono text-xs uppercase tracking-widest text-signal">{c.tag}</span>
-        <h3 className="mt-3 text-xl font-semibold">{c.t}</h3>
-        <p className="mt-2 text-sm text-muted-foreground">{c.d}</p>
-        <Link
-          href="/clients"
-          className="mt-5 inline-flex items-center gap-2 text-sm text-foreground hover:text-signal transition-colors"
-        >
-          View Architecture <span>→</span>
-        </Link>
+    <div className="flex flex-col h-full overflow-hidden rounded-2xl border border-border bg-[color:var(--void-surface)]/50 backdrop-blur-sm">
+      <div className="relative w-full h-44 overflow-hidden bg-[color:var(--void-section)]">
+        <div className="absolute inset-0 opacity-20" style={{ background: gradient }} />
+        <Image
+          src="/assets/pattern.webp"
+          alt={caseStudy.title || "Deployment Featured Image"}
+          fill
+          sizes="(max-width: 768px) 100vw, 33vw"
+          className="object-cover object-center transition-transform duration-500 hover:scale-105"
+        />
       </div>
-    </motion.div>
+      <div className="flex flex-col flex-grow p-6 md:p-8">
+        <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+          {caseStudy.tag}
+        </span>
+        <h3 className="mt-2 text-2xl font-bold text-foreground">{caseStudy.title}</h3>
+        <p className="mt-4 text-base md:text-lg text-muted-foreground line-clamp-3 leading-relaxed">
+          {caseStudy.description}
+        </p>
+      </div>
+    </div>
   );
 }

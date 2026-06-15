@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { OutlineCTA } from "@/components/common";
 import { slideFromLeft, slideFromRight } from "@/components/common";
@@ -41,24 +42,24 @@ const featured: FeaturedCase[] = [
   },
   {
     name: "Diction Masters",
-    tag: "Diction masters",
-    headline: "Education Technology.",
+    tag: "EdTech & NLP",
+    headline: "Language Learning Reimagined.",
     challenge:
-      "Cross-border B2B trade in Africa suffers from fragmented financial data and slow liquidity cycles.",
+      "Building an intelligent pronunciation coaching system that provides real-time feedback to language learners across different dialects and accents.",
     solution:
-      "We deployed an enterprise-grade trade finance platform that digitizes invoicing, secures B2B lending, and provides real-time financial dashboards for high-volume merchants.",
-    stack: ["Vue.js", "GoLang", "Kubernetes", "Snowflake", "Docker"],
+      "We built a speech recognition pipeline with real-time phoneme analysis, personalized learning paths, and native-language-accurate pronunciation scoring using custom NLP models.",
+    stack: ["Python", "TensorFlow", "React Native", "WebSocket", "GCP"],
     gradient: "linear-gradient(135deg, #00D1FF, #0F1A7A)",
   },
   {
     name: "Waterpro LLC",
-    tag: "Waterpro LLC",
-    headline: "Waterpro LLC.",
+    tag: "Enterprise IoT",
+    headline: "Smart Water Management.",
     challenge:
-      "Cross-border B2B trade in Africa suffers from fragmented financial data and slow liquidity cycles.",
+      "Municipal water systems lacked real-time monitoring, leading to 30%+ losses from leaks and inefficient distribution across urban networks.",
     solution:
-      "We deployed an enterprise-grade trade finance platform that digitizes invoicing, secures B2B lending, and provides real-time financial dashboards for high-volume merchants.",
-    stack: ["Vue.js", "GoLang", "Kubernetes", "Snowflake", "Docker"],
+      "We deployed an IoT sensor network with a real-time analytics dashboard that detects leaks, predicts maintenance, and optimizes distribution flow across city infrastructure.",
+    stack: ["Go", "React", "InfluxDB", "MQTT", "Kubernetes"],
     gradient: "linear-gradient(135deg, #00D1FF, #0F1A7A)",
   },
 ];
@@ -129,6 +130,15 @@ function CaseStudyMockupPanel({ c }: { c: FeaturedCase }) {
   return (
     <div className="relative rounded-2xl glass-strong overflow-hidden aspect-[4/3]">
       <div className="absolute inset-0" style={{ background: c.gradient, opacity: 0.85 }} />
+      {c.name === "XPay" && (
+        <Image
+          src="/assets/XPAY LOGO.webp"
+          alt="XPay Logo"
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-contain opacity-30 p-8"
+        />
+      )}
       <div className="absolute inset-0 grid-pattern opacity-30" />
       <div className="absolute inset-6 rounded-lg bg-[color:var(--void-main)]/85 backdrop-blur-sm p-4 flex flex-col gap-3">
         <div className="flex items-center gap-2">

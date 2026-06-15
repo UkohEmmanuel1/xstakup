@@ -58,7 +58,7 @@ function FormFields() {
         <textarea
           required
           rows={5}
-          className="mt-2 w-full rounded-md bg-[color:var(--void-main)] border border-border px-4 py-3 text-foreground focus:border-signal focus:outline-none transition-colors"
+          className="mt-2 w-full rounded-md bg-[color:var(--void-main)] border border-border px-4 py-3 text-foreground focus:border-signal focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring transition-colors"
           placeholder="Tell us about the system you need to engineer..."
         />
       </motion.div>
@@ -67,9 +67,9 @@ function FormFields() {
           type="submit"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          className="w-full inline-flex items-center justify-center gap-2 rounded-md bg-quantum-gradient px-6 py-3.5 text-sm font-semibold text-white shadow-quantum hover:shadow-glow transition-all"
+          className="w-full inline-flex items-center justify-center gap-2 rounded-md bg-quantum-gradient px-6 py-3.5 text-sm font-semibold text-white shadow-quantum hover:shadow-glow transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
-          Initialize Your Build →
+          Initialize Your Build 
         </motion.button>
       </motion.div>
       <motion.p

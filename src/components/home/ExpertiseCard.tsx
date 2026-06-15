@@ -12,7 +12,7 @@ export function ExpertiseCard({ item }: ExpertiseCardProps) {
   return (
     <motion.div
       variants={staggerItem}
-      whileHover={{ y: -6, scale: 1.05, borderColor: "rgba(0, 209, 255, 0.6)" }}
+      whileHover={{ y: -6, scale: 1.05, borderColor: "oklch(0.65 0.18 230 / 0.6)" }}
       className="group relative rounded-xl glass p-6 transition-colors cursor-pointer"
     >
       <motion.div
@@ -20,10 +20,10 @@ export function ExpertiseCard({ item }: ExpertiseCardProps) {
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
         className="font-mono text-3xl text-signal/80 group-hover:text-signal transition-colors"
       >
-        {item.i}
+        {item.icon}
       </motion.div>
-      <h3 className="mt-5 text-lg font-semibold">{item.t}</h3>
-      <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{item.d}</p>
+      <h3 className="mt-5 text-lg font-semibold">{item.title}</h3>
+      <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{item.description}</p>
       <motion.div
         initial={{ opacity: 0, x: -10 }}
         whileHover={{ opacity: 1, x: 0 }}

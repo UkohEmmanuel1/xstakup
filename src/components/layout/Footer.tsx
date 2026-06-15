@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -53,12 +54,9 @@ function FooterBrand() {
       className="lg:col-span-2"
     >
       <Link href="/" className="flex items-center gap-2">
-        <motion.div whileHover={{ rotate: 5, scale: 1.05 }} className="relative h-8 w-8">
-          <div className="absolute inset-0 rounded-md bg-quantum-gradient" />
-          <div className="absolute inset-[3px] rounded-[5px] bg-background flex items-center justify-center">
-            <span className="font-mono text-xs font-bold text-signal">X</span>
-          </div>
-        </motion.div>
+        <div className="relative h-10 w-10">
+          <Image src="/assets/foot_logo.webp" alt="XStakUp footer logo" fill sizes="40px" className="object-contain" />
+        </div>
         <span className="font-semibold text-foreground">XStakUp</span>
       </Link>
       <p className="mt-4 text-sm text-muted-foreground max-w-sm">
@@ -120,10 +118,8 @@ function FooterBottom() {
         © 2026 XStakUp. An FTRX Group Company. All rights reserved.
       </p>
       <div className="flex gap-6 text-xs text-muted-foreground font-mono">
-        <span>
-          Terms & Conditions <span className="text-signal animate-pulse-glow">● Privacy Policy</span>
-        </span>
-        <span>UPTIME: 99.99%</span>
+        <span>Terms & Conditions</span>
+        <span>Privacy Policy</span>
       </div>
     </motion.div>
   );

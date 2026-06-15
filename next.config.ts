@@ -1,12 +1,13 @@
-/** @type {import('next').NextConfig} */
+import path from "path";
+
 const nextConfig = {
-  // Add this to skip strict linter breaks on production build compiles
   eslint: {
     ignoreDuringBuilds: true,
   },
   typescript: {
     ignoreBuildErrors: true,
   },
+  outputFileTracingRoot: path.join(__dirname, "../../"),
 };
 
 export default nextConfig;

@@ -15,13 +15,21 @@ export function ImpactMarqueeSection() {
     <AnimatedSection>
       <section className="py-16 overflow-hidden border-b border-border">
         <div className="relative">
-          <div className="flex animate-marquee-fast gap-8 w-max font-mono text-2xl md:text-4xl font-bold group hover:[animation-play-state:paused]">
-            {[...metrics, ...metrics, ...metrics].map((m, i) => (
-              <div key={i} className="flex items-center gap-8 whitespace-nowrap">
+          <div className="flex animate-marquee-fast gap-8 w-max font-mono text-2xl md:text-4xl font-bold group hover:[animation-play-state:paused]" role="list" aria-label="Key metrics">
+            {metrics.map((m, i) => (
+              <div key={i} role="listitem" className="flex items-center gap-8 whitespace-nowrap">
                 <span className="text-signal">{m}</span>
                 <span className="text-muted-foreground">•</span>
               </div>
             ))}
+            <div aria-hidden="true" className="flex gap-8">
+              {[...metrics, ...metrics].map((m, i) => (
+                <div key={`dup-${i}`} className="flex items-center gap-8 whitespace-nowrap">
+                  <span className="text-signal">{m}</span>
+                  <span className="text-muted-foreground">•</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

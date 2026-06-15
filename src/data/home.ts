@@ -2,65 +2,85 @@ import type { PipelineStep, ExpertiseItem, CaseStudy, StatsItem } from "@/types"
 
 export const pipeline: PipelineStep[] = [
   {
-    n: "01",
-    t: "System Strategy",
-    d: "Clear technical roadmapping for complex software solutions aligned with your business goals.",
+    number: "01",
+    title: "Software Strategy & Planning",
+    description: "Technical roadmapping and requirement analysis for custom enterprise software aligned with your business objectives.",
   },
   {
-    n: "02",
-    t: "Architecture & UI/UX Design",
-    d: "User-centered, interactive, and scalable system design built for your target audience.",
+    number: "02",
+    title: "Architecture & UX Design",
+    description: "Scalable system architecture design with user-centered UI/UX built for your target audience and growth requirements.",
   },
   {
-    n: "03",
-    t: "Full-Stack Development",
-    d: "Robust, custom coding (web, mobile, and Web3) tailored to your exact specifications.",
+    number: "03",
+    title: "Full-Stack Development",
+    description: "Custom software development across web, mobile, and Web3 platforms using modern frameworks and best practices.",
   },
   {
-    n: "04",
-    t: "DevSecOps & Support",
-    d: "Secure, scalable deployments, post-launch monitoring, and 99.9% uptime maintenance.",
+    number: "04",
+    title: "DevSecOps & Deployment",
+    description: "Secure CI/CD pipelines, cloud infrastructure, post-launch monitoring, and 99.9% uptime maintenance.",
   },
 ];
 
 export const expertise: ExpertiseItem[] = [
-  { t: "Product Engineering", d: "End-to-end development from your idea to launch.", i: "◇" },
-  { t: "Web3 & Blockchain", d: "Smart contracts and decentralized infrastructure.", i: "⬡" },
-  { t: "Web & SaaS Development", d: "Custom, high-performance web applications.", i: "▤" },
-  { t: "Mobile Development", d: "High-performing iOS & Android applications.", i: "▢" },
   {
-    t: "AI & Machine Learning",
-    d: "Custom AI integrations to make your business smarter.",
-    i: "✦",
-  },
-  { t: "Fintech Solutions", d: "Payment gateways and secure financial architecture.", i: "₿" },
-  {
-    t: "CTO-as-a-Service",
-    d: "On-demand technical leadership to guide your internal team.",
-    i: "◈",
+    title: "Product Engineering",
+    description: "End-to-end custom software development from concept to launch.",
+    icon: "◇",
   },
   {
-    t: "DevSecOps",
-    d: "Secure, scalable, and worry-free deployments for your peace of mind.",
-    i: "⟁",
+    title: "Web3 & Blockchain",
+    description: "Smart contract development, dApps, and decentralized infrastructure.",
+    icon: "⬡",
+  },
+  {
+    title: "Web & SaaS Development",
+    description: "High-performance web applications and scalable SaaS platforms.",
+    icon: "▤",
+  },
+  {
+    title: "Mobile Development",
+    description: "Native iOS and Android applications with cross-platform expertise.",
+    icon: "▢",
+  },
+  {
+    title: "AI & Machine Learning",
+    description: "Custom AI integration, NLP solutions, and intelligent automation services.",
+    icon: "✦",
+  },
+  {
+    title: "Fintech Solutions",
+    description: "Payment gateway integration, financial architecture, and secure transaction systems.",
+    icon: "₿",
+  },
+  {
+    title: "CTO-as-a-Service",
+    description: "On-demand technical leadership and software architecture guidance for your team.",
+    icon: "◈",
+  },
+  {
+    title: "DevSecOps",
+    description: "Secure cloud deployments, automated CI/CD pipelines, and infrastructure management.",
+    icon: "⟁",
   },
 ];
 
 export const cases: CaseStudy[] = [
   {
-    t: "XPay",
+    title: "XPay",
     tag: "Fintech / Web3",
-    d: "Crypto, gift card & fiat payment infrastructure with real-time multi-currency settlement.",
+    description: "Crypto, gift card & fiat payment infrastructure with real-time multi-currency settlement.",
   },
   {
-    t: "Quik",
+    title: "Quik",
     tag: "AI / NLP",
-    d: "AI-powered booking application that intelligently syncs availability and automates communication.",
+    description: "AI-powered booking application that intelligently syncs availability and automates communication.",
   },
   {
-    t: "Cashflow Africa",
+    title: "Cashflow Africa",
     tag: "Trade Finance",
-    d: "Intra-African B2B trade finance platform digitizing invoicing and securing lending.",
+    description: "Intra-African B2B trade finance platform digitizing invoicing and securing lending.",
   },
 ];
 
@@ -88,8 +108,8 @@ export const marqueeItems = [
 ];
 
 export const stats: StatsItem[] = [
-  { v: "99.99%", l: "Average Uptime" },
-  { v: "5M+", l: "Transactions" },
-  { v: "10+", l: "Enterprise Builds" },
-  { v: "0", l: "Security Breaches" },
+  { value: "99.99%", label: "Average Uptime" },
+  { value: "5M+", label: "Transactions" },
+  { value: "10+", label: "Enterprise Builds" },
+  { value: "0", label: "Security Breaches" },
 ];

@@ -10,14 +10,17 @@ export function PipelineSection() {
     <AnimatedSection>
       <section
         className="relative py-24 bg-[color:var(--void-section)] border-y border-border bg-cover bg-center bg-no-repeat overflow-hidden"
-        style={{ backgroundImage: `url('')` }}
+        style={{ backgroundImage: `url('/assets/bg.webp')` }}
       >
         <div className="relative z-10 mx-auto max-w-7xl px-6">
           <div className="max-w-2xl">
-            <SectionLabel>The Engineering Pipeline</SectionLabel>
-            <h2 className="mt-4 text-3xl md:text-5xl font-bold text-white">
-              Build confidently with a team that puts your product first.
+            <h2 className="mt-4 text-3xl md:text-5xl font-bold">
+              Custom Enterprise Software Development: Our Process
             </h2>
+            <p className="mt-4 text-muted-foreground max-w-xl">
+              From strategy to deployment — our proven software engineering pipeline delivers
+              production-grade systems for web, mobile, AI, and Web3.
+            </p>
           </div>
 
           <motion.div
@@ -28,7 +31,7 @@ export function PipelineSection() {
             className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4"
           >
             {pipeline.map((s) => (
-              <PipelineCard key={s.n} step={s} />
+              <PipelineCard key={s.number} step={s} />
             ))}
           </motion.div>
         </div>

@@ -10,21 +10,6 @@ const leaders: Leader[] = [
     role: "Founder & CEO",
     bio: "Vision-led founder driving XStakUp's growth and engineering culture across Africa and global markets.",
   },
-  {
-    name: "[Placeholder]",
-    role: "Creative Director",
-    bio: "Leads the design language and product experience across all XStakUp deployments.",
-  },
-  {
-    name: "[Placeholder]",
-    role: "Operations & Growth",
-    bio: "Architects the operational backbone that keeps every client deployment on time and on budget.",
-  },
-  {
-    name: "[Placeholder]",
-    role: "Engineering Lead",
-    bio: "Heads the technical architecture practice across fintech, AI, and Web3 verticals.",
-  },
 ];
 
 const gradients = [
@@ -40,9 +25,9 @@ export function LeadershipSection() {
       <section className="py-24 bg-[color:var(--void-section)] border-y border-border">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center max-w-2xl mx-auto mb-14">
-            <SectionLabel>The Architects</SectionLabel>
+            
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
-              Led by Visionaries. Driven by Engineers.
+              Enterprise Software Leadership Team
             </h2>
           </div>
           <motion.div

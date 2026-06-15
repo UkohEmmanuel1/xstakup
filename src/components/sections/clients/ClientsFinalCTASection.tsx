@@ -26,16 +26,16 @@ export function ClientsFinalCTASection() {
           />
           <div className="relative">
             <h2 className="text-3xl md:text-5xl font-bold text-white max-w-3xl mx-auto">
-              Your Product Deserves Elite Engineering.
+              Start Your Custom Software Development Project
             </h2>
             <p className="mt-5 text-white/70 max-w-xl mx-auto">
               Don&apos;t risk your launch on outsourced templates. Partner with the dedicated
-              engineers at XStakUp.
+              enterprise software engineers at XStakUp.
             </p>
             <div className="mt-10">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-md bg-white px-6 py-3 text-sm font-semibold text-[color:var(--deep-core)] hover:bg-signal hover:text-white transition-all"
+                className="inline-flex items-center gap-2 rounded-md bg-white px-6 py-3 text-sm font-semibold text-deep-core hover:bg-signal hover:text-white transition-all"
               >
                 Initialize Your Build <span>→</span>
               </Link>

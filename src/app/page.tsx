@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import { HomePage } from "@/components/pages";
 
 export const metadata: Metadata = {
-  title: "XStakUp — Custom Enterprise Software Development Partner",
+  title: "Enterprise Software Development Company | Web, Mobile, AI & Web3",
   description:
-    "Your dedicated engineering team. XStakUp architects scalable web, mobile, AI, and Web3 applications for ambitious businesses.",
+    "XStakUp is a premier enterprise software development company offering custom web development, mobile app development, AI solutions, and Web3 development services. Your dedicated engineering team for scalable, production-grade systems.",
   openGraph: {
-    title: "XStakUp — Custom Enterprise Software Development",
+    title: "Enterprise Software Development Company | XStakUp",
     description:
-      "Dedicated engineering team building scalable web, mobile, AI, and Web3 infrastructure.",
+      "Custom enterprise software development for web, mobile, AI, and Web3. Dedicated engineering team building scalable applications for ambitious businesses.",
   },
 };
 

@@ -5,7 +5,11 @@ import { ContactInfoPanel, ContactForm } from "@/components/sections/contact";
 
 export function ContactPage() {
   return (
-    <section className="relative overflow-hidden min-h-[80vh]">
+    <section
+      className="relative overflow-hidden min-h-[80vh] bg-cover bg-center bg-no-repeat max-w-full"
+      style={{ backgroundImage: `url('/assets/contact.webp')` }}
+    >
+      <div className="absolute inset-0 bg-white/60 dark:bg-black/60" />
       <div className="absolute inset-0 grid-pattern opacity-40" />
       <motion.div
         animate={{ scale: [1, 1.08, 1], opacity: [0.25, 0.4, 0.25] }}

@@ -1,12 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SectionLabel, FinalCTA } from "@/components/common";
+import { FinalCTA } from "@/components/common";
 
 export function ExpertisePage() {
   return (
     <>
-      <section className="relative overflow-hidden py-32">
+      <section
+        className="relative overflow-hidden py-32 bg-cover bg-center bg-no-repeat max-w-full"
+        style={{ backgroundImage: `url('/assets/expertise.webp')` }}
+      >
+        <div className="absolute inset-0 bg-white/60 dark:bg-black/60" />
         <div className="absolute inset-0 grid-pattern opacity-40" />
         <motion.div
           animate={{ scale: [1, 1.08, 1], opacity: [0.2, 0.35, 0.2] }}
@@ -19,7 +23,7 @@ export function ExpertisePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <SectionLabel>Capabilities</SectionLabel>
+            
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -27,7 +31,7 @@ export function ExpertisePage() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="mt-6 text-5xl md:text-7xl font-bold tracking-tight"
           >
-            <span className="text-gradient-quantum">Engineering Disciplines</span>
+            <span className="text-gradient-quantum">Software Development Expertise</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -35,8 +39,9 @@ export function ExpertisePage() {
             transition={{ duration: 0.6, delay: 0.35 }}
             className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto"
           >
-            Eight specialized practices powering custom enterprise software. Detailed capability
-            pages coming soon.
+            Eight specialized engineering disciplines: product engineering, Web3 blockchain
+            development, AI and machine learning, fintech solutions, mobile development, DevSecOps,
+            and more.
           </motion.p>
         </div>
       </section>

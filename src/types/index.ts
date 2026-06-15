@@ -1,21 +1,21 @@
 import type { ReactNode } from "react";
 
 export interface PipelineStep {
-  n: string;
-  t: string;
-  d: string;
+  number: string;
+  title: string;
+  description: string;
 }
 
 export interface ExpertiseItem {
-  t: string;
-  d: string;
-  i: string;
+  title: string;
+  description: string;
+  icon: string;
 }
 
 export interface CaseStudy {
-  t: string;
+  title: string;
   tag: string;
-  d: string;
+  description: string;
 }
 
 export interface Leader {
@@ -25,14 +25,14 @@ export interface Leader {
 }
 
 export interface Differentiator {
-  t: string;
-  d: string;
+  title: string;
+  description: string;
 }
 
 export interface ValueItem {
-  i: string;
-  t: string;
-  d: string;
+  icon: string;
+  title: string;
+  description: string;
 }
 
 export interface FeaturedCase {
@@ -46,9 +46,9 @@ export interface FeaturedCase {
 }
 
 export interface EcosystemItem {
-  t: string;
-  d: string;
-  i: string;
+  title: string;
+  description: string;
+  icon: string;
 }
 
 export interface ContactInfo {
@@ -73,6 +73,6 @@ export interface SectionLabelProps {
 }
 
 export interface StatsItem {
-  v: string;
-  l: string;
+  value: string;
+  label: string;
 }

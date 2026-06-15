@@ -13,17 +13,21 @@ export function ExpertiseSection() {
 
   return (
     <AnimatedSection>
-      <section className="py-24 bg-[color:var(--void-section)] border-y border-border">
+      <section
+        className="py-24 bg-[color:var(--void-section)] border-y border-border bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url('/assets/bg.webp')` }}
+      >
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
             <div>
-              <SectionLabel>Capabilities</SectionLabel>
-              <h2 className="mt-4 text-3xl md:text-5xl font-bold">Explore Our Expertise</h2>
+              <h2 className="mt-4 text-3xl md:text-5xl font-bold">
+                Enterprise Software Development Expertise
+              </h2>
+              <p className="mt-3 text-muted-foreground max-w-lg">
+                From AI and Web3 to fintech and mobile — our eight specialized engineering
+                disciplines deliver production-grade custom software.
+              </p>
             </div>
-            <p className="max-w-md text-muted-foreground">
-              Eight specialized practice areas, one accountable engineering team. Custom-built for
-              the scale your business demands.
-            </p>
           </div>
 
           <motion.div
@@ -31,12 +35,12 @@ export function ExpertiseSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3"
+            className="grid gap-5 grid-cols-2 lg:grid-cols-3"
           >
             <AnimatePresence mode="popLayout">
               {visibleExpertise.map((e) => (
                 <motion.div
-                  key={e.t}
+                  key={e.title}
                   layout
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
@@ -48,15 +52,6 @@ export function ExpertiseSection() {
               ))}
             </AnimatePresence>
           </motion.div>
-
-          <div className="mt-12 flex justify-center">
-            <button
-              onClick={() => setIsExpanded(!isExpanded)}
-              className="px-6 py-3 text-sm font-medium rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-colors shadow-sm"
-            >
-              {isExpanded ? "Show Less" : "View All"}
-            </button>
-          </div>
         </div>
       </section>
     </AnimatedSection>

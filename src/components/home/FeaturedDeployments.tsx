@@ -1,8 +1,8 @@
+// src/components/home/FeaturedDeployments.tsx
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
-import { SectionLabel, AnimatedSection, staggerContainer } from "@/components/common";
+import { AnimatedSection, staggerContainer } from "@/components/common";
 import { DeploymentCard } from "./DeploymentCard";
 import { cases, caseGradients } from "@/data/home";
 
@@ -13,15 +13,16 @@ export function FeaturedDeployments() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
             <div>
-              <SectionLabel>Featured Deployments</SectionLabel>
               <h2 className="mt-4 text-3xl md:text-5xl font-bold">
-                High-Performance Systems We&apos;ve Engineered.
+                Enterprise Software Case Studies: Systems We&apos;ve Engineered
               </h2>
+              <p className="mt-3 text-muted-foreground max-w-lg">
+                Real-world software engineering projects — fintech infrastructure, AI platforms, and
+                Web3 applications built for scale.
+              </p>
             </div>
-            <Link href="/clients" className="text-sm text-signal hover:underline font-mono">
-              VIEW ALL DEPLOYMENTS →
-            </Link>
           </div>
+
           <motion.div
             variants={staggerContainer}
             initial="hidden"
@@ -30,7 +31,7 @@ export function FeaturedDeployments() {
             className="grid gap-6 md:grid-cols-3"
           >
             {cases.map((c, i) => (
-              <DeploymentCard key={c.t} caseStudy={c} gradient={caseGradients[i]} />
+              <DeploymentCard key={c.title} caseStudy={c} gradient={caseGradients[i]} />
             ))}
           </motion.div>
         </div>

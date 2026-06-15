@@ -10,7 +10,7 @@ export function GlobalFootprintSection() {
         <div className="mx-auto max-w-7xl px-6 text-center">
           <SectionLabel>Global Footprint</SectionLabel>
           <h2 className="mt-4 text-3xl md:text-5xl font-bold">
-            Headquartered in Lagos. Engineering for the World.
+            Global Software Engineering — Headquartered in Lagos, Engineering for the World
           </h2>
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
