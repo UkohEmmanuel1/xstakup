@@ -8,7 +8,7 @@ export function AboutHeroSection() {
       className="relative overflow-hidden bg-cover bg-center bg-no-repeat max-w-full"
       style={{ backgroundImage: `url('/assets/about.webp')` }}
     >
-      <div className="absolute inset-0 bg-white/60 dark:bg-black/60" />
+      <div className="absolute inset-0 bg-black/85" />
       <div className="absolute inset-0 grid-pattern opacity-40" />
       <motion.div
         animate={{ scale: [1, 1.08, 1], opacity: [0.25, 0.4, 0.25] }}
@@ -20,28 +20,25 @@ export function AboutHeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-        >
-          
-        </motion.div>
+        ></motion.div>
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="mt-6 text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight max-w-4xl mx-auto"
+          className="mt-6 text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight max-w-4xl mx-auto text-white"
         >
-          Custom Enterprise Software Development {" "}
-          <span className="">Engineering Digital Commerce</span> and Enterprise
-          Solutions
+          Custom Enterprise Software Development <span>Engineering Digital Commerce</span> and
+          Enterprise Solutions
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.35 }}
-          className="mt-6 max-w-2xl mx-auto text-lg text-muted-foreground"
+          className="mt-6 max-w-2xl mx-auto text-lg text-white/70"
         >
           We are a team of dedicated software engineers, solution architects, and technology
-          strategists committed to building robust enterprise infrastructure that powers
-          market leading businesses across Africa and global markets.
+          strategists committed to building robust enterprise infrastructure that powers market
+          leading businesses across Africa and global markets.
         </motion.p>
       </div>
     </section>

@@ -5,10 +5,7 @@ import { PrimaryCTA } from "@/components/common/Button";
 
 export function FinalCTA() {
   return (
-    <section
-      className="relative overflow-hidden bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url('/assets/pattern.webp')` }}
-    >
+    <section className="relative">
       <div
         className="absolute inset-0 mix-blend-multiply opacity-90 pointer-events-none animate-gradient-shift"
         style={{
@@ -33,14 +30,14 @@ export function FinalCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
-          className="rounded-2xl p-12 md:p-20 text-center"
+          className="rounded-2xl p-8 md:p-12 text-center"
         >
           <div>
             <h2 className="text-3xl md:text-5xl font-bold text-white max-w-3xl mx-auto tracking-tight">
               Ready for Custom Enterprise Software Development?
             </h2>
             <p className="mt-5 text-white/80 max-w-xl mx-auto text-base md:text-lg">
-              Partner with a dedicated engineering team that ships elite, production-grade web,
+              Partner with a dedicated engineering team that ships elite, production grade web,
               mobile, AI, and Web3 systems.
             </p>
             <div className="mt-10">

@@ -42,10 +42,140 @@ const tweets = [
   },
 ];
 
+const verifiedBadge = (
+  <svg viewBox="0 0 24 24" className="h-4 w-4 text-signal fill-current">
+    <path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.99-3.818-3.99-.48 0-.94.1-1.348.27C14.825 2.515 13.512 1.5 12 1.5s-2.825 1.015-3.422 2.28c-.407-.17-.867-.27-1.348-.27-2.108 0-3.818 1.78-3.818 3.99 0 .495.084.965.238 1.4-1.273.65-2.148 2.02-2.148 3.6 0 1.58.875 2.95 2.148 3.6-.154.435-.238.905-.238 1.4 0 2.21 1.71 3.99 3.818 3.99.48 0 .94-.1 1.348-.27.597 1.265 1.91 2.28 3.422 2.28s2.825-1.015 3.422-2.28c.407.17.867.27 1.348.27 2.108 0 3.818-1.78 3.818-3.99 0-.495-.084-.965-.238-1.4 1.273-.65 2.148-2.02 2.148-3.6zm-12.22 3.58l-3.5-3.5 1.41-1.42 2.08 2.08 5.67-5.67 1.41 1.42-7.07 7.09z" />
+  </svg>
+);
+
+const replyIcon = (
+  <svg
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth="2"
+    stroke="currentColor"
+    className="w-3.5 h-3.5"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641l-.318 1.235c-.07.272.176.518.448.448l1.235-.319c.601-.154 1.194.154 1.641.586A11.472 11.472 0 0012 20.25z"
+    />
+  </svg>
+);
+
+const repostIcon = (
+  <svg
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth="2"
+    stroke="currentColor"
+    className="w-3.5 h-3.5"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.656 48.656 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7C4.547 9.547 4.5 10.768 4.5 12s.047 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.092-1.209.138-2.43.138-3.662z"
+    />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M9 10.5l3 3 3-3" />
+  </svg>
+);
+
+const heartIcon = (
+  <svg
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth="2"
+    stroke="currentColor"
+    className="w-3.5 h-3.5"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+    />
+  </svg>
+);
+
+const barChartIcon = (
+  <svg
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth="2"
+    stroke="currentColor"
+    className="w-3.5 h-3.5"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v5.25c0 .621-.504 1.125-1.125 1.125h-2.25A1.125 1.125 0 013 18.375v-5.25zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125v-9.75zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v14.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"
+    />
+  </svg>
+);
+
+function TweetCard({
+  t,
+  index,
+  showMetrics,
+}: {
+  t: (typeof tweets)[number];
+  index: number;
+  showMetrics?: boolean;
+}) {
+  return (
+    <div className="w-[350px] md:w-[420px] max-w-[85vw] flex-shrink-0 rounded-2xl border border-border/60 bg-[color:var(--void-surface)]/40 p-6 shadow-sm hover:border-signal/30 transition-all duration-300 flex flex-col justify-between">
+      <div>
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className={`h-10 w-10 rounded-full ${t.avatar} flex-shrink-0`} />
+            <div className="leading-tight">
+              <div className="flex items-center gap-1">
+                <p className="font-semibold text-sm text-foreground">{t.name}</p>
+                {verifiedBadge}
+              </div>
+              <p className="text-xs text-muted-foreground font-mono">{t.handle}</p>
+            </div>
+          </div>
+          <span className="font-mono text-xs text-muted-foreground/40 font-bold">X</span>
+        </div>
+        <p className="mt-4 text-base leading-relaxed text-foreground/90 font-sans tracking-normal">
+          {t.text}
+        </p>
+      </div>
+      <div>
+        <div className="mt-4 pt-3 border-t border-border/20 flex items-center justify-between text-xs text-muted-foreground font-mono">
+          <span>{t.time}</span>
+          <span className="text-signal/80 font-semibold">{t.role}</span>
+        </div>
+        {showMetrics && (
+          <div className="mt-3 pt-2 border-t border-border/10 flex items-center justify-between text-muted-foreground/70 font-mono text-xs">
+            <div className="flex items-center gap-1.5 hover:text-blue-500 transition-colors">
+              {replyIcon}
+              <span>{t.metrics.replies}</span>
+            </div>
+            <div className="flex items-center gap-1.5 hover:text-emerald-500 transition-colors">
+              {repostIcon}
+              <span>{t.metrics.reposts}</span>
+            </div>
+            <div className="flex items-center gap-1.5 hover:text-rose-500 transition-colors">
+              {heartIcon}
+              <span>{t.metrics.likes}</span>
+            </div>
+            <div className="flex items-center gap-1.5 hover:text-signal transition-colors">
+              {barChartIcon}
+              <span>{t.metrics.views}</span>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
 export function TestimonialSection() {
   return (
     <AnimatedSection>
-      <section className="py-24 bg-background relative overflow-hidden">
+      <section className="pt-24 pb-0 bg-background relative z-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
@@ -58,148 +188,19 @@ export function TestimonialSection() {
           </div>
 
           <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]">
-            <div className="flex gap-6 w-max animate-marquee hover:[animation-play-state:paused] py-2" role="list" aria-label="Client testimonials">
+            <div
+              className="flex gap-6 w-max animate-marquee hover:[animation-play-state:paused] py-2"
+              role="list"
+              aria-label="Client testimonials"
+            >
               {tweets.map((t, index) => (
-                <div
-                  key={`${t.handle}-${index}`}
-                  role="listitem"
-                  className="w-[350px] md:w-[420px] flex-shrink-0 rounded-2xl border border-border/60 bg-[color:var(--void-surface)]/40 p-6 shadow-sm hover:border-signal/30 transition-all duration-300 flex flex-col justify-between"
-                >
-                  <div>
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-3">
-                        <div className={`h-10 w-10 rounded-full ${t.avatar} flex-shrink-0`} />
-                        <div className="leading-tight">
-                          <div className="flex items-center gap-1">
-                            <p className="font-semibold text-sm text-foreground">
-                              {t.name}
-                            </p>
-                            <svg viewBox="0 0 24 24" className="h-4 w-4 text-signal fill-current">
-                              <path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.99-3.818-3.99-.48 0-.94.1-1.348.27C14.825 2.515 13.512 1.5 12 1.5s-2.825 1.015-3.422 2.28c-.407-.17-.867-.27-1.348-.27-2.108 0-3.818 1.78-3.818 3.99 0 .495.084.965.238 1.4-1.273.65-2.148 2.02-2.148 3.6 0 1.58.875 2.95 2.148 3.6-.154.435-.238.905-.238 1.4 0 2.21 1.71 3.99 3.818 3.99.48 0 .94-.1 1.348-.27.597 1.265 1.91 2.28 3.422 2.28s2.825-1.015 3.422-2.28c.407.17.867.27 1.348.27 2.108 0 3.818-1.78 3.818-3.99 0-.495-.084-.965-.238-1.4 1.273-.65 2.148-2.02 2.148-3.6zm-12.22 3.58l-3.5-3.5 1.41-1.42 2.08 2.08 5.67-5.67 1.41 1.42-7.07 7.09z" />
-                            </svg>
-                          </div>
-                          <p className="text-xs text-muted-foreground font-mono">{t.handle}</p>
-                        </div>
-                      </div>
-                      <span className="font-mono text-xs text-muted-foreground/40 font-bold">
-                        X
-                      </span>
-                    </div>
-
-                    <p className="mt-4 text-sm leading-normal text-foreground/90 font-sans tracking-normal">
-                      {t.text}
-                    </p>
-                  </div>
-
-                  <div>
-                    <div className="mt-4 pt-3 border-t border-border/20 flex items-center justify-between text-xs text-muted-foreground font-mono">
-                      <span>{t.time}</span>
-                      <span className="text-signal/80 font-semibold">{t.role}</span>
-                    </div>
-
-                    <div className="mt-3 pt-2 border-t border-border/10 flex items-center justify-between text-muted-foreground/70 font-mono text-xs">
-                      <div className="flex items-center gap-1.5 hover:text-blue-500 transition-colors">
-                        <svg
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth="2"
-                          stroke="currentColor"
-                          className="w-3.5 h-3.5"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641l-.318 1.235c-.07.272.176.518.448.448l1.235-.319c.601-.154 1.194.154 1.641.586A11.472 11.472 0 0012 20.25z"
-                          />
-                        </svg>
-                        <span>{t.metrics.replies}</span>
-                      </div>
-                      <div className="flex items-center gap-1.5 hover:text-emerald-500 transition-colors">
-                        <svg
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth="2"
-                          stroke="currentColor"
-                          className="w-3.5 h-3.5"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.656 48.656 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7C4.547 9.547 4.5 10.768 4.5 12s.047 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.092-1.209.138-2.43.138-3.662z"
-                          />
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M9 10.5l3 3 3-3" />
-                        </svg>
-                        <span>{t.metrics.reposts}</span>
-                      </div>
-                      <div className="flex items-center gap-1.5 hover:text-rose-500 transition-colors">
-                        <svg
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth="2"
-                          stroke="currentColor"
-                          className="w-3.5 h-3.5"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
-                          />
-                        </svg>
-                        <span>{t.metrics.likes}</span>
-                      </div>
-                      <div className="flex items-center gap-1.5 hover:text-signal transition-colors">
-                        <svg
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth="2"
-                          stroke="currentColor"
-                          className="w-3.5 h-3.5"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v5.25c0 .621-.504 1.125-1.125 1.125h-2.25A1.125 1.125 0 013 18.375v-5.25zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125v-9.75zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v14.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"
-                          />
-                        </svg>
-                        <span>{t.metrics.views}</span>
-                      </div>
-                    </div>
-                  </div>
+                <div key={`${t.handle}-${index}`} role="listitem">
+                  <TweetCard t={t} index={index} showMetrics />
                 </div>
               ))}
               <div aria-hidden="true" className="flex gap-6">
                 {tweets.map((t, index) => (
-                  <div
-                    key={`dup-${t.handle}-${index}`}
-                    className="w-[350px] md:w-[420px] flex-shrink-0 rounded-2xl border border-border/60 bg-[color:var(--void-surface)]/40 p-6 shadow-sm flex flex-col justify-between"
-                  >
-                    <div>
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-3">
-                          <div className={`h-10 w-10 rounded-full ${t.avatar} flex-shrink-0`} />
-                          <div className="leading-tight">
-                            <div className="flex items-center gap-1">
-                              <p className="font-semibold text-sm text-foreground">{t.name}</p>
-                              <svg viewBox="0 0 24 24" className="h-4 w-4 text-signal fill-current">
-                                <path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.99-3.818-3.99-.48 0-.94.1-1.348.27C14.825 2.515 13.512 1.5 12 1.5s-2.825 1.015-3.422 2.28c-.407-.17-.867-.27-1.348-.27-2.108 0-3.818 1.78-3.818 3.99 0 .495.084.965.238 1.4-1.273.65-2.148 2.02-2.148 3.6 0 1.58.875 2.95 2.148 3.6-.154.435-.238.905-.238 1.4 0 2.21 1.71 3.99 3.818 3.99.48 0 .94-.1 1.348-.27.597 1.265 1.91 2.28 3.422 2.28s2.825-1.015 3.422-2.28c.407.17.867.27 1.348.27 2.108 0 3.818-1.78 3.818-3.99 0-.495-.084-.965-.238-1.4 1.273-.65 2.148-2.02 2.148-3.6zm-12.22 3.58l-3.5-3.5 1.41-1.42 2.08 2.08 5.67-5.67 1.41 1.42-7.07 7.09z" />
-                              </svg>
-                            </div>
-                            <p className="text-xs text-muted-foreground font-mono">{t.handle}</p>
-                          </div>
-                        </div>
-                        <span className="font-mono text-xs text-muted-foreground/40 font-bold">X</span>
-                      </div>
-                      <p className="mt-4 text-sm leading-normal text-foreground/90 font-sans tracking-normal">
-                        {t.text}
-                      </p>
-                    </div>
-                    <div>
-                      <div className="mt-4 pt-3 border-t border-border/20 flex items-center justify-between text-xs text-muted-foreground font-mono">
-                        <span>{t.time}</span>
-                        <span className="text-signal/80 font-semibold">{t.role}</span>
-                      </div>
-                    </div>
-                  </div>
+                  <TweetCard key={`dup-${t.handle}-${index}`} t={t} index={index} />
                 ))}
               </div>
             </div>

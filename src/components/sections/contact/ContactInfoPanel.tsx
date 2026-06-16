@@ -20,11 +20,10 @@ export function ContactInfoPanel() {
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.7 }}
     >
-      
       <h1 className="mt-6 text-4xl md:text-5xl font-bold tracking-tight">
         Let's <span className="text-gradient-quantum">Engineer Your Custom Software Solution</span>
       </h1>
-      <p className="mt-6 text-muted-foreground">
+      <p className="mt-6 text-white/70">
         Tell us about your enterprise software project. A senior engineer will respond within 24
         hours with a technical roadmap and development proposal.
       </p>

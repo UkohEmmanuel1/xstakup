@@ -16,7 +16,7 @@ export function GlobalReachSection() {
           >
             <SectionLabel>Global Reach</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
-              Global Software Engineering Services — From Lagos to the World
+              Global Software Engineering Services: From Lagos to the World
             </h2>
             <p className="mt-6 text-lg text-muted-foreground">
               Headquartered in Lagos, Nigeria, we deploy enterprise software systems across Africa,

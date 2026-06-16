@@ -13,10 +13,7 @@ export function ExpertiseSection() {
 
   return (
     <AnimatedSection>
-      <section
-        className="py-24 bg-[color:var(--void-section)] border-y border-border bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url('/assets/bg.webp')` }}
-      >
+      <section className="py-24  border-y border-border">
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
             <div>
@@ -24,7 +21,7 @@ export function ExpertiseSection() {
                 Enterprise Software Development Expertise
               </h2>
               <p className="mt-3 text-muted-foreground max-w-lg">
-                From AI and Web3 to fintech and mobile — our eight specialized engineering
+                From AI and Web3 to fintech and mobile: our eight specialized engineering
                 disciplines deliver production-grade custom software.
               </p>
             </div>

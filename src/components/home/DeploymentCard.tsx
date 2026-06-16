@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import type { CaseStudy } from "@/types";
 
 interface DeploymentCardProps {
@@ -11,15 +10,11 @@ interface DeploymentCardProps {
 export function DeploymentCard({ caseStudy, gradient }: DeploymentCardProps) {
   return (
     <div className="flex flex-col h-full overflow-hidden rounded-2xl border border-border bg-[color:var(--void-surface)]/50 backdrop-blur-sm">
-      <div className="relative w-full h-44 overflow-hidden bg-[color:var(--void-section)]">
-        <div className="absolute inset-0 opacity-20" style={{ background: gradient }} />
-        <Image
-          src="/assets/pattern.webp"
-          alt={caseStudy.title || "Deployment Featured Image"}
-          fill
-          sizes="(max-width: 768px) 100vw, 33vw"
-          className="object-cover object-center transition-transform duration-500 hover:scale-105"
-        />
+      <div
+        className="relative w-full h-36 md:h-44 overflow-hidden"
+        style={{ background: gradient }}
+      >
+        <div className="absolute inset-0 bg-black/20" />
       </div>
       <div className="flex flex-col flex-grow p-6 md:p-8">
         <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">

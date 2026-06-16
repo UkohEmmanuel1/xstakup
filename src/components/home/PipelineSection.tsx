@@ -8,17 +8,14 @@ import { pipeline } from "@/data/home";
 export function PipelineSection() {
   return (
     <AnimatedSection>
-      <section
-        className="relative py-24 bg-[color:var(--void-section)] border-y border-border bg-cover bg-center bg-no-repeat overflow-hidden"
-        style={{ backgroundImage: `url('/assets/bg.webp')` }}
-      >
+      <section className="relative py-24 border-y border-border overflow-hidden">
         <div className="relative z-10 mx-auto max-w-7xl px-6">
-          <div className="max-w-2xl">
+          <div className="max-w-2xl mb-14">
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
               Custom Enterprise Software Development: Our Process
             </h2>
             <p className="mt-4 text-muted-foreground max-w-xl">
-              From strategy to deployment — our proven software engineering pipeline delivers
+              From strategy to deployment: our proven software engineering pipeline delivers
               production-grade systems for web, mobile, AI, and Web3.
             </p>
           </div>

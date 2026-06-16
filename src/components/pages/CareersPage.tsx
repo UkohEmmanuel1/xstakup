@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {  FinalCTA } from "@/components/common";
+import { FinalCTA } from "@/components/common";
 
 export function CareersPage() {
   return (
@@ -10,7 +10,7 @@ export function CareersPage() {
         className="relative overflow-hidden py-32 bg-cover bg-center bg-no-repeat max-w-full"
         style={{ backgroundImage: `url('/assets/career.webp')` }}
       >
-        <div className="absolute inset-0 bg-white/60 dark:bg-black/60" />
+        <div className="absolute inset-0 bg-black/85" />
         <div className="absolute inset-0 grid-pattern opacity-40" />
         <motion.div
           animate={{ scale: [1, 1.08, 1], opacity: [0.2, 0.35, 0.2] }}
@@ -22,9 +22,7 @@ export function CareersPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-          >
-            
-          </motion.div>
+          ></motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -37,7 +35,7 @@ export function CareersPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.35 }}
-            className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto"
+            className="mt-6 text-lg text-white/70 max-w-2xl mx-auto"
           >
             We&apos;re building Africa&apos;s premier enterprise software engineering team. Open
             positions in backend development, AI engineering, Web3 development, and DevSecOps.

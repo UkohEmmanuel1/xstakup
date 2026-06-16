@@ -4,22 +4,26 @@ export const pipeline: PipelineStep[] = [
   {
     number: "01",
     title: "Software Strategy & Planning",
-    description: "Technical roadmapping and requirement analysis for custom enterprise software aligned with your business objectives.",
+    description:
+      "Technical roadmapping and requirement analysis for custom enterprise software aligned with your business objectives.",
   },
   {
     number: "02",
     title: "Architecture & UX Design",
-    description: "Scalable system architecture design with user-centered UI/UX built for your target audience and growth requirements.",
+    description:
+      "Scalable system architecture design with user-centered UI/UX built for your target audience and growth requirements.",
   },
   {
     number: "03",
     title: "Full-Stack Development",
-    description: "Custom software development across web, mobile, and Web3 platforms using modern frameworks and best practices.",
+    description:
+      "Custom software development across web, mobile, and Web3 platforms using modern frameworks and best practices.",
   },
   {
     number: "04",
     title: "DevSecOps & Deployment",
-    description: "Secure CI/CD pipelines, cloud infrastructure, post-launch monitoring, and 99.9% uptime maintenance.",
+    description:
+      "Secure CI/CD pipelines, cloud infrastructure, post-launch monitoring, and 99.9% uptime maintenance.",
   },
 ];
 
@@ -51,7 +55,8 @@ export const expertise: ExpertiseItem[] = [
   },
   {
     title: "Fintech Solutions",
-    description: "Payment gateway integration, financial architecture, and secure transaction systems.",
+    description:
+      "Payment gateway integration, financial architecture, and secure transaction systems.",
     icon: "₿",
   },
   {
@@ -61,7 +66,8 @@ export const expertise: ExpertiseItem[] = [
   },
   {
     title: "DevSecOps",
-    description: "Secure cloud deployments, automated CI/CD pipelines, and infrastructure management.",
+    description:
+      "Secure cloud deployments, automated CI/CD pipelines, and infrastructure management.",
     icon: "⟁",
   },
 ];
@@ -70,17 +76,20 @@ export const cases: CaseStudy[] = [
   {
     title: "XPay",
     tag: "Fintech / Web3",
-    description: "Crypto, gift card & fiat payment infrastructure with real-time multi-currency settlement.",
+    description:
+      "Crypto, gift card & fiat payment infrastructure with real time multi currency settlement.",
   },
   {
     title: "Quik",
     tag: "AI / NLP",
-    description: "AI-powered booking application that intelligently syncs availability and automates communication.",
+    description:
+      "AI-powered booking application that intelligently syncs availability and automates communication.",
   },
   {
     title: "Cashflow Africa",
     tag: "Trade Finance",
-    description: "Intra-African B2B trade finance platform digitizing invoicing and securing lending.",
+    description:
+      "Intra African B2B trade finance platform digitizing invoicing and securing lending.",
   },
 ];
 

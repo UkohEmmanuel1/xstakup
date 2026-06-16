@@ -6,16 +6,17 @@ import type { StatsItem } from "@/types";
 
 interface StatsStripProps {
   items: StatsItem[];
+  className?: string;
 }
 
-export function StatsStrip({ items }: StatsStripProps) {
+export function StatsStrip({ items, className }: StatsStripProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.7, delay: 0.2 }}
-      className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-px overflow-hidden rounded-xl glass w-full max-w-4xl"
+      className={`${className ?? "mt-20"} grid grid-cols-2 md:grid-cols-4 gap-px overflow-hidden rounded-xl glass w-full max-w-4xl`}
     >
       {items.map((s, i) => (
         <motion.div
@@ -24,7 +25,7 @@ export function StatsStrip({ items }: StatsStripProps) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
-          className="px-6 py-6 bg-[color:var(--void-surface)]/50"
+          className="px-4 py-4 md:px-6 md:py-6 bg-[color:var(--void-surface)]/50"
         >
           <Counter value={s.value} />
           <p className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">{s.label}</p>
