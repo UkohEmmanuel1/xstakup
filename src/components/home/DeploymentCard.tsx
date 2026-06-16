@@ -17,11 +17,11 @@ export function DeploymentCard({ caseStudy, gradient }: DeploymentCardProps) {
         <div className="absolute inset-0 bg-black/20" />
       </div>
       <div className="flex flex-col flex-grow p-6 md:p-8">
-        <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+        <span className="text-xs font-semibold uppercase tracking-wider text-foreground/80">
           {caseStudy.tag}
         </span>
         <h3 className="mt-2 text-2xl font-bold text-foreground">{caseStudy.title}</h3>
-        <p className="mt-4 text-base md:text-lg text-muted-foreground line-clamp-3 leading-relaxed">
+        <p className="mt-4 text-base md:text-lg text-foreground/80 line-clamp-3 leading-relaxed">
           {caseStudy.description}
         </p>
       </div>

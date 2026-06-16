@@ -23,7 +23,7 @@ export function ContactInfoPanel() {
       <h1 className="mt-6 text-4xl md:text-5xl font-bold tracking-tight">
         Let's <span className="text-gradient-quantum">Engineer Your Custom Software Solution</span>
       </h1>
-      <p className="mt-6 text-white/70">
+      <p className="mt-6 text-foreground/80">
         Tell us about your enterprise software project. A senior engineer will respond within 24
         hours with a technical roadmap and development proposal.
       </p>

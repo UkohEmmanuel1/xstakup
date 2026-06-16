@@ -28,7 +28,7 @@ export function StatsStrip({ items, className }: StatsStripProps) {
           className="px-4 py-4 md:px-6 md:py-6 bg-[color:var(--void-surface)]/50"
         >
           <Counter value={s.value} />
-          <p className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">{s.label}</p>
+          <p className="mt-1 text-xs uppercase tracking-widest text-foreground/80">{s.label}</p>
         </motion.div>
       ))}
     </motion.div>

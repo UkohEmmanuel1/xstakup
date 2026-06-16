@@ -11,10 +11,10 @@ export function PipelineSection() {
       <section className="relative py-24 border-y border-border overflow-hidden">
         <div className="relative z-10 mx-auto max-w-7xl px-6">
           <div className="max-w-2xl mb-14">
-            <h2 className="mt-4 text-3xl md:text-5xl font-bold">
+            <h2 className="mt-4 text-3xl md:text-5xl font-bold text-foreground">
               Custom Enterprise Software Development: Our Process
             </h2>
-            <p className="mt-4 text-muted-foreground max-w-xl">
+            <p className="mt-4 text-foreground/80 max-w-xl">
               From strategy to deployment: our proven software engineering pipeline delivers
               production-grade systems for web, mobile, AI, and Web3.
             </p>

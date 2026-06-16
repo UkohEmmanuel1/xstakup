@@ -9,7 +9,7 @@ export function MarqueeSection() {
           <h2 className="mt-4 text-2xl md:text-4xl font-bold max-w-3xl mx-auto">
             Trusted by Industry Leaders: Enterprise Technology Stack
           </h2>
-          <p className="mt-3 text-muted-foreground max-w-xl mx-auto">
+          <p className="mt-3 text-foreground/80 max-w-xl mx-auto">
             Our engineering team specializes in modern frameworks, cloud infrastructure, blockchain
             protocols, and AI platforms.
           </p>

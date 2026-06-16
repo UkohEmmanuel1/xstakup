@@ -13,14 +13,14 @@ export function ExpertiseSection() {
 
   return (
     <AnimatedSection>
-      <section className="py-24  border-y border-border">
+      <section className="py-24 border-y border-border">
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
             <div>
-              <h2 className="mt-4 text-3xl md:text-5xl font-bold">
+              <h2 className="mt-4 text-3xl md:text-5xl font-bold text-foreground">
                 Enterprise Software Development Expertise
               </h2>
-              <p className="mt-3 text-muted-foreground max-w-lg">
+              <p className="mt-3 text-foreground/80 max-w-lg">
                 From AI and Web3 to fintech and mobile: our eight specialized engineering
                 disciplines deliver production-grade custom software.
               </p>

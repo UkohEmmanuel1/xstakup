@@ -17,7 +17,7 @@ export function PipelineCard({ step }: PipelineCardProps) {
     >
       <div className="font-mono text-xs text-signal">{step.number}</div>
       <h3 className="mt-4 text-xl font-semibold">{step.title}</h3>
-      <p className="mt-3 text-base text-muted-foreground leading-relaxed">{step.description}</p>
+      <p className="mt-3 text-base text-foreground/80 leading-relaxed">{step.description}</p>
       <div className="mt-6 h-px bg-gradient-to-r from-signal/40 to-transparent" />
     </motion.div>
   );

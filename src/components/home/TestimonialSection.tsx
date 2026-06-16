@@ -133,22 +133,22 @@ function TweetCard({
                 <p className="font-semibold text-sm text-foreground">{t.name}</p>
                 {verifiedBadge}
               </div>
-              <p className="text-xs text-muted-foreground font-mono">{t.handle}</p>
+              <p className="text-xs text-foreground/80 font-mono">{t.handle}</p>
             </div>
           </div>
-          <span className="font-mono text-xs text-muted-foreground/40 font-bold">X</span>
+          <span className="font-mono text-xs text-foreground/40 font-bold">X</span>
         </div>
         <p className="mt-4 text-base leading-relaxed text-foreground/90 font-sans tracking-normal">
           {t.text}
         </p>
       </div>
       <div>
-        <div className="mt-4 pt-3 border-t border-border/20 flex items-center justify-between text-xs text-muted-foreground font-mono">
+        <div className="mt-4 pt-3 border-t border-border/20 flex items-center justify-between text-xs text-foreground/80 font-mono">
           <span>{t.time}</span>
           <span className="text-signal/80 font-semibold">{t.role}</span>
         </div>
         {showMetrics && (
-          <div className="mt-3 pt-2 border-t border-border/10 flex items-center justify-between text-muted-foreground/70 font-mono text-xs">
+          <div className="mt-3 pt-2 border-t border-border/10 flex items-center justify-between text-foreground/70 font-mono text-xs">
             <div className="flex items-center gap-1.5 hover:text-blue-500 transition-colors">
               {replyIcon}
               <span>{t.metrics.replies}</span>
@@ -181,7 +181,7 @@ export function TestimonialSection() {
             <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
               Client Testimonials: Enterprise Software Development Reviews
             </h2>
-            <p className="mt-4 text-sm md:text-base text-muted-foreground max-w-xl mx-auto">
+            <p className="mt-4 text-sm md:text-base text-foreground/80 max-w-xl mx-auto">
               Real feedback from CTOs, founders, and product leaders who trust XStakUp for their
               custom software development.
             </p>

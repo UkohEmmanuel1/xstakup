@@ -23,7 +23,7 @@ export function ExpertiseCard({ item }: ExpertiseCardProps) {
         {item.icon}
       </motion.div>
       <h3 className="mt-5 text-lg font-semibold">{item.title}</h3>
-      <p className="mt-2 text-base text-muted-foreground leading-relaxed">{item.description}</p>
+      <p className="mt-2 text-base text-foreground/80 leading-relaxed">{item.description}</p>
       <motion.div
         initial={{ opacity: 0.6, x: -10 }}
         whileHover={{ opacity: 1, x: 0 }}

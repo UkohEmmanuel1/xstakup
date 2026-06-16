@@ -13,10 +13,10 @@ export function FeaturedDeployments() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
             <div>
-              <h2 className="mt-4 text-3xl md:text-5xl font-bold">
+              <h2 className="mt-4 text-3xl md:text-5xl font-bold text-foreground">
                 Enterprise Software Case Studies: Systems We&apos;ve Engineered
               </h2>
-              <p className="mt-3 text-muted-foreground max-w-lg">
+              <p className="mt-3 text-foreground/80 max-w-lg">
                 Real world software engineering projects: fintech infrastructure, AI platforms, and
                 Web3 applications built for scale.
               </p>
