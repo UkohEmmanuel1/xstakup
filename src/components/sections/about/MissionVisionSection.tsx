@@ -17,7 +17,7 @@ export function MissionVisionSection() {
 
   return (
     <AnimatedSection>
-      <section className="py-12 md:py-24">
+      <section className="py-12 md:py-24 overflow-hidden">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center max-w-2xl mx-auto mb-14">
             

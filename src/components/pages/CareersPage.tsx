@@ -47,7 +47,7 @@ export function CareersPage() {
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.96 }}
             href="mailto:partnerships@xstakup.com"
-            className="mt-10 inline-flex items-center gap-2 rounded-md bg-quantum-gradient px-6 py-3 text-sm font-medium text-white shadow-quantum focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            className="mt-10 inline-flex items-center gap-2 rounded-md bg-quantum-gradient px-6 py-3.5 text-sm font-medium text-white shadow-quantum focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
             View Open Roles
           </motion.a>

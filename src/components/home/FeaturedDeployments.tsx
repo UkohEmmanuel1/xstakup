@@ -9,7 +9,7 @@ import { cases, caseGradients } from "@/data/home";
 export function FeaturedDeployments() {
   return (
     <AnimatedSection>
-      <section className="py-12 md:py-24 border-b border-border">
+      <section className="py-12 md:py-24 border-b border-border overflow-hidden">
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
             <div>

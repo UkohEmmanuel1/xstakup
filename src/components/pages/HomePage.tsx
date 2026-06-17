@@ -13,7 +13,7 @@ export function HomePage() {
   return (
     // --- WRAPPER: Full page background image ---
     <main
-      className="min-h-screen w-full bg-cover bg-center bg-no-repeat bg-fixed"
+      className="min-h-screen w-full bg-cover bg-center bg-no-repeat max-lg:bg-scroll bg-fixed"
       style={{
         backgroundImage: "url('/assets/background.png')",
       }}

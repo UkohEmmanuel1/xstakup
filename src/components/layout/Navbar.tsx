@@ -33,7 +33,7 @@ function Logo({ onClose }: { onClose: () => void }) {
     <Link href="/" className="flex items-center gap-3 z-50" onClick={onClose}>
       <motion.div
         whileHover={{ scale: 1.05, rotate: -2 }}
-        className="relative h-16 w-16 flex-shrink-0"
+        className="relative h-12 w-12 md:h-16 md:w-16 flex-shrink-0"
       >
         <div className="absolute inset-0 flex items-center justify-center overflow-hidden rounded-xl">
           <Image
@@ -121,7 +121,7 @@ function MobileNav({
               <Link
                 href="/contact"
                 onClick={onClose}
-                className="mt-4 inline-flex w-full justify-center items-center gap-2 rounded-md bg-quantum-gradient px-4 py-3 text-sm font-medium text-white shadow-quantum focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                className="mt-4 inline-flex w-full justify-center items-center gap-2 rounded-md bg-quantum-gradient px-4 py-3.5 text-sm font-medium text-white shadow-quantum focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               >
                 Initialize Your Build
               </Link>
@@ -138,7 +138,7 @@ function HamburgerButton({ open, onClick }: { open: boolean; onClick: () => void
     <button
       onClick={onClick}
       aria-label={open ? "Close Menu" : "Open Menu"}
-      className="md:hidden flex items-center justify-center p-2 text-foreground focus:outline-none"
+      className="md:hidden flex items-center justify-center p-3 text-foreground focus:outline-none"
     >
       {open ? <X size={22} /> : <Menu size={22} />}
     </button>
@@ -167,7 +167,7 @@ export function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
+      <div className="mx-auto flex h-14 md:h-16 max-w-7xl items-center justify-between px-6">
         <Logo onClose={() => setOpen(false)} />
         <DesktopNav pathname={pathname} />
 

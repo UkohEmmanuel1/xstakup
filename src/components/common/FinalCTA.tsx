@@ -5,7 +5,7 @@ import { PrimaryCTA } from "@/components/common/Button";
 
 export function FinalCTA() {
   return (
-    <section className="relative z-30">
+    <section className="relative z-30 overflow-hidden">
       <div
         className="absolute inset-0 mix-blend-multiply opacity-90 pointer-events-none animate-gradient-shift"
         style={{

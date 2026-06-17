@@ -179,7 +179,7 @@ function CaseStudyMockupPanel({ c }: { c: FeaturedCase }) {
 
 export function FeaturedCaseStudiesSection() {
   return (
-    <section className="py-12 md:py-20">
+    <section className="py-12 md:py-20 overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 space-y-16 md:space-y-32">
         {featured.map((c, i) => {
           const reverse = i % 2 === 1;

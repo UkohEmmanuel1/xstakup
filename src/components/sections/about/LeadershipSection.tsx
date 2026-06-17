@@ -22,7 +22,7 @@ const gradients = [
 export function LeadershipSection() {
   return (
     <AnimatedSection>
-      <section className="py-12 md:py-24 bg-[color:var(--void-section)] border-y border-border">
+      <section className="py-12 md:py-24 bg-[color:var(--void-section)] border-y border-border overflow-hidden">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center max-w-2xl mx-auto mb-14">
             

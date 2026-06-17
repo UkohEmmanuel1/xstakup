@@ -23,7 +23,7 @@ export function ContactInfoPanel() {
       <h1 className="mt-6 text-4xl md:text-5xl font-bold tracking-tight">
         Let's <span className="text-gradient-quantum">Engineer Your Custom Software Solution</span>
       </h1>
-      <p className="mt-6 text-foreground/80">
+      <p className="mt-6 text-white/80">
         Tell us about your enterprise software project. A senior engineer will respond within 24
         hours with a technical roadmap and development proposal.
       </p>
@@ -47,12 +47,12 @@ export function ContactInfoPanel() {
             {item.href ? (
               <a
                 href={item.href}
-                className="mt-2 block text-lg text-foreground hover:text-signal transition-colors"
+                className="mt-2 block text-lg text-white hover:text-signal transition-colors"
               >
                 {item.value}
               </a>
             ) : (
-              <p className="mt-2 text-foreground">{item.value}</p>
+              <p className="mt-2 text-white">{item.value}</p>
             )}
           </motion.div>
         ))}

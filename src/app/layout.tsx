@@ -74,7 +74,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${inter.variable} ${jetbrainsMono.variable}`}
+      className={`overflow-x-hidden ${inter.variable} ${jetbrainsMono.variable}`}
     >
       <body>
         <link rel="icon" href="/assets/favicon.png" />

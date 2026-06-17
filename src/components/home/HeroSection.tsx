@@ -80,10 +80,10 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="mt-10 flex flex-wrap items-center justify-center gap-4"
           >
-            <button className="rounded-full bg-gradient-to-r from-quantum to-purple-600 px-8 py-3.5 text-sm font-semibold text-white shadow-2xl shadow-quantum/30 transition-all hover:scale-105 hover:shadow-quantum/50">
+            <button className="rounded-full bg-gradient-to-r from-quantum to-purple-600 px-8 py-4 text-sm font-semibold text-white shadow-2xl shadow-quantum/30 transition-all hover:scale-105 hover:shadow-quantum/50">
               Book a Free Consultation
             </button>
-            <button className="rounded-full border border-white/20 bg-white/5 px-8 py-3.5 text-sm font-semibold text-white/80 backdrop-blur-sm transition-all hover:bg-white/10 hover:border-white/40">
+            <button className="rounded-full border border-white/20 bg-white/5 px-8 py-4 text-sm font-semibold text-white/80 backdrop-blur-sm transition-all hover:bg-white/10 hover:border-white/40">
               Watch Demo
             </button>
           </motion.div>
