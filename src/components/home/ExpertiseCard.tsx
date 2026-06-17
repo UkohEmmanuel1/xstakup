@@ -13,7 +13,7 @@ export function ExpertiseCard({ item }: ExpertiseCardProps) {
     <motion.div
       variants={staggerItem}
       whileHover={{ y: -6, scale: 1.05, borderColor: "oklch(0.65 0.18 230 / 0.6)" }}
-      className="group relative rounded-xl glass p-4 md:p-6 transition-colors"
+      className="group relative rounded-xl bg-card-solid-bg p-4 md:p-6 transition-colors"
     >
       <motion.div
         animate={{ y: [0, -4, 0] }}
@@ -22,8 +22,8 @@ export function ExpertiseCard({ item }: ExpertiseCardProps) {
       >
         {item.icon}
       </motion.div>
-      <h3 className="mt-5 text-lg font-semibold">{item.title}</h3>
-      <p className="mt-2 text-base text-foreground/80 leading-relaxed">{item.description}</p>
+      <h3 className="mt-5 text-lg font-semibold text-white">{item.title}</h3>
+      <p className="mt-2 text-base text-white/80 leading-relaxed">{item.description}</p>
       <motion.div
         initial={{ opacity: 0.6, x: -10 }}
         whileHover={{ opacity: 1, x: 0 }}

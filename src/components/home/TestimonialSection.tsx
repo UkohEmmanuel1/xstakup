@@ -123,32 +123,32 @@ function TweetCard({
   showMetrics?: boolean;
 }) {
   return (
-    <div className="w-[350px] md:w-[420px] max-w-[85vw] flex-shrink-0 rounded-2xl border border-border/60 bg-[color:var(--void-surface)]/40 p-6 shadow-sm hover:border-signal/30 transition-all duration-300 flex flex-col justify-between">
+    <div className="w-[350px] md:w-[420px] max-w-[85vw] flex-shrink-0 rounded-2xl border border-border/60 bg-card-solid-bg p-6 shadow-sm hover:border-signal/30 transition-all duration-300 flex flex-col justify-between">
       <div>
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className={`h-10 w-10 rounded-full ${t.avatar} flex-shrink-0`} />
             <div className="leading-tight">
               <div className="flex items-center gap-1">
-                <p className="font-semibold text-sm text-foreground">{t.name}</p>
+                <p className="font-semibold text-sm text-white">{t.name}</p>
                 {verifiedBadge}
               </div>
-              <p className="text-xs text-foreground/80 font-mono">{t.handle}</p>
+              <p className="text-xs text-white/80 font-mono">{t.handle}</p>
             </div>
           </div>
-          <span className="font-mono text-xs text-foreground/40 font-bold">X</span>
+          <span className="font-mono text-xs text-white/40 font-bold">X</span>
         </div>
-        <p className="mt-4 text-base leading-relaxed text-foreground/90 font-sans tracking-normal">
+        <p className="mt-4 text-base leading-relaxed text-white/90 font-sans tracking-normal">
           {t.text}
         </p>
       </div>
       <div>
-        <div className="mt-4 pt-3 border-t border-border/20 flex items-center justify-between text-xs text-foreground/80 font-mono">
+        <div className="mt-4 pt-3 border-t border-border/20 flex items-center justify-between text-xs text-white/80 font-mono">
           <span>{t.time}</span>
           <span className="text-signal/80 font-semibold">{t.role}</span>
         </div>
         {showMetrics && (
-          <div className="mt-3 pt-2 border-t border-border/10 flex items-center justify-between text-foreground/70 font-mono text-xs">
+          <div className="mt-3 pt-2 border-t border-border/10 flex items-center justify-between text-white/70 font-mono text-xs">
             <div className="flex items-center gap-1.5 hover:text-blue-500 transition-colors">
               {replyIcon}
               <span>{t.metrics.replies}</span>
@@ -175,7 +175,7 @@ function TweetCard({
 export function TestimonialSection() {
   return (
     <AnimatedSection>
-      <section className="pt-24 pb-0 bg-background relative z-20">
+      <section className="pt-24 pb-0 bg-background sticky top-0 z-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold tracking-tight">

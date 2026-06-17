@@ -42,6 +42,7 @@
   --color-void-main: var(--void-main);
   --color-void-section: var(--void-section);
   --color-void-surface: var(--void-surface);
+  --color-card-solid-bg: var(--card-solid-bg);
 }
 
 :root {
@@ -77,6 +78,7 @@
   --void-main: oklch(0.97 0.005 260);
   --void-section: oklch(0.945 0.006 260);
   --void-surface: oklch(0.99 0.002 260);
+  --card-solid-bg: oklch(0.225 0.04 268);
 
   --gradient-quantum: linear-gradient(135deg, var(--brand-blue), oklch(0.55 0.24 250));
   --gradient-hero: radial-gradient(ellipse at 50% 0%, oklch(0.45 0.27 268 / 0.08), transparent 60%);
@@ -115,6 +117,7 @@
   --void-main: oklch(0.135 0.018 270);
   --void-section: oklch(0.17 0.02 268);
   --void-surface: oklch(0.225 0.04 268);
+  --card-solid-bg: oklch(0.225 0.04 268);
 
   --gradient-quantum: linear-gradient(135deg, oklch(0.45 0.27 268), oklch(0.55 0.24 250));
   --gradient-hero: radial-gradient(ellipse at 50% 0%, oklch(0.28 0.2 268 / 0.55), transparent 60%);

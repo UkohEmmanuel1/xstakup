@@ -13,11 +13,11 @@ export function PipelineCard({ step }: PipelineCardProps) {
     <motion.div
       variants={staggerItem}
       whileHover={{ y: -4, borderColor: "oklch(0.65 0.18 230 / 0.4)" }}
-      className="group relative rounded-xl glass p-4 md:p-6 transition-colors h-full"
+      className="group relative rounded-xl bg-card-solid-bg p-4 md:p-6 transition-colors h-full"
     >
       <div className="font-mono text-xs text-signal">{step.number}</div>
-      <h3 className="mt-4 text-xl font-semibold">{step.title}</h3>
-      <p className="mt-3 text-base text-foreground/80 leading-relaxed">{step.description}</p>
+      <h3 className="mt-4 text-xl font-semibold text-white">{step.title}</h3>
+      <p className="mt-3 text-base text-white/80 leading-relaxed">{step.description}</p>
       <div className="mt-6 h-px bg-gradient-to-r from-signal/40 to-transparent" />
     </motion.div>
   );
