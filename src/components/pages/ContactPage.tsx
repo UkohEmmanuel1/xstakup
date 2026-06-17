@@ -17,7 +17,7 @@ export function ContactPage() {
         className="absolute top-0 left-1/2 -translate-x-1/2 h-[500px] w-[700px] rounded-full bg-quantum/30 blur-[120px]"
       />
 
-      <div className="relative mx-auto max-w-6xl px-6 py-24 grid md:grid-cols-2 gap-16">
+      <div className="relative mx-auto max-w-6xl px-6 py-12 md:py-24 grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-16">
         <ContactInfoPanel />
         <ContactForm />
       </div>

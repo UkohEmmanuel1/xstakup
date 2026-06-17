@@ -6,13 +6,13 @@ import { motion } from "framer-motion";
 export function ClientsFinalCTASection() {
   return (
     <section className="relative overflow-hidden">
-      <div className="mx-auto max-w-7xl px-6 py-24">
+      <div className="mx-auto max-w-7xl px-6 py-12 md:py-24">
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="relative overflow-hidden rounded-2xl p-12 md:p-20 text-center animate-gradient-shift"
+          className="relative overflow-hidden rounded-2xl p-6 md:p-12 lg:p-20 text-center animate-gradient-shift"
           style={{
             background:
               "linear-gradient(135deg, #0F1A7A 0%, #0F1A7A 30%, #1E2BFF 60%, #0F1A7A 100%)",

@@ -17,7 +17,7 @@ export function MissionVisionSection() {
 
   return (
     <AnimatedSection>
-      <section className="py-24">
+      <section className="py-12 md:py-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center max-w-2xl mx-auto mb-14">
             
@@ -30,13 +30,13 @@ export function MissionVisionSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid md:grid-cols-2 gap-6"
+            className="grid grid-cols-1 gap-6 md:grid-cols-2"
           >
             {items.map((c) => (
               <motion.div
                 key={c.t}
                 variants={staggerItem}
-                className="relative rounded-2xl p-10 glass"
+                className="relative rounded-2xl p-6 md:p-10 glass"
                 style={{ borderColor: "oklch(0.65 0.18 230 / 0.4)" }}
               >
                 <h3 className="font-mono text-xs uppercase tracking-widest text-signal">{c.t}</h3>

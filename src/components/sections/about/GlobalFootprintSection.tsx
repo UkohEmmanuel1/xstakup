@@ -6,10 +6,10 @@ import { SectionLabel, AnimatedSection } from "@/components/common";
 export function GlobalFootprintSection() {
   return (
     <AnimatedSection>
-      <section className="py-24">
+      <section className="py-12 md:py-24">
         <div className="mx-auto max-w-7xl px-6 text-center">
           <SectionLabel>Global Footprint</SectionLabel>
-          <h2 className="mt-4 text-3xl md:text-5xl font-bold">
+          <h2 className="mt-4 text-2xl md:text-5xl font-bold">
             Global Software Engineering — Headquartered in Lagos, Engineering for the World
           </h2>
           <motion.div

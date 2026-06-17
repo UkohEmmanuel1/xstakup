@@ -7,7 +7,7 @@ export function BlogPage() {
   return (
     <>
       <section
-        className="relative overflow-hidden py-32 bg-cover bg-center bg-no-repeat max-w-full"
+        className="relative overflow-hidden py-16 md:py-24 lg:py-32 bg-cover bg-center bg-no-repeat max-w-full"
         style={{ backgroundImage: `url('/assets/blog.webp')` }}
       >
         <div className="absolute inset-0 bg-black/85" />
@@ -27,7 +27,7 @@ export function BlogPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="mt-6 text-5xl md:text-7xl font-bold tracking-tight"
+            className="mt-6 text-3xl sm:text-4xl md:text-7xl font-bold tracking-tight"
           >
             <span className="text-gradient-quantum">Software Engineering Insights</span>
           </motion.h1>

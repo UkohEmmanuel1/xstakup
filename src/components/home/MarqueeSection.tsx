@@ -4,9 +4,9 @@ import { marqueeItems } from "@/data/home";
 export function MarqueeSection() {
   return (
     <AnimatedSection>
-      <section className="py-20 relative bg-[color:var(--void-section)] border-y border-border overflow-hidden">
+      <section className="py-12 md:py-20 relative bg-[color:var(--void-section)] border-y border-border overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 mb-12 text-center">
-          <h2 className="mt-4 text-2xl md:text-4xl font-bold max-w-3xl mx-auto">
+          <h2 className="mt-4 text-xl md:text-4xl font-bold max-w-3xl mx-auto">
             Trusted by Industry Leaders: Enterprise Technology Stack
           </h2>
           <p className="mt-3 text-foreground/80 max-w-xl mx-auto">

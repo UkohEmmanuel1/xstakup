@@ -145,8 +145,8 @@ export function Footer() {
             "linear-gradient(90deg, transparent, oklch(0.82 0.16 220 / 0.4), transparent)",
         }}
       />
-      <div className="mx-auto max-w-7xl px-6 py-16">
-        <div className="grid gap-12 lg:grid-cols-5">
+      <div className="mx-auto max-w-7xl px-6 py-10 md:py-16">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-5 lg:gap-12">
           <FooterBrand />
           {columns.map((col, idx) => (
             <FooterColumn key={col.title} col={col} index={idx} />

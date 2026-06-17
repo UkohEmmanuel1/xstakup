@@ -27,10 +27,10 @@ export function HeroSection() {
       <motion.div
         animate={{ scale: [1, 1.1, 1], opacity: [0.15, 0.3, 0.15] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-20 left-1/2 -translate-x-1/2 h-[600px] w-[800px] rounded-full bg-quantum/30 blur-[140px]"
+        className="absolute top-20 left-1/2 -translate-x-1/2 h-[400px] w-[500px] md:h-[600px] md:w-[800px] rounded-full bg-quantum/30 blur-[80px] md:blur-[140px]"
       />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 pt-24 pb-32 md:pt-32 md:pb-40 w-full">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 pt-16 md:pt-32 pb-20 md:pb-40 w-full">
         <div className="flex flex-col items-center text-center">
 
           {/* --- 1. TOP BADGE (New - Classic Trust Signal) --- */}
@@ -52,13 +52,13 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="mt-6 font-serif text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.05] max-w-5xl"
+            className="mt-6 font-serif text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight leading-[1.05] max-w-5xl"
           >
             <span className="text-white">Custom Enterprise</span>
             <br />
             <span className="text-gradient-quantum">Software Development</span>
             <br />
-            <span className="text-3xl md:text-5xl text-white/40">Company</span> {/* Subdued for elegance */}
+            <span className="text-2xl md:text-5xl text-white/40">Company</span> {/* Subdued for elegance */}
           </motion.h1>
 
           {/* --- 3. SUBTITLE --- */}

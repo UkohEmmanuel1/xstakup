@@ -22,11 +22,11 @@ const differentiators: Differentiator[] = [
 export function DifferentiatorsSection() {
   return (
     <AnimatedSection>
-      <section className="py-24 bg-[color:var(--void-section)] border-y border-border">
+      <section className="py-12 md:py-24 bg-[color:var(--void-section)] border-y border-border">
         <div className="mx-auto max-w-7xl px-6">
           <div className="max-w-2xl mb-14">
             
-            <h2 className="mt-4 text-3xl md:text-5xl font-bold">
+            <h2 className="mt-4 text-2xl md:text-5xl font-bold">
               Why Companies Choose Our Custom Software Development Services
             </h2>
           </div>
@@ -35,7 +35,7 @@ export function DifferentiatorsSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid md:grid-cols-3 gap-6"
+            className="grid grid-cols-1 gap-6 md:grid-cols-3"
           >
             {differentiators.map((d, i) => (
               <motion.div

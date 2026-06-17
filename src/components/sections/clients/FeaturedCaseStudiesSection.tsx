@@ -180,7 +180,7 @@ function CaseStudyMockupPanel({ c }: { c: FeaturedCase }) {
 export function FeaturedCaseStudiesSection() {
   return (
     <section className="py-12 md:py-20">
-      <div className="mx-auto max-w-7xl px-6 space-y-32">
+      <div className="mx-auto max-w-7xl px-6 space-y-16 md:space-y-32">
         {featured.map((c, i) => {
           const reverse = i % 2 === 1;
           return (
@@ -190,7 +190,7 @@ export function FeaturedCaseStudiesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: i * 0.15 }}
-              className={`grid md:grid-cols-2 gap-12 lg:gap-20 items-center ${reverse ? "md:[&>*:first-child]:order-2" : ""}`}
+              className={`grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 lg:gap-20 items-center ${reverse ? "md:[&>*:first-child]:order-2" : ""}`}
             >
               <motion.div
                 variants={reverse ? slideFromRight : slideFromLeft}

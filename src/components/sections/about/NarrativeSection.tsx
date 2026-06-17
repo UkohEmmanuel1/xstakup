@@ -7,8 +7,8 @@ import { SectionLabel, AnimatedSection, slideFromLeft, slideFromRight } from "@/
 export function NarrativeSection() {
   return (
     <AnimatedSection>
-      <section className="py-24 bg-[color:var(--void-section)] border-y border-border">
-        <div className="mx-auto max-w-7xl px-6 grid md:grid-cols-2 gap-16 items-center">
+      <section className="py-12 md:py-24 bg-[color:var(--void-section)] border-y border-border">
+        <div className="mx-auto max-w-7xl px-6 grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-16 items-center">
           <motion.div
             variants={slideFromLeft}
             initial="hidden"

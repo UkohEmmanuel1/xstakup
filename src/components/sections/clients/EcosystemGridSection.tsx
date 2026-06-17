@@ -20,7 +20,7 @@ const ecosystem: EcosystemItem[] = [
 export function EcosystemGridSection() {
   return (
     <AnimatedSection>
-      <section className="py-24 bg-[color:var(--void-section)] border-y border-border mt-24">
+      <section className="py-12 md:py-24 bg-[color:var(--void-section)] border-y border-border mt-12 md:mt-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
             <div>
@@ -38,7 +38,7 @@ export function EcosystemGridSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4"
+            className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4"
           >
             {ecosystem.map((e) => (
               <motion.a

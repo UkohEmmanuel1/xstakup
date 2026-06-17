@@ -16,7 +16,7 @@ export function ClientsHeroSection() {
         transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
         className="absolute top-0 left-1/2 -translate-x-1/2 h-[400px] w-[700px] rounded-full bg-quantum/25 blur-[120px]"
       />
-      <div className="relative mx-auto max-w-7xl px-6 pt-24 pb-28 md:pt-32 text-center">
+      <div className="relative mx-auto max-w-7xl px-6 pt-16 pb-20 md:pt-32 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -28,7 +28,7 @@ export function ClientsHeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="mt-6 text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight max-w-4xl mx-auto text-white"
+          className="mt-6 text-2xl sm:text-3xl md:text-6xl lg:text-7xl font-bold tracking-tight max-w-4xl mx-auto text-white"
         >
           <span className="text-gradient-quantum">Enterprise Software Case Studies</span> — Client
           Success Stories

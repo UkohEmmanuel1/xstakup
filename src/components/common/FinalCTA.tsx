@@ -24,7 +24,7 @@ export function FinalCTA() {
         className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-violet/30 blur-3xl pointer-events-none"
       />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 py-24">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 py-12 md:py-24">
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -33,7 +33,7 @@ export function FinalCTA() {
           className="rounded-2xl p-8 md:p-12 text-center"
         >
           <div>
-            <h2 className="text-3xl md:text-5xl font-bold text-white max-w-3xl mx-auto tracking-tight">
+            <h2 className="text-2xl md:text-5xl font-bold text-white max-w-3xl mx-auto tracking-tight">
               Ready for Custom Enterprise Software Development?
             </h2>
             <p className="mt-5 text-white/80 max-w-xl mx-auto text-base md:text-lg">

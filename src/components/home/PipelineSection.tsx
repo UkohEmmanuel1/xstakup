@@ -8,13 +8,13 @@ import { pipeline } from "@/data/home";
 export function PipelineSection() {
   return (
     <AnimatedSection>
-      <section className="relative py-24 border-y border-border overflow-hidden">
+      <section className="relative py-12 md:py-24 border-y border-border overflow-hidden">
         <div className="relative z-10 mx-auto max-w-7xl px-6">
           <div className="max-w-2xl mb-14">
-            <h2 className="mt-4 text-3xl md:text-5xl font-bold text-foreground">
+            <h2 className="mt-4 text-2xl md:text-5xl font-bold text-white">
               Custom Enterprise Software Development: Our Process
             </h2>
-            <p className="mt-4 text-foreground/80 max-w-xl">
+            <p className="mt-4 text-white/80 max-w-xl">
               From strategy to deployment: our proven software engineering pipeline delivers
               production-grade systems for web, mobile, AI, and Web3.
             </p>
@@ -25,7 +25,7 @@ export function PipelineSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4"
+            className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4"
           >
             {pipeline.map((s) => (
               <PipelineCard key={s.number} step={s} />

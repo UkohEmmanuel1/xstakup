@@ -175,10 +175,10 @@ function TweetCard({
 export function TestimonialSection() {
   return (
     <AnimatedSection>
-      <section className="pt-24 pb-0 bg-background sticky top-0 z-20">
+      <section className="pt-12 md:pt-24 pb-0 bg-background sticky top-0 z-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
+            <h2 className="text-xl sm:text-2xl md:text-5xl font-bold tracking-tight">
               Client Testimonials: Enterprise Software Development Reviews
             </h2>
             <p className="mt-4 text-sm md:text-base text-foreground/80 max-w-xl mx-auto">
