@@ -30,7 +30,7 @@ const menuVariants = {
 
 function Logo({ onClose }: { onClose: () => void }) {
   return (
-    <Link href="/" className="flex items-center gap-3 z-50" onClick={onClose}>
+    <Link href="/" className="flex items-center z-50" onClick={onClose}>
       <motion.div
         whileHover={{ scale: 1.05, rotate: -2 }}
         className="relative h-12 w-12 md:h-16 md:w-16 flex-shrink-0"
@@ -41,18 +41,15 @@ function Logo({ onClose }: { onClose: () => void }) {
             alt="XStakUp Logo"
             fill
             sizes="64px"
-            className="object-cover select-none"
+            className="object-contain select-none"
           />
         </div>
       </motion.div>
-      <span className="hidden sm:inline-block font-mono text-[10px] uppercase tracking-widest text-muted-foreground border border-border rounded px-1.5 py-0.5 self-center">
-        FTRX Group
-      </span>
     </Link>
   );
 }
 
-function DesktopNav({ pathname }: { pathname: string }) {
+function DesktopNav({ pathname, scrolled }: { pathname: string; scrolled: boolean }) {
   return (
     <nav className="hidden md:flex items-center gap-1">
       {links.map((l) => (
@@ -61,8 +58,8 @@ function DesktopNav({ pathname }: { pathname: string }) {
           href={l.to}
           className={`px-3 py-2 text-sm transition-colors relative group ${
             pathname === l.to
-              ? "text-foreground font-medium"
-              : "text-muted-foreground hover:text-foreground"
+              ? `${scrolled ? "text-foreground" : "text-white"} font-medium`
+              : `${scrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`
           }`}
         >
           {l.label}
@@ -90,7 +87,7 @@ function MobileNav({
           initial="hidden"
           animate="visible"
           exit="exit"
-          className="md:hidden absolute top-16 inset-x-0 w-full glass-strong border-b border-border origin-top"
+          className="md:hidden absolute top-14 inset-x-0 w-full glass-strong border-b border-border origin-top"
         >
           <nav className="flex flex-col px-6 py-5 gap-2">
             {links.map((l, i) => (
@@ -133,12 +130,12 @@ function MobileNav({
   );
 }
 
-function HamburgerButton({ open, onClick }: { open: boolean; onClick: () => void }) {
+function HamburgerButton({ open, onClick, scrolled }: { open: boolean; onClick: () => void; scrolled: boolean }) {
   return (
     <button
       onClick={onClick}
       aria-label={open ? "Close Menu" : "Open Menu"}
-      className="md:hidden flex items-center justify-center p-3 text-foreground focus:outline-none"
+      className={`md:hidden flex items-center justify-center p-3 focus:outline-none ${scrolled || open ? "text-foreground" : "text-white"}`}
     >
       {open ? <X size={22} /> : <Menu size={22} />}
     </button>
@@ -152,6 +149,7 @@ export function Navbar() {
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
+    onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
@@ -169,14 +167,14 @@ export function Navbar() {
     >
       <div className="mx-auto flex h-14 md:h-16 max-w-7xl items-center justify-between px-6">
         <Logo onClose={() => setOpen(false)} />
-        <DesktopNav pathname={pathname} />
+        <DesktopNav pathname={pathname} scrolled={scrolled} />
 
         <div className="flex items-center gap-3 z-50">
           <ThemeToggle />
           <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
             <Link
               href="/contact"
-              className="hidden sm:inline-flex items-center gap-2 rounded-md bg-quantum-gradient px-4 py-2 text-sm font-medium text-white shadow-quantum hover:shadow-glow transition-shadow relative overflow-hidden group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              className="hidden sm:inline-flex items-center gap-2 rounded-md bg-quantum-gradient px-4 py-2.5 text-sm font-medium text-white shadow-quantum hover:shadow-glow transition-shadow relative overflow-hidden group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
               <span className="relative z-10">Initialize Your Build</span>
               <motion.span
@@ -188,7 +186,7 @@ export function Navbar() {
             </Link>
           </motion.div>
 
-          <HamburgerButton open={open} onClick={() => setOpen(!open)} />
+          <HamburgerButton open={open} onClick={() => setOpen(!open)} scrolled={scrolled} />
         </div>
       </div>
 
