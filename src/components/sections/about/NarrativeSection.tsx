@@ -3,12 +3,15 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { SectionLabel, AnimatedSection, slideFromLeft, slideFromRight } from "@/components/common";
+// 1. Import the image directly
+import brandIdentityImg from "@/../public/assets/Brandidentity.webp"; 
 
 export function NarrativeSection() {
   return (
     <AnimatedSection>
-      <section className="py-12 md:py-24 bg-[color:var(--void-section)] border-y border-border overflow-hidden">
+      <section className="py-12 md:py-24 bg-[var(--void-section)] border-y border-border overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-16 items-center">
+          
           <motion.div
             variants={slideFromLeft}
             initial="hidden"
@@ -22,37 +25,32 @@ export function NarrativeSection() {
             <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
               <p>
                 XStakUp was founded on a simple premise: businesses deserve better than
-                off-the-shelf software solutions. We saw the gap between ambitious product ideas and
-                the technical infrastructure required to sustain them at enterprise scale.
-              </p>
-              <p>
-                Today, we bridge that gap. As the engineering engine within the{" "}
-                <span className="text-foreground font-medium">FTRX Group</span> ecosystem, we bring
-                specialized expertise in fintech software development, artificial intelligence, and
-                scalable cloud architecture to every client partnership.
+                off-the-shelf software solutions.
               </p>
             </div>
           </motion.div>
+
           <motion.div
             variants={slideFromRight}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="relative aspect-square max-w-md mx-auto"
+            className="relative aspect-square max-w-md mx-auto w-full"
           >
             <div className="absolute inset-0 rounded-2xl glass overflow-hidden flex items-center justify-center">
               <div className="absolute inset-0 grid-pattern opacity-40" />
-              <div className="relative w-3/4 h-3/4">
+              <div className="relative w-3/4 h-3/4 flex items-center justify-center">
+                {/* 2. Drop the 'fill' and pass the static object directly */}
                 <Image
-                  src="/assets/Brandidentity.webp"
+                  src={brandIdentityImg}
                   alt="XStakUp Brand Identity"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-contain"
+                  className="object-contain max-h-full w-auto"
+                  priority
                 />
               </div>
             </div>
           </motion.div>
+
         </div>
       </section>
     </AnimatedSection>

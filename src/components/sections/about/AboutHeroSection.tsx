@@ -36,17 +36,7 @@ export function AboutHeroSection() {
           strategists committed to building robust enterprise infrastructure that powers market
           leading businesses across Africa and global markets.
         </motion.p>
-        <motion.a
-          href="#differentiators"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-          whileHover={{ scale: 1.04 }}
-          whileTap={{ scale: 0.96 }}
-          className="mt-10 inline-flex items-center gap-2 rounded-md bg-quantum-gradient px-6 py-3.5 text-sm font-medium text-white shadow-quantum focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-        >
-          Explore What Sets Us Apart
-        </motion.a>
+       
       </div>
     </section>
   );
