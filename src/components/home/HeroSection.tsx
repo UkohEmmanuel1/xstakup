@@ -58,7 +58,7 @@ export function HeroSection() {
             <br />
             <span className="text-gradient-quantum">Software Development</span>
             <br />
-            <span className="text-2xl md:text-5xl text-white/40">Company</span> {/* Subdued for elegance */}
+            
           </motion.h1>
 
           {/* --- 3. SUBTITLE --- */}
@@ -72,21 +72,7 @@ export function HeroSection() {
             artificial intelligence, and Web3 solutions. We architect scalable, production-grade
             systems so you can lead your market.
           </motion.p>
-
-          {/* --- 4. CALL-TO-ACTIONS (Crucial for conversion) --- */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="mt-10 flex flex-wrap items-center justify-center gap-4"
-          >
-            <button className="rounded-full bg-gradient-to-r from-quantum to-purple-600 px-8 py-4 text-sm font-semibold text-white shadow-2xl shadow-quantum/30 transition-all hover:scale-105 hover:shadow-quantum/50">
-              Book a Free Consultation
-            </button>
-            <button className="rounded-full border border-white/20 bg-white/5 px-8 py-4 text-sm font-semibold text-white/80 backdrop-blur-sm transition-all hover:bg-white/10 hover:border-white/40">
-              Watch Demo
-            </button>
-          </motion.div>
+          
 
           {/* --- 5. STATS (Now using your imported StatsStrip, but we will upgrade that component below) --- */}
           <StatsStrip items={stats} className="mt-16" />

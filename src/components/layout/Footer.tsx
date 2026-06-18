@@ -55,9 +55,8 @@ function FooterBrand() {
     >
       <Link href="/" className="flex items-center gap-2">
         <div className="relative h-10 w-10">
-          <Image src="/assets/foot_logo.webp" alt="XStakUp footer logo" fill sizes="40px" className="object-contain" />
+          <Image src="/assets/XStakUP LOGO-2.webp" alt="XStakUp footer logo" fill sizes="40px" className="object-contain" />
         </div>
-        <span className="font-semibold text-foreground">XStakUp</span>
       </Link>
       <p className="mt-4 text-sm text-muted-foreground max-w-sm">
         Custom enterprise software development. We architect scalable web, mobile, AI, and Web3

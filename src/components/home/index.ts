@@ -4,7 +4,6 @@ export { MarqueeSection } from "./MarqueeSection";
 export { TestimonialSection } from "./TestimonialSection";
 export { ExpertiseSection } from "./ExpertiseSection";
 export { FeaturedDeployments } from "./FeaturedDeployments";
-export { GlobalReachSection } from "./GlobalReachSection";
 export { StatsStrip } from "./StatsStrip";
 export { PipelineCard } from "./PipelineCard";
 export { ExpertiseCard } from "./ExpertiseCard";

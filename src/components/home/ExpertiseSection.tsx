@@ -22,7 +22,7 @@ export function ExpertiseSection() {
               </h2>
               <p className="mt-3 text-white/80 max-w-lg">
                 From AI and Web3 to fintech and mobile: our eight specialized engineering
-                disciplines deliver production-grade custom software.
+                disciplines deliver production grade custom software.
               </p>
             </div>
           </div>

@@ -16,7 +16,7 @@ export function PipelineSection() {
             </h2>
             <p className="mt-4 text-white/80 max-w-xl">
               From strategy to deployment: our proven software engineering pipeline delivers
-              production-grade systems for web, mobile, AI, and Web3.
+              production grade systems for web, mobile, AI, and Web3.
             </p>
           </div>
 
