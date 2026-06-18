@@ -5,7 +5,6 @@ import {
   DifferentiatorsSection,
   ValuesSection,
   LeadershipSection,
-  GlobalFootprintSection,
 } from "@/components/sections/about";
 import { FinalCTA } from "@/components/common";
 
@@ -24,7 +23,6 @@ export function AboutPage() {
         <DifferentiatorsSection />
         <ValuesSection />
         <LeadershipSection />
-        <GlobalFootprintSection />
         <FinalCTA />
       </div>
     </main>
