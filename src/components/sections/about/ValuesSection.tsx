@@ -42,11 +42,11 @@ export function ValuesSection() {
                 key={v.title}
                 variants={staggerItem}
                 whileHover={{ y: -4, borderColor: "oklch(0.65 0.18 230 / 0.4)" }}
-                className="rounded-xl glass p-6 transition-colors"
+                className="group relative rounded-xl bg-card-solid-bg p-4 md:p-6 transition-colors"
               >
-                <div className="font-mono text-3xl text-signal">{v.icon}</div>
-                <h3 className="mt-4 text-lg font-semibold">{v.title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{v.description}</p>
+                <div className="font-mono text-3xl text-signal/80">{v.icon}</div>
+                <h3 className="mt-4 text-lg font-semibold text-white">{v.title}</h3>
+                <p className="mt-2 text-base text-white/80 leading-relaxed">{v.description}</p>
               </motion.div>
             ))}
           </motion.div>

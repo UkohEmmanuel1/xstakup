@@ -41,12 +41,12 @@ export function DifferentiatorsSection() {
               <motion.div
                 key={d.title}
                 variants={staggerItem}
-                whileHover={{ y: -4 }}
-                className="relative rounded-xl glass p-8 transition-shadow hover:shadow-glow"
+                whileHover={{ y: -4, borderColor: "oklch(0.65 0.18 230 / 0.4)" }}
+                className="group relative rounded-xl bg-card-solid-bg p-4 md:p-6 transition-colors"
               >
                 <div className="font-mono text-xs text-signal">0{i + 1}</div>
-                <h3 className="mt-4 text-2xl font-semibold">{d.title}</h3>
-                <p className="mt-3 text-muted-foreground leading-relaxed">{d.description}</p>
+                <h3 className="mt-4 text-lg font-semibold text-white">{d.title}</h3>
+                <p className="mt-3 text-base text-white/80 leading-relaxed">{d.description}</p>
               </motion.div>
             ))}
           </motion.div>

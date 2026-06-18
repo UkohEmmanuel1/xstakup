@@ -40,9 +40,9 @@ export function NarrativeSection() {
             viewport={{ once: true }}
             className="relative aspect-square max-w-md mx-auto"
           >
-            <div className="absolute inset-0 rounded-2xl glass overflow-hidden">
+            <div className="absolute inset-0 rounded-2xl glass overflow-hidden flex items-center justify-center">
               <div className="absolute inset-0 grid-pattern opacity-40" />
-              <div className="absolute inset-0 flex items-center justify-center p-8">
+              <div className="relative w-3/4 h-3/4">
                 <Image
                   src="/assets/Brandidentity.webp"
                   alt="XStakUp Brand Identity"

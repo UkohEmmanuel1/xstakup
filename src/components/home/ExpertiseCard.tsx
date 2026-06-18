@@ -12,7 +12,7 @@ export function ExpertiseCard({ item }: ExpertiseCardProps) {
   return (
     <motion.div
       variants={staggerItem}
-      whileHover={{ y: -6, scale: 1.05, borderColor: "oklch(0.65 0.18 230 / 0.6)" }}
+      whileHover={{ y: -4, borderColor: "oklch(0.65 0.18 230 / 0.4)" }}
       className="group relative rounded-xl bg-card-solid-bg p-4 md:p-6 transition-colors"
     >
       <motion.div
