@@ -87,7 +87,7 @@ function MobileNav({
           initial="hidden"
           animate="visible"
           exit="exit"
-          className="md:hidden absolute top-14 inset-x-0 w-full glass-strong border-b border-border origin-top"
+          className="md:hidden absolute top-14 inset-x-0 w-full bg-[color:var(--void-main)] border-b border-border origin-top shadow-lg"
         >
           <nav className="flex flex-col px-6 py-5 gap-2">
             {links.map((l, i) => (
