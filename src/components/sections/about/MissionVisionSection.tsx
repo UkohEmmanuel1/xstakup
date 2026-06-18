@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { SectionLabel, AnimatedSection, staggerContainer, staggerItem } from "@/components/common";
-import { missionVisionItems } from "@/data/about";
+import { missionVisionItems, mvCardColors } from "@/data/about";
 
 export function MissionVisionSection() {
   return (
@@ -12,7 +12,7 @@ export function MissionVisionSection() {
           <div className="text-center max-w-2xl mx-auto mb-14">
             <SectionLabel>Mission & Vision</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
-              Software Company Mission & Vision
+              Software Company <span className="text-gradient-quantum">Mission & Vision</span>
             </h2>
           </div>
           <motion.div
@@ -22,19 +22,24 @@ export function MissionVisionSection() {
             viewport={{ once: true }}
             className="grid grid-cols-1 gap-6 md:grid-cols-2"
           >
-            {missionVisionItems.map((c) => (
-              <motion.div
-                key={c.t}
-                variants={staggerItem}
-                className="relative rounded-2xl p-6 md:p-10 glass"
-                style={{ borderColor: "oklch(0.65 0.18 230 / 0.4)" }}
-              >
-                <h3 className="font-mono text-xs uppercase tracking-widest text-signal">{c.t}</h3>
-                <p className="mt-5 text-xl md:text-2xl text-foreground leading-relaxed font-medium">
-                  {c.d}
-                </p>
-              </motion.div>
-            ))}
+            {missionVisionItems.map((c, i) => {
+              const color = mvCardColors[i];
+              return (
+                <motion.div
+                  key={c.t}
+                  variants={staggerItem}
+                  whileHover={{ y: -4, borderColor: color.hover }}
+                  className="group relative rounded-xl p-6 md:p-10"
+                  style={{ border: `1px solid ${color.border}`, background: color.bg }}
+                >
+                  <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: color.accent }} />
+                  <h3 className="font-mono text-xs uppercase tracking-widest" style={{ color: color.hover }}>{c.t}</h3>
+                  <p className="mt-5 text-xl md:text-2xl text-white leading-relaxed font-medium">
+                    {c.d}
+                  </p>
+                </motion.div>
+              );
+            })}
           </motion.div>
         </div>
       </section>

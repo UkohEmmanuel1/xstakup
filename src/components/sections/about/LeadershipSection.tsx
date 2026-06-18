@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { SectionLabel, AnimatedSection, staggerContainer, staggerItem } from "@/components/common";
-import { leaders, leaderGradients } from "@/data/about";
+import { leaders, leaderGradients, leaderCardColors } from "@/data/about";
 
 export function LeadershipSection() {
   return (
@@ -12,7 +12,7 @@ export function LeadershipSection() {
           <div className="text-center max-w-2xl mx-auto mb-14">
             <SectionLabel>Leadership</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
-              Enterprise Software Leadership Team
+              Enterprise Software <span className="text-gradient-quantum">Leadership Team</span>
             </h2>
           </div>
           <motion.div
@@ -22,34 +22,39 @@ export function LeadershipSection() {
             viewport={{ once: true }}
             className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
           >
-            {leaders.map((l, i) => (
-              <motion.div
-                key={i}
-                variants={staggerItem}
-                whileHover={{ y: -6 }}
-                className="group rounded-xl glass overflow-hidden transition-shadow hover:shadow-quantum"
-              >
+            {leaders.map((l, i) => {
+              const c = leaderCardColors[i % leaderCardColors.length];
+              return (
                 <motion.div
-                  className="aspect-[4/5] relative overflow-hidden"
-                  style={{ background: leaderGradients[i] }}
+                  key={i}
+                  variants={staggerItem}
+                  whileHover={{ y: -6 }}
+                  className="group rounded-xl overflow-hidden transition-shadow hover:shadow-quantum"
+                  style={{ border: `1px solid ${c.border}`, background: c.bg }}
                 >
-                  <div className="absolute inset-0 grid-pattern opacity-25" />
                   <motion.div
-                    whileHover={{ scale: 1.1 }}
-                    className="absolute inset-0 flex items-center justify-center text-6xl font-mono text-white/80"
+                    className="aspect-[4/5] relative overflow-hidden"
+                    style={{ background: leaderGradients[i] }}
                   >
-                    {l.name.charAt(0)}
+                    <div className="absolute inset-0 grid-pattern opacity-25" />
+                    <motion.div
+                      whileHover={{ scale: 1.1 }}
+                      className="absolute inset-0 flex items-center justify-center text-6xl font-mono text-white/80"
+                    >
+                      {l.name.charAt(0)}
+                    </motion.div>
+                    <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: c.accent }} />
                   </motion.div>
+                  <div className="p-5">
+                    <h3 className="font-semibold text-white">{l.name}</h3>
+                    <p className="mt-1 font-mono text-xs uppercase tracking-widest" style={{ color: c.hover }}>
+                      {l.role}
+                    </p>
+                    <p className="mt-3 text-sm text-white/70">{l.bio}</p>
+                  </div>
                 </motion.div>
-                <div className="p-5">
-                  <h3 className="font-semibold text-foreground">{l.name}</h3>
-                  <p className="mt-1 font-mono text-xs uppercase tracking-widest text-signal">
-                    {l.role}
-                  </p>
-                  <p className="mt-3 text-sm text-muted-foreground">{l.bio}</p>
-                </div>
-              </motion.div>
-            ))}
+              );
+            })}
           </motion.div>
         </div>
       </section>

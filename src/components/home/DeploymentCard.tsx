@@ -1,7 +1,7 @@
 "use client";
 
 import type { CaseStudy } from "@/types";
-import type { CardColor } from "@/data/home";
+import type { CardColor } from "@/types";
 
 interface DeploymentCardProps {
   caseStudy: CaseStudy;

@@ -84,3 +84,25 @@ export interface CardColor {
   accent: string;
   bg: string;
 }
+
+export interface JobPosting {
+  id: string;
+  title: string;
+  department: string;
+  location: string;
+  type: "Full-time" | "Contract" | "Internship";
+  description: string;
+  requirements: string[];
+  applyUrl: string;
+}
+
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+export interface BenefitItem {
+  icon: string;
+  title: string;
+  description: string;
+}

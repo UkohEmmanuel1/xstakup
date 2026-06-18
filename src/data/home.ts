@@ -116,12 +116,7 @@ export const marqueeItems = [
   "GraphQL",
 ];
 
-export interface CardColor {
-  border: string;
-  hover: string;
-  accent: string;
-  bg: string;
-}
+
 
 export const pipelineCardColors: CardColor[] = [
   { border: "oklch(0.65 0.18 230 / 0.25)", hover: "oklch(0.65 0.18 230 / 0.5)", accent: "oklch(0.65 0.18 230 / 0.6)", bg: "oklch(0.21 0.06 230)" },
