@@ -5,7 +5,6 @@ import {
   TestimonialSection,
   ExpertiseSection,
   FeaturedDeployments,
-  GlobalReachSection,
 } from "@/components/home";
 import { FinalCTA } from "@/components/common";
 

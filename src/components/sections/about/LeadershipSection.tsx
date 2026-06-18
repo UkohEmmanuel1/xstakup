@@ -39,7 +39,7 @@ export function LeadershipSection() {
                     <div className="absolute inset-0 grid-pattern opacity-25" />
                     <motion.div
                       whileHover={{ scale: 1.1 }}
-                      className="absolute inset-0 flex items-center justify-center text-6xl font-mono text-white/80"
+                      className="absolute inset-0 flex items-center justify-center text-6xl text-white/80"
                     >
                       {l.name.charAt(0)}
                     </motion.div>
@@ -47,7 +47,7 @@ export function LeadershipSection() {
                   </motion.div>
                   <div className="p-5">
                     <h3 className="font-semibold text-white">{l.name}</h3>
-                    <p className="mt-1 font-mono text-xs uppercase tracking-widest" style={{ color: c.hover }}>
+                    <p className="mt-1 text-xs uppercase tracking-widest" style={{ color: c.hover }}>
                       {l.role}
                     </p>
                     <p className="mt-3 text-sm text-white/70">{l.bio}</p>

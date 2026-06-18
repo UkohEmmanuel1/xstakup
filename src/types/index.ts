@@ -90,7 +90,7 @@ export interface JobPosting {
   title: string;
   department: string;
   location: string;
-  type: "Full-time" | "Contract" | "Internship";
+  type: "Full time" | "Contract" | "Internship";
   description: string;
   requirements: string[];
   applyUrl: string;
@@ -105,4 +105,18 @@ export interface BenefitItem {
   icon: string;
   title: string;
   description: string;
+}
+
+export interface CommunityEvent {
+  title: string;
+  date: string;
+  type: "Meetup" | "Workshop" | "Talk" | "Hackathon";
+  description: string;
+  icon: string;
+}
+
+export interface CommunityProject {
+  name: string;
+  description: string;
+  tech: string[];
 }

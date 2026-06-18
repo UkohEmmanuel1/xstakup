@@ -1,4 +1,4 @@
-import type { PipelineStep, ExpertiseItem, CaseStudy, StatsItem } from "@/types";
+import type { PipelineStep, ExpertiseItem, CaseStudy, StatsItem, CardColor } from "@/types";
 
 export const pipeline: PipelineStep[] = [
   {
@@ -11,11 +11,11 @@ export const pipeline: PipelineStep[] = [
     number: "02",
     title: "Architecture & UX Design",
     description:
-      "Scalable system architecture design with user-centered UI/UX built for your target audience and growth requirements.",
+      "Scalable system architecture design with user centered UI/UX built for your target audience and growth requirements.",
   },
   {
     number: "03",
-    title: "Full-Stack Development",
+    title: "Full Stack Development",
     description:
       "Custom software development across web, mobile, and Web3 platforms using modern frameworks and best practices.",
   },
@@ -23,14 +23,14 @@ export const pipeline: PipelineStep[] = [
     number: "04",
     title: "DevSecOps & Deployment",
     description:
-      "Secure CI/CD pipelines, cloud infrastructure, post-launch monitoring, and 99.9% uptime maintenance.",
+      "Secure CI/CD pipelines, cloud infrastructure, post launch monitoring, and 99.9% uptime maintenance.",
   },
 ];
 
 export const expertise: ExpertiseItem[] = [
   {
     title: "Product Engineering",
-    description: "End-to-end custom software development from concept to launch.",
+    description: "End to end custom software development from concept to launch.",
     icon: "◇",
   },
   {
@@ -40,12 +40,12 @@ export const expertise: ExpertiseItem[] = [
   },
   {
     title: "Web & SaaS Development",
-    description: "High-performance web applications and scalable SaaS platforms.",
+    description: "High performance web applications and scalable SaaS platforms.",
     icon: "▤",
   },
   {
     title: "Mobile Development",
-    description: "Native iOS and Android applications with cross-platform expertise.",
+    description: "Native iOS and Android applications with cross platform expertise.",
     icon: "▢",
   },
   {
@@ -60,8 +60,8 @@ export const expertise: ExpertiseItem[] = [
     icon: "₿",
   },
   {
-    title: "CTO-as-a-Service",
-    description: "On-demand technical leadership and software architecture guidance for your team.",
+    title: "CTO as a Service",
+    description: "On demand technical leadership and software architecture guidance for your team.",
     icon: "◈",
   },
   {
@@ -83,7 +83,7 @@ export const cases: CaseStudy[] = [
     title: "Quik",
     tag: "AI / NLP",
     description:
-      "AI-powered booking application that intelligently syncs availability and automates communication.",
+      "AI powered booking application that intelligently syncs availability and automates communication.",
   },
   {
     title: "Cashflow Africa",

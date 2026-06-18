@@ -10,7 +10,7 @@ const contactItems: ContactInfo[] = [
     href: "mailto:partnerships@xstakup.com",
   },
   { label: "Engineering HQ", value: "Lagos, Nigeria" },
-  { label: "Response Time", value: "less then 24 hours" },
+  { label: "Response Time", value: "less than 24 hours" },
 ];
 
 export function ContactInfoPanel() {
@@ -43,7 +43,7 @@ export function ContactInfoPanel() {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <p className="font-mono text-xs uppercase tracking-widest text-signal">{item.label}</p>
+            <p className="text-xs uppercase tracking-widest text-signal">{item.label}</p>
             {item.href ? (
               <a
                 href={item.href}

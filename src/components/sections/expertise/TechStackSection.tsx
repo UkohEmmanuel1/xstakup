@@ -1,15 +1,15 @@
 import { AnimatedSection } from "@/components/common";
 import { marqueeItems } from "@/data/home";
 
-export function MarqueeSection() {
+export function TechStackSection() {
   return (
     <AnimatedSection>
-      <section className="py-12 md:py-20 relative bg-[color:var(--void-section)] border-y border-border overflow-hidden">
+      <section className="py-12 md:py-20 border-y border-border overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 mb-12 text-center">
           <h2 className="mt-4 text-xl md:text-4xl font-bold max-w-3xl mx-auto">
-            Trusted by Industry Leaders: Enterprise Technology Stack
+            Technologies We <span className="text-gradient-quantum">Engineer With</span>
           </h2>
-          <p className="mt-3 text-foreground/80 max-w-xl mx-auto">
+          <p className="mt-3 text-white/70 max-w-xl mx-auto">
             Our engineering team specializes in modern frameworks, cloud infrastructure, blockchain
             protocols, and AI platforms.
           </p>
@@ -29,7 +29,7 @@ export function MarqueeSection() {
                 className="flex items-center gap-3 px-6 py-3 rounded-lg bg-white/10 backdrop-blur-md border border-white/15"
               >
                 <span className="h-2 w-2 rounded-full bg-signal" />
-                <span className="text-sm whitespace-nowrap text-foreground/80">
+                <span className="text-sm whitespace-nowrap text-white/80">
                   {item}
                 </span>
               </div>
@@ -41,7 +41,7 @@ export function MarqueeSection() {
                   className="flex items-center gap-3 px-6 py-3 rounded-lg bg-white/10 backdrop-blur-md border border-white/15"
                 >
                   <span className="h-2 w-2 rounded-full bg-signal" />
-                  <span className="text-sm whitespace-nowrap text-foreground/80">
+                  <span className="text-sm whitespace-nowrap text-white/80">
                     {item}
                   </span>
                 </div>

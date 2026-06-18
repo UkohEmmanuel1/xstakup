@@ -2,9 +2,17 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { OutlineCTA } from "@/components/common";
-import { slideFromLeft, slideFromRight } from "@/components/common";
+import { AnimatedSection, OutlineCTA, slideFromLeft, slideFromRight } from "@/components/common";
 import type { FeaturedCase } from "@/types";
+import type { CardColor } from "@/types";
+
+const caseCardColors: CardColor[] = [
+  { border: "oklch(0.52 0.28 265 / 0.25)", hover: "oklch(0.52 0.28 265 / 0.5)", accent: "oklch(0.52 0.28 265 / 0.6)", bg: "oklch(0.21 0.08 265)" },
+  { border: "oklch(0.55 0.22 290 / 0.25)", hover: "oklch(0.55 0.22 290 / 0.5)", accent: "oklch(0.55 0.22 290 / 0.6)", bg: "oklch(0.21 0.09 290)" },
+  { border: "oklch(0.65 0.18 230 / 0.25)", hover: "oklch(0.65 0.18 230 / 0.5)", accent: "oklch(0.65 0.18 230 / 0.6)", bg: "oklch(0.21 0.06 230)" },
+  { border: "oklch(0.6 0.15 200 / 0.25)", hover: "oklch(0.6 0.15 200 / 0.5)", accent: "oklch(0.6 0.15 200 / 0.6)", bg: "oklch(0.21 0.06 200)" },
+  { border: "oklch(0.65 0.14 95 / 0.3)", hover: "oklch(0.65 0.14 95 / 0.55)", accent: "oklch(0.65 0.14 95 / 0.65)", bg: "oklch(0.23 0.06 95)" },
+];
 
 const featured: FeaturedCase[] = [
   {
@@ -83,35 +91,29 @@ function CaseStudyContent({ c, reverse }: { c: FeaturedCase; reverse: boolean })
       whileInView="visible"
       viewport={{ once: true }}
     >
-      <span className="inline-block font-mono text-xs uppercase tracking-widest text-signal border border-signal/30 rounded-full px-3 py-1">
+      <span className="inline-block text-xs uppercase tracking-widest border rounded-full px-3 py-1 text-blue-400 border-blue-500/30">
         {c.tag}
       </span>
       <h2 className="mt-5 text-3xl md:text-4xl font-bold">
         <span className="text-gradient-quantum">{c.name}:</span>{" "}
-        <span className="text-foreground">{c.headline}</span>
+        <span className="text-white">{c.headline}</span>
       </h2>
       <div className="mt-6 space-y-5">
         <div>
-          <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
-            The Challenge
-          </p>
-          <p className="mt-2 text-muted-foreground leading-relaxed">{c.challenge}</p>
+          <p className="text-xs uppercase tracking-widest text-white/50">The Challenge</p>
+          <p className="mt-2 text-white/70 leading-relaxed">{c.challenge}</p>
         </div>
         <div>
-          <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
-            The Solution
-          </p>
-          <p className="mt-2 text-muted-foreground leading-relaxed">{c.solution}</p>
+          <p className="text-xs uppercase tracking-widest text-white/50">The Solution</p>
+          <p className="mt-2 text-white/70 leading-relaxed">{c.solution}</p>
         </div>
         <div>
-          <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
-            Tech Stack
-          </p>
+          <p className="text-xs uppercase tracking-widest text-white/50">Tech Stack</p>
           <div className="mt-3 flex flex-wrap gap-2">
             {c.stack.map((s) => (
               <span
                 key={s}
-                className="font-mono text-xs px-2.5 py-1 rounded border border-border bg-[color:var(--void-surface)]"
+                className="text-xs px-2.5 py-1 rounded border border-white/10 bg-white/5 text-white/70"
               >
                 {s}
               </span>
@@ -126,9 +128,13 @@ function CaseStudyContent({ c, reverse }: { c: FeaturedCase; reverse: boolean })
   );
 }
 
-function CaseStudyMockupPanel({ c }: { c: FeaturedCase }) {
+function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor }) {
   return (
-    <div className="relative rounded-2xl glass-strong overflow-hidden aspect-[4/3]">
+    <div
+      className="relative rounded-2xl overflow-hidden aspect-[4/3]"
+      style={{ border: `1px solid ${color.border}`, background: color.bg }}
+    >
+      <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: color.accent }} />
       <div className="absolute inset-0" style={{ background: c.gradient, opacity: 0.85 }} />
       {c.name === "XPay" && (
         <Image
@@ -140,18 +146,18 @@ function CaseStudyMockupPanel({ c }: { c: FeaturedCase }) {
         />
       )}
       <div className="absolute inset-0 grid-pattern opacity-30" />
-      <div className="absolute inset-6 rounded-lg bg-[color:var(--void-main)]/85 backdrop-blur-sm p-4 flex flex-col gap-3">
+      <div className="absolute inset-6 rounded-lg bg-black/60 backdrop-blur-sm p-4 flex flex-col gap-3">
         <div className="flex items-center gap-2">
           <div className="h-2.5 w-2.5 rounded-full bg-red-400/60" />
           <div className="h-2.5 w-2.5 rounded-full bg-yellow-400/60" />
           <div className="h-2.5 w-2.5 rounded-full bg-green-400/60" />
-          <span className="ml-2 font-mono text-[10px] text-muted-foreground">
+          <span className="ml-2 text-[10px] text-white/50">
             {c.name.toLowerCase()}.xstakup.io
           </span>
         </div>
         <div className="flex-1 grid grid-cols-3 gap-2">
           <div className="col-span-2 rounded bg-white/5 p-3 flex flex-col gap-2">
-            <div className="h-2 w-1/3 rounded bg-signal/60" />
+            <div className="h-2 w-1/3 rounded" style={{ background: color.accent }} />
             <div className="h-8 rounded bg-quantum/20" />
             <div className="h-2 w-2/3 rounded bg-white/10" />
             <div className="h-2 w-1/2 rounded bg-white/10" />
@@ -162,7 +168,7 @@ function CaseStudyMockupPanel({ c }: { c: FeaturedCase }) {
             </div>
           </div>
           <div className="rounded bg-white/5 p-3 flex flex-col gap-2">
-            <div className="h-2 w-2/3 rounded bg-signal/60" />
+            <div className="h-2 w-2/3 rounded" style={{ background: color.accent }} />
             {[1, 2, 3, 4].map((k) => (
               <div
                 key={k}
@@ -179,35 +185,38 @@ function CaseStudyMockupPanel({ c }: { c: FeaturedCase }) {
 
 export function FeaturedCaseStudiesSection() {
   return (
-    <section className="py-12 md:py-20 overflow-hidden">
-      <div className="mx-auto max-w-7xl px-6 space-y-16 md:space-y-32">
-        {featured.map((c, i) => {
-          const reverse = i % 2 === 1;
-          return (
-            <motion.div
-              key={c.name}
-              initial={{ opacity: 0, y: 60 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: i * 0.15 }}
-              className={`grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 lg:gap-20 items-center ${reverse ? "md:[&>*:first-child]:order-2" : ""}`}
-            >
+    <AnimatedSection>
+      <section id="cases" className="py-12 md:py-20 bg-void-section border-y border-border overflow-hidden">
+        <div className="mx-auto max-w-7xl px-6 space-y-16 md:space-y-32">
+          {featured.map((c, i) => {
+            const reverse = i % 2 === 1;
+            const color = caseCardColors[i % caseCardColors.length];
+            return (
               <motion.div
-                variants={reverse ? slideFromRight : slideFromLeft}
-                initial="hidden"
-                whileInView="visible"
+                key={c.name}
+                initial={{ opacity: 0, y: 60 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="relative"
+                transition={{ duration: 0.7, delay: i * 0.15 }}
+                className={`grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 lg:gap-20 items-center ${reverse ? "md:[&>*:first-child]:order-2" : ""}`}
               >
-                <CaseStudyMockup gradient={c.gradient} name={c.name} />
-                <CaseStudyMockupPanel c={c} />
-              </motion.div>
+                <motion.div
+                  variants={reverse ? slideFromRight : slideFromLeft}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  className="relative"
+                >
+                  <CaseStudyMockup gradient={c.gradient} name={c.name} />
+                  <CaseStudyMockupPanel c={c} color={color} />
+                </motion.div>
 
-              <CaseStudyContent c={c} reverse={reverse} />
-            </motion.div>
-          );
-        })}
-      </div>
-    </section>
+                <CaseStudyContent c={c} reverse={reverse} />
+              </motion.div>
+            );
+          })}
+        </div>
+      </section>
+    </AnimatedSection>
   );
 }

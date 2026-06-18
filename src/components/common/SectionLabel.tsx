@@ -10,7 +10,7 @@ export function SectionLabel({ children }: { children: ReactNode }) {
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-signal"
+      className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-signal"
     >
       <motion.span
         initial={{ width: 0 }}

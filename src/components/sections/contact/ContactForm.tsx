@@ -38,7 +38,7 @@ function SubmittedState() {
   );
 }
 
-function FormFields() {
+function FormFields({ error }: { error: boolean }) {
   return (
     <motion.div key="form" initial="hidden" animate="visible" className="space-y-5">
       <motion.div custom={0} variants={fieldVariants} className="grid sm:grid-cols-2 gap-5">
@@ -52,11 +52,12 @@ function FormFields() {
         <Field label="Project Type" name="type" placeholder="Fintech, AI, Web3, SaaS..." />
       </motion.div>
       <motion.div custom={3} variants={fieldVariants}>
-        <label className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
+        <label className="text-xs uppercase tracking-widest text-muted-foreground">
           Project Brief
         </label>
         <textarea
           required
+          name="message"
           rows={5}
           className="mt-2 w-full rounded-md bg-[color:var(--void-main)] border border-border px-4 py-3 text-foreground focus:border-signal focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring transition-colors"
           placeholder="Tell us about the system you need to engineer..."
@@ -79,26 +80,54 @@ function FormFields() {
       >
         NDA-friendly. Your information is never shared.
       </motion.p>
+      {error && (
+        <p className="text-xs text-red-400 text-center">
+          Something went wrong. Please try again or email us directly.
+        </p>
+      )}
     </motion.div>
   );
 }
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    const payload = {
+      name: data.get("name"),
+      email: data.get("email"),
+      company: data.get("company"),
+      type: data.get("type"),
+      message: data.get("message"),
+    };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) throw new Error("Failed");
+      setSubmitted(true);
+    } catch {
+      setError(true);
+    }
+  }
 
   return (
     <motion.form
       initial={{ opacity: 0, x: 40 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.7, delay: 0.15 }}
-      onSubmit={(e) => {
-        e.preventDefault();
-        setSubmitted(true);
-      }}
+      onSubmit={handleSubmit}
       className="rounded-2xl glass-strong p-8 space-y-5 h-fit"
     >
       <AnimatePresence mode="wait">
-        {submitted ? <SubmittedState /> : <FormFields />}
+        {submitted ? <SubmittedState /> : <FormFields error={error} />}
       </AnimatePresence>
     </motion.form>
   );

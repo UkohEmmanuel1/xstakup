@@ -64,7 +64,7 @@ function FooterBrand() {
         systems for market-leading businesses.
       </p>
       <div className="mt-6 space-y-1 text-sm">
-        <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
+        <p className="text-xs uppercase tracking-widest text-muted-foreground">
           Engineering HQ
         </p>
         <p className="text-foreground">Lagos, Nigeria</p>
@@ -85,7 +85,7 @@ function FooterColumn({ col, index }: { col: (typeof columns)[number]; index: nu
       whileInView="visible"
       viewport={{ once: true }}
     >
-      <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground mb-4">
+      <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
         {col.title}
       </p>
       <ul className="space-y-2.5">
@@ -114,10 +114,10 @@ function FooterBottom() {
       transition={{ delay: 0.4 }}
       className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row gap-4 items-start md:items-center justify-between"
     >
-      <p className="text-xs text-muted-foreground font-mono">
+      <p className="text-xs text-muted-foreground">
         © 2026 XStakUp. An FTRX Group Company. All rights reserved.
       </p>
-      <div className="flex gap-6 text-xs text-muted-foreground font-mono">
+      <div className="flex gap-6 text-xs text-muted-foreground">
         <span>Terms & Conditions</span>
         <span>Privacy Policy</span>
       </div>

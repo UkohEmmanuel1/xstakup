@@ -3,11 +3,12 @@
 import { motion } from "framer-motion";
 import { AnimatedSection } from "@/components/common";
 import { tweetCardColors } from "@/data/home";
+import type { CardColor } from "@/types";
 
 const tweets = [
   {
     name: "Adaeze Okonkwo",
-    handle: "@ada_okonkwo",
+    handle: "@adaokonkwo",
     role: "CTO, XPay",
     avatar: "bg-gradient-to-tr from-blue-600 to-indigo-900",
     text: "XStakUp isn't a vendor — they're embedded in our roadmap. They shipped our payment infrastructure faster and more securely than any in-house team we'd hired. They engineer like founders.",
@@ -25,7 +26,7 @@ const tweets = [
   },
   {
     name: "Elena Rostova",
-    handle: "@elena_dev",
+    handle: "@elenadev",
     role: "VP of Product, FTRX",
     avatar: "bg-gradient-to-tr from-purple-600 to-pink-900",
     text: "Most outsourcing studios just write what you tell them. XStakUp pushed back on our cloud deployment topology, saved us 40% on monthly AWS compute overhead, and shipped an immutable multi-region pipeline.",
@@ -34,7 +35,7 @@ const tweets = [
   },
   {
     name: "Marcus Sterling",
-    handle: "@marcus_fintech",
+    handle: "@marcusfintech",
     role: "Director, Cashflow Africa",
     avatar: "bg-gradient-to-tr from-amber-500 to-orange-800",
     text: "Cross-border B2B ledgering infrastructure requires absolute structural fault tolerance. XStakUp decoupled our state processing engines flawlessly. Zero settlement errors across 5M+ volume transactions.",
@@ -123,7 +124,7 @@ function TweetCard({
   t: (typeof tweets)[number];
   index: number;
   showMetrics?: boolean;
-  color?: import("@/data/home").CardColor;
+  color?: CardColor;
 }) {
   const c = color ?? { border: "oklch(0.52 0.28 265 / 0.25)", hover: "oklch(0.52 0.28 265 / 0.5)", accent: "oklch(0.52 0.28 265 / 0.6)", bg: "oklch(0.21 0.08 265)" };
 
@@ -143,22 +144,22 @@ function TweetCard({
                 <p className="font-semibold text-sm text-white">{t.name}</p>
                 {verifiedBadge}
               </div>
-              <p className="text-xs text-white/80 font-mono">{t.handle}</p>
+              <p className="text-xs text-white/80">{t.handle}</p>
             </div>
           </div>
-          <span className="font-mono text-xs text-white/40 font-bold">X</span>
+          <span className="text-xs text-white/40 font-bold">X</span>
         </div>
         <p className="mt-4 text-base leading-relaxed text-white/90 font-sans tracking-normal">
           {t.text}
         </p>
       </div>
       <div>
-        <div className="mt-4 pt-3 border-t border-border/20 flex items-center justify-between text-xs text-white/80 font-mono">
+        <div className="mt-4 pt-3 border-t border-border/20 flex items-center justify-between text-xs text-white/80">
           <span>{t.time}</span>
           <span className="text-signal/80 font-semibold">{t.role}</span>
         </div>
         {showMetrics && (
-          <div className="mt-3 pt-2 border-t border-border/10 flex items-center justify-between text-white/70 font-mono text-xs">
+          <div className="mt-3 pt-2 border-t border-border/10 flex items-center justify-between text-white/70 text-xs">
             <div className="flex items-center gap-1.5 hover:text-blue-500 transition-colors">
               {replyIcon}
               <span>{t.metrics.replies}</span>

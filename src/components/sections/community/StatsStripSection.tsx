@@ -2,19 +2,13 @@
 
 import { motion } from "framer-motion";
 import { AnimatedSection, staggerContainer, staggerItem } from "@/components/common";
+import { communityStats } from "@/data/community";
 import { statCardColors } from "@/data/careers";
 
-const metrics = [
-  { value: "99.99%", label: "Average Uptime" },
-  { value: "5M+", label: "Transactions Processed" },
-  { value: "0", label: "Security Breaches" },
-  { value: "10+", label: "Enterprise Deployments" },
-];
-
-export function ImpactMarqueeSection() {
+export function StatsStripSection() {
   return (
     <AnimatedSection>
-      <section className="py-12 md:py-20 border-y border-border overflow-hidden">
+      <section className="py-12 md:py-20 overflow-hidden">
         <div className="mx-auto max-w-7xl px-6">
           <motion.div
             variants={staggerContainer}
@@ -23,11 +17,11 @@ export function ImpactMarqueeSection() {
             viewport={{ once: true }}
             className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center"
           >
-            {metrics.map((m, i) => {
+            {communityStats.map((stat, i) => {
               const c = statCardColors[i % statCardColors.length];
               return (
                 <motion.div
-                  key={m.label}
+                  key={stat.label}
                   variants={staggerItem}
                   whileHover={{ y: -4, borderColor: c.hover }}
                   className="group relative rounded-xl p-6"
@@ -35,9 +29,9 @@ export function ImpactMarqueeSection() {
                 >
                   <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: c.accent }} />
                   <div className="text-3xl md:text-4xl font-bold text-gradient-quantum">
-                    {m.value}
+                    {stat.value}
                   </div>
-                  <div className="mt-2 text-sm text-white/60 uppercase tracking-wide">{m.label}</div>
+                  <div className="mt-2 text-sm text-white/60 uppercase tracking-wide">{stat.label}</div>
                 </motion.div>
               );
             })}

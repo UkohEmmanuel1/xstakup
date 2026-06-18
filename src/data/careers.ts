@@ -6,9 +6,9 @@ export const jobOpenings: JobPosting[] = [
     title: "Senior Backend Engineer",
     department: "Backend",
     location: "Lagos, Nigeria (Remote)",
-    type: "Full-time",
+    type: "Full time",
     description:
-      "Design and build high-performance distributed systems powering enterprise fintech and logistics platforms.",
+      "Design and build high performance distributed systems powering enterprise fintech and logistics platforms.",
     requirements: [
       "5+ years in Node.js, Go, or Python",
       "Experience with PostgreSQL, Redis, Kafka",
@@ -22,9 +22,9 @@ export const jobOpenings: JobPosting[] = [
     title: "Backend Engineer (Mid-Level)",
     department: "Backend",
     location: "Lagos, Nigeria (Remote)",
-    type: "Full-time",
+    type: "Full time",
     description:
-      "Build and maintain RESTful APIs and event-driven services for high-scale client deployments.",
+      "Build and maintain RESTful APIs and event driven services for high-scale client deployments.",
     requirements: [
       "3+ years experience in Node.js or Go",
       "Proficiency with SQL and NoSQL databases",
@@ -38,9 +38,9 @@ export const jobOpenings: JobPosting[] = [
     title: "AI/ML Engineer",
     department: "AI",
     location: "Remote (Global)",
-    type: "Full-time",
+    type: "Full time",
     description:
-      "Develop production-grade ML models and AI pipelines for predictive analytics, fraud detection, and intelligent automation.",
+      "Develop production grade ML models and AI pipelines for predictive analytics, fraud detection, and intelligent automation.",
     requirements: [
       "4+ years in ML engineering or data science",
       "Proficiency with PyTorch, TensorFlow, or JAX",
@@ -54,7 +54,7 @@ export const jobOpenings: JobPosting[] = [
     title: "Web3 / Blockchain Engineer",
     department: "Web3",
     location: "Remote (Global)",
-    type: "Full-time",
+    type: "Full time",
     description:
       "Architect and deploy smart contracts, dApps, and DeFi protocols on EVM-compatible chains.",
     requirements: [
@@ -70,7 +70,7 @@ export const jobOpenings: JobPosting[] = [
     title: "DevSecOps Engineer",
     department: "DevSecOps",
     location: "Lagos, Nigeria (Remote)",
-    type: "Full-time",
+    type: "Full time",
     description:
       "Own infrastructure security, automated pipelines, and cloud reliability for enterprise clients.",
     requirements: [
@@ -86,9 +86,9 @@ export const jobOpenings: JobPosting[] = [
     title: "Frontend Engineer (React)",
     department: "Frontend",
     location: "Lagos, Nigeria (Remote)",
-    type: "Full-time",
+    type: "Full time",
     description:
-      "Craft responsive, high-performance UIs for enterprise dashboards and customer-facing platforms.",
+      "Craft responsive, high performance UIs for enterprise dashboards and customer-facing platforms.",
     requirements: [
       "3+ years in React, TypeScript, and Next.js",
       "Strong understanding of state management and SSR",
@@ -104,13 +104,13 @@ export const benefits: BenefitItem[] = [
     icon: "◇",
     title: "Competitive Compensation",
     description:
-      "Industry-leading salary packages with performance bonuses and equity options for full-time team members.",
+      "Industry leading salary packages with performance bonuses and equity options for full time team members.",
   },
   {
     icon: "⌘",
-    title: "Remote-First Culture",
+    title: "Remote First Culture",
     description:
-      "Work from anywhere. We operate async-first with flexible hours and quarterly team meetups.",
+      "Work from anywhere. We operate async first with flexible hours and quarterly team meetups.",
   },
   {
     icon: "⬡",
@@ -128,7 +128,7 @@ export const benefits: BenefitItem[] = [
     icon: "▣",
     title: "Latest Tools & Tech",
     description:
-      "MacBook Pro, ergonomic setup budget, and access to cutting-edge AI and cloud tooling.",
+      "MacBook Pro, ergonomic setup budget, and access to cutting edge AI and cloud tooling.",
   },
   {
     icon: "⟁",
@@ -142,12 +142,12 @@ export const faqItems: FAQItem[] = [
   {
     question: "What is the hiring process like?",
     answer:
-      "Our process typically includes an initial screening call, a technical assessment or take-home project, a technical interview with the team, and a final culture-fit conversation. We aim to complete the process within 2–3 weeks.",
+      "Our process typically includes an initial screening call, a technical assessment or take home project, a technical interview with the team, and a final culture fit conversation. We aim to complete the process within 2–3 weeks.",
   },
   {
     question: "Do you offer remote positions?",
     answer:
-      "Yes. We are a remote-first company. Most roles are fully remote with optional co-working access in Lagos. Some positions may require occasional travel for client on-sites or team retreats.",
+      "Yes. We are a remote first company. Most roles are fully remote with optional co-working access in Lagos. Some positions may require occasional travel for client on sites or team retreats.",
   },
   {
     question: "What technologies does the team use?",
@@ -162,7 +162,7 @@ export const faqItems: FAQItem[] = [
   {
     question: "What is the company culture like?",
     answer:
-      "We value ownership, transparency, and continuous improvement. Our team ships elite code, but we also prioritize work-life balance, open communication, and psychological safety. We grow together.",
+      "We value ownership, transparency, and continuous improvement. Our team ships elite code, but we also prioritize work life balance, open communication, and psychological safety. We grow together.",
   },
   {
     question: "Are there internship opportunities?",

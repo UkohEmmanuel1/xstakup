@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { staggerItem } from "@/components/common";
 import type { ExpertiseItem } from "@/types";
-import type { CardColor } from "@/data/home";
+import type { CardColor } from "@/types";
 
 interface ExpertiseCardProps {
   item: ExpertiseItem;
@@ -24,7 +24,7 @@ export function ExpertiseCard({ item, color }: ExpertiseCardProps) {
       <motion.div
         animate={{ y: [0, -4, 0] }}
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-        className="font-mono text-3xl group-hover:opacity-100 transition-opacity"
+        className="text-3xl group-hover:opacity-100 transition-opacity"
         style={{ color: c.hover, opacity: 0.8 }}
       >
         {item.icon}
@@ -34,7 +34,7 @@ export function ExpertiseCard({ item, color }: ExpertiseCardProps) {
       <motion.div
         initial={{ opacity: 0.6, x: -10 }}
         whileHover={{ opacity: 1, x: 0 }}
-        className="mt-6 flex items-center gap-2 font-mono text-xs"
+        className="mt-6 flex items-center gap-2 text-xs"
         style={{ color: c.hover }}
       >
         EXPLORE <span>→</span>

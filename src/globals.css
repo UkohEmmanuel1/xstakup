@@ -6,7 +6,6 @@
 
 @theme inline {
   --font-sans: var(--font-sans);
-  --font-mono: var(--font-mono);
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -199,10 +198,6 @@
   .shadow-glow {
     box-shadow: var(--shadow-glow);
   }
-  .font-mono {
-    font-family: var(--font-mono);
-  }
-
   .grid-pattern {
     background-image:
       linear-gradient(oklch(0 0 0 / 0.04) 1px, transparent 1px),

@@ -34,7 +34,7 @@ export function DifferentiatorsSection() {
                   style={{ border: `1px solid ${c.border}`, background: c.bg }}
                 >
                   <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: c.accent }} />
-                  <div className="font-mono text-xs" style={{ color: c.hover }}>0{i + 1}</div>
+                  <div className="text-xs" style={{ color: c.hover }}>0{i + 1}</div>
                   <h3 className="mt-4 text-lg font-semibold text-white">{d.title}</h3>
                   <p className="mt-3 text-base text-white/80 leading-relaxed">{d.description}</p>
                 </motion.div>

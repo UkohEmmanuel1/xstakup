@@ -10,7 +10,7 @@ export function Field({ label, name, type = "text", placeholder }: FieldProps) {
     <div>
       <label
         htmlFor={name}
-        className="font-mono text-xs uppercase tracking-widest text-muted-foreground"
+        className="text-xs uppercase tracking-widest text-muted-foreground"
       >
         {label}
       </label>

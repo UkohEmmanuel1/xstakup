@@ -7,13 +7,13 @@ export const missionVisionItems = [
   },
   {
     t: "Our Vision",
-    d: "To be the most trusted global engineering partner for high-scale digital platforms, setting the standard for uptime, security, and innovation.",
+    d: "To be the most trusted global engineering partner for high scale digital platforms, setting the standard for uptime, security, and innovation.",
   },
 ];
 
 export const differentiators: Differentiator[] = [
   {
-    title: "Client-First Architecture",
+    title: "Client First Architecture",
     description: "Your business goals dictate our technical stack. We build for your specific scale, not ours.",
   },
   {
@@ -25,16 +25,16 @@ export const differentiators: Differentiator[] = [
     description: "We utilize DevSecOps and automated QA pipelines to ensure your system remains stable and high-performing 24/7.",
   },
   {
-    title: "Full-Stack Delivery",
+    title: "Full Stack Delivery",
     description: "From frontend to infrastructure, we own the entire stack and deliver production-ready systems every sprint.",
   },
   {
-    title: "AI-First Approach",
+    title: "AI First Approach",
     description: "We integrate AI into every layer of development — from code generation to intelligent monitoring and predictive ops.",
   },
   {
     title: "Global Talent Network",
-    description: "Our distributed team brings diverse expertise across time zones, ensuring round-the-clock engineering velocity.",
+    description: "Our distributed team brings diverse expertise across time zones, ensuring round the clock engineering velocity.",
   },
 ];
 
@@ -67,7 +67,7 @@ export const leaders: Leader[] = [
   {
     name: "Glory Umukoro",
     role: "Founder & CEO",
-    bio: "Vision-led founder driving XStakUp's growth and engineering culture across Africa and global markets.",
+    bio: "Vision led founder driving XStakUp's growth and engineering culture across Africa and global markets.",
   },
   {
     name: "Adaobi Nwosu",
@@ -77,12 +77,12 @@ export const leaders: Leader[] = [
   {
     name: "Chidi Okonkwo",
     role: "VP of Engineering",
-    bio: "Leads cross-functional engineering squads delivering high-scale platforms for fintech, logistics, and Web3.",
+    bio: "Leads cross functional engineering squads delivering high scale platforms for fintech, logistics, and Web3.",
   },
   {
     name: "Tunde Bakare",
     role: "Head of AI & Data",
-    bio: "Drives AI/ML strategy and production-grade model deployment across client platforms.",
+    bio: "Drives AI/ML strategy and production grade model deployment across client platforms.",
   },
 ];
 
