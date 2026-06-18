@@ -76,3 +76,11 @@ export interface StatsItem {
   value: string;
   label: string;
 }
+
+/* Added CardColor interface */
+export interface CardColor {
+  border: string;
+  hover: string;
+  accent: string;
+  bg: string;
+}
