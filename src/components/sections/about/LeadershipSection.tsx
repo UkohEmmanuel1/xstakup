@@ -2,22 +2,7 @@
 
 import { motion } from "framer-motion";
 import { SectionLabel, AnimatedSection, staggerContainer, staggerItem } from "@/components/common";
-import type { Leader } from "@/types";
-
-const leaders: Leader[] = [
-  {
-    name: "Glory Umukoro",
-    role: "Founder & CEO",
-    bio: "Vision-led founder driving XStakUp's growth and engineering culture across Africa and global markets.",
-  },
-];
-
-const gradients = [
-  "linear-gradient(180deg, #1E2BFF, #0F1A7A)",
-  "linear-gradient(180deg, #7A5CFF, #0F1A7A)",
-  "linear-gradient(180deg, #00D1FF, #0F1A7A)",
-  "linear-gradient(180deg, #1E2BFF, #0A0B10)",
-];
+import { leaders, leaderGradients } from "@/data/about";
 
 export function LeadershipSection() {
   return (
@@ -25,7 +10,7 @@ export function LeadershipSection() {
       <section className="py-12 md:py-24 bg-[color:var(--void-section)] border-y border-border overflow-hidden">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center max-w-2xl mx-auto mb-14">
-            
+            <SectionLabel>Leadership</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
               Enterprise Software Leadership Team
             </h2>
@@ -46,7 +31,7 @@ export function LeadershipSection() {
               >
                 <motion.div
                   className="aspect-[4/5] relative overflow-hidden"
-                  style={{ background: gradients[i] }}
+                  style={{ background: leaderGradients[i] }}
                 >
                   <div className="absolute inset-0 grid-pattern opacity-25" />
                   <motion.div

@@ -1,23 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {AnimatedSection, staggerContainer, staggerItem } from "@/components/common";
-import type { ValueItem } from "@/types";
-
-const values: ValueItem[] = [
-  { icon: "✦", title: "Excellence", description: "We don't ship 'good enough.' We ship elite." },
-  {
-    icon: "◇",
-    title: "Transparency",
-    description: "Open communication and clear technical roadmaps at every sprint.",
-  },
-  { icon: "⬡", title: "Ownership", description: "We treat your product like it's our own internal infrastructure." },
-  {
-    icon: "⟁",
-    title: "Innovation",
-    description: "Constantly evolving our stack  AI, Blockchain, Edge  to keep you ahead.",
-  },
-];
+import { SectionLabel, AnimatedSection, staggerContainer, staggerItem } from "@/components/common";
+import { values } from "@/data/about";
 
 export function ValuesSection() {
   return (
@@ -25,7 +10,7 @@ export function ValuesSection() {
       <section className="py-12 md:py-24 overflow-hidden">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center max-w-2xl mx-auto mb-14">
-            
+            <SectionLabel>Core Values</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
               Software Engineering Core Values
             </h2>

@@ -15,7 +15,7 @@ export function NarrativeSection() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            
+            <SectionLabel>Our Story</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-4xl font-bold">
               Software Engineering Company: Bridging Ambition and Infrastructure
             </h2>

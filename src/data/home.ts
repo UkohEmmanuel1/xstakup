@@ -116,6 +116,44 @@ export const marqueeItems = [
   "GraphQL",
 ];
 
+export interface CardColor {
+  border: string;
+  hover: string;
+  accent: string;
+  bg: string;
+}
+
+export const pipelineCardColors: CardColor[] = [
+  { border: "oklch(0.65 0.18 230 / 0.25)", hover: "oklch(0.65 0.18 230 / 0.5)", accent: "oklch(0.65 0.18 230 / 0.6)", bg: "oklch(0.21 0.06 230)" },
+  { border: "oklch(0.52 0.28 265 / 0.25)", hover: "oklch(0.52 0.28 265 / 0.5)", accent: "oklch(0.52 0.28 265 / 0.6)", bg: "oklch(0.21 0.08 265)" },
+  { border: "oklch(0.55 0.22 290 / 0.25)", hover: "oklch(0.55 0.22 290 / 0.5)", accent: "oklch(0.55 0.22 290 / 0.6)", bg: "oklch(0.21 0.09 290)" },
+  { border: "oklch(0.6 0.15 200 / 0.25)", hover: "oklch(0.6 0.15 200 / 0.5)", accent: "oklch(0.6 0.15 200 / 0.6)", bg: "oklch(0.21 0.06 200)" },
+];
+
+export const expertiseCardColors: CardColor[] = [
+  { border: "oklch(0.65 0.18 230 / 0.25)", hover: "oklch(0.65 0.18 230 / 0.5)", accent: "oklch(0.65 0.18 230 / 0.6)", bg: "oklch(0.21 0.06 230)" },
+  { border: "oklch(0.52 0.28 265 / 0.25)", hover: "oklch(0.52 0.28 265 / 0.5)", accent: "oklch(0.52 0.28 265 / 0.6)", bg: "oklch(0.21 0.08 265)" },
+  { border: "oklch(0.55 0.22 290 / 0.25)", hover: "oklch(0.55 0.22 290 / 0.5)", accent: "oklch(0.55 0.22 290 / 0.6)", bg: "oklch(0.21 0.09 290)" },
+  { border: "oklch(0.6 0.15 200 / 0.25)", hover: "oklch(0.6 0.15 200 / 0.5)", accent: "oklch(0.6 0.15 200 / 0.6)", bg: "oklch(0.21 0.06 200)" },
+  { border: "oklch(0.6 0.18 20 / 0.25)", hover: "oklch(0.6 0.18 20 / 0.5)", accent: "oklch(0.6 0.18 20 / 0.6)", bg: "oklch(0.21 0.07 20)" },
+  { border: "oklch(0.6 0.15 150 / 0.25)", hover: "oklch(0.6 0.15 150 / 0.5)", accent: "oklch(0.6 0.15 150 / 0.6)", bg: "oklch(0.21 0.06 150)" },
+  { border: "oklch(0.65 0.15 80 / 0.25)", hover: "oklch(0.65 0.15 80 / 0.5)", accent: "oklch(0.65 0.15 80 / 0.6)", bg: "oklch(0.22 0.07 80)" },
+  { border: "oklch(0.62 0.15 210 / 0.25)", hover: "oklch(0.62 0.15 210 / 0.5)", accent: "oklch(0.62 0.15 210 / 0.6)", bg: "oklch(0.21 0.06 210)" },
+];
+
+export const deploymentCardColors: CardColor[] = [
+  { border: "oklch(0.52 0.28 265 / 0.25)", hover: "oklch(0.52 0.28 265 / 0.5)", accent: "oklch(0.52 0.28 265 / 0.6)", bg: "oklch(0.21 0.08 265)" },
+  { border: "oklch(0.55 0.22 290 / 0.25)", hover: "oklch(0.55 0.22 290 / 0.5)", accent: "oklch(0.55 0.22 290 / 0.6)", bg: "oklch(0.21 0.09 290)" },
+  { border: "oklch(0.62 0.15 210 / 0.25)", hover: "oklch(0.62 0.15 210 / 0.5)", accent: "oklch(0.62 0.15 210 / 0.6)", bg: "oklch(0.21 0.06 210)" },
+];
+
+export const tweetCardColors: CardColor[] = [
+  { border: "oklch(0.52 0.28 265 / 0.25)", hover: "oklch(0.52 0.28 265 / 0.5)", accent: "oklch(0.52 0.28 265 / 0.6)", bg: "oklch(0.21 0.08 265)" },
+  { border: "oklch(0.6 0.15 150 / 0.25)", hover: "oklch(0.6 0.15 150 / 0.5)", accent: "oklch(0.6 0.15 150 / 0.6)", bg: "oklch(0.21 0.06 150)" },
+  { border: "oklch(0.55 0.22 290 / 0.25)", hover: "oklch(0.55 0.22 290 / 0.5)", accent: "oklch(0.55 0.22 290 / 0.6)", bg: "oklch(0.21 0.09 290)" },
+  { border: "oklch(0.65 0.15 80 / 0.25)", hover: "oklch(0.65 0.15 80 / 0.5)", accent: "oklch(0.65 0.15 80 / 0.6)", bg: "oklch(0.22 0.07 80)" },
+];
+
 export const stats: StatsItem[] = [
   { value: "99.99%", label: "Average Uptime" },
   { value: "5M+", label: "Transactions" },

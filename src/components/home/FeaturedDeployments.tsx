@@ -4,7 +4,7 @@
 import { motion } from "framer-motion";
 import { AnimatedSection, staggerContainer } from "@/components/common";
 import { DeploymentCard } from "./DeploymentCard";
-import { cases, caseGradients } from "@/data/home";
+import { cases, caseGradients, deploymentCardColors } from "@/data/home";
 
 export function FeaturedDeployments() {
   return (
@@ -31,7 +31,7 @@ export function FeaturedDeployments() {
             className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3"
           >
             {cases.map((c, i) => (
-              <DeploymentCard key={c.title} caseStudy={c} gradient={caseGradients[i]} />
+              <DeploymentCard key={c.title} caseStudy={c} gradient={caseGradients[i]} color={deploymentCardColors[i]} />
             ))}
           </motion.div>
         </div>

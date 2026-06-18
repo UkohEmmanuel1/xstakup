@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { AnimatedSection } from "@/components/common";
+import { tweetCardColors } from "@/data/home";
 
 const tweets = [
   {
@@ -117,13 +118,22 @@ function TweetCard({
   t,
   index,
   showMetrics,
+  color,
 }: {
   t: (typeof tweets)[number];
   index: number;
   showMetrics?: boolean;
+  color?: import("@/data/home").CardColor;
 }) {
+  const c = color ?? { border: "oklch(0.52 0.28 265 / 0.25)", hover: "oklch(0.52 0.28 265 / 0.5)", accent: "oklch(0.52 0.28 265 / 0.6)", bg: "oklch(0.21 0.08 265)" };
+
   return (
-    <div className="w-[350px] md:w-[420px] max-w-[85vw] flex-shrink-0 rounded-2xl border border-border/60 bg-card-solid-bg p-6 shadow-sm hover:border-signal/30 transition-all duration-300 flex flex-col justify-between">
+    <div
+      className="w-[350px] md:w-[420px] max-w-[85vw] flex-shrink-0 rounded-2xl p-6 shadow-sm transition-all duration-300 flex flex-col justify-between"
+      style={{ border: `1px solid ${c.border}`, background: c.bg }}
+      onMouseEnter={(e) => { e.currentTarget.style.borderColor = c.hover; }}
+      onMouseLeave={(e) => { e.currentTarget.style.borderColor = c.border; }}
+    >
       <div>
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
@@ -195,12 +205,12 @@ export function TestimonialSection() {
             >
               {tweets.map((t, index) => (
                 <div key={`${t.handle}-${index}`} role="listitem">
-                  <TweetCard t={t} index={index} showMetrics />
+                  <TweetCard t={t} index={index} showMetrics color={tweetCardColors[index]} />
                 </div>
               ))}
               <div aria-hidden="true" className="flex gap-6">
                 {tweets.map((t, index) => (
-                  <TweetCard key={`dup-${t.handle}-${index}`} t={t} index={index} />
+                  <TweetCard key={`dup-${t.handle}-${index}`} t={t} index={index} color={tweetCardColors[index]} />
                 ))}
               </div>
             </div>

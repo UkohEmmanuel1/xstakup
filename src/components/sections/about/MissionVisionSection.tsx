@@ -1,26 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {AnimatedSection, staggerContainer, staggerItem } from "@/components/common";
+import { SectionLabel, AnimatedSection, staggerContainer, staggerItem } from "@/components/common";
+import { missionVisionItems } from "@/data/about";
 
 export function MissionVisionSection() {
-  const items = [
-    {
-      t: "Our Mission",
-      d: "To provide world-class technical infrastructure and engineering expertise that empowers businesses to scale without limits.",
-    },
-    {
-      t: "Our Vision",
-      d: "To be the most trusted global engineering partner for high-scale digital platforms, setting the standard for uptime, security, and innovation.",
-    },
-  ];
-
   return (
     <AnimatedSection>
       <section className="py-12 md:py-24 overflow-hidden">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center max-w-2xl mx-auto mb-14">
-            
+            <SectionLabel>Mission & Vision</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
               Software Company Mission & Vision
             </h2>
@@ -32,7 +22,7 @@ export function MissionVisionSection() {
             viewport={{ once: true }}
             className="grid grid-cols-1 gap-6 md:grid-cols-2"
           >
-            {items.map((c) => (
+            {missionVisionItems.map((c) => (
               <motion.div
                 key={c.t}
                 variants={staggerItem}

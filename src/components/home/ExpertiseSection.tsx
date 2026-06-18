@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { SectionLabel, AnimatedSection, staggerContainer } from "@/components/common";
 import { ExpertiseCard } from "./ExpertiseCard";
-import { expertise } from "@/data/home";
+import { expertise, expertiseCardColors } from "@/data/home";
 
 export function ExpertiseSection() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -44,7 +44,7 @@ export function ExpertiseSection() {
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.25, ease: "easeInOut" }}
                 >
-                  <ExpertiseCard item={e} />
+                  <ExpertiseCard item={e} color={expertiseCardColors[expertise.indexOf(e) % expertiseCardColors.length]} />
                 </motion.div>
               ))}
             </AnimatePresence>
