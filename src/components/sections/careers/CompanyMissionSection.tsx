@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { SectionLabel, AnimatedSection, staggerContainer, staggerItem } from "@/components/common";
+import {  AnimatedSection, staggerContainer, staggerItem } from "@/components/common";
 import { statCardColors } from "@/data/careers";
 
 export function CompanyMissionSection() {
@@ -12,7 +12,6 @@ export function CompanyMissionSection() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <SectionLabel>Our Mission</SectionLabel>
               <h2 className="mt-4 text-3xl md:text-5xl font-bold">
                 Engineering <span className="text-gradient-quantum">Africa&apos;s Digital Future</span>
               </h2>
@@ -23,7 +22,7 @@ export function CompanyMissionSection() {
                   greatest innovations will be built on enterprise-grade software.
                 </p>
                 <p>
-                  Every engineer on our team contributes directly to that mission — shipping
+                  Every engineer on our team contributes directly to that mission: shipping
                   production systems for fintech, logistics, Web3, and AI platforms that serve
                   millions of users across the continent and beyond.
                 </p>

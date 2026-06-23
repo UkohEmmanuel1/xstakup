@@ -1,4 +1,5 @@
 export { AnimatedSection } from "./AnimatedSection";
+export { SubPageHero } from "./SubPageHero";
 export { ClientOnly } from "./ClientOnly";
 export { PrimaryCTA, OutlineCTA } from "./Button";
 export { SectionLabel } from "./SectionLabel";

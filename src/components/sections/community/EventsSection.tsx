@@ -22,7 +22,7 @@ export function EventsSection() {
               Upcoming <span className="text-gradient-quantum">Community Events</span>
             </h2>
             <p className="mt-4 text-white/70 text-base md:text-lg">
-              Meetups, workshops, talks, and hackathons — built by engineers, for engineers.
+              Meetups, workshops, talks, and hackathons, built by engineers, for engineers.
             </p>
           </div>
           <motion.div

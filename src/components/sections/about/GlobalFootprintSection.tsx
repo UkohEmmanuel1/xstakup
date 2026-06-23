@@ -9,8 +9,8 @@ export function GlobalFootprintSection() {
       <section className="py-12 md:py-24 overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 text-center">
           <SectionLabel>Global Footprint</SectionLabel>
-          <h2 className="mt-4 text-2xl md:text-5xl font-bold">
-            Global Software Engineering — Headquartered in Lagos, Engineering for the World
+          <h2 className="mt-4 text-2xl md:text-5xl font-bold text-white">
+            Global Software Engineering | Headquartered in Lagos, Engineering for the World
           </h2>
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -44,7 +44,7 @@ export function GlobalFootprintSection() {
                   <animate attributeName="r" values="6;12;6" dur="2s" repeatCount="indefinite" />
                 </circle>
                 <circle cx="200" cy="170" r="3" fill="#fff" />
-                <text x="210" y="168" fill="#F9FAFB" fontSize="11" fontFamily="monospace">
+                <text x="210" y="168" fill="#F9FAFB" fontSize="11" >
                   LAGOS
                 </text>
                 {[

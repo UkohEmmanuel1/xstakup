@@ -26,7 +26,7 @@ export const communityEvents: CommunityEvent[] = [
     title: "AI in Production Talk",
     date: "August 22, 2026",
     type: "Talk",
-    description: "Deep dive into deploying ML models at scale — from model registries to real time inference pipelines on Kubernetes.",
+    description: "Deep dive into deploying ML models at scale, from model registries to real time inference pipelines on Kubernetes.",
     icon: "✦",
   },
   {
@@ -120,7 +120,7 @@ export const communityTestimonials = [
     name: "Fatima Bello",
     handle: "@fatimaml",
     role: "ML Engineer, Andela",
-    text: "The AI in Production talk series gave me a practical deployment framework I still use. This community isn't about theory — it's about shipping production grade systems.",
+    text: "The AI in Production talk series gave me a practical deployment framework I still use. This community isn't about theory; it's about shipping production grade systems.",
   },
   {
     name: "Emeka Okafor",

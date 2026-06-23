@@ -11,7 +11,7 @@ const tweets = [
     handle: "@adaokonkwo",
     role: "CTO, XPay",
     avatar: "bg-gradient-to-tr from-blue-600 to-indigo-900",
-    text: "XStakUp isn't a vendor — they're embedded in our roadmap. They shipped our payment infrastructure faster and more securely than any in-house team we'd hired. They engineer like founders.",
+    text: "XStakUp isn't a vendor; they're embedded in our roadmap. They shipped our payment infrastructure faster and more securely than any in-house team we'd hired. They engineer like founders.",
     time: "2:14 PM · May 25, 2026",
     metrics: { replies: "12", reposts: "48", likes: "342", views: "12K" },
   },

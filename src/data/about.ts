@@ -2,12 +2,12 @@ import type { Differentiator, ValueItem, Leader, CardColor } from "@/types";
 
 export const missionVisionItems = [
   {
-    t: "Our Mission",
-    d: "To provide world-class technical infrastructure and engineering expertise that empowers businesses to scale without limits.",
+    title: "Our Mission",
+    description: "To provide world-class technical infrastructure and engineering expertise that empowers businesses to scale without limits.",
   },
   {
-    t: "Our Vision",
-    d: "To be the most trusted global engineering partner for high scale digital platforms, setting the standard for uptime, security, and innovation.",
+    title: "Our Vision",
+    description: "To be the most trusted global engineering partner for high scale digital platforms, setting the standard for uptime, security, and innovation.",
   },
 ];
 
@@ -30,7 +30,7 @@ export const differentiators: Differentiator[] = [
   },
   {
     title: "AI First Approach",
-    description: "We integrate AI into every layer of development — from code generation to intelligent monitoring and predictive ops.",
+    description: "We integrate AI into every layer of development, from code generation to intelligent monitoring and predictive ops.",
   },
   {
     title: "Global Talent Network",
@@ -49,7 +49,7 @@ export const values: ValueItem[] = [
   {
     icon: "⟁",
     title: "Innovation",
-    description: "Constantly evolving our stack — AI, Blockchain, Edge — to keep you ahead.",
+    description: "Constantly evolving our stack with AI, Blockchain, and Edge to keep you ahead.",
   },
   {
     icon: "⌘",

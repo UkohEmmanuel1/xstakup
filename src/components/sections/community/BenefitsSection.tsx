@@ -15,7 +15,7 @@ export function BenefitsSection() {
               Benefits of <span className="text-gradient-quantum">Joining</span>
             </h2>
             <p className="mt-4 text-white/70 text-base md:text-lg">
-              More than a community — a launchpad for your engineering career.
+              More than a community: a launchpad for your engineering career.
             </p>
           </div>
           <motion.div

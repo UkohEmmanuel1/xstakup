@@ -22,20 +22,20 @@ export function MissionVisionSection() {
             viewport={{ once: true }}
             className="grid grid-cols-1 gap-6 md:grid-cols-2"
           >
-            {missionVisionItems.map((c, i) => {
+            {missionVisionItems.map((item, i) => {
               const color = mvCardColors[i];
               return (
                 <motion.div
-                  key={c.t}
+                  key={item.title}
                   variants={staggerItem}
                   whileHover={{ y: -4, borderColor: color.hover }}
                   className="group relative rounded-xl p-6 md:p-10"
                   style={{ border: `1px solid ${color.border}`, background: color.bg }}
                 >
                   <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: color.accent }} />
-                  <h3 className="text-xs uppercase tracking-widest" style={{ color: color.hover }}>{c.t}</h3>
+                  <h3 className="text-xs uppercase tracking-widest" style={{ color: color.hover }}>{item.title}</h3>
                   <p className="mt-5 text-xl md:text-2xl text-white leading-relaxed font-medium">
-                    {c.d}
+                    {item.description}
                   </p>
                 </motion.div>
               );

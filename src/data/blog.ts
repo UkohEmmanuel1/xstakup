@@ -18,7 +18,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     title: "A Practical Guide to Deploying LLMs in Production",
-    excerpt: "From model selection to inference optimization, monitoring, and cost management — a framework for shipping AI features that actually work at scale.",
+    excerpt: "From model selection to inference optimization, monitoring, and cost management. A framework for shipping AI features that actually work at scale.",
     date: "2026-04-28",
     author: "Engineering Team",
     slug: "practical-guide-llms-production",

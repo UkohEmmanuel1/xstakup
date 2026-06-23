@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FinalCTA, AnimatedSection } from "@/components/common";
+import { FinalCTA, AnimatedSection, SubPageHero } from "@/components/common";
 import { blogPosts } from "@/data/blog";
 
 const blogCardColors = [
@@ -62,27 +62,11 @@ export function BlogPage() {
       style={{ backgroundImage: "url('/assets/background.png')" }}
     >
       <div className="min-h-screen w-full bg-black/80 backdrop-blur-[1px]">
-        <section className="relative overflow-hidden py-16 md:py-24 lg:py-32">
-          <div className="relative mx-auto max-w-5xl px-6 text-center">
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.2 }}
-              className="text-3xl sm:text-4xl md:text-7xl font-bold tracking-tight"
-            >
-              <span className="text-gradient-quantum">Software Engineering Insights</span>
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.35 }}
-              className="mt-6 text-lg text-white/70 max-w-2xl mx-auto"
-            >
-              Technical deep-dives on software architecture, system design, AI engineering, Web3
-              development, and best practices from the XStakUp engineering team.
-            </motion.p>
-          </div>
-        </section>
+        <SubPageHero
+          title="Software Engineering Insights"
+          subtitle="Deep dives on software architecture, system design, AI engineering, and Web3 development from the XStakUp engineering team."
+          bgImage="/assets/blog.webp"
+        />
 
         <AnimatedSection>
           <section className="border-y border-border py-12 md:py-20">
