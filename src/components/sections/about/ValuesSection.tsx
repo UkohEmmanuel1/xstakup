@@ -12,7 +12,7 @@ export function ValuesSection() {
           <div className="text-center max-w-2xl mx-auto mb-14">
             <SectionLabel>Core Values</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
-              Software Engineering <span className="text-gradient-quantum">Core Values</span>
+              Software Engineering <span className="text-gradient-blue">Core Values</span>
             </h2>
           </div>
           <motion.div

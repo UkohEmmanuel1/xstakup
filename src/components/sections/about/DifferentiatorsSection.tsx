@@ -13,7 +13,7 @@ export function DifferentiatorsSection() {
             <SectionLabel>Why Choose Us</SectionLabel>
             <h2 className="mt-4 text-2xl md:text-5xl font-bold">
               Why Companies Choose Our{" "}
-              <span className="text-gradient-quantum">Custom Software Development</span> Services
+              <span className="text-gradient-blue">Custom Software Development</span> Services
             </h2>
           </div>
           <motion.div

@@ -12,7 +12,7 @@ export function WhyJoinUsSection() {
           <div className="text-center max-w-2xl mx-auto mb-14">
             <SectionLabel>Why Join Us</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
-              Benefits &amp; <span className="text-gradient-quantum">Perks</span>
+              Benefits &amp; <span className="text-gradient-blue">Perks</span>
             </h2>
             <p className="mt-4 text-white/70 text-base md:text-lg">
               We invest in our people because great engineering starts with a great environment.

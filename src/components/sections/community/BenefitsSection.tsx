@@ -12,7 +12,7 @@ export function BenefitsSection() {
           <div className="text-center max-w-2xl mx-auto mb-14">
             <SectionLabel>Why Join</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
-              Benefits of <span className="text-gradient-quantum">Joining</span>
+              Benefits of <span className="text-gradient-blue">Joining</span>
             </h2>
             <p className="mt-4 text-white/70 text-base md:text-lg">
               More than a community: a launchpad for your engineering career.

@@ -6,8 +6,6 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ThemeToggle } from "@/components/ui/ThemeToggle";
-
 const links = [
   { to: "/about", label: "About" },
   { to: "/clients", label: "Clients" },
@@ -63,7 +61,7 @@ function DesktopNav({ pathname, scrolled }: { pathname: string; scrolled: boolea
           }`}
         >
           {l.label}
-          <span className="absolute bottom-0 left-3 right-3 h-px bg-signal scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+          <span className="absolute bottom-0 left-3 right-3 h-px bg-blue scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
         </Link>
       ))}
     </nav>
@@ -102,7 +100,7 @@ function MobileNav({
                   onClick={onClose}
                   className={`py-2.5 text-base border-b border-border/10 last:border-0 transition-colors block ${
                     pathname === l.to
-                      ? "text-foreground font-semibold border-l-2 border-signal pl-3"
+                      ? "text-foreground font-semibold border-l-2 border-blue pl-3"
                       : "text-muted-foreground hover:text-foreground"
                   }`}
                 >
@@ -118,7 +116,7 @@ function MobileNav({
               <Link
                 href="/contact"
                 onClick={onClose}
-                className="mt-4 inline-flex w-full justify-center items-center gap-2 rounded-md bg-quantum-gradient px-4 py-3.5 text-sm font-medium text-white shadow-quantum focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                className="mt-4 inline-flex w-full justify-center items-center gap-2 rounded-md bg-blue-gradient px-4 py-3.5 text-sm font-medium text-[#070a09] shadow-blue focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               >
                 Initialize Your Build
               </Link>
@@ -161,7 +159,7 @@ export function Navbar() {
       transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
         scrolled || open
-          ? "glass-strong shadow-quantum border-b border-border/40"
+          ? "glass-strong shadow-blue border-b border-border/40"
           : "bg-transparent"
       }`}
     >
@@ -170,11 +168,10 @@ export function Navbar() {
         <DesktopNav pathname={pathname} scrolled={scrolled} />
 
         <div className="flex items-center gap-3 z-50">
-          <ThemeToggle />
           <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
             <Link
               href="/contact"
-              className="hidden sm:inline-flex items-center gap-2 rounded-md bg-quantum-gradient px-4 py-2.5 text-sm font-medium text-white shadow-quantum hover:shadow-glow transition-shadow relative overflow-hidden group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              className="hidden sm:inline-flex items-center gap-2 rounded-md bg-blue-gradient px-4 py-2.5 text-sm font-medium text-[#070a09] shadow-blue hover:shadow-glow transition-shadow relative overflow-hidden group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
               <span className="relative z-10">Initialize Your Build</span>
               <motion.span

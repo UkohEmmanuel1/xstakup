@@ -32,7 +32,7 @@ export function ExpertiseSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+            className="grid gap-5 md:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
           >
             <AnimatePresence mode="popLayout">
               {visibleExpertise.map((e) => (

@@ -7,7 +7,7 @@ export function TechStackSection() {
       <section className="py-12 md:py-20 border-y border-border overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 mb-12 text-center">
           <h2 className="mt-4 text-xl md:text-4xl font-bold max-w-3xl mx-auto">
-            Technologies We <span className="text-gradient-quantum">Engineer With</span>
+            Technologies We <span className="text-gradient-blue">Engineer With</span>
           </h2>
           <p className="mt-3 text-white/70 max-w-xl mx-auto">
             Our engineering team specializes in modern frameworks, cloud infrastructure, blockchain
@@ -28,7 +28,7 @@ export function TechStackSection() {
                 role="listitem"
                 className="flex items-center gap-3 px-6 py-3 rounded-lg bg-white/10 backdrop-blur-md border border-white/15"
               >
-                <span className="h-2 w-2 rounded-full bg-signal" />
+                  <span className="h-2 w-2 rounded-full bg-blue" />
                 <span className="text-sm whitespace-nowrap text-white/80">
                   {item}
                 </span>
@@ -40,7 +40,7 @@ export function TechStackSection() {
                   key={`dup-${i}`}
                   className="flex items-center gap-3 px-6 py-3 rounded-lg bg-white/10 backdrop-blur-md border border-white/15"
                 >
-                  <span className="h-2 w-2 rounded-full bg-signal" />
+                <span className="h-2 w-2 rounded-full bg-blue" />
                   <span className="text-sm whitespace-nowrap text-white/80">
                     {item}
                   </span>

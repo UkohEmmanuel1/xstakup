@@ -28,7 +28,7 @@ export function FeaturedDeployments() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3"
+            className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 md:gap-8"
           >
             {cases.map((c, i) => (
               <DeploymentCard key={c.title} caseStudy={c} gradient={caseGradients[i]} color={deploymentCardColors[i]} />

@@ -8,7 +8,7 @@ export function HeroBannerSection() {
       title="Software Developer Community"
       subtitle="Join our engineering community for meetups, technical talks, and open source contributions powering Africa's next generation of software builders."
       bgImage="/assets/community.webp"
-      orbColor="bg-violet/25"
+      orbColor="bg-blue/25"
     />
   );
 }

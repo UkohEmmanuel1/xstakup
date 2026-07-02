@@ -37,7 +37,7 @@ export function GlobalReachSection() {
             <motion.div
               animate={{ scale: [1, 1.1, 1], opacity: [0.15, 0.3, 0.15] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute inset-0 rounded-full bg-quantum/20 blur-3xl"
+              className="absolute inset-0 rounded-full bg-blue/20 blur-3xl"
             />
             <motion.svg
               viewBox="0 0 400 400"

@@ -11,13 +11,13 @@ interface PipelineCardProps {
 }
 
 export function PipelineCard({ step, color }: PipelineCardProps) {
-  const c = color ?? { border: "oklch(0.65 0.18 230 / 0.25)", hover: "oklch(0.65 0.18 230 / 0.5)", accent: "oklch(0.65 0.18 230 / 0.6)", bg: "oklch(0.21 0.06 230)" };
+  const c = color ?? { border: "oklch(0.6 0.2 210 / 0.25)", hover: "oklch(0.6 0.2 210 / 0.5)", accent: "oklch(0.6 0.2 210 / 0.6)", bg: "oklch(0.16 0.06 210)" };
 
   return (
     <motion.div
       variants={staggerItem}
       whileHover={{ y: -4, borderColor: c.hover }}
-      className="group relative rounded-xl p-4 md:p-6 transition-colors h-full"
+      className="group relative rounded-xl p-6 md:p-8 transition-colors h-full"
       style={{ border: `1px solid ${c.border}`, background: c.bg }}
     >
       <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: c.accent }} />

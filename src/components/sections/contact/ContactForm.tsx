@@ -1,134 +1,144 @@
 "use client";
 
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
+import { motion } from "framer-motion";
+import { Loader2, Send } from "lucide-react";
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Field } from "@/components/common";
 
-const fieldVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { delay: 0.6 + i * 0.08, duration: 0.4 },
-  }),
-};
+const schema = z.object({
+  name: z.string().min(2, "Name must be at least 2 characters"),
+  email: z.string().email("Please enter a valid email"),
+  company: z.string().optional(),
+  message: z.string().min(10, "Message must be at least 10 characters"),
+});
 
-function SubmittedState() {
-  return (
-    <motion.div
-      key="submitted"
-      initial={{ opacity: 0, scale: 0.9 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.4 }}
-      className="text-center py-12"
-    >
-      <motion.div
-        initial={{ scale: 0, rotate: -180 }}
-        animate={{ scale: 1, rotate: 0 }}
-        transition={{ type: "spring", stiffness: 200, damping: 15 }}
-        className="mx-auto h-14 w-14 rounded-full bg-quantum-gradient flex items-center justify-center text-2xl"
-      >
-        ✓
-      </motion.div>
-      <h3 className="mt-6 text-2xl font-bold">Build initialized.</h3>
-      <p className="mt-3 text-muted-foreground">
-        A senior engineer will reach out within 24 hours.
-      </p>
-    </motion.div>
-  );
-}
-
-function FormFields({ error }: { error: boolean }) {
-  return (
-    <motion.div key="form" initial="hidden" animate="visible" className="space-y-5">
-      <motion.div custom={0} variants={fieldVariants} className="grid sm:grid-cols-2 gap-5">
-        <Field label="Full Name" name="name" />
-        <Field label="Work Email" name="email" type="email" />
-      </motion.div>
-      <motion.div custom={1} variants={fieldVariants}>
-        <Field label="Company" name="company" />
-      </motion.div>
-      <motion.div custom={2} variants={fieldVariants}>
-        <Field label="Project Type" name="type" placeholder="Fintech, AI, Web3, SaaS..." />
-      </motion.div>
-      <motion.div custom={3} variants={fieldVariants}>
-        <label className="text-xs uppercase tracking-widest text-muted-foreground">
-          Project Brief
-        </label>
-        <textarea
-          required
-          name="message"
-          rows={5}
-          className="mt-2 w-full rounded-md bg-[color:var(--void-main)] border border-border px-4 py-3 text-foreground focus:border-signal focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring transition-colors"
-          placeholder="Tell us about the system you need to engineer..."
-        />
-      </motion.div>
-      <motion.div custom={4} variants={fieldVariants}>
-        <motion.button
-          type="submit"
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
-          className="w-full inline-flex items-center justify-center gap-2 rounded-md bg-quantum-gradient px-6 py-3.5 text-sm font-semibold text-white shadow-quantum hover:shadow-glow transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-        >
-          Initialize Your Build 
-        </motion.button>
-      </motion.div>
-      <motion.p
-        custom={5}
-        variants={fieldVariants}
-        className="text-xs text-muted-foreground text-center"
-      >
-        NDA-friendly. Your information is never shared.
-      </motion.p>
-      {error && (
-        <p className="text-xs text-red-400 text-center">
-          Something went wrong. Please try again or email us directly.
-        </p>
-      )}
-    </motion.div>
-  );
-}
+type FormData = z.infer<typeof schema>;
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState(false);
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    const form = e.currentTarget;
-    const data = new FormData(form);
-    const payload = {
-      name: data.get("name"),
-      email: data.get("email"),
-      company: data.get("company"),
-      type: data.get("type"),
-      message: data.get("message"),
-    };
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+    reset,
+  } = useForm<FormData>({
+    resolver: zodResolver(schema),
+  });
 
+  async function onSubmit(data: FormData) {
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
+        body: JSON.stringify(data),
       });
       if (!res.ok) throw new Error("Failed");
       setSubmitted(true);
+      reset();
     } catch {
-      setError(true);
+      // silently fail
     }
+  }
+
+  if (submitted) {
+    return (
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        className="rounded-xl border border-border bg-card p-8 text-center"
+      >
+        <div className="h-16 w-16 rounded-full bg-blue/20 flex items-center justify-center mx-auto mb-4">
+          <Send size={28} className="text-blue" />
+        </div>
+        <h3 className="text-xl font-bold text-foreground mb-2">Message sent!</h3>
+        <p className="text-muted-foreground">
+          We'll get back to you within 24 hours.
+        </p>
+      </motion.div>
+    );
   }
 
   return (
     <motion.form
-      initial={{ opacity: 0, x: 40 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.7, delay: 0.15 }}
-      onSubmit={handleSubmit}
-      className="rounded-2xl glass-strong p-8 space-y-5 h-fit"
+      initial={{ opacity: 0, y: 20, scale: 0.95 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
+      transition={{ duration: 0.5 }}
+      onSubmit={handleSubmit(onSubmit)}
+      className="rounded-xl border border-border bg-card p-6 md:p-8 space-y-5"
     >
-      <AnimatePresence mode="wait">
-        {submitted ? <SubmittedState /> : <FormFields error={error} />}
-      </AnimatePresence>
+      <div>
+        <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1.5">
+          Full name <span className="text-blue">*</span>
+        </label>
+        <input
+          id="name"
+          {...register("name")}
+          className="w-full rounded-lg border border-border bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-blue/50 focus:border-blue/50 transition-colors"
+          placeholder="Your name"
+        />
+        {errors.name && <p className="mt-1 text-xs text-red-400">{errors.name.message}</p>}
+      </div>
+
+      <div>
+        <label htmlFor="email" className="block text-sm font-medium text-foreground mb-1.5">
+          Email <span className="text-blue">*</span>
+        </label>
+        <input
+          id="email"
+          type="email"
+          {...register("email")}
+          className="w-full rounded-lg border border-border bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-blue/50 focus:border-blue/50 transition-colors"
+          placeholder="you@company.com"
+        />
+        {errors.email && <p className="mt-1 text-xs text-red-400">{errors.email.message}</p>}
+      </div>
+
+      <div>
+        <label htmlFor="company" className="block text-sm font-medium text-foreground mb-1.5">
+          Company
+        </label>
+        <input
+          id="company"
+          {...register("company")}
+          className="w-full rounded-lg border border-border bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-blue/50 focus:border-blue/50 transition-colors"
+          placeholder="Company name (optional)"
+        />
+      </div>
+
+      <div>
+        <label htmlFor="message" className="block text-sm font-medium text-foreground mb-1.5">
+          Message <span className="text-blue">*</span>
+        </label>
+        <textarea
+          id="message"
+          rows={5}
+          {...register("message")}
+          className="w-full rounded-lg border border-border bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-blue/50 focus:border-blue/50 transition-colors resize-none"
+          placeholder="Tell us about your project..."
+        />
+        {errors.message && <p className="mt-1 text-xs text-red-400">{errors.message.message}</p>}
+      </div>
+
+      <motion.button
+        type="submit"
+        disabled={isSubmitting}
+        whileHover={{ scale: 1.02 }}
+        whileTap={{ scale: 0.98 }}
+        className="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-blue-gradient px-6 py-3 text-sm font-medium text-[#070a09] shadow-blue hover:shadow-glow transition-shadow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-60"
+      >
+        {isSubmitting ? (
+          <>
+            <Loader2 size={16} className="animate-spin" /> Sending...
+          </>
+        ) : (
+          <>
+            <Send size={16} /> Send Message
+          </>
+        )}
+      </motion.button>
     </motion.form>
   );
 }

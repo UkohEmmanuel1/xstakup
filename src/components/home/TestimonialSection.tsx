@@ -19,7 +19,7 @@ const tweets = [
     name: "Tunde Rahman",
     handle: "@tunderahman",
     role: "Founder, Quik",
-    avatar: "bg-gradient-to-tr from-emerald-500 to-teal-900",
+    avatar: "bg-gradient-to-tr from-blue-500 to-indigo-900",
     text: "We needed our NLP booking systems up in 3 weeks. The engineering velocity out of the XStakUp laboratory is actually terrifying. No drop in code architecture quality either. Complete professionals.",
     time: "9:05 AM · Apr 18, 2026",
     metrics: { replies: "8", reposts: "29", likes: "194", views: "8.4K" },
@@ -45,7 +45,7 @@ const tweets = [
 ];
 
 const verifiedBadge = (
-  <svg viewBox="0 0 24 24" className="h-4 w-4 text-signal fill-current">
+  <svg viewBox="0 0 24 24" className="h-4 w-4 text-blue fill-current">
     <path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.99-3.818-3.99-.48 0-.94.1-1.348.27C14.825 2.515 13.512 1.5 12 1.5s-2.825 1.015-3.422 2.28c-.407-.17-.867-.27-1.348-.27-2.108 0-3.818 1.78-3.818 3.99 0 .495.084.965.238 1.4-1.273.65-2.148 2.02-2.148 3.6 0 1.58.875 2.95 2.148 3.6-.154.435-.238.905-.238 1.4 0 2.21 1.71 3.99 3.818 3.99.48 0 .94-.1 1.348-.27.597 1.265 1.91 2.28 3.422 2.28s2.825-1.015 3.422-2.28c.407.17.867.27 1.348.27 2.108 0 3.818-1.78 3.818-3.99 0-.495-.084-.965-.238-1.4 1.273-.65 2.148-2.02 2.148-3.6zm-12.22 3.58l-3.5-3.5 1.41-1.42 2.08 2.08 5.67-5.67 1.41 1.42-7.07 7.09z" />
   </svg>
 );
@@ -126,7 +126,7 @@ function TweetCard({
   showMetrics?: boolean;
   color?: CardColor;
 }) {
-  const c = color ?? { border: "oklch(0.52 0.28 265 / 0.25)", hover: "oklch(0.52 0.28 265 / 0.5)", accent: "oklch(0.52 0.28 265 / 0.6)", bg: "oklch(0.21 0.08 265)" };
+  const c = color ?? { border: "oklch(0.6 0.2 210 / 0.25)", hover: "oklch(0.6 0.2 210 / 0.5)", accent: "oklch(0.6 0.2 210 / 0.6)", bg: "oklch(0.16 0.06 210)" };
 
   return (
     <div
@@ -156,7 +156,7 @@ function TweetCard({
       <div>
         <div className="mt-4 pt-3 border-t border-border/20 flex items-center justify-between text-xs text-white/80">
           <span>{t.time}</span>
-          <span className="text-signal/80 font-semibold">{t.role}</span>
+          <span className="text-blue/80 font-semibold">{t.role}</span>
         </div>
         {showMetrics && (
           <div className="mt-3 pt-2 border-t border-border/10 flex items-center justify-between text-white/70 text-xs">
@@ -164,7 +164,7 @@ function TweetCard({
               {replyIcon}
               <span>{t.metrics.replies}</span>
             </div>
-            <div className="flex items-center gap-1.5 hover:text-emerald-500 transition-colors">
+            <div className="flex items-center gap-1.5 hover:text-blue-500 transition-colors">
               {repostIcon}
               <span>{t.metrics.reposts}</span>
             </div>
@@ -172,7 +172,7 @@ function TweetCard({
               {heartIcon}
               <span>{t.metrics.likes}</span>
             </div>
-            <div className="flex items-center gap-1.5 hover:text-signal transition-colors">
+            <div className="flex items-center gap-1.5 hover:text-blue transition-colors">
               {barChartIcon}
               <span>{t.metrics.views}</span>
             </div>

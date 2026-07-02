@@ -67,7 +67,7 @@ function FooterBrand() {
           Engineering HQ
         </p>
         <p className="text-foreground">Lagos, Nigeria</p>
-        <a href="mailto:partnerships@xstakup.com" className="text-signal hover:underline">
+        <a href="mailto:partnerships@xstakup.com" className="text-blue hover:underline">
           partnerships@xstakup.com
         </a>
       </div>
@@ -92,10 +92,10 @@ function FooterColumn({ col, index }: { col: (typeof columns)[number]; index: nu
           <li key={i}>
             <Link
               href={l.to}
-              className="text-sm text-foreground/80 hover:text-signal transition-colors relative group inline-block"
+              className="text-sm text-foreground/80 hover:text-blue transition-colors relative group inline-block"
             >
               {l.label}
-              <span className="absolute bottom-0 left-0 right-0 h-px bg-signal scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+              <span className="absolute bottom-0 left-0 right-0 h-px bg-blue scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
             </Link>
           </li>
         ))}
@@ -138,11 +138,7 @@ export function Footer() {
         whileInView={{ scaleX: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-signal/50 to-transparent origin-left"
-        style={{
-          background:
-            "linear-gradient(90deg, transparent, oklch(0.82 0.16 220 / 0.4), transparent)",
-        }}
+          className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-blue/40 to-transparent origin-left"
       />
       <div className="mx-auto max-w-7xl px-6 py-10 md:py-16">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-5 lg:gap-12">

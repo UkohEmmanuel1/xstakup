@@ -12,7 +12,7 @@ export function ExpertiseDetailSection() {
           <div className="text-center max-w-2xl mx-auto mb-14">
             <SectionLabel>Disciplines</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
-              Our Engineering <span className="text-gradient-quantum">Disciplines</span>
+              Our Engineering <span className="text-gradient-blue">Disciplines</span>
             </h2>
             <p className="mt-4 text-white/70 text-base md:text-lg">
               Eight specialized areas of expertise delivering production-grade enterprise software.

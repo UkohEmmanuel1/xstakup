@@ -4,6 +4,9 @@ import "../globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Providers } from "./providers";
+import { SmoothScroll } from "@/components/common/SmoothScroll";
+import { ScrollProgress } from "@/components/common/ScrollProgress";
+import { CustomCursor } from "@/components/common/CustomCursor";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -98,6 +101,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             }),
           }}
         />
+        <SmoothScroll />
+        <ScrollProgress />
+        <CustomCursor />
+        <div className="bg-noise" />
         <Providers>
           <Navbar />
           <main className="pt-16">{children}</main>

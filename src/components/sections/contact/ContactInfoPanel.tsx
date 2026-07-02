@@ -16,12 +16,12 @@ const contactItems: ContactInfo[] = [
 export function ContactInfoPanel() {
   return (
     <motion.div
-      initial={{ opacity: 0, x: -40 }}
-      animate={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0, x: -40, scale: 0.97 }}
+      animate={{ opacity: 1, x: 0, scale: 1 }}
       transition={{ duration: 0.7 }}
     >
       <h1 className="mt-6 text-4xl md:text-5xl font-bold tracking-tight">
-        Let's <span className="text-gradient-quantum">Engineer Your Custom Software Solution</span>
+        Let's <span className="text-gradient-blue">Engineer Your Custom Software Solution</span>
       </h1>
       <p className="mt-6 text-white/80">
         Tell us about your enterprise software project. A senior engineer will respond within 24
@@ -43,11 +43,11 @@ export function ContactInfoPanel() {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <p className="text-xs uppercase tracking-widest text-signal">{item.label}</p>
+            <p className="text-xs uppercase tracking-widest text-blue">{item.label}</p>
             {item.href ? (
               <a
                 href={item.href}
-                className="mt-2 block text-lg text-white hover:text-signal transition-colors"
+                className="mt-2 block text-lg text-white hover:text-blue transition-colors"
               >
                 {item.value}
               </a>

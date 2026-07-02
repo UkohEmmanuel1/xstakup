@@ -18,7 +18,7 @@ export function SubPageHero({
   ctaText,
   ctaHref,
   bgImage,
-  orbColor = "bg-quantum/25",
+  orbColor = "bg-blue/15",
 }: SubPageHeroProps) {
   return (
     <section
@@ -34,13 +34,13 @@ export function SubPageHero({
       />
       <div className="relative mx-auto max-w-5xl px-6 text-center">
         <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 30, scale: 0.97 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.2 }}
           className="mt-6 text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight"
         >
           {typeof title === "string" ? (
-            <span className="text-gradient-quantum">{title}</span>
+            <span className="text-gradient-blue">{title}</span>
           ) : (
             title
           )}
@@ -63,7 +63,7 @@ export function SubPageHero({
             transition={{ duration: 0.5, delay: 0.5 }}
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.96 }}
-            className="mt-8 inline-flex items-center gap-2 rounded-md bg-quantum-gradient px-6 py-3.5 text-sm font-medium text-white shadow-quantum focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            className="mt-8 inline-flex items-center gap-2 rounded-md bg-blue-gradient px-6 py-3.5 text-sm font-medium text-[#070a09] shadow-blue focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
             {ctaText}
           </motion.a>

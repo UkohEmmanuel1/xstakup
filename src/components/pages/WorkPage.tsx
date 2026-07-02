@@ -1,0 +1,71 @@
+"use client";
+
+import { PageHero } from "@/components/common/PageHero";
+import { AnimatedSection, SectionLabel, CaseCard, CTAButton, FinalCTA } from "@/components/common";
+import { caseStudies } from "@/data";
+
+export function WorkPageComponent() {
+  return (
+    <main>
+      <PageHero
+        title="Real products, platforms, and systems."
+        subtitle="Case studies from projects we've designed, built, and deployed across fintech, AI, Web3, SaaS, mobile, and more."
+      >
+        <CTAButton
+          href="/contact"
+          className="bg-gradient-primary text-white shadow-lg shadow-electric/25"
+        >
+          Start a Project
+        </CTAButton>
+      </PageHero>
+
+      <AnimatedSection className="py-16 md:py-24 border-b border-border">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="text-center mb-14">
+            <SectionLabel>Work</SectionLabel>
+            <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight max-w-3xl mx-auto">
+              Systems, platforms, and products we help bring to life.
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-8">
+            {caseStudies.map((c, i) => (
+              <CaseCard key={c.title} item={c} index={i} />
+            ))}
+          </div>
+        </div>
+      </AnimatedSection>
+
+      <AnimatedSection className="py-16 md:py-24 border-b border-border bg-muted/30">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="flex flex-col lg:flex-row gap-12 items-start">
+            <div className="flex-1 max-w-xl">
+              <SectionLabel>Capabilities</SectionLabel>
+              <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight">
+                What we build, across industries.
+              </h2>
+            </div>
+            <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {[
+                "Fintech & Payment Platforms",
+                "AI & Automation Systems",
+                "Web3 & Blockchain dApps",
+                "Mobile Applications",
+                "SaaS Platforms",
+                "EdTech Systems",
+                "Marketplaces",
+                "Internal Dashboards & Tools",
+              ].map((item) => (
+                <div key={item} className="flex items-center gap-3 text-sm text-foreground/80">
+                  <span className="h-2 w-2 rounded-full bg-blue flex-shrink-0" />
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </AnimatedSection>
+
+      <FinalCTA />
+    </main>
+  );
+}

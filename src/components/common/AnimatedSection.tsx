@@ -19,8 +19,8 @@ export function AnimatedSection({
   return (
     <motion.div
       className={className}
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 30, scale: 0.95 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
       viewport={{ once, margin: "-80px 0px" }}
       transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1], delay }}
     >

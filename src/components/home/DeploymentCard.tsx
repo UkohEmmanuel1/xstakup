@@ -10,7 +10,7 @@ interface DeploymentCardProps {
 }
 
 export function DeploymentCard({ caseStudy, gradient, color }: DeploymentCardProps) {
-  const c = color ?? { border: "oklch(0.52 0.28 265 / 0.25)", hover: "oklch(0.52 0.28 265 / 0.5)", accent: "oklch(0.52 0.28 265 / 0.6)", bg: "oklch(0.21 0.08 265)" };
+  const c = color ?? { border: "oklch(0.6 0.2 210 / 0.25)", hover: "oklch(0.6 0.2 210 / 0.5)", accent: "oklch(0.6 0.2 210 / 0.6)", bg: "oklch(0.16 0.06 210)" };
 
   return (
     <div className="flex flex-col h-full overflow-hidden rounded-xl" style={{ border: `1px solid ${c.border}`, background: c.bg }}>
@@ -20,7 +20,7 @@ export function DeploymentCard({ caseStudy, gradient, color }: DeploymentCardPro
       >
         <div className="absolute inset-0 bg-black/20" />
       </div>
-      <div className="flex flex-col flex-grow p-4 md:p-6">
+      <div className="flex flex-col flex-grow p-6 md:p-8">
         <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: c.accent }}>
           {caseStudy.tag}
         </span>

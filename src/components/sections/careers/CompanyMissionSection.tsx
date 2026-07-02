@@ -13,7 +13,7 @@ export function CompanyMissionSection() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="mt-4 text-3xl md:text-5xl font-bold">
-                Engineering <span className="text-gradient-quantum">Africa&apos;s Digital Future</span>
+                Engineering <span className="text-gradient-blue">Africa&apos;s Digital Future</span>
               </h2>
               <div className="mt-6 space-y-6 text-white/70 text-base md:text-lg leading-relaxed">
                 <p>
@@ -35,7 +35,7 @@ export function CompanyMissionSection() {
               transition={{ duration: 0.6 }}
               className="relative aspect-[4/3] rounded-xl overflow-hidden"
             >
-              <div className="absolute inset-0 bg-quantum/20 z-10" />
+              <div className="absolute inset-0 bg-blue/20 z-10" />
               <Image
                 src="/assets/career.webp"
                 alt="Engineering team"
@@ -67,7 +67,7 @@ export function CompanyMissionSection() {
                   style={{ border: `1px solid ${c.border}`, background: c.bg }}
                 >
                   <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: c.accent }} />
-                  <div className="text-3xl md:text-4xl font-bold text-gradient-quantum">
+                  <div className="text-3xl md:text-4xl font-bold text-gradient-blue">
                     {stat.value}
                   </div>
                   <div className="mt-2 text-sm text-white/60 uppercase tracking-wide">{stat.label}</div>

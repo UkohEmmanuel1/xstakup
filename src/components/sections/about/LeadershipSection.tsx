@@ -12,7 +12,7 @@ export function LeadershipSection() {
           <div className="text-center max-w-2xl mx-auto mb-14">
             <SectionLabel>Leadership</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
-              Enterprise Software <span className="text-gradient-quantum">Leadership Team</span>
+              Enterprise Software <span className="text-gradient-blue">Leadership Team</span>
             </h2>
           </div>
           <motion.div
@@ -29,7 +29,7 @@ export function LeadershipSection() {
                   key={i}
                   variants={staggerItem}
                   whileHover={{ y: -6 }}
-                  className="group rounded-xl overflow-hidden transition-shadow hover:shadow-quantum"
+                  className="group rounded-xl overflow-hidden transition-shadow hover:shadow-blue"
                   style={{ border: `1px solid ${c.border}`, background: c.bg }}
                 >
                   <motion.div

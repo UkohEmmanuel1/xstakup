@@ -24,7 +24,7 @@ export function OpenPositionsSection() {
             <div>
               <SectionLabel>Open Positions</SectionLabel>
               <h2 className="mt-4 text-2xl md:text-5xl font-bold">
-                Join the <span className="text-gradient-quantum">Team</span>
+                Join the <span className="text-gradient-blue">Team</span>
               </h2>
               <p className="mt-3 text-white/80 max-w-lg">
                 We&apos;re looking for engineers who ship elite code and care deeply about impact.
@@ -39,7 +39,7 @@ export function OpenPositionsSection() {
                 onClick={() => setActiveDept(dept)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all cursor-pointer ${
                   activeDept === dept
-                    ? "bg-quantum-gradient text-white shadow-quantum"
+                    ? "bg-blue-gradient text-white shadow-blue"
                     : "bg-card-solid-bg text-white/60 hover:text-white border border-white/10"
                 }`}
               >
@@ -93,7 +93,7 @@ export function OpenPositionsSection() {
                   <div className="mt-5">
                     <a
                       href={job.applyUrl}
-                      className="inline-flex items-center gap-2 rounded-md bg-quantum-gradient px-5 py-2.5 text-sm font-medium text-white shadow-quantum hover:shadow-glow transition-shadow"
+                      className="inline-flex items-center gap-2 rounded-md bg-blue-gradient px-5 py-2.5 text-sm font-medium text-white shadow-blue hover:shadow-glow transition-shadow"
                     >
                       Apply Now
                     </a>

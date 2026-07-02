@@ -25,7 +25,7 @@ export function PipelineSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4"
+            className="mt-16 grid grid-cols-1 gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-4"
           >
             {pipeline.map((s, i) => (
               <PipelineCard key={s.number} step={s} color={pipelineCardColors[i]} />

@@ -22,7 +22,7 @@ export function PrimaryCTA({
     <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }} className="inline-block">
       <Link
         href={href}
-        className="inline-flex items-center gap-2 rounded-md bg-quantum-gradient px-6 py-3.5 text-base font-medium text-white shadow-quantum hover:shadow-glow transition-shadow relative overflow-hidden group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        className="inline-flex items-center gap-2 rounded-md bg-blue-gradient px-6 py-3.5 text-base font-medium text-[#070a09] shadow-blue hover:shadow-glow transition-shadow relative overflow-hidden group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
       >
         <motion.span
           className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"
@@ -41,7 +41,7 @@ export function OutlineCTA({ children, href }: OutlineCTAProps) {
     <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} className="inline-block">
       <Link
         href={href}
-        className="inline-flex items-center gap-2 rounded-md border border-border bg-transparent px-6 py-3.5 text-base font-medium text-foreground hover:border-signal hover:text-signal transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        className="inline-flex items-center gap-2 rounded-md border border-border bg-transparent px-6 py-3.5 text-base font-medium text-foreground hover:border-blue hover:text-blue transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
       >
         <span>{children}</span>
       </Link>

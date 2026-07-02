@@ -12,7 +12,7 @@ export function OpenSourceSection() {
           <div className="text-center max-w-2xl mx-auto mb-14">
             <SectionLabel>Open Source</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
-              Community <span className="text-gradient-quantum">Projects</span>
+              Community <span className="text-gradient-blue">Projects</span>
             </h2>
             <p className="mt-4 text-white/70 text-base md:text-lg">
               Open-source tools built and maintained by our community for the African engineering ecosystem.

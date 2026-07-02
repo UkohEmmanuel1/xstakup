@@ -17,7 +17,7 @@ export function FAQSection() {
           <div className="text-center max-w-2xl mx-auto mb-14">
             <SectionLabel>FAQ</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
-              Frequently Asked <span className="text-gradient-quantum">Questions</span>
+              Frequently Asked <span className="text-gradient-blue">Questions</span>
             </h2>
           </div>
           <Accordion type="single" collapsible className="w-full space-y-3">

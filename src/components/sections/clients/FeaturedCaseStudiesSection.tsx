@@ -95,7 +95,7 @@ function CaseStudyContent({ c, reverse }: { c: FeaturedCase; reverse: boolean })
         {c.tag}
       </span>
       <h2 className="mt-5 text-3xl md:text-4xl font-bold">
-        <span className="text-gradient-quantum">{c.name}:</span>{" "}
+        <span className="text-gradient-blue">{c.name}:</span>{" "}
         <span className="text-white">{c.headline}</span>
       </h2>
       <div className="mt-6 space-y-5">
@@ -158,13 +158,13 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
         <div className="flex-1 grid grid-cols-3 gap-2">
           <div className="col-span-2 rounded bg-white/5 p-3 flex flex-col gap-2">
             <div className="h-2 w-1/3 rounded" style={{ background: color.accent }} />
-            <div className="h-8 rounded bg-quantum/20" />
+            <div className="h-8 rounded bg-blue/20" />
             <div className="h-2 w-2/3 rounded bg-white/10" />
             <div className="h-2 w-1/2 rounded bg-white/10" />
             <div className="mt-auto grid grid-cols-3 gap-1">
-              <div className="h-6 rounded bg-quantum/40" />
-              <div className="h-6 rounded bg-violet/30" />
-              <div className="h-6 rounded bg-signal/30" />
+              <div className="h-6 rounded bg-blue/40" />
+              <div className="h-6 rounded bg-steel/30" />
+              <div className="h-6 rounded bg-blue/30" />
             </div>
           </div>
           <div className="rounded bg-white/5 p-3 flex flex-col gap-2">

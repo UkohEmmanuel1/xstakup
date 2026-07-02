@@ -12,7 +12,7 @@ export function PipelineSection() {
           <div className="max-w-2xl mb-14">
             <SectionLabel>Process</SectionLabel>
             <h2 className="mt-4 text-2xl md:text-5xl font-bold">
-              Our Development <span className="text-gradient-quantum">Pipeline</span>
+              Our Development <span className="text-gradient-blue">Pipeline</span>
             </h2>
             <p className="mt-4 text-white/80 max-w-xl">
               From strategy to deployment: our proven engineering pipeline delivers

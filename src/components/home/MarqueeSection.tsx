@@ -28,7 +28,7 @@ export function MarqueeSection() {
                 role="listitem"
                 className="flex items-center gap-3 px-6 py-3 rounded-lg bg-white/10 backdrop-blur-md border border-white/15"
               >
-                <span className="h-2 w-2 rounded-full bg-signal" />
+                  <span className="h-2 w-2 rounded-full bg-blue" />
                 <span className="text-sm whitespace-nowrap text-foreground/80">
                   {item}
                 </span>
@@ -40,7 +40,7 @@ export function MarqueeSection() {
                   key={`dup-${i}`}
                   className="flex items-center gap-3 px-6 py-3 rounded-lg bg-white/10 backdrop-blur-md border border-white/15"
                 >
-                  <span className="h-2 w-2 rounded-full bg-signal" />
+                <span className="h-2 w-2 rounded-full bg-blue" />
                   <span className="text-sm whitespace-nowrap text-foreground/80">
                     {item}
                   </span>

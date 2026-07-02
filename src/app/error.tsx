@@ -16,7 +16,7 @@ export default function ErrorPage({
         <div className="mt-6 flex justify-center gap-2">
           <button
             onClick={() => reset()}
-            className="rounded-md bg-quantum-gradient px-4 py-2 text-sm text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            className="rounded-md bg-blue-gradient px-4 py-2 text-sm text-[#070a09] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
             Try again
           </button>

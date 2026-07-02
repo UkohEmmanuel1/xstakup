@@ -1,0 +1,55 @@
+"use client";
+
+import { motion } from "framer-motion";
+import {
+  Building2,
+  Cloud,
+  Sparkles,
+  Hexagon,
+  BookOpen,
+  ShoppingCart,
+  Truck,
+  Camera,
+  Briefcase,
+  Store,
+} from "lucide-react";
+import type { IndustryItem } from "@/types";
+
+const iconMap: Record<string, React.ElementType> = {
+  "building-bank": Building2,
+  cloud: Cloud,
+  sparkles: Sparkles,
+  hexagon: Hexagon,
+  "book-open": BookOpen,
+  "shopping-cart": ShoppingCart,
+  truck: Truck,
+  camera: Camera,
+  briefcase: Briefcase,
+  store: Store,
+};
+
+interface Props {
+  item: IndustryItem;
+  index: number;
+}
+
+export function IndustryCard({ item, index }: Props) {
+  const Icon = iconMap[item.icon] || Building2;
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.4, delay: index * 0.06 }}
+    >
+      <div className="group rounded-xl border border-border bg-card p-6 hover:shadow-card-hover hover:border-blue/30 transition-all duration-300 h-full">
+        <div className="h-9 w-9 rounded-lg bg-blue/10 flex items-center justify-center mb-3 group-hover:bg-blue/20 transition-colors">
+          <Icon size={18} className="text-blue" />
+        </div>
+        <h3 className="text-base font-heading font-bold text-foreground mb-1.5">{item.title}</h3>
+        <p className="text-sm text-muted-foreground">{item.description}</p>
+      </div>
+    </motion.div>
+  );
+}

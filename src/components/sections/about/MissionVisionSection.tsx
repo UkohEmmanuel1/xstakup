@@ -12,7 +12,7 @@ export function MissionVisionSection() {
           <div className="text-center max-w-2xl mx-auto mb-14">
             <SectionLabel>Mission & Vision</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
-              Software Company <span className="text-gradient-quantum">Mission & Vision</span>
+              Software Company <span className="text-gradient-blue">Mission & Vision</span>
             </h2>
           </div>
           <motion.div

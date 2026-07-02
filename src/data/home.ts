@@ -94,9 +94,9 @@ export const cases: CaseStudy[] = [
 ];
 
 export const caseGradients = [
-  "linear-gradient(135deg, #1E2BFF, #0F1A7A)",
-  "linear-gradient(135deg, #7A5CFF, #1E2BFF)",
-  "linear-gradient(135deg, #00D1FF, #0F1A7A)",
+  "linear-gradient(135deg, #00BFFF, #003355)",
+  "linear-gradient(135deg, #0087BD, #002540)",
+  "linear-gradient(135deg, #00BFFF, #001A2A)",
 ];
 
 export const marqueeItems = [
@@ -118,36 +118,24 @@ export const marqueeItems = [
 
 
 
-export const pipelineCardColors: CardColor[] = [
-  { border: "oklch(0.65 0.18 230 / 0.25)", hover: "oklch(0.65 0.18 230 / 0.5)", accent: "oklch(0.65 0.18 230 / 0.6)", bg: "oklch(0.21 0.06 230)" },
-  { border: "oklch(0.52 0.28 265 / 0.25)", hover: "oklch(0.52 0.28 265 / 0.5)", accent: "oklch(0.52 0.28 265 / 0.6)", bg: "oklch(0.21 0.08 265)" },
-  { border: "oklch(0.55 0.22 290 / 0.25)", hover: "oklch(0.55 0.22 290 / 0.5)", accent: "oklch(0.55 0.22 290 / 0.6)", bg: "oklch(0.21 0.09 290)" },
-  { border: "oklch(0.6 0.15 200 / 0.25)", hover: "oklch(0.6 0.15 200 / 0.5)", accent: "oklch(0.6 0.15 200 / 0.6)", bg: "oklch(0.21 0.06 200)" },
-];
+const cardColor: CardColor = {
+  border: "oklch(0.6 0.2 210 / 0.25)",
+  hover: "oklch(0.6 0.2 210 / 0.5)",
+  accent: "oklch(0.6 0.2 210 / 0.6)",
+  bg: "oklch(0.16 0.06 210)",
+};
 
-export const expertiseCardColors: CardColor[] = [
-  { border: "oklch(0.65 0.18 230 / 0.25)", hover: "oklch(0.65 0.18 230 / 0.5)", accent: "oklch(0.65 0.18 230 / 0.6)", bg: "oklch(0.21 0.06 230)" },
-  { border: "oklch(0.52 0.28 265 / 0.25)", hover: "oklch(0.52 0.28 265 / 0.5)", accent: "oklch(0.52 0.28 265 / 0.6)", bg: "oklch(0.21 0.08 265)" },
-  { border: "oklch(0.55 0.22 290 / 0.25)", hover: "oklch(0.55 0.22 290 / 0.5)", accent: "oklch(0.55 0.22 290 / 0.6)", bg: "oklch(0.21 0.09 290)" },
-  { border: "oklch(0.6 0.15 200 / 0.25)", hover: "oklch(0.6 0.15 200 / 0.5)", accent: "oklch(0.6 0.15 200 / 0.6)", bg: "oklch(0.21 0.06 200)" },
-  { border: "oklch(0.65 0.14 95 / 0.3)", hover: "oklch(0.65 0.14 95 / 0.55)", accent: "oklch(0.65 0.14 95 / 0.65)", bg: "oklch(0.23 0.06 95)" },
-  { border: "oklch(0.6 0.15 150 / 0.25)", hover: "oklch(0.6 0.15 150 / 0.5)", accent: "oklch(0.6 0.15 150 / 0.6)", bg: "oklch(0.21 0.06 150)" },
-  { border: "oklch(0.65 0.15 80 / 0.25)", hover: "oklch(0.65 0.15 80 / 0.5)", accent: "oklch(0.65 0.15 80 / 0.6)", bg: "oklch(0.22 0.07 80)" },
-  { border: "oklch(0.62 0.15 210 / 0.25)", hover: "oklch(0.62 0.15 210 / 0.5)", accent: "oklch(0.62 0.15 210 / 0.6)", bg: "oklch(0.21 0.06 210)" },
-];
+const cardColorTweet: CardColor = {
+  border: "oklch(0.6 0.2 210 / 0.25)",
+  hover: "oklch(0.6 0.2 210 / 0.5)",
+  accent: "oklch(0.6 0.2 210 / 0.6)",
+  bg: "oklch(0.16 0.06 210)",
+};
 
-export const deploymentCardColors: CardColor[] = [
-  { border: "oklch(0.6 0.15 150 / 0.3)", hover: "oklch(0.6 0.15 150 / 0.6)", accent: "oklch(0.6 0.15 150 / 0.7)", bg: "oklch(0.21 0.07 150)" },
-  { border: "oklch(0.55 0.22 290 / 0.25)", hover: "oklch(0.55 0.22 290 / 0.5)", accent: "oklch(0.55 0.22 290 / 0.6)", bg: "oklch(0.21 0.09 290)" },
-  { border: "oklch(0.62 0.15 210 / 0.25)", hover: "oklch(0.62 0.15 210 / 0.5)", accent: "oklch(0.62 0.15 210 / 0.6)", bg: "oklch(0.21 0.06 210)" },
-];
-
-export const tweetCardColors: CardColor[] = [
-  { border: "oklch(0.52 0.28 265 / 0.25)", hover: "oklch(0.52 0.28 265 / 0.5)", accent: "oklch(0.52 0.28 265 / 0.6)", bg: "oklch(0.21 0.08 265)" },
-  { border: "oklch(0.6 0.15 150 / 0.25)", hover: "oklch(0.6 0.15 150 / 0.5)", accent: "oklch(0.6 0.15 150 / 0.6)", bg: "oklch(0.21 0.06 150)" },
-  { border: "oklch(0.55 0.22 290 / 0.25)", hover: "oklch(0.55 0.22 290 / 0.5)", accent: "oklch(0.55 0.22 290 / 0.6)", bg: "oklch(0.21 0.09 290)" },
-  { border: "oklch(0.65 0.15 80 / 0.25)", hover: "oklch(0.65 0.15 80 / 0.5)", accent: "oklch(0.65 0.15 80 / 0.6)", bg: "oklch(0.22 0.07 80)" },
-];
+export const pipelineCardColors: CardColor[] = Array(4).fill(cardColor);
+export const expertiseCardColors: CardColor[] = Array(8).fill(cardColor);
+export const deploymentCardColors: CardColor[] = Array(3).fill(cardColor);
+export const tweetCardColors: CardColor[] = Array(4).fill(cardColorTweet);
 
 export const stats: StatsItem[] = [
   { value: "99.99%", label: "Average Uptime" },

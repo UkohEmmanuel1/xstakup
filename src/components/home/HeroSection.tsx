@@ -1,39 +1,47 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useScrollZoom } from "@/hooks/useScrollZoom";
 import { StatsStrip } from "./StatsStrip";
 import { stats } from "@/data/home";
 
 export function HeroSection() {
+  const { ref, scale } = useScrollZoom([0, 1], [1, 1.2]);
+
   return (
-    <section className="relative overflow-hidden md:min-h-[90vh] flex items-center max-w-full">
-      {/* --- VIDEO --- */}
-      <video
-        className="absolute inset-0 w-full h-full object-cover block"
-        src="/assets/hero.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline
-        aria-label="XStakUp enterprise software development showcase"
-      />
+    <section className="relative overflow-hidden md:min-h-[90vh] flex items-center max-w-full" ref={ref}>
+      <motion.div
+        className="absolute inset-0"
+        style={{ scale }}
+      >
+        <video
+          className="absolute inset-0 w-full h-full object-cover block"
+          src="/assets/hero.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          aria-label="XStakUp enterprise software development showcase"
+        />
+        <div className="absolute inset-0 bg-black/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/80" />
+        <div className="absolute inset-0 bg-hero-glow" />
+      </motion.div>
 
-      {/* --- OVERLAYS (Softer + Vignette for classic cinematic feel) --- */}
-      <div className="absolute inset-0 bg-black/70" /> 
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/80" /> {/* Vignette */}
-      <div className="absolute inset-0 bg-hero-glow" />
-
-      {/* --- PULSING ORB (Trending UI) --- */}
       <motion.div
         animate={{ scale: [1, 1.1, 1], opacity: [0.15, 0.3, 0.15] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-20 left-1/2 -translate-x-1/2 h-[400px] w-[500px] md:h-[600px] md:w-[800px] rounded-full bg-quantum/30 blur-[80px] md:blur-[140px]"
+        className="absolute top-20 left-1/2 -translate-x-1/2 h-[400px] w-[500px] md:h-[600px] md:w-[800px] rounded-full bg-blue/30 blur-[80px] md:blur-[140px]"
       />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 pt-16 md:pt-32 pb-20 md:pb-40 w-full">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.97 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
+        className="relative z-10 mx-auto max-w-7xl px-6 pt-16 md:pt-32 pb-20 md:pb-40 w-full"
+      >
         <div className="flex flex-col items-center text-center">
 
-          {/* --- 1. TOP BADGE (New - Classic Trust Signal) --- */}
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -41,13 +49,12 @@ export function HeroSection() {
             className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-sm font-medium text-white/70 backdrop-blur-sm"
           >
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
             </span>
             Trusted by 200+ Enterprises Worldwide
           </motion.div>
 
-          {/* --- 2. HEADING (Classic Serif + Gradient) --- */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -56,12 +63,11 @@ export function HeroSection() {
           >
             <span className="text-white">Custom Enterprise</span>
             <br />
-            <span className="text-gradient-quantum">Software Development</span>
+            <span className="text-gradient-blue">Software Development</span>
             <br />
-            
+
           </motion.h1>
 
-          {/* --- 3. SUBTITLE --- */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -72,13 +78,11 @@ export function HeroSection() {
             artificial intelligence, and Web3 solutions. We architect scalable, production-grade
             systems so you can lead your market.
           </motion.p>
-          
 
-          {/* --- 5. STATS (Now using your imported StatsStrip, but we will upgrade that component below) --- */}
           <StatsStrip items={stats} className="mt-16" />
-          
+
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

@@ -28,7 +28,7 @@ export function StatsStripSection() {
                   style={{ border: `1px solid ${c.border}`, background: c.bg }}
                 >
                   <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: c.accent }} />
-                  <div className="text-3xl md:text-4xl font-bold text-gradient-quantum">
+                  <div className="text-3xl md:text-4xl font-bold text-gradient-blue">
                     {stat.value}
                   </div>
                   <div className="mt-2 text-sm text-white/60 uppercase tracking-wide">{stat.label}</div>

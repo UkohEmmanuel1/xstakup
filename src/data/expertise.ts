@@ -47,19 +47,19 @@ export const expertiseCases: CaseStudy[] = [
 ];
 
 export const expertiseCaseGradients = [
-  "linear-gradient(135deg, #1E2BFF, #0F1A7A)",
-  "linear-gradient(135deg, #7A5CFF, #1E2BFF)",
-  "linear-gradient(135deg, #00D1FF, #0F1A7A)",
-  "linear-gradient(135deg, #0F1A7A, #1E2BFF)",
-  "linear-gradient(135deg, #7A5CFF, #00D1FF)",
-  "linear-gradient(135deg, #1E2BFF, #0A0B10)",
+  "linear-gradient(135deg, #05ff9b, #003d1a)",
+  "linear-gradient(135deg, #00cc7a, #002610)",
+  "linear-gradient(135deg, #05ff9b, #001a0e)",
+  "linear-gradient(135deg, #00cc7a, #001a0e)",
+  "linear-gradient(135deg, #00cc7a, #003d1a)",
+  "linear-gradient(135deg, #05ff9b, #000d05)",
 ];
 
 export const expertiseCaseColors: CardColor[] = [
-  { border: "oklch(0.6 0.15 150 / 0.3)", hover: "oklch(0.6 0.15 150 / 0.6)", accent: "oklch(0.6 0.15 150 / 0.7)", bg: "oklch(0.21 0.07 150)" },
-  { border: "oklch(0.55 0.22 290 / 0.25)", hover: "oklch(0.55 0.22 290 / 0.5)", accent: "oklch(0.55 0.22 290 / 0.6)", bg: "oklch(0.21 0.09 290)" },
-  { border: "oklch(0.62 0.15 210 / 0.25)", hover: "oklch(0.62 0.15 210 / 0.5)", accent: "oklch(0.62 0.15 210 / 0.6)", bg: "oklch(0.21 0.06 210)" },
-  { border: "oklch(0.65 0.18 230 / 0.25)", hover: "oklch(0.65 0.18 230 / 0.5)", accent: "oklch(0.65 0.18 230 / 0.6)", bg: "oklch(0.21 0.06 230)" },
-  { border: "oklch(0.52 0.28 265 / 0.25)", hover: "oklch(0.52 0.28 265 / 0.5)", accent: "oklch(0.52 0.28 265 / 0.6)", bg: "oklch(0.21 0.08 265)" },
-  { border: "oklch(0.65 0.14 95 / 0.3)", hover: "oklch(0.65 0.14 95 / 0.55)", accent: "oklch(0.65 0.14 95 / 0.65)", bg: "oklch(0.23 0.06 95)" },
+  { border: "oklch(0.6 0.1 170 / 0.3)", hover: "oklch(0.6 0.1 170 / 0.6)", accent: "oklch(0.6 0.1 170 / 0.7)", bg: "oklch(0.12 0.03 160)" },
+  { border: "oklch(0.65 0.15 150 / 0.25)", hover: "oklch(0.65 0.15 150 / 0.5)", accent: "oklch(0.65 0.15 150 / 0.6)", bg: "oklch(0.12 0.05 150)" },
+  { border: "oklch(0.7 0.15 160 / 0.25)", hover: "oklch(0.7 0.15 160 / 0.5)", accent: "oklch(0.7 0.15 160 / 0.6)", bg: "oklch(0.12 0.04 160)" },
+  { border: "oklch(0.65 0.12 160 / 0.25)", hover: "oklch(0.65 0.12 160 / 0.5)", accent: "oklch(0.65 0.12 160 / 0.6)", bg: "oklch(0.12 0.04 160)" },
+  { border: "oklch(0.75 0.25 160 / 0.25)", hover: "oklch(0.75 0.25 160 / 0.5)", accent: "oklch(0.75 0.25 160 / 0.6)", bg: "oklch(0.14 0.06 160)" },
+  { border: "oklch(0.7 0.12 120 / 0.3)", hover: "oklch(0.7 0.12 120 / 0.55)", accent: "oklch(0.7 0.12 120 / 0.65)", bg: "oklch(0.14 0.04 130)" },
 ];

@@ -7,27 +7,28 @@ export function FinalCTA() {
   return (
     <section className="relative z-30 overflow-hidden">
       <div
-        className="absolute inset-0 mix-blend-multiply opacity-90 pointer-events-none animate-gradient-shift"
+        className="absolute inset-0 pointer-events-none animate-gradient-shift"
         style={{
-          background: "linear-gradient(135deg, #0F1A7A 0%, #0F1A7A 30%, #1E2BFF 60%, #0F1A7A 100%)",
+          background: "linear-gradient(135deg, #0A1A2A 0%, #0A1A2A 30%, #00BFFF 60%, #0A1A2A 100%)",
+          opacity: 0.15,
         }}
       />
 
       <motion.div
         animate={{ scale: [1, 1.1, 1], opacity: [0.3, 0.5, 0.3] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute -top-20 -right-20 h-72 w-72 rounded-full bg-signal/30 blur-3xl pointer-events-none"
+        className="absolute -top-20 -right-20 h-72 w-72 rounded-full bg-blue/20 blur-3xl pointer-events-none"
       />
       <motion.div
         animate={{ scale: [1, 1.15, 1], opacity: [0.3, 0.5, 0.3] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
-        className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-violet/30 blur-3xl pointer-events-none"
+        className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-steel/20 blur-3xl pointer-events-none"
       />
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 py-12 md:py-24">
         <motion.div
-          initial={{ opacity: 0, y: 60 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 60, scale: 0.95 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
           className="rounded-2xl p-8 md:p-12 text-center"

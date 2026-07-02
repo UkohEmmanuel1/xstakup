@@ -7,7 +7,7 @@ export function ClientsHeroSection() {
     <SubPageHero
       title={
         <>
-          <span className="text-gradient-quantum">Enterprise Software Case Studies</span>{" "}
+          <span className="text-gradient-blue">Enterprise Software Case Studies</span>{" "}
           Client Success Stories
         </>
       }

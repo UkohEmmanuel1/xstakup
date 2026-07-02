@@ -6,7 +6,7 @@ import { communityEvents, eventCardColors } from "@/data/community";
 
 const typeBadge: Record<string, string> = {
   Meetup: "border-blue-500/30 text-blue-400",
-  Workshop: "border-emerald-500/30 text-emerald-400",
+  Workshop: "border-blue-500/30 text-blue-400",
   Talk: "border-purple-500/30 text-purple-400",
   Hackathon: "border-amber-500/30 text-amber-400",
 };
@@ -19,7 +19,7 @@ export function EventsSection() {
           <div className="text-center max-w-2xl mx-auto mb-14">
             <SectionLabel>Events</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
-              Upcoming <span className="text-gradient-quantum">Community Events</span>
+              Upcoming <span className="text-gradient-blue">Community Events</span>
             </h2>
             <p className="mt-4 text-white/70 text-base md:text-lg">
               Meetups, workshops, talks, and hackathons, built by engineers, for engineers.

@@ -12,7 +12,7 @@ export function CaseStudiesSection() {
           <div className="text-center max-w-2xl mx-auto mb-14">
             <SectionLabel>Case Studies</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
-              Featured <span className="text-gradient-quantum">Projects</span>
+              Featured <span className="text-gradient-blue">Projects</span>
             </h2>
             <p className="mt-4 text-white/70 text-base md:text-lg">
               Real-world systems we&apos;ve engineered across fintech, AI, Web3, logistics, and more.

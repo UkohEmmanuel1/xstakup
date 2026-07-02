@@ -87,38 +87,38 @@ export const leaders: Leader[] = [
 ];
 
 export const leaderGradients = [
-  "linear-gradient(135deg, #1E2BFF, #0F1A7A)",
-  "linear-gradient(135deg, #7A5CFF, #0F1A7A)",
-  "linear-gradient(135deg, #00D1FF, #0F1A7A)",
-  "linear-gradient(135deg, #1E2BFF, #0A0B10)",
+  "linear-gradient(135deg, #05ff9b, #003d1a)",
+  "linear-gradient(135deg, #00cc7a, #002610)",
+  "linear-gradient(135deg, #05ff9b, #001a0e)",
+  "linear-gradient(135deg, #00cc7a, #001a0e)",
 ];
 
 export const mvCardColors: CardColor[] = [
-  { border: "oklch(0.52 0.28 265 / 0.25)", hover: "oklch(0.52 0.28 265 / 0.5)", accent: "oklch(0.52 0.28 265 / 0.6)", bg: "oklch(0.21 0.08 265)" },
-  { border: "oklch(0.55 0.22 290 / 0.25)", hover: "oklch(0.55 0.22 290 / 0.5)", accent: "oklch(0.55 0.22 290 / 0.6)", bg: "oklch(0.21 0.09 290)" },
+  { border: "oklch(0.75 0.25 160 / 0.25)", hover: "oklch(0.75 0.25 160 / 0.5)", accent: "oklch(0.75 0.25 160 / 0.6)", bg: "oklch(0.14 0.06 160)" },
+  { border: "oklch(0.65 0.15 150 / 0.25)", hover: "oklch(0.65 0.15 150 / 0.5)", accent: "oklch(0.65 0.15 150 / 0.6)", bg: "oklch(0.12 0.05 150)" },
 ];
 
 export const differentiatorCardColors: CardColor[] = [
-  { border: "oklch(0.65 0.18 230 / 0.25)", hover: "oklch(0.65 0.18 230 / 0.5)", accent: "oklch(0.65 0.18 230 / 0.6)", bg: "oklch(0.21 0.06 230)" },
-  { border: "oklch(0.52 0.28 265 / 0.25)", hover: "oklch(0.52 0.28 265 / 0.5)", accent: "oklch(0.52 0.28 265 / 0.6)", bg: "oklch(0.21 0.08 265)" },
-  { border: "oklch(0.55 0.22 290 / 0.25)", hover: "oklch(0.55 0.22 290 / 0.5)", accent: "oklch(0.55 0.22 290 / 0.6)", bg: "oklch(0.21 0.09 290)" },
-  { border: "oklch(0.6 0.15 200 / 0.25)", hover: "oklch(0.6 0.15 200 / 0.5)", accent: "oklch(0.6 0.15 200 / 0.6)", bg: "oklch(0.21 0.06 200)" },
-  { border: "oklch(0.65 0.14 95 / 0.3)", hover: "oklch(0.65 0.14 95 / 0.55)", accent: "oklch(0.65 0.14 95 / 0.65)", bg: "oklch(0.23 0.06 95)" },
-  { border: "oklch(0.6 0.15 150 / 0.25)", hover: "oklch(0.6 0.15 150 / 0.5)", accent: "oklch(0.6 0.15 150 / 0.6)", bg: "oklch(0.21 0.06 150)" },
+  { border: "oklch(0.65 0.12 160 / 0.25)", hover: "oklch(0.65 0.12 160 / 0.5)", accent: "oklch(0.65 0.12 160 / 0.6)", bg: "oklch(0.12 0.04 160)" },
+  { border: "oklch(0.75 0.25 160 / 0.25)", hover: "oklch(0.75 0.25 160 / 0.5)", accent: "oklch(0.75 0.25 160 / 0.6)", bg: "oklch(0.14 0.06 160)" },
+  { border: "oklch(0.65 0.15 150 / 0.25)", hover: "oklch(0.65 0.15 150 / 0.5)", accent: "oklch(0.65 0.15 150 / 0.6)", bg: "oklch(0.12 0.05 150)" },
+  { border: "oklch(0.55 0.1 160 / 0.25)", hover: "oklch(0.55 0.1 160 / 0.5)", accent: "oklch(0.55 0.1 160 / 0.6)", bg: "oklch(0.12 0.03 170)" },
+  { border: "oklch(0.7 0.12 120 / 0.3)", hover: "oklch(0.7 0.12 120 / 0.55)", accent: "oklch(0.7 0.12 120 / 0.65)", bg: "oklch(0.14 0.04 130)" },
+  { border: "oklch(0.6 0.1 170 / 0.25)", hover: "oklch(0.6 0.1 170 / 0.5)", accent: "oklch(0.6 0.1 170 / 0.6)", bg: "oklch(0.12 0.03 160)" },
 ];
 
 export const valueCardColors: CardColor[] = [
-  { border: "oklch(0.65 0.18 230 / 0.25)", hover: "oklch(0.65 0.18 230 / 0.5)", accent: "oklch(0.65 0.18 230 / 0.6)", bg: "oklch(0.21 0.06 230)" },
-  { border: "oklch(0.52 0.28 265 / 0.25)", hover: "oklch(0.52 0.28 265 / 0.5)", accent: "oklch(0.52 0.28 265 / 0.6)", bg: "oklch(0.21 0.08 265)" },
-  { border: "oklch(0.55 0.22 290 / 0.25)", hover: "oklch(0.55 0.22 290 / 0.5)", accent: "oklch(0.55 0.22 290 / 0.6)", bg: "oklch(0.21 0.09 290)" },
-  { border: "oklch(0.6 0.15 200 / 0.25)", hover: "oklch(0.6 0.15 200 / 0.5)", accent: "oklch(0.6 0.15 200 / 0.6)", bg: "oklch(0.21 0.06 200)" },
-  { border: "oklch(0.65 0.14 95 / 0.3)", hover: "oklch(0.65 0.14 95 / 0.55)", accent: "oklch(0.65 0.14 95 / 0.65)", bg: "oklch(0.23 0.06 95)" },
-  { border: "oklch(0.6 0.15 150 / 0.25)", hover: "oklch(0.6 0.15 150 / 0.5)", accent: "oklch(0.6 0.15 150 / 0.6)", bg: "oklch(0.21 0.06 150)" },
+  { border: "oklch(0.65 0.12 160 / 0.25)", hover: "oklch(0.65 0.12 160 / 0.5)", accent: "oklch(0.65 0.12 160 / 0.6)", bg: "oklch(0.12 0.04 160)" },
+  { border: "oklch(0.75 0.25 160 / 0.25)", hover: "oklch(0.75 0.25 160 / 0.5)", accent: "oklch(0.75 0.25 160 / 0.6)", bg: "oklch(0.14 0.06 160)" },
+  { border: "oklch(0.65 0.15 150 / 0.25)", hover: "oklch(0.65 0.15 150 / 0.5)", accent: "oklch(0.65 0.15 150 / 0.6)", bg: "oklch(0.12 0.05 150)" },
+  { border: "oklch(0.55 0.1 160 / 0.25)", hover: "oklch(0.55 0.1 160 / 0.5)", accent: "oklch(0.55 0.1 160 / 0.6)", bg: "oklch(0.12 0.03 170)" },
+  { border: "oklch(0.7 0.12 120 / 0.3)", hover: "oklch(0.7 0.12 120 / 0.55)", accent: "oklch(0.7 0.12 120 / 0.65)", bg: "oklch(0.14 0.04 130)" },
+  { border: "oklch(0.6 0.1 170 / 0.25)", hover: "oklch(0.6 0.1 170 / 0.5)", accent: "oklch(0.6 0.1 170 / 0.6)", bg: "oklch(0.12 0.03 160)" },
 ];
 
 export const leaderCardColors: CardColor[] = [
-  { border: "oklch(0.65 0.18 230 / 0.25)", hover: "oklch(0.65 0.18 230 / 0.5)", accent: "oklch(0.65 0.18 230 / 0.6)", bg: "oklch(0.21 0.06 230)" },
-  { border: "oklch(0.52 0.28 265 / 0.25)", hover: "oklch(0.52 0.28 265 / 0.5)", accent: "oklch(0.52 0.28 265 / 0.6)", bg: "oklch(0.21 0.08 265)" },
-  { border: "oklch(0.55 0.22 290 / 0.25)", hover: "oklch(0.55 0.22 290 / 0.5)", accent: "oklch(0.55 0.22 290 / 0.6)", bg: "oklch(0.21 0.09 290)" },
-  { border: "oklch(0.6 0.15 200 / 0.25)", hover: "oklch(0.6 0.15 200 / 0.5)", accent: "oklch(0.6 0.15 200 / 0.6)", bg: "oklch(0.21 0.06 200)" },
+  { border: "oklch(0.65 0.12 160 / 0.25)", hover: "oklch(0.65 0.12 160 / 0.5)", accent: "oklch(0.65 0.12 160 / 0.6)", bg: "oklch(0.12 0.04 160)" },
+  { border: "oklch(0.75 0.25 160 / 0.25)", hover: "oklch(0.75 0.25 160 / 0.5)", accent: "oklch(0.75 0.25 160 / 0.6)", bg: "oklch(0.14 0.06 160)" },
+  { border: "oklch(0.65 0.15 150 / 0.25)", hover: "oklch(0.65 0.15 150 / 0.5)", accent: "oklch(0.65 0.15 150 / 0.6)", bg: "oklch(0.12 0.05 150)" },
+  { border: "oklch(0.55 0.1 160 / 0.25)", hover: "oklch(0.55 0.1 160 / 0.5)", accent: "oklch(0.55 0.1 160 / 0.6)", bg: "oklch(0.12 0.03 170)" },
 ];

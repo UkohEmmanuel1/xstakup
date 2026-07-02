@@ -10,7 +10,7 @@ export function TestimonialsSection() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <h2 className="text-3xl md:text-5xl font-bold">
-              What <span className="text-gradient-quantum">Members Say</span>
+              What <span className="text-gradient-blue">Members Say</span>
             </h2>
             <p className="mt-4 text-white/70 text-base md:text-lg">
               Hear from engineers and founders who are part of the community.
