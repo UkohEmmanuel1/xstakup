@@ -31,14 +31,14 @@ function Logo({ onClose }: { onClose: () => void }) {
     <Link href="/" className="flex items-center z-50" onClick={onClose}>
       <motion.div
         whileHover={{ scale: 1.05, rotate: -2 }}
-        className="relative h-12 w-12 md:h-16 md:w-16 flex-shrink-0"
+        className="relative h-14 w-14 md:h-20 md:w-20 flex-shrink-0"
       >
         <div className="absolute inset-0 flex items-center justify-center overflow-hidden rounded-xl">
           <Image
             src="/assets/XStakUP LOGO-2.webp"
             alt="XStakUp Logo"
             fill
-            sizes="64px"
+            sizes="80px"
             className="object-contain select-none"
           />
         </div>

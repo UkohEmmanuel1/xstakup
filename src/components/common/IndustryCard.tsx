@@ -43,7 +43,7 @@ export function IndustryCard({ item, index }: Props) {
       viewport={{ once: true }}
       transition={{ duration: 0.4, delay: index * 0.06 }}
     >
-      <div className="group rounded-xl border border-border bg-card p-6 hover:shadow-card-hover hover:border-blue/30 transition-all duration-300 h-full">
+      <div className="group rounded-xl border border-border bg-card p-8 md:p-10 hover:shadow-card-hover hover:border-blue/30 transition-all duration-300 h-full min-h-[200px]">
         <div className="h-9 w-9 rounded-lg bg-blue/10 flex items-center justify-center mb-3 group-hover:bg-blue/20 transition-colors">
           <Icon size={18} className="text-blue" />
         </div>

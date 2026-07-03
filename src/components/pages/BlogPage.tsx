@@ -29,7 +29,7 @@ function BlogPostCard({ post, index }: { post: typeof blogPosts[number]; index: 
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.08 }}
-      className="flex flex-col h-full rounded-2xl p-6 shadow-sm transition-all duration-300"
+      className="flex flex-col h-full rounded-2xl p-8 md:p-10 shadow-sm transition-all duration-300"
       style={{ border: `1px solid ${c.border}`, background: c.bg }}
       onMouseEnter={(e) => { e.currentTarget.style.borderColor = c.hover; }}
       onMouseLeave={(e) => { e.currentTarget.style.borderColor = c.border; }}

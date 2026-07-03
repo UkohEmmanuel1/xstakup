@@ -22,7 +22,7 @@ export function ProcessSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
-              className="rounded-xl border border-border bg-card p-6 hover:shadow-card-hover transition-all"
+              className="rounded-xl border border-border bg-card p-8 md:p-10 hover:shadow-card-hover transition-all h-full min-h-[200px] flex flex-col"
             >
               <span className="text-3xl font-heading font-bold text-blue/30">
                 {step.number}

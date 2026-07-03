@@ -29,7 +29,7 @@ export function MissionVisionSection() {
                   key={item.title}
                   variants={staggerItem}
                   whileHover={{ y: -4, borderColor: color.hover }}
-                  className="group relative rounded-xl p-6"
+                  className="group relative rounded-xl p-8 md:p-10"
                   style={{ border: `1px solid ${color.border}`, background: color.bg }}
                 >
                   <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: color.accent }} />

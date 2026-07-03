@@ -30,7 +30,7 @@ export function ImpactMarqueeSection() {
                   key={m.label}
                   variants={staggerItem}
                   whileHover={{ y: -4, borderColor: c.hover }}
-                  className="group relative rounded-xl p-6"
+                  className="group relative rounded-xl p-8 md:p-10"
                   style={{ border: `1px solid ${c.border}`, background: c.bg }}
                 >
                   <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: c.accent }} />

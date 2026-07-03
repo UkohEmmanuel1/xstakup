@@ -32,7 +32,7 @@ export function PipelineSection() {
                   key={s.number}
                   variants={staggerItem}
                   whileHover={{ y: -4, borderColor: c.hover }}
-                  className="group relative rounded-xl p-6 transition-colors h-full"
+                  className="group relative rounded-xl p-8 md:p-10 transition-colors h-full"
                   style={{ border: `1px solid ${c.border}`, background: c.bg }}
                 >
                   <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: c.accent }} />

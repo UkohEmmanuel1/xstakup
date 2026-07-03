@@ -17,7 +17,7 @@ export function ExpertiseCard({ item, color }: ExpertiseCardProps) {
     <motion.div
       variants={staggerItem}
       whileHover={{ y: -4, borderColor: c.hover }}
-      className="group relative rounded-xl p-6 md:p-8 transition-colors"
+      className="group relative rounded-xl p-8 md:p-10 transition-colors h-full min-h-[200px] flex flex-col"
       style={{ border: `1px solid ${c.border}`, background: c.bg }}
     >
       <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: c.accent }} />

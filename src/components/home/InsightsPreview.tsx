@@ -29,7 +29,7 @@ export function InsightsPreview() {
             <Link
               key={post.slug}
               href={`/insights/${post.slug}`}
-              className="group rounded-xl border border-border bg-card p-6 hover:shadow-card-hover transition-all"
+              className="group rounded-xl border border-border bg-card p-8 md:p-10 hover:shadow-card-hover transition-all"
             >
               <div className="flex flex-wrap gap-2 mb-3">
                 {post.tags.slice(0, 2).map((t) => (

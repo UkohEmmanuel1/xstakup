@@ -67,7 +67,7 @@ export function ContactForm() {
       animate={{ opacity: 1, y: 0, scale: 1 }}
       transition={{ duration: 0.5 }}
       onSubmit={handleSubmit(onSubmit)}
-      className="rounded-xl border border-border bg-card p-6 md:p-8 space-y-5"
+      className="rounded-xl border border-border bg-card p-8 md:p-10 space-y-5"
     >
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1.5">

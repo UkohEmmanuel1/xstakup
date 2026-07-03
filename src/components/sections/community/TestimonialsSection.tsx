@@ -28,7 +28,7 @@ export function TestimonialsSection() {
               return (
                 <div key={t.handle} role="listitem">
                   <div
-                    className="w-[380px] md:w-[440px] max-w-[85vw] flex-shrink-0 rounded-2xl p-6 transition-all duration-300 flex flex-col justify-between"
+                    className="w-[380px] md:w-[440px] max-w-[85vw] flex-shrink-0 rounded-2xl p-8 md:p-10 transition-all duration-300 flex flex-col justify-between"
                     style={{ border: `1px solid ${c.border}`, background: c.bg }}
                     onMouseEnter={(e) => { e.currentTarget.style.borderColor = c.hover; }}
                     onMouseLeave={(e) => { e.currentTarget.style.borderColor = c.border; }}
@@ -60,7 +60,7 @@ export function TestimonialsSection() {
                 return (
                   <div key={`dup-${t.handle}`}>
                     <div
-                      className="w-[380px] md:w-[440px] max-w-[85vw] flex-shrink-0 rounded-2xl p-6 flex flex-col justify-between"
+                      className="w-[380px] md:w-[440px] max-w-[85vw] flex-shrink-0 rounded-2xl p-8 md:p-10 flex flex-col justify-between"
                       style={{ border: `1px solid ${c.border}`, background: c.bg }}
                     >
                       <div>

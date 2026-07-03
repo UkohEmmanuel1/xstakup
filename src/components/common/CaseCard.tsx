@@ -17,7 +17,7 @@ export function CaseCard({ item, index }: Props) {
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
     >
-      <div className="group rounded-xl border border-border bg-card p-6 hover:shadow-card-hover transition-all duration-300 h-full flex flex-col">
+      <div className="group rounded-xl border border-border bg-card p-8 md:p-10 hover:shadow-card-hover transition-all duration-300 h-full min-h-[200px] flex flex-col">
         <div className="flex items-center gap-2 mb-3">
           <span className="text-xs font-medium text-blue bg-blue/10 px-2 py-0.5 rounded-full">
             {item.industry}

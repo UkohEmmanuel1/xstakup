@@ -16,7 +16,7 @@ export function UseCaseCard({ item, index }: Props) {
       viewport={{ once: true }}
       transition={{ duration: 0.4, delay: index * 0.06 }}
     >
-      <div className="rounded-xl border border-border bg-card p-6 hover:shadow-card-hover transition-all duration-300 h-full flex flex-col">
+      <div className="rounded-xl border border-border bg-card p-8 md:p-10 hover:shadow-card-hover transition-all duration-300 h-full min-h-[200px] flex flex-col">
         <h3 className="text-lg font-heading font-bold text-foreground mb-3">{item.title}</h3>
         <div className="space-y-3 flex-grow">
           <div>

@@ -120,7 +120,7 @@ export function ProcessPageComponent() {
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="grid grid-cols-1 md:grid-cols-5 gap-5 md:gap-6 rounded-xl border border-border bg-card p-6"
+                className="grid grid-cols-1 md:grid-cols-5 gap-5 md:gap-6 rounded-xl border border-border bg-card p-8 md:p-10"
               >
                 <div className="md:col-span-1">
                   <span className="text-4xl md:text-5xl font-heading font-bold text-blue/20">

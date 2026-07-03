@@ -16,7 +16,7 @@ export function EngagementCard({ item, index }: Props) {
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
     >
-      <div className="rounded-xl border border-border bg-card p-6 hover:shadow-card-hover hover:border-blue/30 transition-all duration-300 h-full flex flex-col">
+      <div className="rounded-xl border border-border bg-card p-8 md:p-10 hover:shadow-card-hover hover:border-blue/30 transition-all duration-300 h-full min-h-[200px] flex flex-col">
         <h3 className="text-lg font-heading font-bold text-foreground mb-2">{item.title}</h3>
         <p className="text-sm text-muted-foreground mb-4">{item.bestFor}</p>
         <ul className="space-y-2 mb-5 flex-grow">

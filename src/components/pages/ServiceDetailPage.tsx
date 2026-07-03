@@ -77,7 +77,7 @@ export function ServiceDetailPageComponent({ serviceId }: Props) {
               </p>
             </div>
             <div className="lg:col-span-2">
-              <div className="rounded-xl border border-border bg-card p-6">
+              <div className="rounded-xl border border-border bg-card p-8 md:p-10">
                 <div className="h-12 w-12 rounded-lg bg-blue/10 flex items-center justify-center mb-4">
                   <Icon size={24} className="text-blue" />
                 </div>
@@ -134,7 +134,7 @@ export function ServiceDetailPageComponent({ serviceId }: Props) {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="rounded-xl border border-border bg-card p-6"
+                className="rounded-xl border border-border bg-card p-8 md:p-10"
               >
                 <span className="text-3xl font-heading font-bold text-blue/30">{step.num}</span>
                 <h3 className="mt-2 text-lg font-heading font-bold text-foreground">
@@ -157,7 +157,7 @@ export function ServiceDetailPageComponent({ serviceId }: Props) {
               </h2>
             </div>
             <div className="flex-1 space-y-4">
-              <div className="rounded-xl border border-border bg-card p-6">
+              <div className="rounded-xl border border-border bg-card p-8 md:p-10">
                 <h3 className="text-sm font-heading font-bold text-foreground mb-1">
                   Startups &amp; founders
                 </h3>
@@ -165,7 +165,7 @@ export function ServiceDetailPageComponent({ serviceId }: Props) {
                   Turn your idea into a working product.
                 </p>
               </div>
-              <div className="rounded-xl border border-border bg-card p-6">
+              <div className="rounded-xl border border-border bg-card p-8 md:p-10">
                 <h3 className="text-sm font-heading font-bold text-foreground mb-1">
                   Growing businesses
                 </h3>
@@ -173,7 +173,7 @@ export function ServiceDetailPageComponent({ serviceId }: Props) {
                   Scale your product and add features.
                 </p>
               </div>
-              <div className="rounded-xl border border-border bg-card p-6">
+              <div className="rounded-xl border border-border bg-card p-8 md:p-10">
                 <h3 className="text-sm font-heading font-bold text-foreground mb-1">
                   Enterprise teams
                 </h3>
