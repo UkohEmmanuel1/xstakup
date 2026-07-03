@@ -39,7 +39,7 @@ export function CaseStudiesSection() {
                     className="relative w-full h-36 md:h-44 overflow-hidden"
                     style={{ background: expertiseCaseGradients[i] }}
                   >
-                    <div className="absolute inset-0 bg-black/20" />
+                    <div className="absolute inset-0 bg-[#303030]/20" />
                     <div className="absolute top-0 left-3 right-3 h-[2px]" style={{ background: color.accent }} />
                   </div>
                   <div className="flex flex-col flex-grow p-4 md:p-6">

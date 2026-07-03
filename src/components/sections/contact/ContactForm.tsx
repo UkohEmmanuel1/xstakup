@@ -79,7 +79,7 @@ export function ContactForm() {
           className="w-full rounded-lg border border-border bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-blue/50 focus:border-blue/50 transition-colors"
           placeholder="Your name"
         />
-        {errors.name && <p className="mt-1 text-xs text-red-400">{errors.name.message}</p>}
+        {errors.name && <p className="mt-1 text-xs text-[#0094C7]">{errors.name.message}</p>}
       </div>
 
       <div>
@@ -93,7 +93,7 @@ export function ContactForm() {
           className="w-full rounded-lg border border-border bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-blue/50 focus:border-blue/50 transition-colors"
           placeholder="you@company.com"
         />
-        {errors.email && <p className="mt-1 text-xs text-red-400">{errors.email.message}</p>}
+        {errors.email && <p className="mt-1 text-xs text-[#0094C7]">{errors.email.message}</p>}
       </div>
 
       <div>
@@ -119,7 +119,7 @@ export function ContactForm() {
           className="w-full rounded-lg border border-border bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-blue/50 focus:border-blue/50 transition-colors resize-none"
           placeholder="Tell us about your project..."
         />
-        {errors.message && <p className="mt-1 text-xs text-red-400">{errors.message.message}</p>}
+        {errors.message && <p className="mt-1 text-xs text-[#0094C7]">{errors.message.message}</p>}
       </div>
 
       <motion.button
@@ -127,7 +127,7 @@ export function ContactForm() {
         disabled={isSubmitting}
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
-        className="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-blue-gradient px-6 py-3 text-sm font-medium text-[#070a09] shadow-blue hover:shadow-glow transition-shadow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-60"
+        className="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-blue-gradient px-6 py-3 text-sm font-medium text-[#303030] shadow-blue hover:shadow-glow transition-shadow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-60"
       >
         {isSubmitting ? (
           <>

@@ -9,7 +9,7 @@ export function ContactPage() {
       className="relative overflow-hidden bg-cover bg-center bg-no-repeat max-w-full"
       style={{ backgroundImage: `url('/assets/contact.webp')` }}
     >
-      <div className="absolute inset-0 bg-black/85" />
+      <div className="absolute inset-0 bg-[#303030]/85" />
       <div className="absolute inset-0 grid-pattern opacity-40" />
       <motion.div
         animate={{ scale: [1, 1.08, 1], opacity: [0.25, 0.4, 0.25] }}

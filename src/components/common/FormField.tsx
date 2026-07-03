@@ -20,7 +20,7 @@ export function Field({ label, name, type = "text", placeholder }: FieldProps) {
         type={type}
         required
         placeholder={placeholder}
-        className="mt-2 w-full rounded-md bg-[color:var(--void-main)] border border-border px-4 py-3 text-foreground focus:border-signal focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring transition-colors"
+        className="mt-2 w-full rounded-md bg-[color:var(--void-main)] border border-border px-4 py-3 text-foreground focus:border-[#0094C7] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring transition-colors"
       />
     </div>
   );

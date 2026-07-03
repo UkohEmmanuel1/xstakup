@@ -5,10 +5,10 @@ import { SectionLabel, AnimatedSection, staggerContainer, staggerItem } from "@/
 import { communityEvents, eventCardColors } from "@/data/community";
 
 const typeBadge: Record<string, string> = {
-  Meetup: "border-blue-500/30 text-blue-400",
-  Workshop: "border-blue-500/30 text-blue-400",
-  Talk: "border-purple-500/30 text-purple-400",
-  Hackathon: "border-amber-500/30 text-amber-400",
+  Meetup: "border-[#0094C7]/30 text-[#0094C7]",
+  Workshop: "border-[#0094C7]/30 text-[#0094C7]",
+  Talk: "border-[#0094C7]/30 text-[#0094C7]",
+  Hackathon: "border-[#0094C7]/30 text-[#0094C7]",
 };
 
 export function EventsSection() {

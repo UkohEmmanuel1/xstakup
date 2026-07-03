@@ -9,7 +9,7 @@ export function FinalCTA() {
       <div
         className="absolute inset-0 pointer-events-none animate-gradient-shift"
         style={{
-          background: "linear-gradient(135deg, #0A1A2A 0%, #0A1A2A 30%, #00BFFF 60%, #0A1A2A 100%)",
+          background: "linear-gradient(135deg, #303030 0%, #303030 30%, #0094C7 60%, #303030 100%)",
           opacity: 0.15,
         }}
       />
@@ -17,12 +17,12 @@ export function FinalCTA() {
       <motion.div
         animate={{ scale: [1, 1.1, 1], opacity: [0.3, 0.5, 0.3] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute -top-20 -right-20 h-72 w-72 rounded-full bg-blue/20 blur-3xl pointer-events-none"
+        className="absolute -top-20 -right-20 h-72 w-72 rounded-full bg-[#0094C7]/20 blur-3xl pointer-events-none"
       />
       <motion.div
         animate={{ scale: [1, 1.15, 1], opacity: [0.3, 0.5, 0.3] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
-        className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-steel/20 blur-3xl pointer-events-none"
+        className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-[#303030]/20 blur-3xl pointer-events-none"
       />
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 py-12 md:py-24">

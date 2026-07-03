@@ -7,11 +7,11 @@ import type { FeaturedCase } from "@/types";
 import type { CardColor } from "@/types";
 
 const caseCardColors: CardColor[] = [
-  { border: "oklch(0.52 0.28 265 / 0.25)", hover: "oklch(0.52 0.28 265 / 0.5)", accent: "oklch(0.52 0.28 265 / 0.6)", bg: "oklch(0.21 0.08 265)" },
-  { border: "oklch(0.55 0.22 290 / 0.25)", hover: "oklch(0.55 0.22 290 / 0.5)", accent: "oklch(0.55 0.22 290 / 0.6)", bg: "oklch(0.21 0.09 290)" },
-  { border: "oklch(0.65 0.18 230 / 0.25)", hover: "oklch(0.65 0.18 230 / 0.5)", accent: "oklch(0.65 0.18 230 / 0.6)", bg: "oklch(0.21 0.06 230)" },
-  { border: "oklch(0.6 0.15 200 / 0.25)", hover: "oklch(0.6 0.15 200 / 0.5)", accent: "oklch(0.6 0.15 200 / 0.6)", bg: "oklch(0.21 0.06 200)" },
-  { border: "oklch(0.65 0.14 95 / 0.3)", hover: "oklch(0.65 0.14 95 / 0.55)", accent: "oklch(0.65 0.14 95 / 0.65)", bg: "oklch(0.23 0.06 95)" },
+  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
+  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
+  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
+  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
+  { border: "rgba(0, 148, 199, 0.3)", hover: "rgba(0, 148, 199, 0.55)", accent: "rgba(0, 148, 199, 0.65)", bg: "#303030" },
 ];
 
 const featured: FeaturedCase[] = [
@@ -24,7 +24,7 @@ const featured: FeaturedCase[] = [
     solution:
       "We engineered a highly secure, scalable payment architecture featuring real-time transaction ledgers, enterprise-grade fraud protection, and instant multi-currency settlements.",
     stack: ["React", "Node.js", "Web3.js", "AWS Secure Enclave", "PostgreSQL"],
-    gradient: "linear-gradient(135deg, #1E2BFF, #0F1A7A)",
+    gradient: "linear-gradient(135deg, #0094C7, #303030)",
   },
   {
     name: "Quik",
@@ -35,7 +35,7 @@ const featured: FeaturedCase[] = [
     solution:
       "XStakUp developed a custom NLP booking application that intelligently syncs availability, manages conflicts, and automates client communication without human intervention.",
     stack: ["Python", "OpenAI API", "React Native", "GraphQL", "Redis"],
-    gradient: "linear-gradient(135deg, #7A5CFF, #1E2BFF)",
+    gradient: "linear-gradient(135deg, #0094C7, #0094C7)",
   },
   {
     name: "Cashflow Africa",
@@ -46,7 +46,7 @@ const featured: FeaturedCase[] = [
     solution:
       "We deployed an enterprise-grade trade finance platform that digitizes invoicing, secures B2B lending, and provides real-time financial dashboards for high-volume merchants.",
     stack: ["Vue.js", "GoLang", "Kubernetes", "Snowflake", "Docker"],
-    gradient: "linear-gradient(135deg, #00D1FF, #0F1A7A)",
+    gradient: "linear-gradient(135deg, #0094C7, #303030)",
   },
   {
     name: "Diction Masters",
@@ -57,7 +57,7 @@ const featured: FeaturedCase[] = [
     solution:
       "We built a speech recognition pipeline with real-time phoneme analysis, personalized learning paths, and native-language-accurate pronunciation scoring using custom NLP models.",
     stack: ["Python", "TensorFlow", "React Native", "WebSocket", "GCP"],
-    gradient: "linear-gradient(135deg, #00D1FF, #0F1A7A)",
+    gradient: "linear-gradient(135deg, #0094C7, #303030)",
   },
   {
     name: "Waterpro LLC",
@@ -68,7 +68,7 @@ const featured: FeaturedCase[] = [
     solution:
       "We deployed an IoT sensor network with a real-time analytics dashboard that detects leaks, predicts maintenance, and optimizes distribution flow across city infrastructure.",
     stack: ["Go", "React", "InfluxDB", "MQTT", "Kubernetes"],
-    gradient: "linear-gradient(135deg, #00D1FF, #0F1A7A)",
+    gradient: "linear-gradient(135deg, #0094C7, #303030)",
   },
 ];
 
@@ -91,7 +91,7 @@ function CaseStudyContent({ c, reverse }: { c: FeaturedCase; reverse: boolean })
       whileInView="visible"
       viewport={{ once: true }}
     >
-      <span className="inline-block text-xs uppercase tracking-widest border rounded-full px-3 py-1 text-blue-400 border-blue-500/30">
+      <span className="inline-block text-xs uppercase tracking-widest border rounded-full px-3 py-1 text-[#0094C7] border-[#0094C7]/30">
         {c.tag}
       </span>
       <h2 className="mt-5 text-3xl md:text-4xl font-bold">
@@ -146,11 +146,11 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
         />
       )}
       <div className="absolute inset-0 grid-pattern opacity-30" />
-      <div className="absolute inset-6 rounded-lg bg-black/60 backdrop-blur-sm p-4 flex flex-col gap-3">
+      <div className="absolute inset-6 rounded-lg bg-[#303030]/60 backdrop-blur-sm p-4 flex flex-col gap-3">
         <div className="flex items-center gap-2">
-          <div className="h-2.5 w-2.5 rounded-full bg-red-400/60" />
-          <div className="h-2.5 w-2.5 rounded-full bg-yellow-400/60" />
-          <div className="h-2.5 w-2.5 rounded-full bg-green-400/60" />
+          <div className="h-2.5 w-2.5 rounded-full bg-[#0094C7]/60" />
+          <div className="h-2.5 w-2.5 rounded-full bg-[#0094C7]/60" />
+          <div className="h-2.5 w-2.5 rounded-full bg-[#0094C7]/60" />
           <span className="ml-2 text-[10px] text-white/50">
             {c.name.toLowerCase()}.xstakup.io
           </span>

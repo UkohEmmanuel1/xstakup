@@ -11,7 +11,7 @@ interface ExpertiseCardProps {
 }
 
 export function ExpertiseCard({ item, color }: ExpertiseCardProps) {
-  const c = color ?? { border: "oklch(0.6 0.2 210 / 0.25)", hover: "oklch(0.6 0.2 210 / 0.5)", accent: "oklch(0.6 0.2 210 / 0.6)", bg: "oklch(0.16 0.06 210)" };
+  const c = color ?? { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" };
 
   return (
     <motion.div

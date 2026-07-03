@@ -25,7 +25,7 @@ export function SubPageHero({
       className="relative overflow-hidden py-8 md:py-12 lg:py-16 bg-cover bg-center bg-no-repeat max-w-full"
       style={{ backgroundImage: `url('${bgImage}')` }}
     >
-      <div className="absolute inset-0 bg-black/85" />
+      <div className="absolute inset-0 bg-[#303030]/85" />
       <div className="absolute inset-0 grid-pattern opacity-40" />
       <motion.div
         animate={{ scale: [1, 1.08, 1], opacity: [0.2, 0.35, 0.2] }}
@@ -63,7 +63,7 @@ export function SubPageHero({
             transition={{ duration: 0.5, delay: 0.5 }}
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.96 }}
-            className="mt-8 inline-flex items-center gap-2 rounded-md bg-blue-gradient px-6 py-3.5 text-sm font-medium text-[#070a09] shadow-blue focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            className="mt-8 inline-flex items-center gap-2 rounded-md bg-blue-gradient px-6 py-3.5 text-sm font-medium text-[#303030] shadow-blue focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
             {ctaText}
           </motion.a>

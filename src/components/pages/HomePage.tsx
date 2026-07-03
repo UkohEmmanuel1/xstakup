@@ -18,8 +18,8 @@ export function HomePage() {
       }}
     >
       {/* --- OPTIONAL OVERLAY: Makes text readable --- */}
-      {/* Change bg-black/40 to bg-white/10, or remove this <div> entirely if you don't want it */}
-      <div className="min-h-screen w-full bg-black/80 backdrop-blur-[1px]">
+      {/* Change bg-[#303030]/40 to bg-white/10, or remove this <div> entirely if you don't want it */}
+      <div className="min-h-screen w-full bg-[#303030]/80 backdrop-blur-[1px]">
         
         
         <HeroSection />

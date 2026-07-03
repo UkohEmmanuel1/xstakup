@@ -34,17 +34,17 @@ export function GlobalFootprintSection() {
                   <path
                     key={i}
                     d={d}
-                    fill="#1E2BFF"
+                    fill="#0094C7"
                     fillOpacity="0.15"
-                    stroke="#1E2BFF"
+                    stroke="#0094C7"
                     strokeOpacity="0.4"
                   />
                 ))}
-                <circle cx="200" cy="170" r="6" fill="#00D1FF">
+                <circle cx="200" cy="170" r="6" fill="#0094C7">
                   <animate attributeName="r" values="6;12;6" dur="2s" repeatCount="indefinite" />
                 </circle>
-                <circle cx="200" cy="170" r="3" fill="#fff" />
-                <text x="210" y="168" fill="#F9FAFB" fontSize="11" >
+                <circle cx="200" cy="170" r="3" fill="#FFFFFF" />
+                <text x="210" y="168" fill="#FFFFFF" fontSize="11" >
                   LAGOS
                 </text>
                 {[
@@ -55,13 +55,13 @@ export function GlobalFootprintSection() {
                   [500, 200],
                 ].map(([x, y], i) => (
                   <g key={i}>
-                    <circle cx={x} cy={y} r="3" fill="#7A5CFF" />
+                    <circle cx={x} cy={y} r="3" fill="#0094C7" />
                     <line
                       x1="200"
                       y1="170"
                       x2={x}
                       y2={y}
-                      stroke="#00D1FF"
+                      stroke="#0094C7"
                       strokeOpacity="0.2"
                       strokeDasharray="2 3"
                     />

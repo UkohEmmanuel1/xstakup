@@ -23,8 +23,8 @@ export function HeroSection() {
           playsInline
           aria-label="XStakUp enterprise software development showcase"
         />
-        <div className="absolute inset-0 bg-black/70" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/80" />
+        <div className="absolute inset-0 bg-[#303030]/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#303030]/40 via-transparent to-[#303030]/80" />
         <div className="absolute inset-0 bg-hero-glow" />
       </motion.div>
 
@@ -49,8 +49,8 @@ export function HeroSection() {
             className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-sm font-medium text-white/70 backdrop-blur-sm"
           >
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#0094C7] opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#0094C7]"></span>
             </span>
             Trusted by 200+ Enterprises Worldwide
           </motion.div>

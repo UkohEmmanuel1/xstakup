@@ -16,7 +16,7 @@ export function ExpertisePage() {
         backgroundImage: "url('/assets/background.png')",
       }}
     >
-      <div className="min-h-screen w-full bg-black/80 backdrop-blur-[1px]">
+      <div className="min-h-screen w-full bg-[#303030]/80 backdrop-blur-[1px]">
         <HeroBannerSection />
         <StatsStripSection />
         <ExpertiseDetailSection />

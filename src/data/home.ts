@@ -94,9 +94,9 @@ export const cases: CaseStudy[] = [
 ];
 
 export const caseGradients = [
-  "linear-gradient(135deg, #00BFFF, #003355)",
-  "linear-gradient(135deg, #0087BD, #002540)",
-  "linear-gradient(135deg, #00BFFF, #001A2A)",
+  "linear-gradient(135deg, #0094C7, #303030)",
+  "linear-gradient(135deg, #0094C7, #303030)",
+  "linear-gradient(135deg, #0094C7, #303030)",
 ];
 
 export const marqueeItems = [
@@ -119,17 +119,17 @@ export const marqueeItems = [
 
 
 const cardColor: CardColor = {
-  border: "oklch(0.6 0.2 210 / 0.25)",
-  hover: "oklch(0.6 0.2 210 / 0.5)",
-  accent: "oklch(0.6 0.2 210 / 0.6)",
-  bg: "oklch(0.16 0.06 210)",
+  border: "rgba(0, 148, 199, 0.25)",
+  hover: "rgba(0, 148, 199, 0.5)",
+  accent: "rgba(0, 148, 199, 0.6)",
+  bg: "#303030",
 };
 
 const cardColorTweet: CardColor = {
-  border: "oklch(0.6 0.2 210 / 0.25)",
-  hover: "oklch(0.6 0.2 210 / 0.5)",
-  accent: "oklch(0.6 0.2 210 / 0.6)",
-  bg: "oklch(0.16 0.06 210)",
+  border: "rgba(0, 148, 199, 0.25)",
+  hover: "rgba(0, 148, 199, 0.5)",
+  accent: "rgba(0, 148, 199, 0.6)",
+  bg: "#303030",
 };
 
 export const pipelineCardColors: CardColor[] = Array(4).fill(cardColor);

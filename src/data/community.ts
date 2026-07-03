@@ -131,32 +131,32 @@ export const communityTestimonials = [
 ];
 
 export const eventCardColors: CardColor[] = [
-  { border: "oklch(0.65 0.12 160 / 0.25)", hover: "oklch(0.65 0.12 160 / 0.5)", accent: "oklch(0.65 0.12 160 / 0.6)", bg: "oklch(0.12 0.04 160)" },
-  { border: "oklch(0.75 0.25 160 / 0.25)", hover: "oklch(0.75 0.25 160 / 0.5)", accent: "oklch(0.75 0.25 160 / 0.6)", bg: "oklch(0.14 0.06 160)" },
-  { border: "oklch(0.65 0.15 150 / 0.25)", hover: "oklch(0.65 0.15 150 / 0.5)", accent: "oklch(0.65 0.15 150 / 0.6)", bg: "oklch(0.12 0.05 150)" },
-  { border: "oklch(0.55 0.1 160 / 0.25)", hover: "oklch(0.55 0.1 160 / 0.5)", accent: "oklch(0.55 0.1 160 / 0.6)", bg: "oklch(0.12 0.03 170)" },
-  { border: "oklch(0.7 0.12 120 / 0.3)", hover: "oklch(0.7 0.12 120 / 0.55)", accent: "oklch(0.7 0.12 120 / 0.65)", bg: "oklch(0.14 0.04 130)" },
-  { border: "oklch(0.6 0.1 170 / 0.25)", hover: "oklch(0.6 0.1 170 / 0.5)", accent: "oklch(0.6 0.1 170 / 0.6)", bg: "oklch(0.12 0.03 160)" },
+  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
+  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
+  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
+  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
+  { border: "rgba(0, 148, 199, 0.3)", hover: "rgba(0, 148, 199, 0.55)", accent: "rgba(0, 148, 199, 0.65)", bg: "#303030" },
+  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
 ];
 
 export const benefitCardColors: CardColor[] = [
-  { border: "oklch(0.65 0.12 160 / 0.25)", hover: "oklch(0.65 0.12 160 / 0.5)", accent: "oklch(0.65 0.12 160 / 0.6)", bg: "oklch(0.12 0.04 160)" },
-  { border: "oklch(0.75 0.25 160 / 0.25)", hover: "oklch(0.75 0.25 160 / 0.5)", accent: "oklch(0.75 0.25 160 / 0.6)", bg: "oklch(0.14 0.06 160)" },
-  { border: "oklch(0.65 0.15 150 / 0.25)", hover: "oklch(0.65 0.15 150 / 0.5)", accent: "oklch(0.65 0.15 150 / 0.6)", bg: "oklch(0.12 0.05 150)" },
-  { border: "oklch(0.55 0.1 160 / 0.25)", hover: "oklch(0.55 0.1 160 / 0.5)", accent: "oklch(0.55 0.1 160 / 0.6)", bg: "oklch(0.12 0.03 170)" },
-  { border: "oklch(0.7 0.12 120 / 0.3)", hover: "oklch(0.7 0.12 120 / 0.55)", accent: "oklch(0.7 0.12 120 / 0.65)", bg: "oklch(0.14 0.04 130)" },
-  { border: "oklch(0.6 0.1 170 / 0.25)", hover: "oklch(0.6 0.1 170 / 0.5)", accent: "oklch(0.6 0.1 170 / 0.6)", bg: "oklch(0.12 0.03 160)" },
+  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
+  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
+  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
+  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
+  { border: "rgba(0, 148, 199, 0.3)", hover: "rgba(0, 148, 199, 0.55)", accent: "rgba(0, 148, 199, 0.65)", bg: "#303030" },
+  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
 ];
 
 export const projectCardColors: CardColor[] = [
-  { border: "oklch(0.75 0.25 160 / 0.25)", hover: "oklch(0.75 0.25 160 / 0.5)", accent: "oklch(0.75 0.25 160 / 0.6)", bg: "oklch(0.14 0.06 160)" },
-  { border: "oklch(0.65 0.15 150 / 0.25)", hover: "oklch(0.65 0.15 150 / 0.5)", accent: "oklch(0.65 0.15 150 / 0.6)", bg: "oklch(0.12 0.05 150)" },
-  { border: "oklch(0.55 0.1 160 / 0.25)", hover: "oklch(0.55 0.1 160 / 0.5)", accent: "oklch(0.55 0.1 160 / 0.6)", bg: "oklch(0.12 0.03 170)" },
+  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
+  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
+  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
 ];
 
 export const testimonialCardColors: CardColor[] = [
-  { border: "oklch(0.65 0.12 160 / 0.25)", hover: "oklch(0.65 0.12 160 / 0.5)", accent: "oklch(0.65 0.12 160 / 0.6)", bg: "oklch(0.12 0.04 160)" },
-  { border: "oklch(0.75 0.25 160 / 0.25)", hover: "oklch(0.75 0.25 160 / 0.5)", accent: "oklch(0.75 0.25 160 / 0.6)", bg: "oklch(0.14 0.06 160)" },
-  { border: "oklch(0.65 0.15 150 / 0.25)", hover: "oklch(0.65 0.15 150 / 0.5)", accent: "oklch(0.65 0.15 150 / 0.6)", bg: "oklch(0.12 0.05 150)" },
-  { border: "oklch(0.55 0.1 160 / 0.25)", hover: "oklch(0.55 0.1 160 / 0.5)", accent: "oklch(0.55 0.1 160 / 0.6)", bg: "oklch(0.12 0.03 170)" },
+  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
+  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
+  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
+  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
 ];

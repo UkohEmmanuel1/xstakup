@@ -10,9 +10,9 @@ interface Props {
 
 export function PageHero({ title, subtitle, children }: Props) {
   return (
-    <section className="relative overflow-hidden bg-dark pt-28 pb-16 md:pt-36 md:pb-20">
+    <section className="relative overflow-hidden bg-[#303030] pt-28 pb-16 md:pt-36 md:pb-20">
       <div className="absolute inset-0 bg-blue-aura" />
-      <div className="absolute inset-0 bg-gradient-to-b from-[#070a09]/0 via-[#070a09]/50 to-[#070a09]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#303030]/0 via-[#303030]/50 to-[#303030]" />
       <motion.div
         initial={{ scale: 0.97 }}
         animate={{ scale: 1 }}

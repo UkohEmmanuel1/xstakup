@@ -47,18 +47,18 @@ export function GlobalReachSection() {
             >
               <defs>
                 <radialGradient id="globe">
-                  <stop offset="0%" stopColor="#1E2BFF" stopOpacity="0.4" />
-                  <stop offset="100%" stopColor="#0A0B10" stopOpacity="0" />
+                  <stop offset="0%" stopColor="#0094C7" stopOpacity="0.4" />
+                  <stop offset="100%" stopColor="#303030" stopOpacity="0" />
                 </radialGradient>
               </defs>
               <circle cx="200" cy="200" r="180" fill="url(#globe)" />
-              <circle cx="200" cy="200" r="180" fill="none" stroke="#1E2BFF" strokeOpacity="0.3" />
+              <circle cx="200" cy="200" r="180" fill="none" stroke="#0094C7" strokeOpacity="0.3" />
               <circle
                 cx="200"
                 cy="200"
                 r="140"
                 fill="none"
-                stroke="#00D1FF"
+                stroke="#0094C7"
                 strokeOpacity="0.2"
                 strokeDasharray="2 4"
               />
@@ -67,7 +67,7 @@ export function GlobalReachSection() {
                 cy="200"
                 r="100"
                 fill="none"
-                stroke="#7A5CFF"
+                stroke="#0094C7"
                 strokeOpacity="0.2"
                 strokeDasharray="2 4"
               />
@@ -79,16 +79,16 @@ export function GlobalReachSection() {
                   rx="180"
                   ry={180 - i * 35}
                   fill="none"
-                  stroke="#1E2BFF"
+                  stroke="#0094C7"
                   strokeOpacity="0.15"
                 />
               ))}
               <g>
-                <circle cx="210" cy="220" r="6" fill="#00D1FF">
+                <circle cx="210" cy="220" r="6" fill="#0094C7">
                   <animate attributeName="r" values="6;10;6" dur="2s" repeatCount="indefinite" />
                 </circle>
-                <circle cx="210" cy="220" r="3" fill="#fff" />
-                <text x="220" y="218" fill="#F9FAFB" fontSize="10" fontFamily="monospace">
+                <circle cx="210" cy="220" r="3" fill="#FFFFFF" />
+                <text x="220" y="218" fill="#FFFFFF" fontSize="10" fontFamily="monospace">
                   LAGOS, NG
                 </text>
               </g>
@@ -99,7 +99,7 @@ export function GlobalReachSection() {
                 [150, 280],
                 [240, 110],
               ].map(([x, y], i) => (
-                <circle key={i} cx={x} cy={y} r="3" fill="#7A5CFF" opacity="0.7" />
+                <circle key={i} cx={x} cy={y} r="3" fill="#0094C7" opacity="0.7" />
               ))}
             </motion.svg>
           </motion.div>
