@@ -6,7 +6,7 @@ export function HeroBannerSection() {
   return (
     <SubPageHero
       title="Software Developer Community"
-      subtitle="Join our engineering community for meetups, technical talks, and open source contributions powering Africa's next generation of software builders."
+      subtitle="Meetups, talks, and OSS for Africa's engineering builders."
       bgImage="/assets/community.webp"
       orbColor="bg-blue/25"
     />

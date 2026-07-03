@@ -25,7 +25,7 @@ export function FinalCTA() {
         className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-[#303030]/20 blur-3xl pointer-events-none"
       />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 py-12 md:py-24">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 py-16 md:py-24">
         <motion.div
           initial={{ opacity: 0, y: 60, scale: 0.95 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
@@ -35,11 +35,10 @@ export function FinalCTA() {
         >
           <div>
             <h2 className="text-2xl md:text-5xl font-bold text-white max-w-3xl mx-auto tracking-tight">
-              Ready for Custom Enterprise Software Development?
+              Start Your Project
             </h2>
             <p className="mt-5 text-white/80 max-w-xl mx-auto text-base md:text-lg">
-              Partner with a dedicated engineering team that ships elite, production grade web,
-              mobile, AI, and Web3 systems.
+              Production-grade web, mobile, AI & Web3 solutions.
             </p>
             <div className="mt-10">
               <PrimaryCTA>Initialize Your Build</PrimaryCTA>

@@ -15,8 +15,8 @@ export function IndustriesPageComponent() {
   return (
     <main>
       <PageHero
-        title="Technical solutions for the industries shaping the digital economy."
-        subtitle="We build software for fintech, SaaS, AI, Web3, EdTech, marketplaces, logistics, media, and business operations."
+        title="Industry-specific engineering solutions."
+        subtitle="Software for fintech, SaaS, AI, Web3, EdTech, and more."
       >
         <CTAButton
           href="/contact"
@@ -28,14 +28,13 @@ export function IndustriesPageComponent() {
 
       <AnimatedSection className="py-16 md:py-24 border-b border-border">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="text-center mb-14">
+          <div className="text-center mb-12">
             <SectionLabel>Industries</SectionLabel>
             <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight max-w-3xl mx-auto">
-              Engineering support across modern digital industries.
+              Industries we serve.
             </h2>
             <p className="mt-4 text-base text-muted-foreground max-w-2xl mx-auto">
-              Every industry has unique technical requirements. We adapt our engineering approach to
-              fit your domain, compliance needs, and user expectations.
+              We adapt our engineering to your domain, compliance needs, and user expectations.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5 md:gap-6">
@@ -52,7 +51,7 @@ export function IndustriesPageComponent() {
             <div className="flex-1 max-w-xl">
               <SectionLabel>Approach</SectionLabel>
               <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight">
-                Industry-specific challenges require customized solutions.
+                Custom solutions, per industry.
               </h2>
             </div>
             <div className="flex-1 space-y-6">

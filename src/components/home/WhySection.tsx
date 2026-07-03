@@ -13,7 +13,7 @@ export function WhySection() {
           <div className="flex-1 max-w-xl">
             <SectionLabel>Why XStakUp</SectionLabel>
             <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight">
-              Built for founders and teams who need reliable execution.
+              Built For Scale
             </h2>
           </div>
           <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-6">

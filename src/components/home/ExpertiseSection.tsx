@@ -13,16 +13,16 @@ export function ExpertiseSection() {
 
   return (
     <AnimatedSection>
-      <section className="py-12 md:py-24 border-y border-border overflow-hidden">
+      <section className="py-16 md:py-24 border-y border-border overflow-hidden">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
             <div>
+              <SectionLabel>Expertise</SectionLabel>
               <h2 className="mt-4 text-2xl md:text-5xl font-bold text-white">
-                Enterprise Software Development Expertise
+                Engineering Expertise
               </h2>
               <p className="mt-3 text-white/80 max-w-lg">
-                From AI and Web3 to fintech and mobile: our eight specialized engineering
-                disciplines deliver production grade custom software.
+                Eight specialized engineering disciplines.
               </p>
             </div>
           </div>
@@ -32,7 +32,7 @@ export function ExpertiseSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid gap-5 md:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+            className="grid gap-5 md:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
           >
             <AnimatePresence mode="popLayout">
               {visibleExpertise.map((e) => (

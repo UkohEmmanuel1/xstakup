@@ -42,19 +42,6 @@ export function HeroSection() {
       >
         <div className="flex flex-col items-center text-center">
 
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-sm font-medium text-white/70 backdrop-blur-sm"
-          >
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#0094C7] opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#0094C7]"></span>
-            </span>
-            Trusted by 200+ Enterprises Worldwide
-          </motion.div>
-
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -74,9 +61,7 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.35 }}
             className="mt-6 max-w-2xl text-base md:text-lg text-white/60 font-light tracking-wide"
           >
-            Your dedicated engineering team for custom web development, mobile applications,
-            artificial intelligence, and Web3 solutions. We architect scalable, production-grade
-            systems so you can lead your market.
+            Dedicated engineering for web, mobile, AI, and Web3. We build production-grade systems so you lead your market.
           </motion.p>
 
           <StatsStrip items={stats} className="mt-16" />

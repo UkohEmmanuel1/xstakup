@@ -12,12 +12,12 @@ import { faqItems, faqCardColors } from "@/data/careers";
 export function FAQSection() {
   return (
     <AnimatedSection>
-      <section className="py-12 md:py-24 overflow-hidden">
+      <section className="py-16 md:py-24 overflow-hidden">
         <div className="mx-auto max-w-3xl px-6">
-          <div className="text-center max-w-2xl mx-auto mb-14">
+          <div className="text-center max-w-2xl mx-auto mb-12">
             <SectionLabel>FAQ</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
-              Frequently Asked <span className="text-gradient-blue">Questions</span>
+              <span className="text-gradient-blue">FAQs</span>
             </h2>
           </div>
           <Accordion type="single" collapsible className="w-full space-y-3">

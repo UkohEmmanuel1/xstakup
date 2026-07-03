@@ -18,21 +18,21 @@ export function OpenPositionsSection() {
 
   return (
     <AnimatedSection>
-      <section id="open-positions" className="py-12 md:py-24 border-y border-border overflow-hidden">
+      <section id="open-positions" className="py-16 md:py-24 border-y border-border overflow-hidden">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
             <div>
               <SectionLabel>Open Positions</SectionLabel>
               <h2 className="mt-4 text-2xl md:text-5xl font-bold">
-                Join the <span className="text-gradient-blue">Team</span>
+                Open <span className="text-gradient-blue">Roles</span>
               </h2>
               <p className="mt-3 text-white/80 max-w-lg">
-                We&apos;re looking for engineers who ship elite code and care deeply about impact.
+                Engineers shipping elite code.
               </p>
             </div>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-2 mb-10">
+          <div className="flex flex-wrap justify-center gap-2 mb-12">
             {departments.map((dept) => (
               <button
                 key={dept}
@@ -59,7 +59,7 @@ export function OpenPositionsSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+            className="grid gap-5 md:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
           >
             {filtered.map((job, i) => {
               const c = jobCardColors[i % jobCardColors.length];
@@ -68,7 +68,7 @@ export function OpenPositionsSection() {
                   key={job.id}
                   variants={staggerItem}
                   whileHover={{ y: -4, borderColor: c.hover }}
-                  className="group relative rounded-xl p-5 md:p-6 transition-colors flex flex-col"
+                  className="group relative rounded-xl p-6 transition-colors flex flex-col"
                   style={{ border: `1px solid ${c.border}`, background: c.bg }}
                 >
                   <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: c.accent }} />

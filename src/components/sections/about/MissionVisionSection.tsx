@@ -7,12 +7,12 @@ import { missionVisionItems, mvCardColors } from "@/data/about";
 export function MissionVisionSection() {
   return (
     <AnimatedSection>
-      <section className="py-12 md:py-24 overflow-hidden">
+      <section className="py-16 md:py-24 overflow-hidden">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="text-center max-w-2xl mx-auto mb-14">
+          <div className="text-center max-w-2xl mx-auto mb-12">
             <SectionLabel>Mission & Vision</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
-              Software Company <span className="text-gradient-blue">Mission & Vision</span>
+              Mission <span className="text-gradient-blue">& Vision</span>
             </h2>
           </div>
           <motion.div
@@ -20,7 +20,7 @@ export function MissionVisionSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid grid-cols-1 gap-6 md:grid-cols-2"
+            className="grid grid-cols-1 gap-5 md:gap-6 md:grid-cols-2"
           >
             {missionVisionItems.map((item, i) => {
               const color = mvCardColors[i];
@@ -29,7 +29,7 @@ export function MissionVisionSection() {
                   key={item.title}
                   variants={staggerItem}
                   whileHover={{ y: -4, borderColor: color.hover }}
-                  className="group relative rounded-xl p-6 md:p-10"
+                  className="group relative rounded-xl p-6"
                   style={{ border: `1px solid ${color.border}`, background: color.bg }}
                 >
                   <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: color.accent }} />

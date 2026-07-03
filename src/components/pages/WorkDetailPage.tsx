@@ -70,7 +70,7 @@ export function WorkDetailPageComponent({ slug }: Props) {
             <div>
               <SectionLabel>Goal</SectionLabel>
               <h2 className="mt-4 text-2xl md:text-3xl font-heading font-bold text-foreground tracking-tight">
-                What we set out to achieve
+                Our goal
               </h2>
               <p className="mt-4 text-base text-muted-foreground leading-relaxed">{study.goal}</p>
             </div>
@@ -84,7 +84,7 @@ export function WorkDetailPageComponent({ slug }: Props) {
             <div className="text-center mb-12">
               <SectionLabel>Scope</SectionLabel>
               <h2 className="mt-4 text-2xl md:text-4xl font-heading font-bold text-foreground tracking-tight">
-                Product scope
+                Scope overview
               </h2>
               <p className="mt-4 text-base text-muted-foreground max-w-2xl mx-auto">
                 {study.scope}
@@ -100,10 +100,10 @@ export function WorkDetailPageComponent({ slug }: Props) {
             <div className="text-center mb-12">
               <SectionLabel>Features</SectionLabel>
               <h2 className="mt-4 text-2xl md:text-4xl font-heading font-bold text-foreground tracking-tight">
-                What we built
+                Key features
               </h2>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 max-w-4xl mx-auto">
               {study.features.map((f) => (
                 <div key={f} className="flex items-start gap-3 text-sm text-foreground/80">
                   <CheckCircle size={16} className="text-blue flex-shrink-0 mt-0.5" />

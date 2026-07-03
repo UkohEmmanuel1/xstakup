@@ -30,19 +30,19 @@ export const expertiseCases: CaseStudy[] = [
     title: "TruRail",
     tag: "Logistics / IoT",
     description:
-      "Real time fleet tracking and logistics orchestration platform with IoT sensor integration and predictive maintenance.",
+      "Real-time fleet tracking and logistics orchestration with IoT sensors and predictive maintenance.",
   },
   {
     title: "MediChain",
     tag: "Healthcare / Web3",
     description:
-      "Decentralized patient record system with HIPAA-compliant storage, smart contract consent management, and cross facility interoperability.",
+      "Decentralized patient records with HIPAA-compliant storage, smart contract consent, and cross-facility interoperability.",
   },
   {
     title: "AgriWise",
     tag: "AgriTech / AI",
     description:
-      "AI powered precision agriculture platform delivering crop yield predictions, supply chain optimization, and satellite imagery analysis.",
+      "AI-powered precision agriculture with crop yield predictions, supply chain optimization, and satellite imagery.",
   },
 ];
 

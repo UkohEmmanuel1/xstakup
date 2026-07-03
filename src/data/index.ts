@@ -26,9 +26,9 @@ export const services: ServiceItem[] = [
   {
     id: "product-engineering",
     title: "Product Engineering",
-    shortDesc: "End-to-end product development from concept to launch.",
+    shortDesc: "From concept to launch — full product development.",
     description:
-      "We partner with founders and teams to design, build, and ship production-ready software products. From MVP to scale, we handle the full lifecycle.",
+      "From MVP to scale, we design, build, and ship production-ready software.",
     icon: "code",
     deliverables: [
       "Product strategy & roadmapping",
@@ -42,9 +42,9 @@ export const services: ServiceItem[] = [
   {
     id: "web-apps",
     title: "Web App Development",
-    shortDesc: "High-performance web applications built with modern frameworks.",
+    shortDesc: "High-performance web apps with modern frameworks.",
     description:
-      "We build responsive, fast, and scalable web applications using React, Next.js, and modern frontend stacks designed for real users.",
+      "Responsive, scalable web apps built with React, Next.js, and modern stacks.",
     icon: "globe",
     deliverables: [
       "Responsive frontend",
@@ -58,9 +58,9 @@ export const services: ServiceItem[] = [
   {
     id: "mobile-apps",
     title: "Mobile App Development",
-    shortDesc: "Cross-platform and native mobile applications.",
+    shortDesc: "Cross-platform iOS and Android apps.",
     description:
-      "We develop iOS and Android applications using React Native and Expo, delivering consistent experiences across devices.",
+      "iOS and Android apps built with React Native and Expo for consistent cross-device experiences.",
     icon: "smartphone",
     deliverables: [
       "Cross-platform apps",
@@ -74,9 +74,9 @@ export const services: ServiceItem[] = [
   {
     id: "saas",
     title: "SaaS Development",
-    shortDesc: "Scalable SaaS platforms with subscription infrastructure.",
+    shortDesc: "Multi-tenant SaaS with subscription infrastructure.",
     description:
-      "We build multi-tenant SaaS platforms with authentication, billing, team management, and analytics built in from day one.",
+      "Scalable SaaS platforms with auth, billing, team management, and analytics built in.",
     icon: "cloud",
     deliverables: [
       "Multi-tenant architecture",
@@ -90,9 +90,9 @@ export const services: ServiceItem[] = [
   {
     id: "ai",
     title: "AI & Automation",
-    shortDesc: "Custom AI integration and intelligent automation.",
+    shortDesc: "LLMs, chatbots, and workflow automation.",
     description:
-      "We integrate AI capabilities including LLMs, chatbots, recommendation engines, and workflow automation into your products.",
+      "AI integration including LLMs, chatbots, recommendation engines, and intelligent automation.",
     icon: "brain",
     deliverables: [
       "LLM integration",
@@ -106,9 +106,9 @@ export const services: ServiceItem[] = [
   {
     id: "fintech",
     title: "Fintech Development",
-    shortDesc: "Payment platforms and financial infrastructure.",
+    shortDesc: "Payment gateways, wallets, and lending systems.",
     description:
-      "We build secure financial systems including payment gateways, wallet infrastructure, lending platforms, and transaction engines.",
+      "Secure fintech systems — payment gateways, wallet infrastructure, lending platforms, and transaction engines.",
     icon: "wallet",
     deliverables: [
       "Payment integration",
@@ -122,9 +122,9 @@ export const services: ServiceItem[] = [
   {
     id: "web3",
     title: "Web3 & Blockchain",
-    shortDesc: "Decentralized applications and smart contracts.",
+    shortDesc: "dApps, smart contracts, and Web3 infrastructure.",
     description:
-      "We develop dApps, smart contracts, wallet integrations, and decentralized infrastructure on EVM-compatible chains.",
+      "dApps, smart contracts, wallet integrations, and decentralized infra on EVM chains.",
     icon: "hexagon",
     deliverables: [
       "Smart contracts",
@@ -138,9 +138,9 @@ export const services: ServiceItem[] = [
   {
     id: "backend",
     title: "Backend, APIs & Cloud",
-    shortDesc: "Robust backend systems and cloud infrastructure.",
+    shortDesc: "Backend systems, APIs, and cloud deployment.",
     description:
-      "We design and deploy scalable backend services, RESTful and GraphQL APIs, database architecture, and cloud infrastructure.",
+      "Scalable backend services, REST/GraphQL APIs, database architecture, and cloud infrastructure.",
     icon: "server",
     deliverables: [
       "REST/GraphQL APIs",
@@ -161,12 +161,12 @@ export const caseStudiesFull: CaseStudy[] = [
     platform: "Web App",
     tags: ["Fintech", "Web3", "Payments"],
     summary:
-      "Multi-currency payment infrastructure supporting crypto, gift cards, and fiat with real-time settlement.",
+      "Multi-currency payment infrastructure for crypto, gift cards, and fiat.",
     problem:
-      "Building a high-liquidity payment gateway capable of processing traditional and digital assets seamlessly across borders.",
-    goal: "Create a unified payment platform that handles crypto, gift cards, and fiat transactions with real-time settlement.",
+      "A high-liquidity payment gateway processing both traditional and digital assets across borders.",
+    goal: "Unified payment platform for crypto, gift cards, and fiat with real-time settlement.",
     scope:
-      "Full payment infrastructure including user wallets, transaction ledgers, admin dashboard, and multi-currency support.",
+      "User wallets, transaction ledgers, admin dashboard, and multi-currency support.",
     features: [
       "Crypto wallet integration",
       "Gift card processing",
@@ -177,9 +177,9 @@ export const caseStudiesFull: CaseStudy[] = [
     ],
     techStack: ["React", "Node.js", "TypeScript", "PostgreSQL", "Web3.js", "Paystack", "Stripe"],
     designApproach:
-      "Clean, trustworthy financial interface with clear transaction flows and real-time status updates.",
+      "Clean financial interface with clear transaction flows and real-time status.",
     outcome:
-      "A production-ready payment platform that processes multiple payment types through a single unified interface.",
+      "A production-ready platform processing multiple payment types through one unified interface.",
     slug: "xpay",
   },
   {
@@ -189,12 +189,12 @@ export const caseStudiesFull: CaseStudy[] = [
     platform: "Mobile App",
     tags: ["AI", "NLP", "Automation"],
     summary:
-      "AI-powered booking assistant that intelligently syncs availability and automates customer communication.",
+      "AI booking assistant that syncs availability and automates communication.",
     problem:
-      "Traditional scheduling apps require manual data entry. The market needed an autonomous agent for natural language booking.",
-    goal: "Build an AI assistant that handles booking requests, checks availability, and manages communication automatically.",
+      "Traditional scheduling apps require manual entry. Needed an autonomous agent for natural language booking.",
+    goal: "AI assistant that handles booking, availability, and communication automatically.",
     scope:
-      "NLP engine, booking system, calendar integration, and automated customer communication.",
+      "NLP engine, booking system, calendar integration, and automated communication.",
     features: [
       "Natural language processing",
       "Real-time availability sync",
@@ -205,9 +205,9 @@ export const caseStudiesFull: CaseStudy[] = [
     ],
     techStack: ["Python", "OpenAI", "React Native", "Node.js", "PostgreSQL", "Redis"],
     designApproach:
-      "Conversational UI with smooth transitions between chat and traditional booking interfaces.",
+      "Conversational UI blending chat and traditional booking interfaces.",
     outcome:
-      "An AI booking assistant that reduces manual coordination and improves customer response times.",
+      "AI booking assistant that reduces manual coordination and accelerates responses.",
     slug: "quik",
   },
   {
@@ -216,11 +216,11 @@ export const caseStudiesFull: CaseStudy[] = [
     industry: "Web3 / Social",
     platform: "Web App",
     tags: ["Web3", "SocialFi", "Blockchain"],
-    summary: "Web3 SocialFi platform with wallet login, NFT passes, quests, and user dashboard.",
+    summary: "Web3 SocialFi platform with wallet login and NFT passes.",
     problem:
-      "Building a social platform that combines Web3 wallet authentication with engaging user experiences.",
-    goal: "Create a SocialFi platform where users connect via wallets, earn through quests, and collect NFT passes.",
-    scope: "Wallet authentication, quest system, NFT pass marketplace, and user dashboard.",
+      "Building a social platform combining Web3 wallet auth with engaging user experiences.",
+    goal: "SocialFi platform with wallet login, quest rewards, and NFT passes.",
+    scope: "Wallet authentication, quest system, NFT marketplace, and user dashboard.",
     features: [
       "Wallet login (WalletConnect)",
       "NFT pass minting",
@@ -231,9 +231,9 @@ export const caseStudiesFull: CaseStudy[] = [
     ],
     techStack: ["Next.js", "Solidity", "WalletConnect", "The Graph", "PostgreSQL", "Tailwind CSS"],
     designApproach:
-      "Gaming-inspired UI with dark theme, animated rewards, and clear wallet interaction flows.",
+      "Gaming-inspired UI with animated rewards and clear wallet flows.",
     outcome:
-      "A fully functional SocialFi platform with wallet-based identity and gamified user engagement.",
+      "Functional SocialFi platform with wallet-based identity and gamified engagement.",
     slug: "digidrops",
   },
   {
@@ -243,12 +243,12 @@ export const caseStudiesFull: CaseStudy[] = [
     platform: "Mobile App",
     tags: ["EdTech", "NLP", "Mobile"],
     summary:
-      "Intelligent pronunciation coaching platform with real-time speech analysis and personalized learning paths.",
+      "Pronunciation coaching with real-time speech analysis and personalized paths.",
     problem:
-      "Language learners needed real-time feedback on pronunciation across different dialects and accents.",
-    goal: "Build a mobile app that provides real-time speech analysis and personalized pronunciation coaching.",
+      "Language learners needed real-time pronunciation feedback across dialects and accents.",
+    goal: "Mobile app with real-time speech analysis and personalized coaching.",
     scope:
-      "Speech recognition, phoneme analysis, personalized learning paths, and admin management platform.",
+      "Speech recognition, phoneme analysis, learning paths, and admin platform.",
     features: [
       "Real-time speech analysis",
       "Phoneme-level feedback",
@@ -258,9 +258,9 @@ export const caseStudiesFull: CaseStudy[] = [
       "Multiple accent support",
     ],
     techStack: ["Python", "TensorFlow", "React Native", "WebSocket", "Node.js", "PostgreSQL"],
-    designApproach: "Clean, encouraging interface with visual feedback on pronunciation accuracy.",
+    designApproach: "Clean interface with visual feedback on pronunciation accuracy.",
     outcome:
-      "An EdTech platform that provides instant, accurate pronunciation feedback to language learners.",
+      "EdTech platform delivering instant, accurate pronunciation feedback.",
     slug: "diction-masters",
   },
 ];
@@ -271,7 +271,7 @@ export const caseStudies: CaseStudyCard[] = [
     industry: "Fintech / Web3",
     tags: ["Fintech", "Web3", "Payments"],
     summary:
-      "Multi-currency payment infrastructure supporting crypto, gift cards, and fiat with real-time settlement.",
+      "Multi-currency payment infrastructure for crypto, gift cards, and fiat.",
     platform: "Web App",
     slug: "/work/xpay",
   },
@@ -280,7 +280,7 @@ export const caseStudies: CaseStudyCard[] = [
     industry: "AI / Automation",
     tags: ["AI", "NLP", "Automation"],
     summary:
-      "AI-powered booking assistant that intelligently syncs availability and automates customer communication.",
+      "AI booking assistant that syncs availability and automates communication.",
     platform: "Mobile App",
     slug: "/work/quik",
   },
@@ -288,7 +288,7 @@ export const caseStudies: CaseStudyCard[] = [
     title: "Digidrops",
     industry: "Web3 / Social",
     tags: ["Web3", "SocialFi", "Blockchain"],
-    summary: "Web3 SocialFi platform with wallet login, NFT passes, quests, and user dashboard.",
+    summary: "Web3 SocialFi platform with wallet login and NFT passes.",
     platform: "Web App",
     slug: "/work/digidrops",
   },
@@ -297,7 +297,7 @@ export const caseStudies: CaseStudyCard[] = [
     industry: "EdTech",
     tags: ["EdTech", "NLP", "Mobile"],
     summary:
-      "Intelligent pronunciation coaching platform with real-time speech analysis and personalized learning paths.",
+      "Pronunciation coaching with real-time speech analysis and personalized paths.",
     platform: "Mobile App",
     slug: "/work/diction-masters",
   },
@@ -307,45 +307,45 @@ export const processSteps: ProcessStep[] = [
   {
     number: "01",
     title: "Discover",
-    description: "Understand your product idea, business goal, users, and technical requirements.",
+    description: "Understand your product idea, goals, and technical requirements.",
     details:
-      "We conduct stakeholder interviews, user research, and technical discovery to align on vision and constraints.",
+      "Stakeholder interviews, user research, and technical discovery to align on vision.",
   },
   {
     number: "02",
     title: "Define",
     description:
-      "Shape the product scope, roadmap, architecture, feature list, and development plan.",
+      "Shape scope, roadmap, architecture, and development plan.",
     details:
-      "We create a product roadmap, define technical architecture, and prioritize features for the first build cycle.",
+      "Product roadmap, technical architecture, and feature prioritization for the first build cycle.",
   },
   {
     number: "03",
     title: "Design",
-    description: "Create user flows, wireframes, UI screens, and system architecture.",
+    description: "User flows, wireframes, UI screens, and system architecture.",
     details:
-      "Our design team produces high-fidelity mockups, interactive prototypes, and system diagrams for approval.",
+      "High-fidelity mockups, interactive prototypes, and system diagrams for stakeholder approval.",
   },
   {
     number: "04",
     title: "Build",
-    description: "Develop the frontend, backend, APIs, integrations, database, and infrastructure.",
+    description: "Frontend, backend, APIs, database, and infrastructure.",
     details:
-      "We ship code in sprint cycles with continuous integration, code reviews, and automated testing.",
+      "Code shipped in sprint cycles with CI, code reviews, and automated testing.",
   },
   {
     number: "05",
     title: "Test",
-    description: "Test performance, security, responsiveness, user flows, and edge cases.",
+    description: "Performance, security, responsiveness, and edge cases.",
     details:
-      "We run QA cycles including load testing, security audits, cross-browser testing, and user acceptance testing.",
+      "QA cycles with load testing, security audits, cross-browser, and user acceptance testing.",
   },
   {
     number: "06",
     title: "Launch & Support",
-    description: "Deploy, monitor, improve, and support the product after launch.",
+    description: "Deploy, monitor, and support post-launch.",
     details:
-      "We handle production deployment, set up monitoring and alerting, and provide ongoing maintenance and iteration support.",
+      "Production deployment, monitoring, alerting, and ongoing maintenance and iteration.",
   },
 ];
 
@@ -410,7 +410,7 @@ export const industries: IndustryItem[] = [
 
 export const whyItems: WhyItem[] = [
   {
-    title: "We think like product partners, not just developers",
+    title: "Product partners, not just developers",
     description: "We care about your business outcomes, not just shipping tickets.",
   },
   {
@@ -418,19 +418,19 @@ export const whyItems: WhyItem[] = [
     description: "No shortcuts. We design systems that grow with your user base.",
   },
   {
-    title: "We understand African and global digital markets",
+    title: "Deep understanding of African and global markets",
     description: "We build for the unique constraints and opportunities of emerging markets.",
   },
   {
-    title: "We support strategy, design, development, and deployment",
-    description: "End-to-end delivery from one team. No handoff friction.",
+    title: "End-to-end delivery, zero handoff friction",
+    description: "Strategy, design, development, and deployment from one team.",
   },
   {
-    title: "We can move fast without ignoring structure",
+    title: "Speed without sacrificing structure",
     description: "Speed and quality are not a trade-off. We deliver both.",
   },
   {
-    title: "We help non-technical founders make better product decisions",
+    title: "Clear guidance for non-technical founders",
     description: "Clear communication, technical context, and honest guidance.",
   },
 ];
@@ -473,84 +473,84 @@ export const techCategories: TechCategory[] = [
 export const useCases: UseCase[] = [
   {
     title: "MVP for a startup idea",
-    problem: "You have a validated concept but no technical team to build the first version.",
+    problem: "Validated concept but no technical team to build the first version.",
     solution:
-      "We design and build a functional MVP in 6-12 weeks with core features, user flows, and deployment.",
-    output: "A working product ready for beta users and investor demos.",
+      "Functional MVP in 6-12 weeks with core features, user flows, and deployment.",
+    output: "A working product for beta users and investor demos.",
   },
   {
     title: "Internal admin dashboard",
-    problem: "Your team needs a centralized system to manage operations, data, and workflows.",
+    problem: "Team needs a centralized system to manage operations and data.",
     solution:
-      "We build a custom dashboard with role-based access, data visualization, and integration with your existing tools.",
-    output: "A streamlined operations hub that reduces manual work and improves decision-making.",
+      "Custom dashboard with role-based access, data visualization, and existing tool integration.",
+    output: "An operations hub that reduces manual work and improves decision-making.",
   },
   {
     title: "Payment platform",
     problem:
-      "You need to accept, process, and settle payments across multiple methods and currencies.",
+      "Need to accept, process, and settle payments across multiple methods and currencies.",
     solution:
-      "We build a payment infrastructure with wallet systems, transaction ledgers, and compliance tooling.",
-    output: "A secure payment platform that handles fiat, crypto, and gift card transactions.",
+      "Payment infrastructure with wallet systems, transaction ledgers, and compliance tooling.",
+    output: "Secure platform handling fiat, crypto, and gift card transactions.",
   },
   {
     title: "Booking platform",
     problem:
-      "Your customers need to book services, check availability, and manage reservations online.",
+      "Customers need to book services, check availability, and manage reservations online.",
     solution:
-      "We develop a booking engine with real-time availability, automated confirmations, and calendar sync.",
-    output: "A booking system that reduces manual coordination and improves customer experience.",
+      "Booking engine with real-time availability, automated confirmations, and calendar sync.",
+    output: "A system that reduces manual coordination and improves customer experience.",
   },
   {
     title: "AI chatbot or AI assistant",
-    problem: "You want to automate customer support or provide intelligent assistance to users.",
+    problem: "Need to automate customer support or provide intelligent assistance.",
     solution:
-      "We integrate LLM-powered chatbots with your knowledge base and train them on your specific use case.",
+      "LLM-powered chatbots integrated with your knowledge base and trained on your use case.",
     output:
-      "An AI assistant that handles inquiries, reduces support load, and improves response times.",
+      "AI assistant that handles inquiries, reduces support load, and improves response times.",
   },
   {
     title: "SaaS customer portal",
     problem:
-      "Your customers need a self-service portal to manage their accounts, billing, and settings.",
+      "Customers need a self-service portal for accounts, billing, and settings.",
     solution:
-      "We build a multi-tenant portal with authentication, subscription management, and usage analytics.",
-    output: "A customer portal that reduces support tickets and improves user autonomy.",
+      "Multi-tenant portal with auth, subscription management, and usage analytics.",
+    output: "A portal that reduces support tickets and improves user autonomy.",
   },
   {
     title: "Marketplace platform",
-    problem: "You need to connect buyers and sellers with listings, payments, and communication.",
+    problem: "Need to connect buyers and sellers with listings, payments, and communication.",
     solution:
-      "We develop a marketplace with vendor onboarding, listing management, escrow payments, and reviews.",
-    output: "A two-sided marketplace that handles transactions and builds trust between parties.",
+      "Marketplace with vendor onboarding, listing management, escrow payments, and reviews.",
+    output: "A two-sided marketplace handling transactions and building trust.",
   },
   {
     title: "Web3 wallet-based app",
-    problem: "You want to build a dApp with wallet authentication and on-chain interactions.",
+    problem: "Need a dApp with wallet authentication and on-chain interactions.",
     solution:
-      "We build a web3 application with WalletConnect, smart contract integration, and transaction management.",
-    output: "A decentralized application that users can access with their crypto wallet.",
+      "Web3 app with WalletConnect, smart contract integration, and transaction management.",
+    output: "A dApp users can access with their crypto wallet.",
   },
   {
     title: "Learning platform",
-    problem: "You need to deliver educational content, track progress, and assess learners online.",
+    problem: "Need to deliver content, track progress, and assess learners online.",
     solution:
-      "We build a learning management system with course authoring, assessments, and progress tracking.",
-    output: "An educational platform that scales from small cohorts to thousands of learners.",
+      "LMS with course authoring, assessments, and progress tracking.",
+    output: "An educational platform scalable from small cohorts to thousands.",
   },
   {
     title: "Business automation tool",
-    problem: "Repetitive manual processes are slowing down your team and causing errors.",
+    problem: "Manual processes slowing down your team and causing errors.",
     solution:
-      "We analyze your workflows and build custom automation pipelines using APIs and event-driven architecture.",
-    output: "Automated processes that save hours of manual work each week.",
+      "Custom automation pipelines using APIs and event-driven architecture.",
+    output: "Automated processes saving hours of manual work each week.",
   },
 ];
 
 export const engagementModels: EngagementModel[] = [
   {
     title: "MVP Build",
-    bestFor: "Founders who need to turn an idea into a working product.",
+    bestFor: "Founders turning an idea into a working product.",
     includes: [
       "Product strategy & scoping",
       "UI/UX design",
@@ -561,7 +561,7 @@ export const engagementModels: EngagementModel[] = [
   },
   {
     title: "Product Team Extension",
-    bestFor: "Companies that need extra engineering capacity.",
+    bestFor: "Companies needing extra engineering capacity.",
     includes: [
       "Dedicated developer(s)",
       "Integration with your team",
@@ -572,7 +572,7 @@ export const engagementModels: EngagementModel[] = [
   },
   {
     title: "Dedicated Product Squad",
-    bestFor: "Teams that need design, frontend, backend, and deployment support.",
+    bestFor: "Teams needing full design, frontend, backend, and deployment support.",
     includes: [
       "Full product team",
       "Design, frontend & backend",
@@ -583,7 +583,7 @@ export const engagementModels: EngagementModel[] = [
   },
   {
     title: "Technical Strategy Sprint",
-    bestFor: "Founders who need architecture, planning, and roadmap clarity before building.",
+    bestFor: "Founders needing architecture and roadmap clarity before building.",
     includes: [
       "Architecture review & planning",
       "Technology stack recommendations",
@@ -594,7 +594,7 @@ export const engagementModels: EngagementModel[] = [
   },
   {
     title: "Maintenance & Scale Support",
-    bestFor: "Products that need bug fixes, monitoring, infrastructure, and improvement.",
+    bestFor: "Products needing bug fixes, monitoring, and infrastructure improvement.",
     includes: [
       "Bug fixes & hotfixes",
       "Performance monitoring",

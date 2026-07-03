@@ -18,8 +18,8 @@ export function InsightsPageComponent() {
   return (
     <main>
       <PageHero
-        title="Notes on product, engineering, AI, and digital growth."
-        subtitle="Practical insights from the XStakUp team on building software that works, scales, and makes an impact."
+        title="Engineering & product insights."
+        subtitle="Practical insights on building software that works and scales."
       >
         <CTAButton
           href="/contact"
@@ -31,7 +31,7 @@ export function InsightsPageComponent() {
 
       <AnimatedSection className="py-16 md:py-24 border-b border-border">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
             {blogPosts.map((post, i) => (
               <motion.div
                 key={post.slug}

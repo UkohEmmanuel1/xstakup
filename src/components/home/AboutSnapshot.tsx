@@ -8,17 +8,17 @@ const cards = [
   {
     icon: Code2,
     title: "Product-first thinking",
-    desc: "We start with your business goals, users, and product strategy before writing a single line of code.",
+    desc: "Business goals, users, and strategy before writing code.",
   },
   {
     icon: Layers,
     title: "Scalable engineering",
-    desc: "We build architecture that grows with your user base, from MVP to millions of requests.",
+    desc: "Architecture that scales from MVP to millions of users.",
   },
   {
     icon: Headphones,
     title: "Long-term technical support",
-    desc: "We stay with you after launch, providing monitoring, maintenance, and iteration support.",
+    desc: "Post-launch monitoring, maintenance, and iteration support.",
   },
 ];
 
@@ -30,15 +30,13 @@ export function AboutSnapshot() {
           <div className="flex-1 max-w-xl">
             <SectionLabel>About</SectionLabel>
             <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight">
-              An engineering partner for teams that need more than just code.
+              About XStakUp
             </h2>
             <p className="mt-4 text-base text-muted-foreground leading-relaxed">
-              XStakUp combines product thinking, UI/UX design, full-stack engineering, cloud
-              infrastructure, and technical strategy to help companies build software that is
-              reliable, scalable, and ready for real users.
+              Full-stack engineering, cloud infrastructure, and technical strategy.
             </p>
           </div>
-          <div className="flex-1 grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="flex-1 grid grid-cols-1 sm:grid-cols-3 gap-5 md:gap-6">
             {cards.map((card, i) => {
               const Icon = card.icon;
               return (
@@ -48,7 +46,7 @@ export function AboutSnapshot() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className="rounded-xl border border-border bg-card p-5 hover:shadow-card-hover transition-all"
+                    className="rounded-xl border border-border bg-card p-6 hover:shadow-card-hover transition-all"
                 >
                   <Icon size={20} className="text-blue mb-3" />
                   <h3 className="text-sm font-heading font-bold text-foreground mb-1.5">

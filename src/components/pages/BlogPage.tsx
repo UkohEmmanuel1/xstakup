@@ -63,15 +63,15 @@ export function BlogPage() {
     >
       <div className="min-h-screen w-full bg-[#303030]/80 backdrop-blur-[1px]">
         <SubPageHero
-          title="Software Engineering Insights"
-          subtitle="Deep dives on software architecture, system design, AI engineering, and Web3 development from the XStakUp engineering team."
+          title="Engineering insights"
+          subtitle="Deep dives on architecture, system design, AI, and Web3 development."
           bgImage="/assets/blog.webp"
         />
 
         <AnimatedSection>
-          <section className="border-y border-border py-12 md:py-20">
+          <section className="border-y border-border py-16 md:py-24">
             <div className="mx-auto max-w-7xl px-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
                 {blogPosts.map((post, i) => (
                   <BlogPostCard key={post.slug} post={post} index={i} />
                 ))}

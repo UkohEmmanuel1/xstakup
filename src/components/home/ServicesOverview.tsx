@@ -12,11 +12,11 @@ export function ServicesOverview() {
           <div className="max-w-xl">
             <SectionLabel>Services</SectionLabel>
             <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight">
-              Everything you need to design, build, and scale digital products.
+              Software Development Services
             </h2>
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
           {services.map((s, i) => (
             <ServiceCard key={s.id} service={s} index={i} />
           ))}

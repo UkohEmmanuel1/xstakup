@@ -6,7 +6,7 @@ import { SectionLabel, PrimaryCTA, AnimatedSection } from "@/components/common";
 export function GlobalReachSection() {
   return (
     <AnimatedSection>
-      <section className="py-12 md:py-24 bg-[color:var(--void-section)] border-y border-border overflow-hidden">
+      <section className="py-16 md:py-24 bg-[color:var(--void-section)] border-y border-border overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -16,12 +16,10 @@ export function GlobalReachSection() {
           >
             <SectionLabel>Global Reach</SectionLabel>
             <h2 className="mt-4 text-2xl md:text-5xl font-bold">
-              Global Software Engineering Services: From Lagos to the World
+              Global Engineering Reach
             </h2>
             <p className="mt-6 text-lg text-foreground/80">
-              Headquartered in Lagos, Nigeria, we deploy enterprise software systems across Africa,
-              Europe, and the Americas. Your distributed engineering team for global-scale
-              applications.
+              Headquartered in Lagos, we deploy enterprise systems across Africa, Europe, and the Americas.
             </p>
             <div className="mt-8">
               <PrimaryCTA>Initialize Your Build</PrimaryCTA>

@@ -75,7 +75,7 @@ export function InsightsDetailPageComponent({ slug }: Props) {
         </div>
       </AnimatedSection>
 
-      <section className="py-12 border-b border-border">
+      <section className="py-16 md:py-24 border-b border-border">
         <div className="mx-auto max-w-3xl px-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>

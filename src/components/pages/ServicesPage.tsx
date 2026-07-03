@@ -14,8 +14,8 @@ export function ServicesPageComponent() {
   return (
     <main>
       <PageHero
-        title="Software development services for modern businesses."
-        subtitle="From product strategy to deployment — we design, build, and scale production-ready digital products across every layer of the stack."
+        title="Full-stack development services."
+        subtitle="From strategy to deployment — we design, build, and scale digital products."
       >
         <CTAButton
           href="/contact"
@@ -27,17 +27,16 @@ export function ServicesPageComponent() {
 
       <AnimatedSection className="py-16 md:py-24 border-b border-border">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="text-center mb-14">
+          <div className="text-center mb-12">
             <SectionLabel>Services</SectionLabel>
             <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight max-w-3xl mx-auto">
-              Everything you need to design, build, and scale digital products.
+              End-to-end digital product delivery.
             </h2>
             <p className="mt-4 text-base text-muted-foreground max-w-2xl mx-auto">
-              Each service is backed by a clear process, modern tooling, and a team that cares about
-              your product outcomes, not just shipping tickets.
+              Clear process, modern tooling, and a team focused on outcomes.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
             {services.map((s, i) => (
               <ServiceCard key={s.id} service={s} index={i} />
             ))}
@@ -51,7 +50,7 @@ export function ServicesPageComponent() {
             <div className="flex-1 max-w-xl">
               <SectionLabel>Approach</SectionLabel>
               <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight">
-                How we deliver each service.
+                Our delivery approach.
               </h2>
             </div>
             <div className="flex-1 space-y-6">

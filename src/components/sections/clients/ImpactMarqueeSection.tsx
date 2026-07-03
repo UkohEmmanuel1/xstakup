@@ -14,14 +14,14 @@ const metrics = [
 export function ImpactMarqueeSection() {
   return (
     <AnimatedSection>
-      <section className="py-12 md:py-20 border-y border-border overflow-hidden">
+      <section className="py-16 md:py-24 border-y border-border overflow-hidden">
         <div className="mx-auto max-w-7xl px-6">
           <motion.div
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center"
+            className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-6 text-center"
           >
             {metrics.map((m, i) => {
               const c = statCardColors[i % statCardColors.length];

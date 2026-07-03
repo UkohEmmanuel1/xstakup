@@ -8,23 +8,21 @@ import { statCardColors } from "@/data/careers";
 export function CompanyMissionSection() {
   return (
     <AnimatedSection>
-      <section className="py-12 md:py-24 overflow-hidden">
+      <section className="py-16 md:py-24 overflow-hidden">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="mt-4 text-3xl md:text-5xl font-bold">
-                Engineering <span className="text-gradient-blue">Africa&apos;s Digital Future</span>
+                Africa&apos;s <span className="text-gradient-blue">Digital Future</span>
               </h2>
               <div className="mt-6 space-y-6 text-white/70 text-base md:text-lg leading-relaxed">
                 <p>
-                  XStakUp exists to provide world-class technical infrastructure and engineering
-                  expertise that empowers businesses to scale without limits. We believe Africa&apos;s
-                  greatest innovations will be built on enterprise-grade software.
+                  World-class infrastructure and expertise powering
+                  Africa&apos;s enterprise-scale innovations.
                 </p>
                 <p>
-                  Every engineer on our team contributes directly to that mission: shipping
-                  production systems for fintech, logistics, Web3, and AI platforms that serve
-                  millions of users across the continent and beyond.
+                  Production systems for fintech, logistics, Web3, and AI
+                  across the continent and beyond.
                 </p>
               </div>
             </div>
@@ -49,7 +47,7 @@ export function CompanyMissionSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 text-center"
+            className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-6 text-center"
           >
             {[
               { value: "50+", label: "Enterprise Clients" },

@@ -8,7 +8,7 @@ const steps = [
   {
     num: "01",
     title: "Product Discovery",
-    desc: "We start by understanding your product idea, business goals, target users, and technical requirements. This phase includes stakeholder interviews, user research, competitive analysis, and feasibility assessment.",
+    desc: "Understand your product idea, goals, users, and technical requirements through research and interviews.",
     details: [
       "Stakeholder interviews and goal alignment",
       "User research and persona development",
@@ -19,7 +19,7 @@ const steps = [
   {
     num: "02",
     title: "Scope & Roadmap",
-    desc: "We shape the product scope, define the feature set, create a technical roadmap, and establish the development plan. You get a clear document of what will be built, how, and when.",
+    desc: "Define scope, features, technical roadmap, and development plan with clear deliverables.",
     details: [
       "Product scope definition",
       "Feature prioritization",
@@ -30,7 +30,7 @@ const steps = [
   {
     num: "03",
     title: "UI/UX Design",
-    desc: "We create user flows, wireframes, high-fidelity UI screens, and interactive prototypes. The design is built around your users' needs and your business goals.",
+    desc: "Create user flows, wireframes, high-fidelity UI, and prototypes aligned with user needs and business goals.",
     details: [
       "User flow mapping",
       "Wireframing and prototyping",
@@ -41,7 +41,7 @@ const steps = [
   {
     num: "04",
     title: "Architecture Planning",
-    desc: "We design the system architecture, database schema, API contracts, and infrastructure setup. This ensures the product is built on a solid technical foundation.",
+    desc: "Design architecture, database schema, API contracts, and infrastructure for a solid technical foundation.",
     details: [
       "System architecture design",
       "Database schema design",
@@ -52,7 +52,7 @@ const steps = [
   {
     num: "05",
     title: "Development Sprint",
-    desc: "We build the frontend, backend, APIs, integrations, and infrastructure in iterative sprint cycles. Code is reviewed, tested, and deployed continuously.",
+    desc: "Build frontend, backend, APIs, and infrastructure in iterative sprint cycles with continuous deployment.",
     details: [
       "Frontend and backend development",
       "API and integration development",
@@ -63,7 +63,7 @@ const steps = [
   {
     num: "06",
     title: "QA & Testing",
-    desc: "We run comprehensive testing including functionality, performance, security, responsiveness, and edge cases. Quality is built into every sprint, not tacked on at the end.",
+    desc: "Functional, performance, security, and edge-case testing built into every sprint.",
     details: [
       "Functional and regression testing",
       "Performance and load testing",
@@ -74,7 +74,7 @@ const steps = [
   {
     num: "07",
     title: "Deployment",
-    desc: "We deploy the product to production with proper infrastructure, monitoring, alerting, and backup strategies. Your product goes live with confidence.",
+    desc: "Deploy to production with monitoring, alerting, and backup strategies in place.",
     details: [
       "Production environment setup",
       "CI/CD pipeline finalization",
@@ -85,7 +85,7 @@ const steps = [
   {
     num: "08",
     title: "Monitoring & Support",
-    desc: "After launch, we monitor performance, fix issues, roll out improvements, and provide ongoing technical support. We stay with you as your product grows.",
+    desc: "Monitor performance, fix issues, roll out improvements, and provide ongoing technical support.",
     details: [
       "Performance monitoring and optimization",
       "Bug fixes and hotfixes",
@@ -99,8 +99,8 @@ export function ProcessPageComponent() {
   return (
     <main>
       <PageHero
-        title="From idea to deployment, with structure at every step."
-        subtitle="A clear 8-step engineering process designed to take your product from concept to launch — and beyond."
+        title="Structured product delivery."
+        subtitle="An 8-step engineering process from concept to launch."
       >
         <CTAButton
           href="/contact"
@@ -120,7 +120,7 @@ export function ProcessPageComponent() {
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="grid grid-cols-1 md:grid-cols-5 gap-6 rounded-xl border border-border bg-card p-6 md:p-8"
+                className="grid grid-cols-1 md:grid-cols-5 gap-5 md:gap-6 rounded-xl border border-border bg-card p-6"
               >
                 <div className="md:col-span-1">
                   <span className="text-4xl md:text-5xl font-heading font-bold text-blue/20">

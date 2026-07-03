@@ -31,7 +31,7 @@ export function ServiceCard({ service, index }: Props) {
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.08 }}
     >
-      <div className="group rounded-xl border border-border bg-card p-6 md:p-8 hover:shadow-card-hover transition-all duration-300 h-full flex flex-col">
+      <div className="group rounded-xl border border-border bg-card p-6 hover:shadow-card-hover transition-all duration-300 h-full flex flex-col">
         <div className="h-10 w-10 rounded-lg bg-blue/10 flex items-center justify-center mb-4 group-hover:bg-blue/20 transition-colors">
           <Icon size={20} className="text-blue" />
         </div>

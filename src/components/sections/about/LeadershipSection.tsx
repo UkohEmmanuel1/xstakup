@@ -7,12 +7,12 @@ import { leaders, leaderGradients, leaderCardColors } from "@/data/about";
 export function LeadershipSection() {
   return (
     <AnimatedSection>
-      <section className="py-12 md:py-24 bg-[color:var(--void-section)] border-y border-border overflow-hidden">
+      <section className="py-16 md:py-24 bg-[color:var(--void-section)] border-y border-border overflow-hidden">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="text-center max-w-2xl mx-auto mb-14">
+          <div className="text-center max-w-2xl mx-auto mb-12">
             <SectionLabel>Leadership</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
-              Enterprise Software <span className="text-gradient-blue">Leadership Team</span>
+              Leadership <span className="text-gradient-blue">Team</span>
             </h2>
           </div>
           <motion.div
@@ -20,7 +20,7 @@ export function LeadershipSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
+            className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6"
           >
             {leaders.map((l, i) => {
               const c = leaderCardColors[i % leaderCardColors.length];
@@ -45,7 +45,7 @@ export function LeadershipSection() {
                     </motion.div>
                     <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: c.accent }} />
                   </motion.div>
-                  <div className="p-5">
+                  <div className="p-6">
                     <h3 className="font-semibold text-white">{l.name}</h3>
                     <p className="mt-1 text-xs uppercase tracking-widest" style={{ color: c.hover }}>
                       {l.role}

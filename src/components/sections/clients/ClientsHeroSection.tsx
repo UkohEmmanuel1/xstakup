@@ -5,13 +5,13 @@ import { SubPageHero } from "@/components/common";
 export function ClientsHeroSection() {
   return (
     <SubPageHero
-      title={
-        <>
-          <span className="text-gradient-blue">Enterprise Software Case Studies</span>{" "}
-          Client Success Stories
-        </>
-      }
-      subtitle="Real world enterprise software deployments: fintech, AI, Web3, and cloud infrastructure engineered for market leading businesses."
+        title={
+          <>
+            <span className="text-gradient-blue">Client</span>{" "}
+            Success Stories
+          </>
+        }
+        subtitle="Real-world fintech, AI, Web3, and cloud deployments."
       bgImage="/assets/clients.webp"
     />
   );

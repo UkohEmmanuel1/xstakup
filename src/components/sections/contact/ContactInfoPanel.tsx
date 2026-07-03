@@ -21,11 +21,10 @@ export function ContactInfoPanel() {
       transition={{ duration: 0.7 }}
     >
       <h1 className="mt-6 text-4xl md:text-5xl font-bold tracking-tight">
-        Let's <span className="text-gradient-blue">Engineer Your Custom Software Solution</span>
+        Let's <span className="text-gradient-blue">Build Together</span>
       </h1>
       <p className="mt-6 text-white/80">
-        Tell us about your enterprise software project. A senior engineer will respond within 24
-        hours with a technical roadmap and development proposal.
+        A senior engineer responds within 24 hours.
       </p>
       <motion.div
         initial="hidden"

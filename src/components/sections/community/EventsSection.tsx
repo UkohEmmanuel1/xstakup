@@ -14,15 +14,15 @@ const typeBadge: Record<string, string> = {
 export function EventsSection() {
   return (
     <AnimatedSection>
-      <section id="events" className="py-12 md:py-24 bg-void-section border-y border-border overflow-hidden">
+      <section id="events" className="py-16 md:py-24 bg-void-section border-y border-border overflow-hidden">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="text-center max-w-2xl mx-auto mb-14">
+          <div className="text-center max-w-2xl mx-auto mb-12">
             <SectionLabel>Events</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
-              Upcoming <span className="text-gradient-blue">Community Events</span>
+              Developer <span className="text-gradient-blue">Events</span>
             </h2>
             <p className="mt-4 text-white/70 text-base md:text-lg">
-              Meetups, workshops, talks, and hackathons, built by engineers, for engineers.
+              Events for every engineer.
             </p>
           </div>
           <motion.div
@@ -30,7 +30,7 @@ export function EventsSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+            className="grid gap-5 md:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
           >
             {communityEvents.map((ev, i) => {
               const c = eventCardColors[i % eventCardColors.length];
@@ -39,7 +39,7 @@ export function EventsSection() {
                   key={ev.title}
                   variants={staggerItem}
                   whileHover={{ y: -4, borderColor: c.hover }}
-                  className="group relative rounded-xl p-5 md:p-6 transition-colors flex flex-col"
+                  className="group relative rounded-xl p-6 transition-colors flex flex-col"
                   style={{ border: `1px solid ${c.border}`, background: c.bg }}
                 >
                   <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: c.accent }} />

@@ -14,7 +14,7 @@ export function InsightsPreview() {
           <div className="max-w-xl">
             <SectionLabel>Insights</SectionLabel>
             <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight">
-              Notes on product, engineering, AI, and digital growth.
+              Engineering Insights
             </h2>
           </div>
           <Link
@@ -24,7 +24,7 @@ export function InsightsPreview() {
             View all posts &rarr;
           </Link>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
           {latest.map((post) => (
             <Link
               key={post.slug}

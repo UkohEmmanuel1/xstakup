@@ -7,8 +7,8 @@ import { AnimatedSection, slideFromLeft, slideFromRight } from "@/components/com
 export function NarrativeSection() {
   return (
     <AnimatedSection>
-      <section className="bg-[var(--void-section)] border-border border-y py-12 md:py-24 overflow-hidden">
-        <div className="mx-auto max-w-7xl px-6 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+      <section className="bg-[var(--void-section)] border-border border-y py-16 md:py-24 overflow-hidden">
+          <div className="mx-auto max-w-7xl px-6 grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6 items-center">
 
           <motion.div
             variants={slideFromLeft}
@@ -17,12 +17,11 @@ export function NarrativeSection() {
             viewport={{ once: true }}
           >
             <h2 className="mt-4 text-3xl md:text-4xl font-bold tracking-tight text-white">
-              Software Engineering Company: Bridging Ambition and Infrastructure
+              Engineering Excellence
             </h2>
             <div className="mt-6 space-y-4 text-white/80 leading-relaxed">
               <p>
-                XStakUp was founded on a simple premise: businesses deserve better than
-                off-the-shelf software solutions.
+                Enterprise-grade solutions built to scale.
               </p>
             </div>
           </motion.div>

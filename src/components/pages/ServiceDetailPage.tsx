@@ -100,13 +100,13 @@ export function ServiceDetailPageComponent({ serviceId }: Props) {
 
       <AnimatedSection className="py-16 md:py-24 border-b border-border bg-muted/30">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="text-center mb-14">
+          <div className="text-center mb-12">
             <SectionLabel>Process</SectionLabel>
             <h2 className="mt-4 text-2xl md:text-4xl font-heading font-bold text-foreground tracking-tight">
-              How we deliver {service.title}.
+              Our delivery process.
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
             {[
               {
                 num: "01",
@@ -153,32 +153,32 @@ export function ServiceDetailPageComponent({ serviceId }: Props) {
             <div className="flex-1">
               <SectionLabel>Who it&apos;s for</SectionLabel>
               <h2 className="mt-4 text-2xl md:text-4xl font-heading font-bold text-foreground tracking-tight">
-                Is this right for your project?
+                Who needs this
               </h2>
             </div>
             <div className="flex-1 space-y-4">
-              <div className="rounded-xl border border-border bg-card p-5">
+              <div className="rounded-xl border border-border bg-card p-6">
                 <h3 className="text-sm font-heading font-bold text-foreground mb-1">
                   Startups &amp; founders
                 </h3>
                 <p className="text-sm text-muted-foreground">
-                  You have an idea and need a team to turn it into a working product.
+                  Turn your idea into a working product.
                 </p>
               </div>
-              <div className="rounded-xl border border-border bg-card p-5">
+              <div className="rounded-xl border border-border bg-card p-6">
                 <h3 className="text-sm font-heading font-bold text-foreground mb-1">
                   Growing businesses
                 </h3>
                 <p className="text-sm text-muted-foreground">
-                  You need to scale your product, add features, or rebuild for growth.
+                  Scale your product and add features.
                 </p>
               </div>
-              <div className="rounded-xl border border-border bg-card p-5">
+              <div className="rounded-xl border border-border bg-card p-6">
                 <h3 className="text-sm font-heading font-bold text-foreground mb-1">
                   Enterprise teams
                 </h3>
                 <p className="text-sm text-muted-foreground">
-                  You need additional engineering capacity or specialized technical expertise.
+                  Extra engineering capacity when you need it.
                 </p>
               </div>
             </div>
@@ -189,10 +189,10 @@ export function ServiceDetailPageComponent({ serviceId }: Props) {
       <AnimatedSection className="py-16 md:py-24 bg-gradient-primary">
         <div className="mx-auto max-w-7xl px-6 text-center">
           <h2 className="text-2xl md:text-4xl font-heading font-bold text-white tracking-tight">
-            Ready to build with {service.title}?
+            Build with {service.title}.
           </h2>
           <p className="mt-4 text-white/80 max-w-xl mx-auto">
-            Tell us about your project and we&apos;ll put together a clear plan and timeline.
+            Tell us about your project for a plan and timeline.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <CTAButton

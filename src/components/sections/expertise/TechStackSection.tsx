@@ -4,14 +4,13 @@ import { marqueeItems } from "@/data/home";
 export function TechStackSection() {
   return (
     <AnimatedSection>
-      <section className="py-12 md:py-20 border-y border-border overflow-hidden">
+      <section className="py-16 md:py-24 border-y border-border overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 mb-12 text-center">
           <h2 className="mt-4 text-xl md:text-4xl font-bold max-w-3xl mx-auto">
-            Technologies We <span className="text-gradient-blue">Engineer With</span>
+            Our <span className="text-gradient-blue">Tech Stack</span>
           </h2>
           <p className="mt-3 text-white/70 max-w-xl mx-auto">
-            Our engineering team specializes in modern frameworks, cloud infrastructure, blockchain
-            protocols, and AI platforms.
+            Full-stack, cloud, blockchain & AI.
           </p>
         </div>
         <div className="relative">

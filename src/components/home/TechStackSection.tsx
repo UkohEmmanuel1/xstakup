@@ -7,10 +7,10 @@ export function TechStackSection() {
   return (
     <AnimatedSection className="py-16 md:py-24 border-b border-border">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="text-center mb-14">
+        <div className="text-center mb-12">
           <SectionLabel>Tech Stack</SectionLabel>
           <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight">
-            Modern tools for production-ready software.
+            Our Tech Stack
           </h2>
         </div>
         <div className="space-y-8">

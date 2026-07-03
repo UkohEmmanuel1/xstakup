@@ -12,11 +12,11 @@ export function FeaturedWork() {
           <div className="max-w-xl">
             <SectionLabel>Work</SectionLabel>
             <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight">
-              Systems, platforms, and products we help bring to life.
+              Featured Projects
             </h2>
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
           {caseStudies.map((c, i) => (
             <CaseCard key={c.title} item={c} index={i} />
           ))}

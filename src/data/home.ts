@@ -5,32 +5,32 @@ export const pipeline: PipelineStep[] = [
     number: "01",
     title: "Software Strategy & Planning",
     description:
-      "Technical roadmapping and requirement analysis for custom enterprise software aligned with your business objectives.",
+      "Technical roadmapping and requirements analysis aligned with your business goals.",
   },
   {
     number: "02",
     title: "Architecture & UX Design",
     description:
-      "Scalable system architecture design with user centered UI/UX built for your target audience and growth requirements.",
+      "Scalable architecture with user-centered UI/UX for your audience and growth.",
   },
   {
     number: "03",
     title: "Full Stack Development",
     description:
-      "Custom software development across web, mobile, and Web3 platforms using modern frameworks and best practices.",
+      "Full-stack development across web, mobile, and Web3 using modern frameworks.",
   },
   {
     number: "04",
     title: "DevSecOps & Deployment",
     description:
-      "Secure CI/CD pipelines, cloud infrastructure, post launch monitoring, and 99.9% uptime maintenance.",
+      "Secure CI/CD, cloud infrastructure, monitoring, and 99.9% uptime maintenance.",
   },
 ];
 
 export const expertise: ExpertiseItem[] = [
   {
     title: "Product Engineering",
-    description: "End to end custom software development from concept to launch.",
+    description: "End-to-end software development from concept to launch.",
     icon: "◇",
   },
   {
@@ -40,34 +40,34 @@ export const expertise: ExpertiseItem[] = [
   },
   {
     title: "Web & SaaS Development",
-    description: "High performance web applications and scalable SaaS platforms.",
+    description: "High-performance web apps and scalable SaaS platforms.",
     icon: "▤",
   },
   {
     title: "Mobile Development",
-    description: "Native iOS and Android applications with cross platform expertise.",
+    description: "Native iOS and Android apps with cross-platform expertise.",
     icon: "▢",
   },
   {
     title: "AI & Machine Learning",
-    description: "Custom AI integration, NLP solutions, and intelligent automation services.",
+    description: "Custom AI, NLP solutions, and intelligent automation.",
     icon: "✦",
   },
   {
     title: "Fintech Solutions",
     description:
-      "Payment gateway integration, financial architecture, and secure transaction systems.",
+      "Payment gateways, financial architecture, and secure transaction systems.",
     icon: "₿",
   },
   {
     title: "CTO as a Service",
-    description: "On demand technical leadership and software architecture guidance for your team.",
+    description: "On-demand technical leadership and architecture guidance.",
     icon: "◈",
   },
   {
     title: "DevSecOps",
     description:
-      "Secure cloud deployments, automated CI/CD pipelines, and infrastructure management.",
+      "Secure cloud deployments, CI/CD pipelines, and infrastructure management.",
     icon: "⟁",
   },
 ];
@@ -77,19 +77,19 @@ export const cases: CaseStudy[] = [
     title: "XPay",
     tag: "Fintech / Web3",
     description:
-      "Crypto, gift card & fiat payment infrastructure with real time multi currency settlement.",
+      "Crypto, gift card, and fiat payment infrastructure with real-time settlement.",
   },
   {
     title: "Quik",
     tag: "AI / NLP",
     description:
-      "AI powered booking application that intelligently syncs availability and automates communication.",
+      "AI-powered booking app that syncs availability and automates communication.",
   },
   {
     title: "Cashflow Africa",
     tag: "Trade Finance",
     description:
-      "Intra African B2B trade finance platform digitizing invoicing and securing lending.",
+      "Intra-African B2B trade finance platform for digitized invoicing and secured lending.",
   },
 ];
 

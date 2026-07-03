@@ -3,38 +3,38 @@ import type { Differentiator, ValueItem, Leader, CardColor } from "@/types";
 export const missionVisionItems = [
   {
     title: "Our Mission",
-    description: "To provide world-class technical infrastructure and engineering expertise that empowers businesses to scale without limits.",
+    description: "World-class technical infrastructure and engineering expertise that empowers businesses to scale without limits.",
   },
   {
     title: "Our Vision",
-    description: "To be the most trusted global engineering partner for high scale digital platforms, setting the standard for uptime, security, and innovation.",
+    description: "The most trusted global engineering partner for high-scale digital platforms, setting the standard for uptime, security, and innovation.",
   },
 ];
 
 export const differentiators: Differentiator[] = [
   {
     title: "Client First Architecture",
-    description: "Your business goals dictate our technical stack. We build for your specific scale, not ours.",
+    description: "Your goals dictate our stack. We build for your scale, not ours.",
   },
   {
     title: "Uncompromising Security",
-    description: "From fintech gateways to Web3 dApps, security isn't a feature it's the foundation of every line of code we ship.",
+    description: "Security isn't a feature — it's the foundation of every line we ship.",
   },
   {
     title: "99.9% Engineering Rigor",
-    description: "We utilize DevSecOps and automated QA pipelines to ensure your system remains stable and high-performing 24/7.",
+    description: "DevSecOps and automated QA for 24/7 stability and performance.",
   },
   {
     title: "Full Stack Delivery",
-    description: "From frontend to infrastructure, we own the entire stack and deliver production-ready systems every sprint.",
+    description: "From frontend to infrastructure, we own the entire stack.",
   },
   {
     title: "AI First Approach",
-    description: "We integrate AI into every layer of development, from code generation to intelligent monitoring and predictive ops.",
+    description: "AI integrated into every layer — from code generation to predictive ops.",
   },
   {
     title: "Global Talent Network",
-    description: "Our distributed team brings diverse expertise across time zones, ensuring round the clock engineering velocity.",
+    description: "Distributed team delivering round-the-clock engineering velocity.",
   },
 ];
 
@@ -43,23 +43,23 @@ export const values: ValueItem[] = [
   {
     icon: "◇",
     title: "Transparency",
-    description: "Open communication and clear technical roadmaps at every sprint.",
+    description: "Open communication and clear roadmaps every sprint.",
   },
   { icon: "⬡", title: "Ownership", description: "We treat your product like it's our own internal infrastructure." },
   {
     icon: "⟁",
     title: "Innovation",
-    description: "Constantly evolving our stack with AI, Blockchain, and Edge to keep you ahead.",
+    description: "Evolving our stack with AI, blockchain, and edge to keep you ahead.",
   },
   {
     icon: "⌘",
     title: "Collaboration",
-    description: "We embed with your team, working as a seamless extension of your engineering organization.",
+    description: "We embed with your team as a seamless extension of your engineering org.",
   },
   {
     icon: "▣",
     title: "Impact",
-    description: "Every line of code ships with measurable business outcomes and real user value.",
+    description: "Every line ships with measurable business outcomes and real user value.",
   },
 ];
 
@@ -67,22 +67,22 @@ export const leaders: Leader[] = [
   {
     name: "Glory Umukoro",
     role: "Founder & CEO",
-    bio: "Vision led founder driving XStakUp's growth and engineering culture across Africa and global markets.",
+    bio: "Vision-led founder driving XStakUp's growth and engineering culture across Africa and global markets.",
   },
   {
     name: "Adaobi Nwosu",
     role: "CTO",
-    bio: "Enterprise architect with deep expertise in distributed systems, cloud infrastructure, and fintech engineering.",
+    bio: "Enterprise architect specializing in distributed systems, cloud infrastructure, and fintech.",
   },
   {
     name: "Chidi Okonkwo",
     role: "VP of Engineering",
-    bio: "Leads cross functional engineering squads delivering high scale platforms for fintech, logistics, and Web3.",
+    bio: "Leads cross-functional squads delivering high-scale platforms for fintech, logistics, and Web3.",
   },
   {
     name: "Tunde Bakare",
     role: "Head of AI & Data",
-    bio: "Drives AI/ML strategy and production grade model deployment across client platforms.",
+    bio: "Drives AI/ML strategy and production-grade model deployment across client platforms.",
   },
 ];
 

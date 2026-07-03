@@ -7,13 +7,12 @@ import { differentiators, differentiatorCardColors } from "@/data/about";
 export function DifferentiatorsSection() {
   return (
     <AnimatedSection>
-      <section id="differentiators" className="py-12 md:py-24 bg-[color:var(--void-section)] border-y border-border overflow-hidden">
+      <section id="differentiators" className="py-16 md:py-24 bg-[color:var(--void-section)] border-y border-border overflow-hidden">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="max-w-2xl mb-14">
+          <div className="max-w-2xl mb-12">
             <SectionLabel>Why Choose Us</SectionLabel>
             <h2 className="mt-4 text-2xl md:text-5xl font-bold">
-              Why Companies Choose Our{" "}
-              <span className="text-gradient-blue">Custom Software Development</span> Services
+              Key <span className="text-gradient-blue">Differentiators</span>
             </h2>
           </div>
           <motion.div
@@ -21,7 +20,7 @@ export function DifferentiatorsSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3"
+            className="grid grid-cols-1 gap-5 md:gap-6 md:grid-cols-2 lg:grid-cols-3"
           >
             {differentiators.map((d, i) => {
               const c = differentiatorCardColors[i % differentiatorCardColors.length];
@@ -30,7 +29,7 @@ export function DifferentiatorsSection() {
                   key={d.title}
                   variants={staggerItem}
                   whileHover={{ y: -4, borderColor: c.hover }}
-                  className="group relative rounded-xl p-5 md:p-6 transition-colors"
+                  className="group relative rounded-xl p-6 transition-colors"
                   style={{ border: `1px solid ${c.border}`, background: c.bg }}
                 >
                   <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: c.accent }} />

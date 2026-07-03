@@ -7,12 +7,12 @@ import { values, valueCardColors } from "@/data/about";
 export function ValuesSection() {
   return (
     <AnimatedSection>
-      <section className="py-12 md:py-24 overflow-hidden">
+      <section className="py-16 md:py-24 overflow-hidden">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="text-center max-w-2xl mx-auto mb-14">
+          <div className="text-center max-w-2xl mx-auto mb-12">
             <SectionLabel>Core Values</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
-              Software Engineering <span className="text-gradient-blue">Core Values</span>
+              Core <span className="text-gradient-blue">Values</span>
             </h2>
           </div>
           <motion.div
@@ -20,7 +20,7 @@ export function ValuesSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"
+            className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6"
           >
             {values.map((v, i) => {
               const c = valueCardColors[i % valueCardColors.length];
@@ -29,7 +29,7 @@ export function ValuesSection() {
                   key={v.title}
                   variants={staggerItem}
                   whileHover={{ y: -4, borderColor: c.hover }}
-                  className="group relative rounded-xl p-5 md:p-6 transition-colors"
+                  className="group relative rounded-xl p-6 transition-colors"
                   style={{ border: `1px solid ${c.border}`, background: c.bg }}
                 >
                   <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: c.accent }} />

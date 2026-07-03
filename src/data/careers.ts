@@ -8,7 +8,7 @@ export const jobOpenings: JobPosting[] = [
     location: "Lagos, Nigeria (Remote)",
     type: "Full time",
     description:
-      "Design and build high performance distributed systems powering enterprise fintech and logistics platforms.",
+      "Design and build high-performance distributed systems for enterprise fintech and logistics platforms.",
     requirements: [
       "5+ years in Node.js, Go, or Python",
       "Experience with PostgreSQL, Redis, Kafka",
@@ -24,7 +24,7 @@ export const jobOpenings: JobPosting[] = [
     location: "Lagos, Nigeria (Remote)",
     type: "Full time",
     description:
-      "Build and maintain RESTful APIs and event driven services for high-scale client deployments.",
+      "Build and maintain RESTful APIs and event-driven services for high-scale client deployments.",
     requirements: [
       "3+ years experience in Node.js or Go",
       "Proficiency with SQL and NoSQL databases",
@@ -40,7 +40,7 @@ export const jobOpenings: JobPosting[] = [
     location: "Remote (Global)",
     type: "Full time",
     description:
-      "Develop production grade ML models and AI pipelines for predictive analytics, fraud detection, and intelligent automation.",
+      "Develop production-grade ML models and AI pipelines for predictive analytics, fraud detection, and automation.",
     requirements: [
       "4+ years in ML engineering or data science",
       "Proficiency with PyTorch, TensorFlow, or JAX",
@@ -56,7 +56,7 @@ export const jobOpenings: JobPosting[] = [
     location: "Remote (Global)",
     type: "Full time",
     description:
-      "Architect and deploy smart contracts, dApps, and DeFi protocols on EVM-compatible chains.",
+      "Architect and deploy smart contracts, dApps, and DeFi protocols on EVM chains.",
     requirements: [
       "3+ years Solidity development experience",
       "Deep knowledge of Ethereum and Layer-2 scaling",
@@ -88,7 +88,7 @@ export const jobOpenings: JobPosting[] = [
     location: "Lagos, Nigeria (Remote)",
     type: "Full time",
     description:
-      "Craft responsive, high performance UIs for enterprise dashboards and customer-facing platforms.",
+      "Craft responsive, high-performance UIs for enterprise dashboards and customer-facing platforms.",
     requirements: [
       "3+ years in React, TypeScript, and Next.js",
       "Strong understanding of state management and SSR",
@@ -104,37 +104,37 @@ export const benefits: BenefitItem[] = [
     icon: "◇",
     title: "Competitive Compensation",
     description:
-      "Industry leading salary packages with performance bonuses and equity options for full time team members.",
+      "Industry-leading salary with performance bonuses and equity options for full-time team members.",
   },
   {
     icon: "⌘",
     title: "Remote First Culture",
     description:
-      "Work from anywhere. We operate async first with flexible hours and quarterly team meetups.",
+      "Work from anywhere. Async-first with flexible hours and quarterly team meetups.",
   },
   {
     icon: "⬡",
     title: "Growth & Learning",
     description:
-      "Annual learning stipend, conference access, and internal mentorship programs to level up your career.",
+      "Annual learning stipend, conference access, and internal mentorship programs.",
   },
   {
     icon: "⊞",
     title: "Health & Wellness",
     description:
-      "Comprehensive health insurance covering you and your dependents, plus wellness and mental health support.",
+      "Comprehensive health insurance covering you and your dependents, plus wellness support.",
   },
   {
     icon: "▣",
     title: "Latest Tools & Tech",
     description:
-      "MacBook Pro, ergonomic setup budget, and access to cutting edge AI and cloud tooling.",
+      "MacBook Pro, ergonomic setup budget, and access to cutting-edge AI and cloud tooling.",
   },
   {
     icon: "⟁",
     title: "Paid Time Off",
     description:
-      "Generous PTO policy with 4 weeks vacation, public holidays, and parental leave.",
+      "Generous PTO with 4 weeks vacation, public holidays, and parental leave.",
   },
 ];
 
@@ -142,32 +142,32 @@ export const faqItems: FAQItem[] = [
   {
     question: "What is the hiring process like?",
     answer:
-      "Our process typically includes an initial screening call, a technical assessment or take home project, a technical interview with the team, and a final culture fit conversation. We aim to complete the process within 2–3 weeks.",
+      "Screening call, technical assessment or take-home project, technical interview, and culture fit conversation. Completed within 2–3 weeks.",
   },
   {
     question: "Do you offer remote positions?",
     answer:
-      "Yes. We are a remote first company. Most roles are fully remote with optional co-working access in Lagos. Some positions may require occasional travel for client on sites or team retreats.",
+      "Yes. We are remote-first. Most roles are fully remote with optional co-working in Lagos. Some roles may require occasional travel.",
   },
   {
     question: "What technologies does the team use?",
     answer:
-      "Our stack includes Node.js, Go, Python, React, Next.js, PostgreSQL, Redis, Kafka, Docker, Kubernetes, AWS/GCP, and Solidity. We adopt the right tools for each project and are always exploring emerging technologies.",
+      "Node.js, Go, Python, React, Next.js, PostgreSQL, Redis, Kafka, Docker, Kubernetes, AWS/GCP, and Solidity. We choose the right tools for each project.",
   },
   {
     question: "Does XStakUp sponsor visas?",
     answer:
-      "We currently sponsor work visas for roles based in Nigeria. For global remote positions, we hire through our international contractor model. We're expanding to new regions and will update postings as eligibility changes.",
+      "We sponsor work visas for Nigeria-based roles. Global remote positions hire through our international contractor model.",
   },
   {
     question: "What is the company culture like?",
     answer:
-      "We value ownership, transparency, and continuous improvement. Our team ships elite code, but we also prioritize work life balance, open communication, and psychological safety. We grow together.",
+      "We value ownership, transparency, and continuous improvement. We ship elite code while prioritizing work-life balance and psychological safety.",
   },
   {
     question: "Are there internship opportunities?",
     answer:
-      "Yes. We run a seasonal internship program for aspiring engineers. Positions are posted on this page and through our community channels when available.",
+      "Yes. We run a seasonal internship program. Positions are posted on this page and through our community channels.",
   },
 ];
 

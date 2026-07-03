@@ -8,8 +8,8 @@ export function WorkPageComponent() {
   return (
     <main>
       <PageHero
-        title="Real products, platforms, and systems."
-        subtitle="Case studies from projects we've designed, built, and deployed across fintech, AI, Web3, SaaS, mobile, and more."
+        title="Proven product engineering."
+        subtitle="Case studies across fintech, AI, Web3, SaaS, and mobile."
       >
         <CTAButton
           href="/contact"
@@ -21,13 +21,13 @@ export function WorkPageComponent() {
 
       <AnimatedSection className="py-16 md:py-24 border-b border-border">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="text-center mb-14">
+          <div className="text-center mb-12">
             <SectionLabel>Work</SectionLabel>
             <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight max-w-3xl mx-auto">
-              Systems, platforms, and products we help bring to life.
+              What we build
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
             {caseStudies.map((c, i) => (
               <CaseCard key={c.title} item={c} index={i} />
             ))}
@@ -41,10 +41,10 @@ export function WorkPageComponent() {
             <div className="flex-1 max-w-xl">
               <SectionLabel>Capabilities</SectionLabel>
               <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight">
-                What we build, across industries.
+                Cross-industry capabilities.
               </h2>
             </div>
-            <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-6">
               {[
                 "Fintech & Payment Platforms",
                 "AI & Automation Systems",

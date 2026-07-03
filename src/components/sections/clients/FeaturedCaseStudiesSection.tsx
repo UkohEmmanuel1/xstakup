@@ -20,9 +20,9 @@ const featured: FeaturedCase[] = [
     tag: "Fintech & Web3 Infrastructure",
     headline: "Bridging Crypto, Gift Cards, and Fiat Payments.",
     challenge:
-      "Building a high-liquidity, zero-latency payment gateway capable of processing traditional and digital assets seamlessly across borders.",
+      "Zero-latency payment gateway for traditional and digital assets.",
     solution:
-      "We engineered a highly secure, scalable payment architecture featuring real-time transaction ledgers, enterprise-grade fraud protection, and instant multi-currency settlements.",
+      "Secure, scalable payment architecture with real-time ledgers, fraud protection, and multi-currency settlements.",
     stack: ["React", "Node.js", "Web3.js", "AWS Secure Enclave", "PostgreSQL"],
     gradient: "linear-gradient(135deg, #0094C7, #303030)",
   },
@@ -31,9 +31,9 @@ const featured: FeaturedCase[] = [
     tag: "AI & Machine Learning",
     headline: "The Intelligent AI Booking Engine.",
     challenge:
-      "Traditional scheduling apps require manual data entry. The market needed an autonomous agent capable of handling natural language requests and complex calendar integrations.",
+      "Autonomous scheduling agent for natural language booking and calendar management.",
     solution:
-      "XStakUp developed a custom NLP booking application that intelligently syncs availability, manages conflicts, and automates client communication without human intervention.",
+      "NLP booking engine with smart availability syncing, conflict management, and automated communication.",
     stack: ["Python", "OpenAI API", "React Native", "GraphQL", "Redis"],
     gradient: "linear-gradient(135deg, #0094C7, #0094C7)",
   },
@@ -42,9 +42,9 @@ const featured: FeaturedCase[] = [
     tag: "Enterprise SaaS & Trade Finance",
     headline: "Powering Intra-African Trade.",
     challenge:
-      "Cross-border B2B trade in Africa suffers from fragmented financial data and slow liquidity cycles.",
+      "Fragmented financial data and slow liquidity in African B2B trade.",
     solution:
-      "We deployed an enterprise-grade trade finance platform that digitizes invoicing, secures B2B lending, and provides real-time financial dashboards for high-volume merchants.",
+      "Enterprise trade finance platform digitizing invoicing, B2B lending, and real-time financial dashboards.",
     stack: ["Vue.js", "GoLang", "Kubernetes", "Snowflake", "Docker"],
     gradient: "linear-gradient(135deg, #0094C7, #303030)",
   },
@@ -53,9 +53,9 @@ const featured: FeaturedCase[] = [
     tag: "EdTech & NLP",
     headline: "Language Learning Reimagined.",
     challenge:
-      "Building an intelligent pronunciation coaching system that provides real-time feedback to language learners across different dialects and accents.",
+      "Real-time pronunciation coaching for language learners across dialects.",
     solution:
-      "We built a speech recognition pipeline with real-time phoneme analysis, personalized learning paths, and native-language-accurate pronunciation scoring using custom NLP models.",
+      "Speech recognition pipeline with phoneme analysis, personalized learning, and NLP scoring.",
     stack: ["Python", "TensorFlow", "React Native", "WebSocket", "GCP"],
     gradient: "linear-gradient(135deg, #0094C7, #303030)",
   },
@@ -64,9 +64,9 @@ const featured: FeaturedCase[] = [
     tag: "Enterprise IoT",
     headline: "Smart Water Management.",
     challenge:
-      "Municipal water systems lacked real-time monitoring, leading to 30%+ losses from leaks and inefficient distribution across urban networks.",
+      "30%+ water losses from leaks due to no real-time monitoring.",
     solution:
-      "We deployed an IoT sensor network with a real-time analytics dashboard that detects leaks, predicts maintenance, and optimizes distribution flow across city infrastructure.",
+      "IoT sensor network with real-time analytics for leak detection, maintenance prediction, and flow optimization.",
     stack: ["Go", "React", "InfluxDB", "MQTT", "Kubernetes"],
     gradient: "linear-gradient(135deg, #0094C7, #303030)",
   },
@@ -186,7 +186,7 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
 export function FeaturedCaseStudiesSection() {
   return (
     <AnimatedSection>
-      <section id="cases" className="py-12 md:py-20 bg-void-section border-y border-border overflow-hidden">
+      <section id="cases" className="py-16 md:py-24 bg-void-section border-y border-border overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 space-y-16 md:space-y-32">
           {featured.map((c, i) => {
             const reverse = i % 2 === 1;
@@ -198,7 +198,7 @@ export function FeaturedCaseStudiesSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: i * 0.15 }}
-                className={`grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 lg:gap-20 items-center ${reverse ? "md:[&>*:first-child]:order-2" : ""}`}
+                className={`grid grid-cols-1 gap-5 md:gap-6 md:grid-cols-2 items-center ${reverse ? "md:[&>*:first-child]:order-2" : ""}`}
               >
                 <motion.div
                   variants={reverse ? slideFromRight : slideFromLeft}

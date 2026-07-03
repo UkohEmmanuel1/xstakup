@@ -7,15 +7,15 @@ import { communityProjects, projectCardColors } from "@/data/community";
 export function OpenSourceSection() {
   return (
     <AnimatedSection>
-      <section className="py-12 md:py-24 bg-void-section border-y border-border overflow-hidden">
+      <section className="py-16 md:py-24 bg-void-section border-y border-border overflow-hidden">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="text-center max-w-2xl mx-auto mb-14">
+          <div className="text-center max-w-2xl mx-auto mb-12">
             <SectionLabel>Open Source</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
               Community <span className="text-gradient-blue">Projects</span>
             </h2>
             <p className="mt-4 text-white/70 text-base md:text-lg">
-              Open-source tools built and maintained by our community for the African engineering ecosystem.
+              Tools for Africa's engineering ecosystem.
             </p>
           </div>
           <motion.div
@@ -23,7 +23,7 @@ export function OpenSourceSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid gap-6 md:grid-cols-3"
+            className="grid gap-5 md:gap-6 md:grid-cols-3"
           >
             {communityProjects.map((proj, i) => {
               const c = projectCardColors[i % projectCardColors.length];

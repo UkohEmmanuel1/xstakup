@@ -9,16 +9,15 @@ import { cases, caseGradients, deploymentCardColors } from "@/data/home";
 export function FeaturedDeployments() {
   return (
     <AnimatedSection>
-      <section className="py-12 md:py-24 border-b border-border overflow-hidden">
+      <section className="py-16 md:py-24 border-b border-border overflow-hidden">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
             <div>
               <h2 className="mt-4 text-xl md:text-3xl lg:text-5xl font-bold text-white">
-                Enterprise Software Case Studies: Systems We&apos;ve Engineered
+                Case Studies
               </h2>
               <p className="mt-3 text-white/80 max-w-lg">
-                Real world software engineering projects: fintech infrastructure, AI platforms, and
-                Web3 applications built for scale.
+                Fintech infrastructure, AI platforms, and Web3 applications built for scale.
               </p>
             </div>
           </div>

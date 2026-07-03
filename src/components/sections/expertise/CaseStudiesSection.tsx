@@ -7,15 +7,15 @@ import { expertiseCases, expertiseCaseGradients, expertiseCaseColors } from "@/d
 export function CaseStudiesSection() {
   return (
     <AnimatedSection>
-      <section className="py-12 md:py-24 overflow-hidden">
+      <section className="py-16 md:py-24 overflow-hidden">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="text-center max-w-2xl mx-auto mb-14">
+          <div className="text-center max-w-2xl mx-auto mb-12">
             <SectionLabel>Case Studies</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
-              Featured <span className="text-gradient-blue">Projects</span>
+              Case <span className="text-gradient-blue">Studies</span>
             </h2>
             <p className="mt-4 text-white/70 text-base md:text-lg">
-              Real-world systems we&apos;ve engineered across fintech, AI, Web3, logistics, and more.
+              Real systems for fintech, AI & Web3.
             </p>
           </div>
           <motion.div
@@ -23,7 +23,7 @@ export function CaseStudiesSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+            className="grid gap-5 md:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
           >
             {expertiseCases.map((c, i) => {
               const color = expertiseCaseColors[i % expertiseCaseColors.length];
@@ -42,7 +42,7 @@ export function CaseStudiesSection() {
                     <div className="absolute inset-0 bg-[#303030]/20" />
                     <div className="absolute top-0 left-3 right-3 h-[2px]" style={{ background: color.accent }} />
                   </div>
-                  <div className="flex flex-col flex-grow p-4 md:p-6">
+                  <div className="flex flex-col flex-grow p-6">
                     <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: color.accent }}>
                       {c.tag}
                     </span>
