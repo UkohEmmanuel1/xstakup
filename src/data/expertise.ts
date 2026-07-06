@@ -1,4 +1,5 @@
-import type { StatsItem, CaseStudy, CardColor } from "@/types";
+import type { StatsItem, CaseStudy } from "@/types";
+import { cardColor, cardColorAlt, cardColorExpertise } from "@/data";
 
 export const expertiseStats: StatsItem[] = [
   { value: "200+", label: "Projects Shipped" },
@@ -55,11 +56,11 @@ export const expertiseCaseGradients = [
   "linear-gradient(135deg, #0094C7, #303030)",
 ];
 
-export const expertiseCaseColors: CardColor[] = [
-  { border: "rgba(0, 148, 199, 0.3)", hover: "rgba(0, 148, 199, 0.6)", accent: "rgba(0, 148, 199, 0.7)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.3)", hover: "rgba(0, 148, 199, 0.55)", accent: "rgba(0, 148, 199, 0.65)", bg: "#303030" },
+export const expertiseCaseColors = [
+  cardColorExpertise,
+  cardColor,
+  cardColor,
+  cardColor,
+  cardColor,
+  cardColorAlt,
 ];

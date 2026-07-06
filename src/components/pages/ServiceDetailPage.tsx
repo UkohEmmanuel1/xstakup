@@ -6,7 +6,6 @@ import { ArrowLeft, CheckCircle } from "lucide-react";
 import { PageHero } from "@/components/common/PageHero";
 import { AnimatedSection, SectionLabel, CTAButton, FinalCTA } from "@/components/common";
 import { services } from "@/data";
-import type { ServiceItem } from "@/types";
 import { Code, Globe, Smartphone, Cloud, Brain, Wallet, Hexagon, Server } from "lucide-react";
 
 const iconMap: Record<string, React.ElementType> = {
@@ -195,10 +194,7 @@ export function ServiceDetailPageComponent({ serviceId }: Props) {
             Tell us about your project for a plan and timeline.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <CTAButton
-              href="/contact"
-              className="bg-white text-blue hover:bg-white/90 shadow-lg"
-            >
+            <CTAButton href="/contact" className="bg-white text-blue hover:bg-white/90 shadow-lg">
               Start a Project
             </CTAButton>
             <CTAButton href="/contact" className="border-white/30 text-white hover:bg-white/10">

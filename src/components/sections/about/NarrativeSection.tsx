@@ -8,8 +8,7 @@ export function NarrativeSection() {
   return (
     <AnimatedSection>
       <section className="bg-[var(--void-section)] border-border border-y py-16 md:py-24 overflow-hidden">
-          <div className="mx-auto max-w-7xl px-6 grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6 items-center">
-
+        <div className="mx-auto max-w-7xl px-6 grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6 items-center">
           <motion.div
             variants={slideFromLeft}
             initial="hidden"
@@ -20,9 +19,7 @@ export function NarrativeSection() {
               Engineering Excellence
             </h2>
             <div className="mt-6 space-y-4 text-white/80 leading-relaxed">
-              <p>
-                Enterprise-grade solutions built to scale.
-              </p>
+              <p>Enterprise-grade solutions built to scale.</p>
             </div>
           </motion.div>
 
@@ -42,7 +39,6 @@ export function NarrativeSection() {
               height={400}
             />
           </motion.div>
-
         </div>
       </section>
     </AnimatedSection>

@@ -35,11 +35,19 @@ export function PipelineSection() {
                   className="group relative rounded-xl p-8 md:p-10 transition-colors h-full"
                   style={{ border: `1px solid ${c.border}`, background: c.bg }}
                 >
-                  <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: c.accent }} />
-                  <div className="text-xs" style={{ color: c.hover }}>{s.number}</div>
+                  <div
+                    className="absolute top-0 left-3 right-3 h-[2px] rounded-full"
+                    style={{ background: c.accent }}
+                  />
+                  <div className="text-xs" style={{ color: c.hover }}>
+                    {s.number}
+                  </div>
                   <h3 className="mt-4 text-xl font-semibold text-white">{s.title}</h3>
                   <p className="mt-3 text-base text-white/80 leading-relaxed">{s.description}</p>
-                  <div className="mt-6 h-px" style={{ background: `linear-gradient(to right, ${c.accent}, transparent)` }} />
+                  <div
+                    className="mt-6 h-px"
+                    style={{ background: `linear-gradient(to right, ${c.accent}, transparent)` }}
+                  />
                 </motion.div>
               );
             })}

@@ -12,9 +12,7 @@ export function TestimonialsSection() {
             <h2 className="text-3xl md:text-5xl font-bold">
               Member <span className="text-gradient-blue">Testimonials</span>
             </h2>
-            <p className="mt-4 text-white/70 text-base md:text-lg">
-              From engineers and founders.
-            </p>
+            <p className="mt-4 text-white/70 text-base md:text-lg">From engineers and founders.</p>
           </div>
         </div>
         <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]">
@@ -30,11 +28,17 @@ export function TestimonialsSection() {
                   <div
                     className="w-[380px] md:w-[440px] max-w-[85vw] flex-shrink-0 rounded-2xl p-8 md:p-10 transition-all duration-300 flex flex-col justify-between"
                     style={{ border: `1px solid ${c.border}`, background: c.bg }}
-                    onMouseEnter={(e) => { e.currentTarget.style.borderColor = c.hover; }}
-                    onMouseLeave={(e) => { e.currentTarget.style.borderColor = c.border; }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.borderColor = c.hover;
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.borderColor = c.border;
+                    }}
                   >
                     <div>
-                      <p className="text-base leading-relaxed text-white/90">&ldquo;{t.text}&rdquo;</p>
+                      <p className="text-base leading-relaxed text-white/90">
+                        &ldquo;{t.text}&rdquo;
+                      </p>
                     </div>
                     <div className="mt-5 pt-4 border-t border-white/10">
                       <div className="flex items-center gap-3">
@@ -46,7 +50,9 @@ export function TestimonialsSection() {
                         </div>
                         <div>
                           <p className="font-semibold text-sm text-white">{t.name}</p>
-                          <p className="text-xs text-white/60">{t.handle} · {t.role}</p>
+                          <p className="text-xs text-white/60">
+                            {t.handle} · {t.role}
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -64,7 +70,9 @@ export function TestimonialsSection() {
                       style={{ border: `1px solid ${c.border}`, background: c.bg }}
                     >
                       <div>
-                        <p className="text-base leading-relaxed text-white/90">&ldquo;{t.text}&rdquo;</p>
+                        <p className="text-base leading-relaxed text-white/90">
+                          &ldquo;{t.text}&rdquo;
+                        </p>
                       </div>
                       <div className="mt-5 pt-4 border-t border-white/10">
                         <div className="flex items-center gap-3">
@@ -76,7 +84,9 @@ export function TestimonialsSection() {
                           </div>
                           <div>
                             <p className="font-semibold text-sm text-white">{t.name}</p>
-                            <p className="text-xs text-white/60">{t.handle} · {t.role}</p>
+                            <p className="text-xs text-white/60">
+                              {t.handle} · {t.role}
+                            </p>
                           </div>
                         </div>
                       </div>

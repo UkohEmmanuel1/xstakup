@@ -35,7 +35,10 @@ export function OpenSourceSection() {
                   className="group relative rounded-xl p-8 md:p-10 transition-colors h-full min-h-[200px] flex flex-col"
                   style={{ border: `1px solid ${c.border}`, background: c.bg }}
                 >
-                  <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: c.accent }} />
+                  <div
+                    className="absolute top-0 left-3 right-3 h-[2px] rounded-full"
+                    style={{ background: c.accent }}
+                  />
                   <h3 className="text-xl font-semibold text-white">{proj.name}</h3>
                   <p className="mt-3 text-white/60 text-sm leading-relaxed flex-grow">
                     {proj.description}

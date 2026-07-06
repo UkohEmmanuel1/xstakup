@@ -54,9 +54,7 @@ export function ContactForm() {
           <Send size={28} className="text-blue" />
         </div>
         <h3 className="text-xl font-bold text-foreground mb-2">Message sent!</h3>
-        <p className="text-muted-foreground">
-          We'll get back to you within 24 hours.
-        </p>
+        <p className="text-muted-foreground">We'll get back to you within 24 hours.</p>
       </motion.div>
     );
   }

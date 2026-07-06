@@ -9,11 +9,11 @@ export function HeroSection() {
   const { ref, scale } = useScrollZoom([0, 1], [1, 1.2]);
 
   return (
-    <section className="relative overflow-hidden md:min-h-[90vh] flex items-center max-w-full" ref={ref}>
-      <motion.div
-        className="absolute inset-0"
-        style={{ scale }}
-      >
+    <section
+      className="relative overflow-hidden md:min-h-[90vh] flex items-center max-w-full"
+      ref={ref}
+    >
+      <motion.div className="absolute inset-0" style={{ scale }}>
         <video
           className="absolute inset-0 w-full h-full object-cover block"
           src="/assets/hero.mp4"
@@ -41,7 +41,6 @@ export function HeroSection() {
         className="relative z-10 mx-auto max-w-7xl px-6 pt-16 md:pt-32 pb-20 md:pb-40 w-full"
       >
         <div className="flex flex-col items-center text-center">
-
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -52,7 +51,6 @@ export function HeroSection() {
             <br />
             <span className="text-gradient-blue">Software Development</span>
             <br />
-
           </motion.h1>
 
           <motion.p
@@ -61,11 +59,11 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.35 }}
             className="mt-6 max-w-2xl text-base md:text-lg text-white/60 font-light tracking-wide"
           >
-            Dedicated engineering for web, mobile, AI, and Web3. We build production-grade systems so you lead your market.
+            Dedicated engineering for web, mobile, AI, and Web3. We build production-grade systems
+            so you lead your market.
           </motion.p>
 
           <StatsStrip items={stats} className="mt-16" />
-
         </div>
       </motion.div>
     </section>

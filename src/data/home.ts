@@ -1,4 +1,5 @@
-import type { PipelineStep, ExpertiseItem, CaseStudy, StatsItem, CardColor } from "@/types";
+import type { PipelineStep, ExpertiseItem, CaseStudy, StatsItem } from "@/types";
+import { cardColor } from "@/data";
 
 export const pipeline: PipelineStep[] = [
   {
@@ -10,20 +11,17 @@ export const pipeline: PipelineStep[] = [
   {
     number: "02",
     title: "Architecture & UX Design",
-    description:
-      "Scalable architecture with user-centered UI/UX for your audience and growth.",
+    description: "Scalable architecture with user-centered UI/UX for your audience and growth.",
   },
   {
     number: "03",
     title: "Full Stack Development",
-    description:
-      "Full-stack development across web, mobile, and Web3 using modern frameworks.",
+    description: "Full-stack development across web, mobile, and Web3 using modern frameworks.",
   },
   {
     number: "04",
     title: "DevSecOps & Deployment",
-    description:
-      "Secure CI/CD, cloud infrastructure, monitoring, and 99.9% uptime maintenance.",
+    description: "Secure CI/CD, cloud infrastructure, monitoring, and 99.9% uptime maintenance.",
   },
 ];
 
@@ -55,8 +53,7 @@ export const expertise: ExpertiseItem[] = [
   },
   {
     title: "Fintech Solutions",
-    description:
-      "Payment gateways, financial architecture, and secure transaction systems.",
+    description: "Payment gateways, financial architecture, and secure transaction systems.",
     icon: "₿",
   },
   {
@@ -66,8 +63,7 @@ export const expertise: ExpertiseItem[] = [
   },
   {
     title: "DevSecOps",
-    description:
-      "Secure cloud deployments, CI/CD pipelines, and infrastructure management.",
+    description: "Secure cloud deployments, CI/CD pipelines, and infrastructure management.",
     icon: "⟁",
   },
 ];
@@ -76,14 +72,12 @@ export const cases: CaseStudy[] = [
   {
     title: "XPay",
     tag: "Fintech / Web3",
-    description:
-      "Crypto, gift card, and fiat payment infrastructure with real-time settlement.",
+    description: "Crypto, gift card, and fiat payment infrastructure with real-time settlement.",
   },
   {
     title: "Quik",
     tag: "AI / NLP",
-    description:
-      "AI-powered booking app that syncs availability and automates communication.",
+    description: "AI-powered booking app that syncs availability and automates communication.",
   },
   {
     title: "Cashflow Africa",
@@ -116,26 +110,10 @@ export const marqueeItems = [
   "GraphQL",
 ];
 
-
-
-const cardColor: CardColor = {
-  border: "rgba(0, 148, 199, 0.25)",
-  hover: "rgba(0, 148, 199, 0.5)",
-  accent: "rgba(0, 148, 199, 0.6)",
-  bg: "#303030",
-};
-
-const cardColorTweet: CardColor = {
-  border: "rgba(0, 148, 199, 0.25)",
-  hover: "rgba(0, 148, 199, 0.5)",
-  accent: "rgba(0, 148, 199, 0.6)",
-  bg: "#303030",
-};
-
-export const pipelineCardColors: CardColor[] = Array(4).fill(cardColor);
-export const expertiseCardColors: CardColor[] = Array(8).fill(cardColor);
-export const deploymentCardColors: CardColor[] = Array(3).fill(cardColor);
-export const tweetCardColors: CardColor[] = Array(4).fill(cardColorTweet);
+export const pipelineCardColors = Array(4).fill(cardColor);
+export const expertiseCardColors = Array(8).fill(cardColor);
+export const deploymentCardColors = Array(3).fill(cardColor);
+export const tweetCardColors = Array(4).fill(cardColor);
 
 export const stats: StatsItem[] = [
   { value: "99.99%", label: "Average Uptime" },

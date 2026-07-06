@@ -1,13 +1,16 @@
 import type { Differentiator, ValueItem, Leader, CardColor } from "@/types";
+import { cardColor, cardColorAlt } from "@/data";
 
 export const missionVisionItems = [
   {
     title: "Our Mission",
-    description: "World-class technical infrastructure and engineering expertise that empowers businesses to scale without limits.",
+    description:
+      "World-class technical infrastructure and engineering expertise that empowers businesses to scale without limits.",
   },
   {
     title: "Our Vision",
-    description: "The most trusted global engineering partner for high-scale digital platforms, setting the standard for uptime, security, and innovation.",
+    description:
+      "The most trusted global engineering partner for high-scale digital platforms, setting the standard for uptime, security, and innovation.",
   },
 ];
 
@@ -45,7 +48,11 @@ export const values: ValueItem[] = [
     title: "Transparency",
     description: "Open communication and clear roadmaps every sprint.",
   },
-  { icon: "⬡", title: "Ownership", description: "We treat your product like it's our own internal infrastructure." },
+  {
+    icon: "⬡",
+    title: "Ownership",
+    description: "We treat your product like it's our own internal infrastructure.",
+  },
   {
     icon: "⟁",
     title: "Innovation",
@@ -93,32 +100,24 @@ export const leaderGradients = [
   "linear-gradient(135deg, #0094C7, #303030)",
 ];
 
-export const mvCardColors: CardColor[] = [
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-];
+export const mvCardColors: CardColor[] = [cardColor, cardColor];
 
 export const differentiatorCardColors: CardColor[] = [
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.3)", hover: "rgba(0, 148, 199, 0.55)", accent: "rgba(0, 148, 199, 0.65)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
+  cardColor,
+  cardColor,
+  cardColor,
+  cardColor,
+  cardColorAlt,
+  cardColor,
 ];
 
 export const valueCardColors: CardColor[] = [
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.3)", hover: "rgba(0, 148, 199, 0.55)", accent: "rgba(0, 148, 199, 0.65)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
+  cardColor,
+  cardColor,
+  cardColor,
+  cardColor,
+  cardColorAlt,
+  cardColor,
 ];
 
-export const leaderCardColors: CardColor[] = [
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-];
+export const leaderCardColors: CardColor[] = [cardColor, cardColor, cardColor, cardColor];

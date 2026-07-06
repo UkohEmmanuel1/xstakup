@@ -14,9 +14,7 @@ export function BenefitsSection() {
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
               Member <span className="text-gradient-blue">Perks</span>
             </h2>
-            <p className="mt-4 text-white/70 text-base md:text-lg">
-              Your engineering launchpad.
-            </p>
+            <p className="mt-4 text-white/70 text-base md:text-lg">Your engineering launchpad.</p>
           </div>
           <motion.div
             variants={staggerContainer}
@@ -35,8 +33,13 @@ export function BenefitsSection() {
                   className="group relative rounded-xl p-8 md:p-10 transition-colors h-full min-h-[200px]"
                   style={{ border: `1px solid ${c.border}`, background: c.bg }}
                 >
-                  <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: c.accent }} />
-                  <div className="text-3xl" style={{ color: c.hover }}>{b.icon}</div>
+                  <div
+                    className="absolute top-0 left-3 right-3 h-[2px] rounded-full"
+                    style={{ background: c.accent }}
+                  />
+                  <div className="text-3xl" style={{ color: c.hover }}>
+                    {b.icon}
+                  </div>
                   <h3 className="mt-4 text-lg font-semibold text-white">{b.title}</h3>
                   <p className="mt-2 text-base text-white/70 leading-relaxed">{b.description}</p>
                 </motion.div>

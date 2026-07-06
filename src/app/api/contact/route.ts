@@ -6,9 +6,13 @@ export async function POST(request: Request) {
     const { name, email, company, type, message } = body;
 
     if (!name || !email || !message) {
-      return NextResponse.json({ error: "Name, email, and project brief are required." }, { status: 400 });
+      return NextResponse.json(
+        { error: "Name, email, and project brief are required." },
+        { status: 400 },
+      );
     }
 
+    // TODO: Integrate with email service (e.g., Resend, SendGrid) or CRM
     console.log("Contact form submission:", { name, email, company, type, message });
 
     return NextResponse.json({ success: true });

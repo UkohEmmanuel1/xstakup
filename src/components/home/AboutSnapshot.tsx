@@ -46,7 +46,7 @@ export function AboutSnapshot() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
-                    className="rounded-xl border border-border bg-card p-8 md:p-10 hover:shadow-card-hover transition-all h-full min-h-[200px]"
+                  className="rounded-xl border border-border bg-card p-8 md:p-10 hover:shadow-card-hover transition-all h-full min-h-[200px]"
                 >
                   <Icon size={20} className="text-blue mb-3" />
                   <h3 className="text-sm font-heading font-bold text-foreground mb-1.5">

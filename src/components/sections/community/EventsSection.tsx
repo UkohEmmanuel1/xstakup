@@ -14,16 +14,17 @@ const typeBadge: Record<string, string> = {
 export function EventsSection() {
   return (
     <AnimatedSection>
-      <section id="events" className="py-16 md:py-24 bg-void-section border-y border-border overflow-hidden">
+      <section
+        id="events"
+        className="py-16 md:py-24 bg-void-section border-y border-border overflow-hidden"
+      >
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <SectionLabel>Events</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
               Developer <span className="text-gradient-blue">Events</span>
             </h2>
-            <p className="mt-4 text-white/70 text-base md:text-lg">
-              Events for every engineer.
-            </p>
+            <p className="mt-4 text-white/70 text-base md:text-lg">Events for every engineer.</p>
           </div>
           <motion.div
             variants={staggerContainer}
@@ -42,15 +43,24 @@ export function EventsSection() {
                   className="group relative rounded-xl p-8 md:p-10 transition-colors h-full min-h-[200px] flex flex-col"
                   style={{ border: `1px solid ${c.border}`, background: c.bg }}
                 >
-                  <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: c.accent }} />
+                  <div
+                    className="absolute top-0 left-3 right-3 h-[2px] rounded-full"
+                    style={{ background: c.accent }}
+                  />
                   <div className="flex items-center justify-between mb-4">
-                    <div className="text-2xl" style={{ color: c.hover }}>{ev.icon}</div>
-                    <span className={`text-xs uppercase tracking-wider px-2.5 py-1 rounded-full border ${typeBadge[ev.type] || ""}`}>
+                    <div className="text-2xl" style={{ color: c.hover }}>
+                      {ev.icon}
+                    </div>
+                    <span
+                      className={`text-xs uppercase tracking-wider px-2.5 py-1 rounded-full border ${typeBadge[ev.type] || ""}`}
+                    >
                       {ev.type}
                     </span>
                   </div>
                   <h3 className="text-lg font-semibold text-white">{ev.title}</h3>
-                  <p className="mt-1 text-sm" style={{ color: c.hover }}>{ev.date}</p>
+                  <p className="mt-1 text-sm" style={{ color: c.hover }}>
+                    {ev.date}
+                  </p>
                   <p className="mt-3 text-white/60 text-sm leading-relaxed flex-grow">
                     {ev.description}
                   </p>

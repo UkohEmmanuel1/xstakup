@@ -32,8 +32,13 @@ export function ValuesSection() {
                   className="group relative rounded-xl p-8 md:p-10 transition-colors"
                   style={{ border: `1px solid ${c.border}`, background: c.bg }}
                 >
-                  <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: c.accent }} />
-                  <div className="text-3xl" style={{ color: c.hover }}>{v.icon}</div>
+                  <div
+                    className="absolute top-0 left-3 right-3 h-[2px] rounded-full"
+                    style={{ background: c.accent }}
+                  />
+                  <div className="text-3xl" style={{ color: c.hover }}>
+                    {v.icon}
+                  </div>
                   <h3 className="mt-4 text-lg font-semibold text-white">{v.title}</h3>
                   <p className="mt-2 text-base text-white/80 leading-relaxed">{v.description}</p>
                 </motion.div>

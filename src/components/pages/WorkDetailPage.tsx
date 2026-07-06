@@ -1,11 +1,10 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, CheckCircle } from "lucide-react";
 import { PageHero } from "@/components/common/PageHero";
-import { AnimatedSection, SectionLabel, CTAButton, FinalCTA } from "@/components/common";
-import { caseStudies, caseStudiesFull } from "@/data";
+import { AnimatedSection, SectionLabel, FinalCTA } from "@/components/common";
+import { caseStudiesFull } from "@/data";
 
 interface Props {
   slug: string;

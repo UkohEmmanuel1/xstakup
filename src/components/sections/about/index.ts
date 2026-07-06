@@ -5,4 +5,3 @@ export { DifferentiatorsSection } from "./DifferentiatorsSection";
 export { ValuesSection } from "./ValuesSection";
 export { LeadershipSection } from "./LeadershipSection";
 export { GlobalFootprintSection } from "./GlobalFootprintSection";
-

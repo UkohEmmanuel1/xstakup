@@ -55,16 +55,20 @@ function FooterBrand() {
     >
       <Link href="/" className="flex items-center gap-2">
         <div className="relative h-12 w-12">
-          <Image src="/assets/XStakUP LOGO-2.webp" alt="XStakUp footer logo" fill sizes="48px" className="object-contain" />
+          <Image
+            src="/assets/XStakUP LOGO-2.webp"
+            alt="XStakUp footer logo"
+            fill
+            sizes="48px"
+            className="object-contain"
+          />
         </div>
       </Link>
       <p className="mt-4 text-sm text-muted-foreground max-w-sm">
         We architect scalable web, mobile, AI, and Web3 systems for market-leading businesses.
       </p>
       <div className="mt-6 space-y-1 text-sm">
-        <p className="text-xs uppercase tracking-widest text-muted-foreground">
-          Engineering HQ
-        </p>
+        <p className="text-xs uppercase tracking-widest text-muted-foreground">Engineering HQ</p>
         <p className="text-foreground">Lagos, Nigeria</p>
         <a href="mailto:partnerships@xstakup.com" className="text-blue hover:underline">
           partnerships@xstakup.com
@@ -83,9 +87,7 @@ function FooterColumn({ col, index }: { col: (typeof columns)[number]; index: nu
       whileInView="visible"
       viewport={{ once: true }}
     >
-      <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
-        {col.title}
-      </p>
+      <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4">{col.title}</p>
       <ul className="space-y-2.5">
         {col.links.map((l, i) => (
           <li key={i}>
@@ -137,7 +139,7 @@ export function Footer() {
         whileInView={{ scaleX: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-          className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-blue/40 to-transparent origin-left"
+        className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-blue/40 to-transparent origin-left"
       />
       <div className="mx-auto max-w-7xl px-6 py-10 md:py-16">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-5 lg:gap-12">

@@ -32,8 +32,13 @@ export function MissionVisionSection() {
                   className="group relative rounded-xl p-8 md:p-10"
                   style={{ border: `1px solid ${color.border}`, background: color.bg }}
                 >
-                  <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: color.accent }} />
-                  <h3 className="text-xs uppercase tracking-widest" style={{ color: color.hover }}>{item.title}</h3>
+                  <div
+                    className="absolute top-0 left-3 right-3 h-[2px] rounded-full"
+                    style={{ background: color.accent }}
+                  />
+                  <h3 className="text-xs uppercase tracking-widest" style={{ color: color.hover }}>
+                    {item.title}
+                  </h3>
                   <p className="mt-5 text-xl md:text-2xl text-white leading-relaxed font-medium">
                     {item.description}
                   </p>

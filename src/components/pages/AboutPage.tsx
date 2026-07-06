@@ -4,7 +4,7 @@ import {
   MissionVisionSection,
   DifferentiatorsSection,
   ValuesSection,
-  LeadershipSection
+  LeadershipSection,
 } from "@/components/sections/about";
 import { FinalCTA } from "@/components/common";
 

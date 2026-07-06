@@ -18,6 +18,15 @@ export interface CaseStudy {
   description: string;
 }
 
+export interface CaseStudyCard {
+  title: string;
+  industry: string;
+  tags: string[];
+  summary: string;
+  platform: string;
+  slug: string;
+}
+
 export interface Leader {
   name: string;
   role: string;
@@ -64,7 +73,8 @@ export interface NavLink {
 
 export interface ButtonProps {
   children: ReactNode;
-  to?: string;
+  href?: string;
+  variant?: "primary" | "outline" | "ghost";
   className?: string;
 }
 
@@ -119,4 +129,67 @@ export interface CommunityProject {
   name: string;
   description: string;
   tech: string[];
+}
+
+export interface ServiceItem {
+  id: string;
+  title: string;
+  shortDesc: string;
+  description: string;
+  icon: string;
+  deliverables: string[];
+  slug: string;
+}
+
+export interface IndustryItem {
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export interface WhyItem {
+  title: string;
+  description: string;
+}
+
+export interface TechCategory {
+  category: string;
+  items: string[];
+}
+
+export interface UseCase {
+  title: string;
+  problem: string;
+  solution: string;
+  output: string;
+}
+
+export interface EngagementModel {
+  title: string;
+  bestFor: string;
+  includes: string[];
+}
+
+export interface ProcessStep {
+  number: string;
+  title: string;
+  description: string;
+  details: string;
+}
+
+export interface CaseStudyFull {
+  id: string;
+  title: string;
+  industry: string;
+  platform: string;
+  tags: string[];
+  summary: string;
+  problem: string;
+  goal: string;
+  scope: string;
+  features: string[];
+  techStack: string[];
+  designApproach: string;
+  outcome: string;
+  slug: string;
 }

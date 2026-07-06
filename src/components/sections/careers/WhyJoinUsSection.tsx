@@ -35,8 +35,13 @@ export function WhyJoinUsSection() {
                   className="group relative rounded-xl p-8 md:p-10 transition-colors"
                   style={{ border: `1px solid ${c.border}`, background: c.bg }}
                 >
-                  <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: c.accent }} />
-                  <div className="text-3xl" style={{ color: c.hover }}>{b.icon}</div>
+                  <div
+                    className="absolute top-0 left-3 right-3 h-[2px] rounded-full"
+                    style={{ background: c.accent }}
+                  />
+                  <div className="text-3xl" style={{ color: c.hover }}>
+                    {b.icon}
+                  </div>
                   <h3 className="mt-4 text-lg font-semibold text-white">{b.title}</h3>
                   <p className="mt-2 text-base text-white/70 leading-relaxed">{b.description}</p>
                 </motion.div>

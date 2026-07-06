@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SectionLabel, AnimatedSection, staggerContainer } from "@/components/common";
+import { AnimatedSection, staggerContainer } from "@/components/common";
 import { PipelineCard } from "./PipelineCard";
 import { pipeline, pipelineCardColors } from "@/data/home";
 
@@ -11,9 +11,7 @@ export function PipelineSection() {
       <section className="relative py-16 md:py-24 border-y border-border overflow-hidden">
         <div className="relative z-10 mx-auto max-w-7xl px-6">
           <div className="max-w-2xl mb-12">
-            <h2 className="mt-4 text-2xl md:text-5xl font-bold text-white">
-              Development Pipeline
-            </h2>
+            <h2 className="mt-4 text-2xl md:text-5xl font-bold text-white">Development Pipeline</h2>
             <p className="mt-4 text-white/80 max-w-xl">
               Proven engineering for web, mobile, AI, and Web3.
             </p>

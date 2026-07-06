@@ -7,7 +7,10 @@ import { differentiators, differentiatorCardColors } from "@/data/about";
 export function DifferentiatorsSection() {
   return (
     <AnimatedSection>
-      <section id="differentiators" className="py-16 md:py-24 bg-[color:var(--void-section)] border-y border-border overflow-hidden">
+      <section
+        id="differentiators"
+        className="py-16 md:py-24 bg-[color:var(--void-section)] border-y border-border overflow-hidden"
+      >
         <div className="mx-auto max-w-7xl px-6">
           <div className="max-w-2xl mb-12">
             <SectionLabel>Why Choose Us</SectionLabel>
@@ -32,8 +35,13 @@ export function DifferentiatorsSection() {
                   className="group relative rounded-xl p-8 md:p-10 transition-colors"
                   style={{ border: `1px solid ${c.border}`, background: c.bg }}
                 >
-                  <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: c.accent }} />
-                  <div className="text-xs" style={{ color: c.hover }}>0{i + 1}</div>
+                  <div
+                    className="absolute top-0 left-3 right-3 h-[2px] rounded-full"
+                    style={{ background: c.accent }}
+                  />
+                  <div className="text-xs" style={{ color: c.hover }}>
+                    0{i + 1}
+                  </div>
                   <h3 className="mt-4 text-lg font-semibold text-white">{d.title}</h3>
                   <p className="mt-3 text-base text-white/80 leading-relaxed">{d.description}</p>
                 </motion.div>

@@ -128,7 +128,15 @@ function MobileNav({
   );
 }
 
-function HamburgerButton({ open, onClick, scrolled }: { open: boolean; onClick: () => void; scrolled: boolean }) {
+function HamburgerButton({
+  open,
+  onClick,
+  scrolled,
+}: {
+  open: boolean;
+  onClick: () => void;
+  scrolled: boolean;
+}) {
   return (
     <button
       onClick={onClick}
@@ -158,9 +166,7 @@ export function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-        scrolled || open
-          ? "glass-strong shadow-blue border-b border-border/40"
-          : "bg-transparent"
+        scrolled || open ? "glass-strong shadow-blue border-b border-border/40" : "bg-transparent"
       }`}
     >
       <div className="mx-auto flex h-14 md:h-16 max-w-7xl items-center justify-between px-6">

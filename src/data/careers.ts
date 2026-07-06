@@ -1,4 +1,5 @@
-import type { JobPosting, FAQItem, BenefitItem, CardColor } from "@/types";
+import type { JobPosting, FAQItem, BenefitItem } from "@/types";
+import { cardColor, cardColorAlt } from "@/data";
 
 export const jobOpenings: JobPosting[] = [
   {
@@ -55,8 +56,7 @@ export const jobOpenings: JobPosting[] = [
     department: "Web3",
     location: "Remote (Global)",
     type: "Full time",
-    description:
-      "Architect and deploy smart contracts, dApps, and DeFi protocols on EVM chains.",
+    description: "Architect and deploy smart contracts, dApps, and DeFi protocols on EVM chains.",
     requirements: [
       "3+ years Solidity development experience",
       "Deep knowledge of Ethereum and Layer-2 scaling",
@@ -109,14 +109,12 @@ export const benefits: BenefitItem[] = [
   {
     icon: "⌘",
     title: "Remote First Culture",
-    description:
-      "Work from anywhere. Async-first with flexible hours and quarterly team meetups.",
+    description: "Work from anywhere. Async-first with flexible hours and quarterly team meetups.",
   },
   {
     icon: "⬡",
     title: "Growth & Learning",
-    description:
-      "Annual learning stipend, conference access, and internal mentorship programs.",
+    description: "Annual learning stipend, conference access, and internal mentorship programs.",
   },
   {
     icon: "⊞",
@@ -133,8 +131,7 @@ export const benefits: BenefitItem[] = [
   {
     icon: "⟁",
     title: "Paid Time Off",
-    description:
-      "Generous PTO with 4 weeks vacation, public holidays, and parental leave.",
+    description: "Generous PTO with 4 weeks vacation, public holidays, and parental leave.",
   },
 ];
 
@@ -171,36 +168,17 @@ export const faqItems: FAQItem[] = [
   },
 ];
 
-export const jobCardColors: CardColor[] = [
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.3)", hover: "rgba(0, 148, 199, 0.55)", accent: "rgba(0, 148, 199, 0.65)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
+export const jobCardColors = [cardColor, cardColor, cardColor, cardColor, cardColorAlt, cardColor];
+
+export const benefitCardColors = [
+  cardColor,
+  cardColor,
+  cardColor,
+  cardColor,
+  cardColorAlt,
+  cardColor,
 ];
 
-export const benefitCardColors: CardColor[] = [
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.3)", hover: "rgba(0, 148, 199, 0.55)", accent: "rgba(0, 148, 199, 0.65)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-];
+export const statCardColors = [cardColor, cardColor, cardColor, cardColor];
 
-export const statCardColors: CardColor[] = [
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-];
-
-export const faqCardColors: CardColor[] = [
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.3)", hover: "rgba(0, 148, 199, 0.55)", accent: "rgba(0, 148, 199, 0.65)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-];
+export const faqCardColors = [cardColor, cardColor, cardColor, cardColor, cardColorAlt, cardColor];

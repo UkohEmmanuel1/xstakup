@@ -43,11 +43,17 @@ export function LeadershipSection() {
                     >
                       {l.name.charAt(0)}
                     </motion.div>
-                    <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: c.accent }} />
+                    <div
+                      className="absolute top-0 left-3 right-3 h-[2px] rounded-full"
+                      style={{ background: c.accent }}
+                    />
                   </motion.div>
                   <div className="p-8 md:p-10">
                     <h3 className="font-semibold text-white">{l.name}</h3>
-                    <p className="mt-1 text-xs uppercase tracking-widest" style={{ color: c.hover }}>
+                    <p
+                      className="mt-1 text-xs uppercase tracking-widest"
+                      style={{ color: c.hover }}
+                    >
                       {l.role}
                     </p>
                     <p className="mt-3 text-sm text-white/70">{l.bio}</p>

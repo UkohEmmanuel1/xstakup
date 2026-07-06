@@ -7,7 +7,7 @@ import { ExpertiseCard } from "./ExpertiseCard";
 import { expertise, expertiseCardColors } from "@/data/home";
 
 export function ExpertiseSection() {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded] = useState(false);
 
   const visibleExpertise = isExpanded ? expertise : expertise.slice(0, 6);
 
@@ -44,7 +44,10 @@ export function ExpertiseSection() {
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.25, ease: "easeInOut" }}
                 >
-                  <ExpertiseCard item={e} color={expertiseCardColors[expertise.indexOf(e) % expertiseCardColors.length]} />
+                  <ExpertiseCard
+                    item={e}
+                    color={expertiseCardColors[expertise.indexOf(e) % expertiseCardColors.length]}
+                  />
                 </motion.div>
               ))}
             </AnimatePresence>

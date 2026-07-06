@@ -9,11 +9,7 @@ interface MagneticButtonProps {
   as?: "div" | "span";
 }
 
-export function MagneticButton({
-  children,
-  className = "",
-  as = "div",
-}: MagneticButtonProps) {
+export function MagneticButton({ children, className = "", as = "div" }: MagneticButtonProps) {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 

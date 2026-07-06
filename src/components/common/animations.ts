@@ -2,7 +2,7 @@ import type { Variants } from "framer-motion";
 
 export const fadeUp: Variants = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as const } },
 };
 
 export const fadeIn: Variants = {
@@ -12,7 +12,11 @@ export const fadeIn: Variants = {
 
 export const scaleIn: Variants = {
   hidden: { opacity: 0, scale: 0.9 },
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: [0.25, 0.1, 0.25, 1] } },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 0.5, ease: [0.25, 0.1, 0.25, 1] as const },
+  },
 };
 
 export const scaleReveal: Variants = {
@@ -20,7 +24,7 @@ export const scaleReveal: Variants = {
   visible: {
     opacity: 1,
     scale: 1,
-    transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] },
+    transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as const },
   },
 };
 
@@ -36,15 +40,15 @@ export const staggerContainer: Variants = {
 
 export const staggerItem: Variants = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.25, 0.1, 0.25, 1] } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.25, 0.1, 0.25, 1] as const } },
 };
 
 export const slideFromLeft: Variants = {
   hidden: { opacity: 0, x: -60 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] } },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as const } },
 };
 
 export const slideFromRight: Variants = {
   hidden: { opacity: 0, x: 60 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] } },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as const } },
 };

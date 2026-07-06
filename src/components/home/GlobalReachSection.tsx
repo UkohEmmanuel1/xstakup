@@ -15,11 +15,10 @@ export function GlobalReachSection() {
             transition={{ duration: 0.7 }}
           >
             <SectionLabel>Global Reach</SectionLabel>
-            <h2 className="mt-4 text-2xl md:text-5xl font-bold">
-              Global Engineering Reach
-            </h2>
+            <h2 className="mt-4 text-2xl md:text-5xl font-bold">Global Engineering Reach</h2>
             <p className="mt-6 text-lg text-foreground/80">
-              Headquartered in Lagos, we deploy enterprise systems across Africa, Europe, and the Americas.
+              Headquartered in Lagos, we deploy enterprise systems across Africa, Europe, and the
+              Americas.
             </p>
             <div className="mt-8">
               <PrimaryCTA>Initialize Your Build</PrimaryCTA>

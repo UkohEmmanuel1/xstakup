@@ -7,11 +7,36 @@ import type { FeaturedCase } from "@/types";
 import type { CardColor } from "@/types";
 
 const caseCardColors: CardColor[] = [
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.3)", hover: "rgba(0, 148, 199, 0.55)", accent: "rgba(0, 148, 199, 0.65)", bg: "#303030" },
+  {
+    border: "rgba(0, 148, 199, 0.25)",
+    hover: "rgba(0, 148, 199, 0.5)",
+    accent: "rgba(0, 148, 199, 0.6)",
+    bg: "#303030",
+  },
+  {
+    border: "rgba(0, 148, 199, 0.25)",
+    hover: "rgba(0, 148, 199, 0.5)",
+    accent: "rgba(0, 148, 199, 0.6)",
+    bg: "#303030",
+  },
+  {
+    border: "rgba(0, 148, 199, 0.25)",
+    hover: "rgba(0, 148, 199, 0.5)",
+    accent: "rgba(0, 148, 199, 0.6)",
+    bg: "#303030",
+  },
+  {
+    border: "rgba(0, 148, 199, 0.25)",
+    hover: "rgba(0, 148, 199, 0.5)",
+    accent: "rgba(0, 148, 199, 0.6)",
+    bg: "#303030",
+  },
+  {
+    border: "rgba(0, 148, 199, 0.3)",
+    hover: "rgba(0, 148, 199, 0.55)",
+    accent: "rgba(0, 148, 199, 0.65)",
+    bg: "#303030",
+  },
 ];
 
 const featured: FeaturedCase[] = [
@@ -19,8 +44,7 @@ const featured: FeaturedCase[] = [
     name: "XPay",
     tag: "Fintech & Web3 Infrastructure",
     headline: "Bridging Crypto, Gift Cards, and Fiat Payments.",
-    challenge:
-      "Zero-latency payment gateway for traditional and digital assets.",
+    challenge: "Zero-latency payment gateway for traditional and digital assets.",
     solution:
       "Secure, scalable payment architecture with real-time ledgers, fraud protection, and multi-currency settlements.",
     stack: ["React", "Node.js", "Web3.js", "AWS Secure Enclave", "PostgreSQL"],
@@ -30,8 +54,7 @@ const featured: FeaturedCase[] = [
     name: "Quik",
     tag: "AI & Machine Learning",
     headline: "The Intelligent AI Booking Engine.",
-    challenge:
-      "Autonomous scheduling agent for natural language booking and calendar management.",
+    challenge: "Autonomous scheduling agent for natural language booking and calendar management.",
     solution:
       "NLP booking engine with smart availability syncing, conflict management, and automated communication.",
     stack: ["Python", "OpenAI API", "React Native", "GraphQL", "Redis"],
@@ -41,8 +64,7 @@ const featured: FeaturedCase[] = [
     name: "Cashflow Africa",
     tag: "Enterprise SaaS & Trade Finance",
     headline: "Powering Intra-African Trade.",
-    challenge:
-      "Fragmented financial data and slow liquidity in African B2B trade.",
+    challenge: "Fragmented financial data and slow liquidity in African B2B trade.",
     solution:
       "Enterprise trade finance platform digitizing invoicing, B2B lending, and real-time financial dashboards.",
     stack: ["Vue.js", "GoLang", "Kubernetes", "Snowflake", "Docker"],
@@ -52,8 +74,7 @@ const featured: FeaturedCase[] = [
     name: "Diction Masters",
     tag: "EdTech & NLP",
     headline: "Language Learning Reimagined.",
-    challenge:
-      "Real-time pronunciation coaching for language learners across dialects.",
+    challenge: "Real-time pronunciation coaching for language learners across dialects.",
     solution:
       "Speech recognition pipeline with phoneme analysis, personalized learning, and NLP scoring.",
     stack: ["Python", "TensorFlow", "React Native", "WebSocket", "GCP"],
@@ -63,8 +84,7 @@ const featured: FeaturedCase[] = [
     name: "Waterpro LLC",
     tag: "Enterprise IoT",
     headline: "Smart Water Management.",
-    challenge:
-      "30%+ water losses from leaks due to no real-time monitoring.",
+    challenge: "30%+ water losses from leaks due to no real-time monitoring.",
     solution:
       "IoT sensor network with real-time analytics for leak detection, maintenance prediction, and flow optimization.",
     stack: ["Go", "React", "InfluxDB", "MQTT", "Kubernetes"],
@@ -72,7 +92,7 @@ const featured: FeaturedCase[] = [
   },
 ];
 
-function CaseStudyMockup({ gradient, name }: { gradient: string; name: string }) {
+function CaseStudyMockup({ gradient, name: _name }: { gradient: string; name: string }) {
   return (
     <motion.div
       animate={{ scale: [1, 1.03, 1], opacity: [0.4, 0.5, 0.4] }}
@@ -134,7 +154,10 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
       className="relative rounded-2xl overflow-hidden aspect-[4/3]"
       style={{ border: `1px solid ${color.border}`, background: color.bg }}
     >
-      <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: color.accent }} />
+      <div
+        className="absolute top-0 left-3 right-3 h-[2px] rounded-full"
+        style={{ background: color.accent }}
+      />
       <div className="absolute inset-0" style={{ background: c.gradient, opacity: 0.85 }} />
       {c.name === "XPay" && (
         <Image
@@ -151,9 +174,7 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
           <div className="h-2.5 w-2.5 rounded-full bg-[#0094C7]/60" />
           <div className="h-2.5 w-2.5 rounded-full bg-[#0094C7]/60" />
           <div className="h-2.5 w-2.5 rounded-full bg-[#0094C7]/60" />
-          <span className="ml-2 text-[10px] text-white/50">
-            {c.name.toLowerCase()}.xstakup.io
-          </span>
+          <span className="ml-2 text-[10px] text-white/50">{c.name.toLowerCase()}.xstakup.io</span>
         </div>
         <div className="flex-1 grid grid-cols-3 gap-2">
           <div className="col-span-2 rounded bg-white/5 p-3 flex flex-col gap-2">
@@ -186,7 +207,10 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
 export function FeaturedCaseStudiesSection() {
   return (
     <AnimatedSection>
-      <section id="cases" className="py-16 md:py-24 bg-void-section border-y border-border overflow-hidden">
+      <section
+        id="cases"
+        className="py-16 md:py-24 bg-void-section border-y border-border overflow-hidden"
+      >
         <div className="mx-auto max-w-7xl px-6 space-y-16 md:space-y-32">
           {featured.map((c, i) => {
             const reverse = i % 2 === 1;

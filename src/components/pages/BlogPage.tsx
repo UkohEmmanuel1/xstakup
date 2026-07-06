@@ -5,12 +5,42 @@ import { FinalCTA, AnimatedSection, SubPageHero } from "@/components/common";
 import { blogPosts } from "@/data/blog";
 
 const blogCardColors = [
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.3)", hover: "rgba(0, 148, 199, 0.55)", accent: "rgba(0, 148, 199, 0.65)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
+  {
+    border: "rgba(0, 148, 199, 0.25)",
+    hover: "rgba(0, 148, 199, 0.5)",
+    accent: "rgba(0, 148, 199, 0.6)",
+    bg: "#303030",
+  },
+  {
+    border: "rgba(0, 148, 199, 0.25)",
+    hover: "rgba(0, 148, 199, 0.5)",
+    accent: "rgba(0, 148, 199, 0.6)",
+    bg: "#303030",
+  },
+  {
+    border: "rgba(0, 148, 199, 0.25)",
+    hover: "rgba(0, 148, 199, 0.5)",
+    accent: "rgba(0, 148, 199, 0.6)",
+    bg: "#303030",
+  },
+  {
+    border: "rgba(0, 148, 199, 0.25)",
+    hover: "rgba(0, 148, 199, 0.5)",
+    accent: "rgba(0, 148, 199, 0.6)",
+    bg: "#303030",
+  },
+  {
+    border: "rgba(0, 148, 199, 0.3)",
+    hover: "rgba(0, 148, 199, 0.55)",
+    accent: "rgba(0, 148, 199, 0.65)",
+    bg: "#303030",
+  },
+  {
+    border: "rgba(0, 148, 199, 0.25)",
+    hover: "rgba(0, 148, 199, 0.5)",
+    accent: "rgba(0, 148, 199, 0.6)",
+    bg: "#303030",
+  },
 ];
 
 function formatDate(dateStr: string) {
@@ -21,7 +51,7 @@ function formatDate(dateStr: string) {
   });
 }
 
-function BlogPostCard({ post, index }: { post: typeof blogPosts[number]; index: number }) {
+function BlogPostCard({ post, index }: { post: (typeof blogPosts)[number]; index: number }) {
   const c = blogCardColors[index % blogCardColors.length];
 
   return (
@@ -31,8 +61,12 @@ function BlogPostCard({ post, index }: { post: typeof blogPosts[number]; index: 
       transition={{ duration: 0.5, delay: index * 0.08 }}
       className="flex flex-col h-full rounded-2xl p-8 md:p-10 shadow-sm transition-all duration-300"
       style={{ border: `1px solid ${c.border}`, background: c.bg }}
-      onMouseEnter={(e) => { e.currentTarget.style.borderColor = c.hover; }}
-      onMouseLeave={(e) => { e.currentTarget.style.borderColor = c.border; }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.borderColor = c.hover;
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.borderColor = c.border;
+      }}
     >
       <div className="flex items-center gap-2 mb-4 flex-wrap">
         {post.tags.map((tag) => (

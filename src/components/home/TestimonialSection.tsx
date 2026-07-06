@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { AnimatedSection, SectionLabel } from "@/components/common";
 import { tweetCardColors } from "@/data/home";
 import type { CardColor } from "@/types";
@@ -117,7 +116,7 @@ const barChartIcon = (
 
 function TweetCard({
   t,
-  index,
+  index: _index,
   showMetrics,
   color,
 }: {
@@ -126,14 +125,23 @@ function TweetCard({
   showMetrics?: boolean;
   color?: CardColor;
 }) {
-  const c = color ?? { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" };
+  const c = color ?? {
+    border: "rgba(0, 148, 199, 0.25)",
+    hover: "rgba(0, 148, 199, 0.5)",
+    accent: "rgba(0, 148, 199, 0.6)",
+    bg: "#303030",
+  };
 
   return (
     <div
       className="w-[350px] md:w-[420px] max-w-[85vw] flex-shrink-0 rounded-2xl p-6 shadow-sm transition-all duration-300 flex flex-col justify-between"
       style={{ border: `1px solid ${c.border}`, background: c.bg }}
-      onMouseEnter={(e) => { e.currentTarget.style.borderColor = c.hover; }}
-      onMouseLeave={(e) => { e.currentTarget.style.borderColor = c.border; }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.borderColor = c.hover;
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.borderColor = c.border;
+      }}
     >
       <div>
         <div className="flex items-center justify-between">
@@ -211,7 +219,12 @@ export function TestimonialSection() {
               ))}
               <div aria-hidden="true" className="flex gap-6">
                 {tweets.map((t, index) => (
-                  <TweetCard key={`dup-${t.handle}-${index}`} t={t} index={index} color={tweetCardColors[index]} />
+                  <TweetCard
+                    key={`dup-${t.handle}-${index}`}
+                    t={t}
+                    index={index}
+                    color={tweetCardColors[index]}
+                  />
                 ))}
               </div>
             </div>

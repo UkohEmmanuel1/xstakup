@@ -39,11 +39,7 @@ export function SubPageHero({
           transition={{ duration: 0.7, delay: 0.2 }}
           className="mt-6 text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight"
         >
-          {typeof title === "string" ? (
-            <span className="text-gradient-blue">{title}</span>
-          ) : (
-            title
-          )}
+          {typeof title === "string" ? <span className="text-gradient-blue">{title}</span> : title}
         </motion.h1>
         {subtitle && (
           <motion.p

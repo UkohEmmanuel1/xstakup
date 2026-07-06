@@ -2,7 +2,7 @@
 import Link from "next/link";
 
 export default function ErrorPage({
-  error,
+  error: _error,
   reset,
 }: {
   error: Error & { digest?: string };
@@ -12,7 +12,9 @@ export default function ErrorPage({
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
         <h1 className="text-xl font-semibold text-foreground">Something went wrong</h1>
-        <p className="mt-2 text-sm text-muted-foreground">An unexpected error occurred. Please try again.</p>
+        <p className="mt-2 text-sm text-muted-foreground">
+          An unexpected error occurred. Please try again.
+        </p>
         <div className="mt-6 flex justify-center gap-2">
           <button
             onClick={() => reset()}

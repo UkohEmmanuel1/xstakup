@@ -27,11 +27,16 @@ export function StatsStripSection() {
                   className="group relative rounded-xl p-8 md:p-10"
                   style={{ border: `1px solid ${c.border}`, background: c.bg }}
                 >
-                  <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: c.accent }} />
+                  <div
+                    className="absolute top-0 left-3 right-3 h-[2px] rounded-full"
+                    style={{ background: c.accent }}
+                  />
                   <div className="text-3xl md:text-4xl font-bold text-gradient-blue">
                     {stat.value}
                   </div>
-                  <div className="mt-2 text-sm text-white/60 uppercase tracking-wide">{stat.label}</div>
+                  <div className="mt-2 text-sm text-white/60 uppercase tracking-wide">
+                    {stat.label}
+                  </div>
                 </motion.div>
               );
             })}

@@ -8,11 +8,7 @@ interface RevealTextProps {
   delay?: number;
 }
 
-export function RevealText({
-  text,
-  className = "",
-  delay = 0,
-}: RevealTextProps) {
+export function RevealText({ text, className = "", delay = 0 }: RevealTextProps) {
   const words = text.split(" ");
 
   const container = {
@@ -35,7 +31,7 @@ export function RevealText({
       opacity: 1,
       transition: {
         duration: 0.5,
-        ease: [0.25, 0.1, 0.25, 1],
+        ease: [0.25, 0.1, 0.25, 1] as const,
       },
     },
   };

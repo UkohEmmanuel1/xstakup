@@ -64,10 +64,7 @@ function Counter({ value }: { value: string }) {
   }, [inView, numericTarget, count]);
 
   return (
-    <motion.p
-      ref={ref}
-      className="text-2xl md:text-3xl font-bold text-white inline-block"
-    >
+    <motion.p ref={ref} className="text-2xl md:text-3xl font-bold text-white inline-block">
       {isNaN(numericTarget) ? value : rounded}
     </motion.p>
   );

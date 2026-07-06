@@ -6,9 +6,7 @@ export function MarqueeSection() {
     <AnimatedSection>
       <section className="py-16 md:py-24 relative bg-[color:var(--void-section)] border-y border-border overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 mb-12 text-center">
-          <h2 className="mt-4 text-xl md:text-4xl font-bold max-w-3xl mx-auto">
-            Our Tech Stack
-          </h2>
+          <h2 className="mt-4 text-xl md:text-4xl font-bold max-w-3xl mx-auto">Our Tech Stack</h2>
           <p className="mt-3 text-foreground/80 max-w-xl mx-auto">
             Modern frameworks, cloud infrastructure, blockchain protocols, and AI platforms.
           </p>
@@ -27,10 +25,8 @@ export function MarqueeSection() {
                 role="listitem"
                 className="flex items-center gap-3 px-6 py-3 rounded-lg bg-white/10 backdrop-blur-md border border-white/15"
               >
-                  <span className="h-2 w-2 rounded-full bg-blue" />
-                <span className="text-sm whitespace-nowrap text-foreground/80">
-                  {item}
-                </span>
+                <span className="h-2 w-2 rounded-full bg-blue" />
+                <span className="text-sm whitespace-nowrap text-foreground/80">{item}</span>
               </div>
             ))}
             <div aria-hidden="true" className="flex gap-6 md:gap-12">
@@ -39,10 +35,8 @@ export function MarqueeSection() {
                   key={`dup-${i}`}
                   className="flex items-center gap-3 px-6 py-3 rounded-lg bg-white/10 backdrop-blur-md border border-white/15"
                 >
-                <span className="h-2 w-2 rounded-full bg-blue" />
-                  <span className="text-sm whitespace-nowrap text-foreground/80">
-                    {item}
-                  </span>
+                  <span className="h-2 w-2 rounded-full bg-blue" />
+                  <span className="text-sm whitespace-nowrap text-foreground/80">{item}</span>
                 </div>
               ))}
             </div>

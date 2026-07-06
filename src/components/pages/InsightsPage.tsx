@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { PageHero } from "@/components/common/PageHero";
-import { AnimatedSection, SectionLabel, CTAButton, FinalCTA } from "@/components/common";
+import { AnimatedSection, CTAButton, FinalCTA } from "@/components/common";
 import { blogPosts } from "@/data/blog";
 
 function formatDate(dateStr: string) {

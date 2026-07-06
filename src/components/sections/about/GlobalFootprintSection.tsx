@@ -9,9 +9,7 @@ export function GlobalFootprintSection() {
       <section className="py-16 md:py-24 overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 text-center">
           <SectionLabel>Global Footprint</SectionLabel>
-          <h2 className="mt-4 text-2xl md:text-5xl font-bold text-white">
-            Global Presence
-          </h2>
+          <h2 className="mt-4 text-2xl md:text-5xl font-bold text-white">Global Presence</h2>
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -44,7 +42,7 @@ export function GlobalFootprintSection() {
                   <animate attributeName="r" values="6;12;6" dur="2s" repeatCount="indefinite" />
                 </circle>
                 <circle cx="200" cy="170" r="3" fill="#FFFFFF" />
-                <text x="210" y="168" fill="#FFFFFF" fontSize="11" >
+                <text x="210" y="168" fill="#FFFFFF" fontSize="11">
                   LAGOS
                 </text>
                 {[

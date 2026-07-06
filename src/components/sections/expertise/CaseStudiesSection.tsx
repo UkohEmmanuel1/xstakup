@@ -40,10 +40,16 @@ export function CaseStudiesSection() {
                     style={{ background: expertiseCaseGradients[i] }}
                   >
                     <div className="absolute inset-0 bg-[#303030]/20" />
-                    <div className="absolute top-0 left-3 right-3 h-[2px]" style={{ background: color.accent }} />
+                    <div
+                      className="absolute top-0 left-3 right-3 h-[2px]"
+                      style={{ background: color.accent }}
+                    />
                   </div>
                   <div className="flex flex-col flex-grow p-8 md:p-10">
-                    <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: color.accent }}>
+                    <span
+                      className="text-xs font-semibold uppercase tracking-wider"
+                      style={{ color: color.accent }}
+                    >
                       {c.tag}
                     </span>
                     <h3 className="mt-2 text-xl font-semibold text-white">{c.title}</h3>

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { PageHero } from "@/components/common/PageHero";
-import { AnimatedSection, SectionLabel, CTAButton, FinalCTA } from "@/components/common";
+import { CTAButton, FinalCTA } from "@/components/common";
 
 const steps = [
   {

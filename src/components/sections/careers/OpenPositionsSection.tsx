@@ -12,13 +12,14 @@ export function OpenPositionsSection() {
   const [activeDept, setActiveDept] = useState("All");
 
   const filtered =
-    activeDept === "All"
-      ? jobOpenings
-      : jobOpenings.filter((j) => j.department === activeDept);
+    activeDept === "All" ? jobOpenings : jobOpenings.filter((j) => j.department === activeDept);
 
   return (
     <AnimatedSection>
-      <section id="open-positions" className="py-16 md:py-24 border-y border-border overflow-hidden">
+      <section
+        id="open-positions"
+        className="py-16 md:py-24 border-y border-border overflow-hidden"
+      >
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
             <div>
@@ -26,9 +27,7 @@ export function OpenPositionsSection() {
               <h2 className="mt-4 text-2xl md:text-5xl font-bold">
                 Open <span className="text-gradient-blue">Roles</span>
               </h2>
-              <p className="mt-3 text-white/80 max-w-lg">
-                Engineers shipping elite code.
-              </p>
+              <p className="mt-3 text-white/80 max-w-lg">Engineers shipping elite code.</p>
             </div>
           </div>
 
@@ -71,7 +70,10 @@ export function OpenPositionsSection() {
                   className="group relative rounded-xl p-8 md:p-10 transition-colors h-full min-h-[200px] flex flex-col"
                   style={{ border: `1px solid ${c.border}`, background: c.bg }}
                 >
-                  <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: c.accent }} />
+                  <div
+                    className="absolute top-0 left-3 right-3 h-[2px] rounded-full"
+                    style={{ background: c.accent }}
+                  />
                   <h3 className="text-lg md:text-xl font-semibold text-white">{job.title}</h3>
                   <div className="flex flex-wrap gap-3 mt-3 text-sm" style={{ color: c.hover }}>
                     <span className="inline-flex items-center gap-1">

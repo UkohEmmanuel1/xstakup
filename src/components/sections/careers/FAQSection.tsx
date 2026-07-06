@@ -30,7 +30,10 @@ export function FAQSection() {
                   className="group relative rounded-xl px-5"
                   style={{ border: `1px solid ${c.border}`, background: c.bg }}
                 >
-                  <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full" style={{ background: c.accent }} />
+                  <div
+                    className="absolute top-0 left-3 right-3 h-[2px] rounded-full"
+                    style={{ background: c.accent }}
+                  />
                   <AccordionTrigger
                     className="text-base font-medium py-4 hover:no-underline"
                     style={{ color: c.hover }}

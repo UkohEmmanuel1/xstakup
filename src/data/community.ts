@@ -1,4 +1,5 @@
-import type { StatsItem, BenefitItem, CommunityEvent, CommunityProject, CardColor } from "@/types";
+import type { StatsItem, BenefitItem, CommunityEvent, CommunityProject } from "@/types";
+import { cardColor, cardColorAlt } from "@/data";
 
 export const communityStats: StatsItem[] = [
   { value: "500+", label: "Community Members" },
@@ -12,35 +13,40 @@ export const communityEvents: CommunityEvent[] = [
     title: "Lagos Engineering Meetup",
     date: "July 15, 2026",
     type: "Meetup",
-    description: "Monthly meetup discussing distributed systems, architecture, and production deployments.",
+    description:
+      "Monthly meetup discussing distributed systems, architecture, and production deployments.",
     icon: "◇",
   },
   {
     title: "Web3 Builders Workshop",
     date: "August 5, 2026",
     type: "Workshop",
-    description: "Hands-on Solidity workshop on smart contracts, Hardhat testing, and EVM deployment.",
+    description:
+      "Hands-on Solidity workshop on smart contracts, Hardhat testing, and EVM deployment.",
     icon: "⬡",
   },
   {
     title: "AI in Production Talk",
     date: "August 22, 2026",
     type: "Talk",
-    description: "Deep dive on deploying ML models at scale — from registries to real-time inference on Kubernetes.",
+    description:
+      "Deep dive on deploying ML models at scale — from registries to real-time inference on Kubernetes.",
     icon: "✦",
   },
   {
     title: "Hackathon: Build for Africa",
     date: "September 10-12, 2026",
     type: "Hackathon",
-    description: "48-hour virtual hackathon building open-source tools for African infrastructure and logistics.",
+    description:
+      "48-hour virtual hackathon building open-source tools for African infrastructure and logistics.",
     icon: "⟁",
   },
   {
     title: "DevSecOps Roundtable",
     date: "September 28, 2026",
     type: "Meetup",
-    description: "Open discussion on security best practices, compliance, and immutable cloud infrastructure.",
+    description:
+      "Open discussion on security best practices, compliance, and immutable cloud infrastructure.",
     icon: "⌘",
   },
   {
@@ -61,7 +67,8 @@ export const communityBenefits: BenefitItem[] = [
   {
     icon: "⬡",
     title: "Hands On Learning",
-    description: "Workshops and hackathons that ship real code, not slides. Build portfolio projects with mentorship.",
+    description:
+      "Workshops and hackathons that ship real code, not slides. Build portfolio projects with mentorship.",
   },
   {
     icon: "✦",
@@ -71,7 +78,8 @@ export const communityBenefits: BenefitItem[] = [
   {
     icon: "⟁",
     title: "Open Source Contributions",
-    description: "Contribute to community tools and libraries used by startups and enterprises across Africa.",
+    description:
+      "Contribute to community tools and libraries used by startups and enterprises across Africa.",
   },
   {
     icon: "⌘",
@@ -81,24 +89,28 @@ export const communityBenefits: BenefitItem[] = [
   {
     icon: "▣",
     title: "Exclusive Resources",
-    description: "Private repositories, learning paths, architecture guides, and production-grade templates.",
+    description:
+      "Private repositories, learning paths, architecture guides, and production-grade templates.",
   },
 ];
 
 export const communityProjects: CommunityProject[] = [
   {
     name: "AfriStack CLI",
-    description: "Open source CLI tool for scaffolding African fintech, logistics, and Web3 projects with pre configured CI/CD, monitoring, and compliance templates.",
+    description:
+      "Open source CLI tool for scaffolding African fintech, logistics, and Web3 projects with pre configured CI/CD, monitoring, and compliance templates.",
     tech: ["Go", "TypeScript", "Docker", "Terraform"],
   },
   {
     name: "Pyng",
-    description: "Distributed uptime monitoring platform built by the community for tracking Nigerian and Pan-African service endpoints with real time alerting.",
+    description:
+      "Distributed uptime monitoring platform built by the community for tracking Nigerian and Pan-African service endpoints with real time alerting.",
     tech: ["Rust", "React", "PostgreSQL", "Redis"],
   },
   {
     name: "Docs for Devs",
-    description: "Community curated library of technical documentation, architecture decision records, and deployment runbooks for African engineering teams.",
+    description:
+      "Community curated library of technical documentation, architecture decision records, and deployment runbooks for African engineering teams.",
     tech: ["Next.js", "MDX", "Tailwind", "OpenAPI"],
   },
 ];
@@ -130,33 +142,24 @@ export const communityTestimonials = [
   },
 ];
 
-export const eventCardColors: CardColor[] = [
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.3)", hover: "rgba(0, 148, 199, 0.55)", accent: "rgba(0, 148, 199, 0.65)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
+export const eventCardColors = [
+  cardColor,
+  cardColor,
+  cardColor,
+  cardColor,
+  cardColorAlt,
+  cardColor,
 ];
 
-export const benefitCardColors: CardColor[] = [
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.3)", hover: "rgba(0, 148, 199, 0.55)", accent: "rgba(0, 148, 199, 0.65)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
+export const benefitCardColors = [
+  cardColor,
+  cardColor,
+  cardColor,
+  cardColor,
+  cardColorAlt,
+  cardColor,
 ];
 
-export const projectCardColors: CardColor[] = [
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-];
+export const projectCardColors = [cardColor, cardColor, cardColor];
 
-export const testimonialCardColors: CardColor[] = [
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)", bg: "#303030" },
-];
+export const testimonialCardColors = [cardColor, cardColor, cardColor, cardColor];
