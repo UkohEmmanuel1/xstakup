@@ -37,6 +37,12 @@ const caseCardColors: CardColor[] = [
     accent: "rgba(0, 148, 199, 0.65)",
     bg: "#303030",
   },
+  {
+    border: "rgba(0, 148, 199, 0.3)",
+    hover: "rgba(0, 148, 199, 0.55)",
+    accent: "rgba(0, 148, 199, 0.65)",
+    bg: "#303030",
+  },
 ];
 
 const featured: FeaturedCase[] = [
@@ -68,6 +74,17 @@ const featured: FeaturedCase[] = [
     solution:
       "Enterprise trade finance platform digitizing invoicing, B2B lending, and real-time financial dashboards.",
     stack: ["Vue.js", "GoLang", "Kubernetes", "Snowflake", "Docker"],
+    gradient: "linear-gradient(135deg, #0094C7, #303030)",
+  },
+  {
+    name: "Digidrops",
+    tag: "Web3 / SocialFi",
+    headline: "SocialFi Platform with Wallet Identity and NFT Rewards.",
+    challenge:
+      "Building a social platform combining Web3 wallet auth with engaging user experiences.",
+    solution:
+      "SocialFi platform with wallet-based identity, quest rewards, and gamified engagement.",
+    stack: ["Next.js", "Solidity", "WalletConnect", "The Graph", "PostgreSQL", "Tailwind CSS"],
     gradient: "linear-gradient(135deg, #0094C7, #303030)",
   },
   {
@@ -163,6 +180,33 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
         <Image
           src="/assets/XPAY LOGO.webp"
           alt="XPay Logo"
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-contain opacity-30 p-8"
+        />
+      )}
+      {c.name === "Digidrops" && (
+        <Image
+          src="/assets/digidrps.png"
+          alt="Digidrops Logo"
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-contain opacity-30 p-8"
+        />
+      )}
+      {c.name === "Diction Masters" && (
+        <Image
+          src="/assets/Diction_Masters.png"
+          alt="Diction Masters Logo"
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-contain opacity-30 p-8"
+        />
+      )}
+      {c.name === "Waterpro LLC" && (
+        <Image
+          src="/assets/Waterpro_LLC.png"
+          alt="Waterpro LLC Logo"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
           className="object-contain opacity-30 p-8"
