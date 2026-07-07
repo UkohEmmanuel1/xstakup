@@ -182,7 +182,7 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
           alt="XPay Logo"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-contain opacity-30 p-8"
+          className="object-contain opacity-50 p-8"
         />
       )}
       {c.name === "Digidrops" && (
@@ -191,7 +191,7 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
           alt="Digidrops Logo"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-contain opacity-30 p-8"
+          className="object-contain opacity-50 p-8"
         />
       )}
       {c.name === "Diction Masters" && (
@@ -200,7 +200,7 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
           alt="Diction Masters Logo"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-contain opacity-30 p-8"
+          className="object-contain opacity-50 p-8"
         />
       )}
       {c.name === "Waterpro LLC" && (
@@ -209,41 +209,9 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
           alt="Waterpro LLC Logo"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-contain opacity-30 p-8"
+          className="object-contain opacity-50 p-8"
         />
       )}
-      <div className="absolute inset-0 grid-pattern opacity-30" />
-      <div className="absolute inset-6 rounded-lg bg-[#303030]/60 backdrop-blur-sm p-4 flex flex-col gap-3">
-        <div className="flex items-center gap-2">
-          <div className="h-2.5 w-2.5 rounded-full bg-[#0094C7]/60" />
-          <div className="h-2.5 w-2.5 rounded-full bg-[#0094C7]/60" />
-          <div className="h-2.5 w-2.5 rounded-full bg-[#0094C7]/60" />
-          <span className="ml-2 text-[10px] text-white/50">{c.name.toLowerCase()}.xstakup.io</span>
-        </div>
-        <div className="flex-1 grid grid-cols-3 gap-2">
-          <div className="col-span-2 rounded bg-white/5 p-3 flex flex-col gap-2">
-            <div className="h-2 w-1/3 rounded" style={{ background: color.accent }} />
-            <div className="h-8 rounded bg-blue/20" />
-            <div className="h-2 w-2/3 rounded bg-white/10" />
-            <div className="h-2 w-1/2 rounded bg-white/10" />
-            <div className="mt-auto grid grid-cols-3 gap-1">
-              <div className="h-6 rounded bg-blue/40" />
-              <div className="h-6 rounded bg-steel/30" />
-              <div className="h-6 rounded bg-blue/30" />
-            </div>
-          </div>
-          <div className="rounded bg-white/5 p-3 flex flex-col gap-2">
-            <div className="h-2 w-2/3 rounded" style={{ background: color.accent }} />
-            {[1, 2, 3, 4].map((k) => (
-              <div
-                key={k}
-                className="h-1.5 rounded bg-white/10"
-                style={{ width: `${50 + k * 10}%` }}
-              />
-            ))}
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
