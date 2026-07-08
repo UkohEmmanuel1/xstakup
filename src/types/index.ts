@@ -16,6 +16,7 @@ export interface CaseStudy {
   title: string;
   tag: string;
   description: string;
+  image?: string;
 }
 
 export interface CaseStudyCard {

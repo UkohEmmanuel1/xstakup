@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import type { CaseStudy } from "@/types";
 import type { CardColor } from "@/types";
 
@@ -27,6 +28,15 @@ export function DeploymentCard({ caseStudy, gradient, color }: DeploymentCardPro
         style={{ background: gradient }}
       >
         <div className="absolute inset-0 bg-[#303030]/20" />
+        {caseStudy.image && (
+          <Image
+            src={caseStudy.image}
+            alt={`${caseStudy.title} logo`}
+            fill
+            sizes="(max-width: 768px) 100vw, 33vw"
+            className="object-cover opacity-50"
+          />
+        )}
       </div>
       <div className="flex flex-col flex-grow p-8 md:p-10">
         <span

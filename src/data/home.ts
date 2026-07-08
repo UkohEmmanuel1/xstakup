@@ -73,6 +73,7 @@ export const cases: CaseStudy[] = [
     title: "XPay",
     tag: "Fintech / Web3",
     description: "Crypto, gift card, and fiat payment infrastructure with real-time settlement.",
+    image: "/assets/XPAY.png",
   },
   {
     title: "Quik",
@@ -80,10 +81,11 @@ export const cases: CaseStudy[] = [
     description: "AI-powered booking app that syncs availability and automates communication.",
   },
   {
-    title: "Cashflow Africa",
-    tag: "Trade Finance",
+    title: "Digidrops",
+    tag: "Web3 / SocialFi",
     description:
-      "Intra-African B2B trade finance platform for digitized invoicing and secured lending.",
+      "SocialFi platform with wallet-based identity, quest rewards, and gamified engagement.",
+    image: "/assets/digidrps.png",
   },
 ];
 
