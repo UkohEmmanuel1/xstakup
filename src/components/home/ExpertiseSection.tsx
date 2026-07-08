@@ -7,7 +7,7 @@ import { ExpertiseCard } from "./ExpertiseCard";
 import { expertise, expertiseCardColors } from "@/data/home";
 
 export function ExpertiseSection() {
-  const [isExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const visibleExpertise = isExpanded ? expertise : expertise.slice(0, 6);
 
@@ -51,6 +51,18 @@ export function ExpertiseSection() {
               ))}
             </AnimatePresence>
           </motion.div>
+
+          {expertise.length > 6 && (
+            <div className="mt-10 text-center">
+              <button
+                onClick={() => setIsExpanded(!isExpanded)}
+                className="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/5"
+              >
+                {isExpanded ? "Show Less" : "See More"}
+                <span>{isExpanded ? "↑" : "↓"}</span>
+              </button>
+            </div>
+          )}
         </div>
       </section>
     </AnimatedSection>
