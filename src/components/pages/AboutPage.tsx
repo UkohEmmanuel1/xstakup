@@ -1,7 +1,6 @@
 import {
   AboutHeroSection,
   NarrativeSection,
-  MissionVisionSection,
   DifferentiatorsSection,
   ValuesSection,
   LeadershipSection,

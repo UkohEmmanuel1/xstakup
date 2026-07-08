@@ -70,7 +70,8 @@ const featured: FeaturedCase[] = [
     name: "Lolliters",
     tag: "Travel Tech & Hospitality",
     headline: "All-in-One Travel Booking Platform.",
-    challenge: "Fragmented travel booking experience across airlines, hotels, and local experiences.",
+    challenge:
+      "Fragmented travel booking experience across airlines, hotels, and local experiences.",
     solution:
       "Unified booking platform with real-time inventory, dynamic pricing, multi-language support, and AI-powered trip recommendations.",
     stack: ["Next.js", "Node.js", "GraphQL", "PostgreSQL", "Redis", "Docker"],

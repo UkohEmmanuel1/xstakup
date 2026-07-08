@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatedSection, SectionLabel } from "@/components/common";
+import { AnimatedSection } from "@/components/common";
 import { tweetCardColors } from "@/data/home";
 import type { CardColor } from "@/types";
 
@@ -197,7 +197,6 @@ export function TestimonialSection() {
       <section className="py-16 md:py-24 bg-background sticky top-0 z-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center mb-12">
-            
             <h2 className="mt-4 text-xl sm:text-2xl md:text-5xl font-bold tracking-tight">
               Client Success Stories
             </h2>
