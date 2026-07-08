@@ -10,7 +10,7 @@ export function ValuesSection() {
       <section className="py-16 md:py-24 overflow-hidden">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <SectionLabel>Core Values</SectionLabel>
+            
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
               Core <span className="text-gradient-blue">Values</span>
             </h2>
