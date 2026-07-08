@@ -31,14 +31,14 @@ function Logo({ onClose }: { onClose: () => void }) {
     <Link href="/" className="flex items-center z-50" onClick={onClose}>
       <motion.div
         whileHover={{ scale: 1.05, rotate: -2 }}
-        className="relative h-14 w-14 md:h-20 md:w-20 flex-shrink-0"
+        className="relative h-16 w-16 md:h-24 md:w-24 flex-shrink-0"
       >
         <div className="absolute inset-0 flex items-center justify-center overflow-hidden rounded-xl">
           <Image
             src="/assets/XStakUP LOGO-2.webp"
             alt="XStakUp Logo"
             fill
-            sizes="80px"
+            sizes="96px"
             className="object-contain select-none"
           />
         </div>
@@ -169,7 +169,7 @@ export function Navbar() {
         scrolled || open ? "glass-strong shadow-blue border-b border-border/40" : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex h-14 md:h-16 max-w-7xl items-center justify-between px-6">
+      <div className="mx-auto flex h-16 md:h-20 max-w-7xl items-center justify-between px-6">
         <Logo onClose={() => setOpen(false)} />
         <DesktopNav pathname={pathname} scrolled={scrolled} />
 
