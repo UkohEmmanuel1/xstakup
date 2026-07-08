@@ -30,10 +30,17 @@ export function ContactForm() {
 
   async function onSubmit(data: FormData) {
     try {
-      const res = await fetch("/api/contact", {
+      const formData = new URLSearchParams();
+      formData.append("form-name", "Contact");
+      formData.append("name", data.name);
+      formData.append("email", data.email);
+      formData.append("company", data.company || "");
+      formData.append("message", data.message);
+
+      const res = await fetch("/", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        headers: { Accept: "application/json" },
+        body: formData,
       });
       if (!res.ok) throw new Error("Failed");
       setSubmitted(true);
@@ -61,12 +68,14 @@ export function ContactForm() {
 
   return (
     <motion.form
+      data-netlify="true"
       initial={{ opacity: 0, y: 20, scale: 0.95 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       transition={{ duration: 0.5 }}
       onSubmit={handleSubmit(onSubmit)}
       className="rounded-xl border border-border bg-card p-8 md:p-10 space-y-5"
     >
+      <input type="hidden" name="form-name" value="Contact" />
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1.5">
           Full name <span className="text-blue">*</span>
@@ -125,7 +134,7 @@ export function ContactForm() {
         disabled={isSubmitting}
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
-        className="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-blue-gradient px-6 py-3 text-sm font-medium text-[#303030] shadow-blue hover:shadow-glow transition-shadow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-60"
+        className="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-blue-gradient px-6 py-3 text-sm font-medium text-white shadow-blue hover:shadow-glow transition-shadow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-60"
       >
         {isSubmitting ? (
           <>

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SectionLabel, AnimatedSection, staggerContainer, staggerItem } from "@/components/common";
+import { AnimatedSection, staggerContainer, staggerItem } from "@/components/common";
 import { expertiseCases, expertiseCaseGradients, expertiseCaseColors } from "@/data/expertise";
 
 export function CaseStudiesSection() {
@@ -10,7 +10,6 @@ export function CaseStudiesSection() {
       <section className="py-16 md:py-24 overflow-hidden">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <SectionLabel>Case Studies</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
               Case <span className="text-gradient-blue">Studies</span>
             </h2>

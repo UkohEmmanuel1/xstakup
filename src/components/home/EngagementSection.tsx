@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatedSection, SectionLabel, EngagementCard } from "@/components/common";
+import { AnimatedSection, EngagementCard } from "@/components/common";
 import { engagementModels } from "@/data";
 
 export function EngagementSection() {
@@ -8,7 +8,6 @@ export function EngagementSection() {
     <AnimatedSection className="py-16 md:py-24 border-b border-border">
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center mb-12">
-          <SectionLabel>How We Work</SectionLabel>
           <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight max-w-3xl mx-auto">
             Engagement Models
           </h2>

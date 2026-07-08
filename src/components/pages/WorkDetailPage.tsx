@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, CheckCircle } from "lucide-react";
 import { PageHero } from "@/components/common/PageHero";
-import { AnimatedSection, SectionLabel, FinalCTA } from "@/components/common";
+import { AnimatedSection, FinalCTA } from "@/components/common";
 import { caseStudiesFull } from "@/data";
 
 interface Props {
@@ -58,7 +58,6 @@ export function WorkDetailPageComponent({ slug }: Props) {
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <SectionLabel>Problem</SectionLabel>
               <h2 className="mt-4 text-2xl md:text-3xl font-heading font-bold text-foreground tracking-tight">
                 The challenge
               </h2>
@@ -67,7 +66,6 @@ export function WorkDetailPageComponent({ slug }: Props) {
               </p>
             </div>
             <div>
-              <SectionLabel>Goal</SectionLabel>
               <h2 className="mt-4 text-2xl md:text-3xl font-heading font-bold text-foreground tracking-tight">
                 Our goal
               </h2>
@@ -81,7 +79,6 @@ export function WorkDetailPageComponent({ slug }: Props) {
         <AnimatedSection className="py-16 md:py-24 border-b border-border bg-muted/30">
           <div className="mx-auto max-w-7xl px-6">
             <div className="text-center mb-12">
-              <SectionLabel>Scope</SectionLabel>
               <h2 className="mt-4 text-2xl md:text-4xl font-heading font-bold text-foreground tracking-tight">
                 Scope overview
               </h2>
@@ -97,7 +94,6 @@ export function WorkDetailPageComponent({ slug }: Props) {
         <AnimatedSection className="py-16 md:py-24 border-b border-border">
           <div className="mx-auto max-w-7xl px-6">
             <div className="text-center mb-12">
-              <SectionLabel>Features</SectionLabel>
               <h2 className="mt-4 text-2xl md:text-4xl font-heading font-bold text-foreground tracking-tight">
                 Key features
               </h2>
@@ -118,7 +114,6 @@ export function WorkDetailPageComponent({ slug }: Props) {
         <AnimatedSection className="py-16 md:py-24 border-b border-border bg-muted/30">
           <div className="mx-auto max-w-7xl px-6">
             <div className="text-center">
-              <SectionLabel>Technology</SectionLabel>
               <h2 className="mt-4 text-2xl md:text-4xl font-heading font-bold text-foreground tracking-tight">
                 Tech stack
               </h2>
@@ -141,7 +136,6 @@ export function WorkDetailPageComponent({ slug }: Props) {
         <AnimatedSection className="py-16 md:py-24 border-b border-border">
           <div className="mx-auto max-w-7xl px-6">
             <div className="text-center max-w-3xl mx-auto">
-              <SectionLabel>Outcome</SectionLabel>
               <h2 className="mt-4 text-2xl md:text-4xl font-heading font-bold text-foreground tracking-tight">
                 The result
               </h2>

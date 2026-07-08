@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SectionLabel, AnimatedSection, staggerContainer, staggerItem } from "@/components/common";
+import { AnimatedSection, staggerContainer, staggerItem } from "@/components/common";
 import { pipeline, pipelineCardColors } from "@/data/home";
 
 export function PipelineSection() {
@@ -10,7 +10,6 @@ export function PipelineSection() {
       <section className="py-16 md:py-24 bg-void-section border-y border-border overflow-hidden">
         <div className="mx-auto max-w-7xl px-6">
           <div className="max-w-2xl mb-12">
-            <SectionLabel>Process</SectionLabel>
             <h2 className="mt-4 text-2xl md:text-5xl font-bold">
               Development <span className="text-gradient-blue">Pipeline</span>
             </h2>

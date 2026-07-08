@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { AnimatedSection, SectionLabel } from "@/components/common";
+import { AnimatedSection } from "@/components/common";
 import { blogPosts } from "@/data/blog";
 
 export function InsightsPreview() {
@@ -12,7 +12,6 @@ export function InsightsPreview() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div className="max-w-xl">
-            <SectionLabel>Insights</SectionLabel>
             <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight">
               Engineering Insights
             </h2>

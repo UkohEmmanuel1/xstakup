@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { SectionLabel, AnimatedSection, staggerContainer } from "@/components/common";
+import { AnimatedSection, staggerContainer } from "@/components/common";
 import { ExpertiseCard } from "./ExpertiseCard";
 import { expertise, expertiseCardColors } from "@/data/home";
 
@@ -17,7 +17,6 @@ export function ExpertiseSection() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
             <div>
-              <SectionLabel>Expertise</SectionLabel>
               <h2 className="mt-4 text-2xl md:text-5xl font-bold text-white">
                 Engineering Expertise
               </h2>

@@ -1,13 +1,7 @@
 "use client";
 
 import { PageHero } from "@/components/common/PageHero";
-import {
-  AnimatedSection,
-  SectionLabel,
-  IndustryCard,
-  CTAButton,
-  FinalCTA,
-} from "@/components/common";
+import { AnimatedSection, IndustryCard, CTAButton, FinalCTA } from "@/components/common";
 import { industries } from "@/data";
 
 export function IndustriesPageComponent() {
@@ -28,7 +22,6 @@ export function IndustriesPageComponent() {
       <AnimatedSection className="py-16 md:py-24 border-b border-border">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center mb-12">
-            <SectionLabel>Industries</SectionLabel>
             <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight max-w-3xl mx-auto">
               Industries we serve.
             </h2>
@@ -48,7 +41,6 @@ export function IndustriesPageComponent() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col lg:flex-row gap-12 items-start">
             <div className="flex-1 max-w-xl">
-              <SectionLabel>Approach</SectionLabel>
               <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight">
                 Custom solutions, per industry.
               </h2>

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SectionLabel, PrimaryCTA, AnimatedSection } from "@/components/common";
+import { PrimaryCTA, AnimatedSection } from "@/components/common";
 
 export function GlobalReachSection() {
   return (
@@ -14,7 +14,6 @@ export function GlobalReachSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            <SectionLabel>Global Reach</SectionLabel>
             <h2 className="mt-4 text-2xl md:text-5xl font-bold">Global Engineering Reach</h2>
             <p className="mt-6 text-lg text-foreground/80">
               Headquartered in Lagos, we deploy enterprise systems across Africa, Europe, and the

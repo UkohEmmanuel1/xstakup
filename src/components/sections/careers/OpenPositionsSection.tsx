@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { MapPin, Briefcase, Clock } from "lucide-react";
-import { SectionLabel, AnimatedSection, staggerContainer, staggerItem } from "@/components/common";
+import { AnimatedSection, staggerContainer, staggerItem } from "@/components/common";
 import { jobOpenings, jobCardColors } from "@/data/careers";
 
 const departments = ["All", "Backend", "Frontend", "AI", "Web3", "DevSecOps"];
@@ -23,7 +23,6 @@ export function OpenPositionsSection() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
             <div>
-              <SectionLabel>Open Positions</SectionLabel>
               <h2 className="mt-4 text-2xl md:text-5xl font-bold">
                 Open <span className="text-gradient-blue">Roles</span>
               </h2>

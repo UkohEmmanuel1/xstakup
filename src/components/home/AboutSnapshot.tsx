@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { AnimatedSection, SectionLabel } from "@/components/common";
+import { AnimatedSection } from "@/components/common";
 import { Code2, Layers, Headphones } from "lucide-react";
 
 const cards = [
@@ -28,7 +28,6 @@ export function AboutSnapshot() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex flex-col lg:flex-row gap-12 items-start">
           <div className="flex-1 max-w-xl">
-            <SectionLabel>About</SectionLabel>
             <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight">
               About XStakUp
             </h2>

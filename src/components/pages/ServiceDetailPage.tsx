@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowLeft, CheckCircle } from "lucide-react";
 import { PageHero } from "@/components/common/PageHero";
-import { AnimatedSection, SectionLabel, CTAButton, FinalCTA } from "@/components/common";
+import { AnimatedSection, CTAButton, FinalCTA } from "@/components/common";
 import { services } from "@/data";
 import { Code, Globe, Smartphone, Cloud, Brain, Wallet, Hexagon, Server } from "lucide-react";
 
@@ -67,7 +67,6 @@ export function ServiceDetailPageComponent({ serviceId }: Props) {
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
             <div className="lg:col-span-3">
-              <SectionLabel>Overview</SectionLabel>
               <h2 className="mt-4 text-2xl md:text-4xl font-heading font-bold text-foreground tracking-tight">
                 What we deliver
               </h2>
@@ -100,7 +99,6 @@ export function ServiceDetailPageComponent({ serviceId }: Props) {
       <AnimatedSection className="py-16 md:py-24 border-b border-border bg-muted/30">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center mb-12">
-            <SectionLabel>Process</SectionLabel>
             <h2 className="mt-4 text-2xl md:text-4xl font-heading font-bold text-foreground tracking-tight">
               Our delivery process.
             </h2>
@@ -150,7 +148,6 @@ export function ServiceDetailPageComponent({ serviceId }: Props) {
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col lg:flex-row gap-12 items-start">
             <div className="flex-1">
-              <SectionLabel>Who it&apos;s for</SectionLabel>
               <h2 className="mt-4 text-2xl md:text-4xl font-heading font-bold text-foreground tracking-tight">
                 Who needs this
               </h2>

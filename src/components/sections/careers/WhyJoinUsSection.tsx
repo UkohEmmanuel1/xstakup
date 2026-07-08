@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SectionLabel, AnimatedSection, staggerContainer, staggerItem } from "@/components/common";
+import { AnimatedSection, staggerContainer, staggerItem } from "@/components/common";
 import { benefits, benefitCardColors } from "@/data/careers";
 
 export function WhyJoinUsSection() {
@@ -10,7 +10,6 @@ export function WhyJoinUsSection() {
       <section className="py-16 md:py-24 overflow-hidden bg-void-section">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <SectionLabel>Why Join Us</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
               Perks <span className="text-gradient-blue">& Culture</span>
             </h2>

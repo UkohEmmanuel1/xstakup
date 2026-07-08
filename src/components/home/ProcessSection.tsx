@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { AnimatedSection, SectionLabel } from "@/components/common";
+import { AnimatedSection } from "@/components/common";
 import { processSteps } from "@/data";
 
 export function ProcessSection() {
@@ -9,7 +9,6 @@ export function ProcessSection() {
     <AnimatedSection className="py-16 md:py-24 border-b border-border bg-muted/30">
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center mb-12">
-          <SectionLabel>Process</SectionLabel>
           <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight max-w-2xl mx-auto">
             Custom Software Process
           </h2>

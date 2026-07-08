@@ -79,10 +79,6 @@ export interface ButtonProps {
   className?: string;
 }
 
-export interface SectionLabelProps {
-  children: ReactNode;
-}
-
 export interface StatsItem {
   value: string;
   label: string;

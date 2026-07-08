@@ -6,7 +6,7 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from "@/components/ui/accordion";
-import { SectionLabel, AnimatedSection } from "@/components/common";
+import { AnimatedSection } from "@/components/common";
 import { faqItems, faqCardColors } from "@/data/careers";
 
 export function FAQSection() {
@@ -15,7 +15,6 @@ export function FAQSection() {
       <section className="py-16 md:py-24 overflow-hidden">
         <div className="mx-auto max-w-3xl px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <SectionLabel>FAQ</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
               <span className="text-gradient-blue">FAQs</span>
             </h2>

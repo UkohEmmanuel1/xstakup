@@ -1,7 +1,7 @@
 "use client";
 
 import { PageHero } from "@/components/common/PageHero";
-import { AnimatedSection, SectionLabel, CaseCard, CTAButton, FinalCTA } from "@/components/common";
+import { AnimatedSection, CaseCard, CTAButton, FinalCTA } from "@/components/common";
 import { caseStudies } from "@/data";
 
 export function WorkPageComponent() {
@@ -22,7 +22,6 @@ export function WorkPageComponent() {
       <AnimatedSection className="py-16 md:py-24 border-b border-border">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center mb-12">
-            <SectionLabel>Work</SectionLabel>
             <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight max-w-3xl mx-auto">
               What we build
             </h2>
@@ -39,7 +38,6 @@ export function WorkPageComponent() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col lg:flex-row gap-12 items-start">
             <div className="flex-1 max-w-xl">
-              <SectionLabel>Capabilities</SectionLabel>
               <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight">
                 Cross-industry capabilities.
               </h2>

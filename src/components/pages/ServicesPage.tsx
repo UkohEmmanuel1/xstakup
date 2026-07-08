@@ -1,13 +1,7 @@
 "use client";
 
 import { PageHero } from "@/components/common/PageHero";
-import {
-  AnimatedSection,
-  SectionLabel,
-  ServiceCard,
-  CTAButton,
-  FinalCTA,
-} from "@/components/common";
+import { AnimatedSection, ServiceCard, CTAButton, FinalCTA } from "@/components/common";
 import { services } from "@/data";
 
 export function ServicesPageComponent() {
@@ -28,7 +22,6 @@ export function ServicesPageComponent() {
       <AnimatedSection className="py-16 md:py-24 border-b border-border">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center mb-12">
-            <SectionLabel>Services</SectionLabel>
             <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight max-w-3xl mx-auto">
               End-to-end digital product delivery.
             </h2>
@@ -48,7 +41,6 @@ export function ServicesPageComponent() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col lg:flex-row gap-12 items-start">
             <div className="flex-1 max-w-xl">
-              <SectionLabel>Approach</SectionLabel>
               <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight">
                 Our delivery approach.
               </h2>

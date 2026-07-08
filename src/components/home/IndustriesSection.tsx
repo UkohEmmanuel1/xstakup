@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatedSection, SectionLabel, IndustryCard } from "@/components/common";
+import { AnimatedSection, IndustryCard } from "@/components/common";
 import { industries } from "@/data";
 
 export function IndustriesSection() {
@@ -8,7 +8,6 @@ export function IndustriesSection() {
     <AnimatedSection className="py-16 md:py-24 border-b border-border">
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center mb-12">
-          <SectionLabel>Industries</SectionLabel>
           <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight max-w-3xl mx-auto">
             Industries Served
           </h2>

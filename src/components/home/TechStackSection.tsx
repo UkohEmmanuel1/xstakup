@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatedSection, SectionLabel, TechBadge } from "@/components/common";
+import { AnimatedSection, TechBadge } from "@/components/common";
 import { techCategories } from "@/data";
 
 export function TechStackSection() {
@@ -8,7 +8,6 @@ export function TechStackSection() {
     <AnimatedSection className="py-16 md:py-24 border-b border-border">
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center mb-12">
-          <SectionLabel>Tech Stack</SectionLabel>
           <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight">
             Our Tech Stack
           </h2>

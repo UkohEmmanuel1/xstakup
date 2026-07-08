@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SectionLabel, AnimatedSection, staggerContainer, staggerItem } from "@/components/common";
+import { AnimatedSection, staggerContainer, staggerItem } from "@/components/common";
 import { communityEvents, eventCardColors } from "@/data/community";
 
 const typeBadge: Record<string, string> = {
@@ -20,7 +20,6 @@ export function EventsSection() {
       >
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <SectionLabel>Events</SectionLabel>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
               Developer <span className="text-gradient-blue">Events</span>
             </h2>

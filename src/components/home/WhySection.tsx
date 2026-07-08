@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { AnimatedSection, SectionLabel } from "@/components/common";
+import { AnimatedSection } from "@/components/common";
 import { whyItems } from "@/data";
 import { CheckCircle } from "lucide-react";
 
@@ -11,7 +11,6 @@ export function WhySection() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex flex-col lg:flex-row gap-12 items-start">
           <div className="flex-1 max-w-xl">
-            <SectionLabel>Why XStakUp</SectionLabel>
             <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight">
               Built For Scale
             </h2>

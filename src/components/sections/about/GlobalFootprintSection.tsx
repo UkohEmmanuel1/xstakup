@@ -1,14 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SectionLabel, AnimatedSection } from "@/components/common";
+import { AnimatedSection } from "@/components/common";
 
 export function GlobalFootprintSection() {
   return (
     <AnimatedSection>
       <section className="py-16 md:py-24 overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 text-center">
-          <SectionLabel>Global Footprint</SectionLabel>
           <h2 className="mt-4 text-2xl md:text-5xl font-bold text-white">Global Presence</h2>
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}

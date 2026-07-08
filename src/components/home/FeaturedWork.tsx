@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatedSection, SectionLabel, CaseCard } from "@/components/common";
+import { AnimatedSection, CaseCard } from "@/components/common";
 import { caseStudies } from "@/data";
 import { CTAButton } from "@/components/common/CTAButton";
 
@@ -10,7 +10,6 @@ export function FeaturedWork() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div className="max-w-xl">
-            <SectionLabel>Work</SectionLabel>
             <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight">
               Featured Projects
             </h2>

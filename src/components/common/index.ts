@@ -3,7 +3,6 @@ export { SubPageHero } from "./SubPageHero";
 export { ClientOnly } from "./ClientOnly";
 export { PrimaryCTA, OutlineCTA } from "./Button";
 export { CTAButton } from "./CTAButton";
-export { SectionLabel } from "./SectionLabel";
 export { FinalCTA } from "./FinalCTA";
 export { Field } from "./FormField";
 export { TiltCard } from "./TiltCard";
