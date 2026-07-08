@@ -10,7 +10,7 @@ export function LeadershipSection() {
       <section className="py-16 md:py-24 bg-[color:var(--void-section)] border-y border-border overflow-hidden">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <SectionLabel>Leadership</SectionLabel>
+            
             <h2 className="mt-4 text-3xl md:text-5xl font-bold">
               Leadership <span className="text-gradient-blue">Team</span>
             </h2>

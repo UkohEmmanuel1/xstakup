@@ -19,7 +19,6 @@ export function AboutPage() {
       <div className="min-h-screen w-full bg-[#303030]/80 backdrop-blur-[1px]">
         <AboutHeroSection />
         <NarrativeSection />
-        <MissionVisionSection />
         <DifferentiatorsSection />
         <ValuesSection />
         <LeadershipSection />

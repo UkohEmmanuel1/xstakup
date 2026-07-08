@@ -13,7 +13,7 @@ export function DifferentiatorsSection() {
       >
         <div className="mx-auto max-w-7xl px-6">
           <div className="max-w-2xl mb-12">
-            <SectionLabel>Why Choose Us</SectionLabel>
+            
             <h2 className="mt-4 text-2xl md:text-5xl font-bold">
               Key <span className="text-gradient-blue">Differentiators</span>
             </h2>

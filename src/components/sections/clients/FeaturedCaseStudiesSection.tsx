@@ -182,7 +182,7 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
           alt="XPay Logo"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-contain opacity-50 p-8"
+          className="object-cover opacity-50"
         />
       )}
       {c.name === "Digidrops" && (
@@ -191,7 +191,7 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
           alt="Digidrops Logo"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-contain opacity-50 p-8"
+          className="object-cover opacity-50"
         />
       )}
       {c.name === "Diction Masters" && (
@@ -200,7 +200,7 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
           alt="Diction Masters Logo"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-contain opacity-50 p-8"
+          className="object-cover opacity-50"
         />
       )}
       {c.name === "Waterpro LLC" && (
@@ -209,7 +209,7 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
           alt="Waterpro LLC Logo"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-contain opacity-50 p-8"
+          className="object-cover opacity-50"
         />
       )}
     </div>

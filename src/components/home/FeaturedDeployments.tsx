@@ -3,6 +3,7 @@
 
 import { motion } from "framer-motion";
 import { AnimatedSection, staggerContainer } from "@/components/common";
+import { CTAButton } from "@/components/common/CTAButton";
 import { DeploymentCard } from "./DeploymentCard";
 import { cases, caseGradients, deploymentCardColors } from "@/data/home";
 
@@ -38,6 +39,11 @@ export function FeaturedDeployments() {
               />
             ))}
           </motion.div>
+          <div className="mt-10 text-center">
+            <CTAButton href="/clients" variant="outline">
+              View All Case Studies &rarr;
+            </CTAButton>
+          </div>
         </div>
       </section>
     </AnimatedSection>
