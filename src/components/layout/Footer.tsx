@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Linkedin, Instagram } from "lucide-react";
+import { Linkedin, Instagram, X } from "lucide-react";
 import { socialLinks } from "@/data";
 
 const staggerColVariants = {
@@ -78,7 +78,8 @@ function FooterBrand() {
       </div>
       <div className="mt-6 flex items-center gap-3">
         {socialLinks.map((s) => {
-          const Icon = s.platform === "LinkedIn" ? Linkedin : Instagram;
+          const iconMap = { LinkedIn: Linkedin, Instagram: Instagram, X: X } as const;
+          const Icon = iconMap[s.platform];
           return (
             <a
               key={s.platform}

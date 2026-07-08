@@ -1,5 +1,5 @@
 export interface SocialLink {
-  platform: "LinkedIn" | "Instagram";
+  platform: "LinkedIn" | "Instagram" | "X";
   url: string;
   label: string;
 }
@@ -14,5 +14,10 @@ export const socialLinks: SocialLink[] = [
     platform: "Instagram",
     url: "https://instagram.com/xstakup",
     label: "Instagram",
+  },
+  {
+    platform: "X",
+    url: "https://x.com/xstakup",
+    label: "X",
   },
 ];
