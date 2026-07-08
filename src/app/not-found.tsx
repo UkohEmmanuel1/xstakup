@@ -12,7 +12,7 @@ export default function NotFoundPage() {
         <div className="mt-8">
           <Link
             href="/"
-            className="inline-flex items-center justify-center rounded-md bg-blue-gradient px-5 py-2.5 text-sm font-medium text-[#070a09] shadow-blue focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            className="inline-flex items-center justify-center rounded-md bg-blue-gradient px-5 py-2.5 text-sm font-medium text-white shadow-blue focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
             Return to Home
           </Link>

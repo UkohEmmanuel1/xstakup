@@ -59,7 +59,7 @@ export function SubPageHero({
             transition={{ duration: 0.5, delay: 0.5 }}
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.96 }}
-            className="mt-8 inline-flex items-center gap-2 rounded-md bg-blue-gradient px-6 py-3.5 text-sm font-medium text-[#303030] shadow-blue focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            className="mt-8 inline-flex items-center gap-2 rounded-md bg-blue-gradient px-6 py-3.5 text-sm font-medium text-white shadow-blue focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
             {ctaText}
           </motion.a>

@@ -22,7 +22,7 @@ export function PrimaryCTA({
     <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }} className="inline-block">
       <Link
         href={href}
-        className="inline-flex items-center gap-2 rounded-md bg-blue-gradient px-6 py-3.5 text-base font-medium text-[#303030] shadow-blue hover:shadow-glow transition-shadow relative overflow-hidden group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        className="inline-flex items-center gap-2 rounded-md bg-blue-gradient px-6 py-3.5 text-base font-medium text-white shadow-blue hover:shadow-glow transition-shadow relative overflow-hidden group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
       >
         <motion.span
           className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"

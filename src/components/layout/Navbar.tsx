@@ -116,7 +116,7 @@ function MobileNav({
               <Link
                 href="/contact"
                 onClick={onClose}
-                className="mt-4 inline-flex w-full justify-center items-center gap-2 rounded-md bg-blue-gradient px-4 py-3.5 text-sm font-medium text-[#303030] shadow-blue focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                className="mt-4 inline-flex w-full justify-center items-center gap-2 rounded-md bg-blue-gradient px-4 py-3.5 text-sm font-medium text-white shadow-blue focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               >
                 Initialize Your Build
               </Link>
@@ -177,7 +177,7 @@ export function Navbar() {
           <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
             <Link
               href="/contact"
-              className="hidden sm:inline-flex items-center gap-2 rounded-md bg-blue-gradient px-4 py-2.5 text-sm font-medium text-[#303030] shadow-blue hover:shadow-glow transition-shadow relative overflow-hidden group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              className="hidden sm:inline-flex items-center gap-2 rounded-md bg-blue-gradient px-4 py-2.5 text-sm font-medium text-white shadow-blue hover:shadow-glow transition-shadow relative overflow-hidden group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
               <span className="relative z-10">Initialize Your Build</span>
               <motion.span

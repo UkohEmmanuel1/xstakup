@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { AnimatedSection, OutlineCTA, slideFromLeft, slideFromRight } from "@/components/common";
+import { AnimatedSection, PrimaryCTA, slideFromLeft, slideFromRight } from "@/components/common";
 import type { FeaturedCase } from "@/types";
 import type { CardColor } from "@/types";
 
@@ -67,13 +67,13 @@ const featured: FeaturedCase[] = [
     gradient: "linear-gradient(135deg, #0094C7, #0094C7)",
   },
   {
-    name: "Cashflow Africa",
-    tag: "Enterprise SaaS & Trade Finance",
-    headline: "Powering Intra-African Trade.",
-    challenge: "Fragmented financial data and slow liquidity in African B2B trade.",
+    name: "Lolliters",
+    tag: "Travel Tech & Hospitality",
+    headline: "All-in-One Travel Booking Platform.",
+    challenge: "Fragmented travel booking experience across airlines, hotels, and local experiences.",
     solution:
-      "Enterprise trade finance platform digitizing invoicing, B2B lending, and real-time financial dashboards.",
-    stack: ["Vue.js", "GoLang", "Kubernetes", "Snowflake", "Docker"],
+      "Unified booking platform with real-time inventory, dynamic pricing, multi-language support, and AI-powered trip recommendations.",
+    stack: ["Next.js", "Node.js", "GraphQL", "PostgreSQL", "Redis", "Docker"],
     gradient: "linear-gradient(135deg, #0094C7, #303030)",
   },
   {
@@ -159,7 +159,7 @@ function CaseStudyContent({ c, reverse }: { c: FeaturedCase; reverse: boolean })
         </div>
       </div>
       <div className="mt-8">
-        <OutlineCTA href="/contact">View Architecture Details</OutlineCTA>
+        <PrimaryCTA href="/contact">View Architecture Details</PrimaryCTA>
       </div>
     </motion.div>
   );
@@ -178,8 +178,17 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
       <div className="absolute inset-0" style={{ background: c.gradient, opacity: 0.85 }} />
       {c.name === "XPay" && (
         <Image
-          src="/assets/XPAY LOGO.webp"
+          src="/assets/XPAY.png"
           alt="XPay Logo"
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-cover opacity-50"
+        />
+      )}
+      {c.name === "Lolliters" && (
+        <Image
+          src="/assets/Lolliters.png"
+          alt="Lolliters Logo"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
           className="object-cover opacity-50"
