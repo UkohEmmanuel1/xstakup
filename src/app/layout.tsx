@@ -93,7 +93,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 email: "partnerships@xstakup.com",
                 contactType: "sales",
               },
-              sameAs: [],
+              sameAs: ["https://linkedin.com/company/xstakup", "https://instagram.com/xstakup"],
             }),
           }}
         />

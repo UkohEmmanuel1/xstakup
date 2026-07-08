@@ -1,6 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Linkedin, Instagram } from "lucide-react";
+import { socialLinks } from "@/data";
 import type { ContactInfo } from "@/types";
 
 const contactItems: ContactInfo[] = [
@@ -54,6 +56,27 @@ export function ContactInfoPanel() {
           </motion.div>
         ))}
       </motion.div>
+
+      <div className="mt-10">
+        <p className="text-xs uppercase tracking-widest text-blue">Social</p>
+        <div className="mt-3 flex items-center gap-3">
+          {socialLinks.map((s) => {
+            const Icon = s.platform === "LinkedIn" ? Linkedin : Instagram;
+            return (
+              <a
+                key={s.platform}
+                href={s.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={s.label}
+                className="h-10 w-10 rounded-lg border border-border bg-card flex items-center justify-center text-muted-foreground hover:text-blue hover:border-blue/50 transition-colors"
+              >
+                <Icon size={18} />
+              </a>
+            );
+          })}
+        </div>
+      </div>
     </motion.div>
   );
 }

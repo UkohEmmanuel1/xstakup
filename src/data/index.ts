@@ -607,3 +607,6 @@ export const stats: StatsItem[] = [
   { value: "8+", label: "Tech Capabilities" },
   { value: "99%", label: "Project Success Rate" },
 ];
+
+export { socialLinks } from "./social";
+export type { SocialLink } from "./social";

@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { Linkedin, Instagram } from "lucide-react";
+import { socialLinks } from "@/data";
 
 const staggerColVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -73,6 +75,23 @@ function FooterBrand() {
         <a href="mailto:partnerships@xstakup.com" className="text-blue hover:underline">
           partnerships@xstakup.com
         </a>
+      </div>
+      <div className="mt-6 flex items-center gap-3">
+        {socialLinks.map((s) => {
+          const Icon = s.platform === "LinkedIn" ? Linkedin : Instagram;
+          return (
+            <a
+              key={s.platform}
+              href={s.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={s.label}
+              className="h-9 w-9 rounded-lg border border-border bg-card flex items-center justify-center text-muted-foreground hover:text-blue hover:border-blue/50 transition-colors"
+            >
+              <Icon size={16} />
+            </a>
+          );
+        })}
       </div>
     </motion.div>
   );
