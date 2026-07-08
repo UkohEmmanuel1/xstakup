@@ -33,10 +33,7 @@ export function FAQSection() {
                     className="absolute top-0 left-3 right-3 h-[2px] rounded-full"
                     style={{ background: c.accent }}
                   />
-                  <AccordionTrigger
-                    className="text-base font-medium py-4 hover:no-underline"
-                    style={{ color: c.hover }}
-                  >
+                  <AccordionTrigger className="text-base font-medium py-4 hover:no-underline text-white/90">
                     {item.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-white/70 text-base leading-relaxed">
