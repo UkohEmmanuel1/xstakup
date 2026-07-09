@@ -25,7 +25,7 @@ export function SubPageHero({
       className="relative overflow-hidden py-8 md:py-12 lg:py-16 bg-cover bg-center bg-no-repeat max-w-full"
       style={{ backgroundImage: `url('${bgImage}')` }}
     >
-      <div className="absolute inset-0 bg-[#303030]/85" />
+      <div className="absolute inset-0 bg-overlay/85" />
       <div className="absolute inset-0 grid-pattern opacity-40" />
       <motion.div
         animate={{ scale: [1, 1.08, 1], opacity: [0.2, 0.35, 0.2] }}

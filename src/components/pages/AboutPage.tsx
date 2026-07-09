@@ -15,7 +15,7 @@ export function AboutPage() {
         backgroundImage: "url('/assets/background.png')",
       }}
     >
-      <div className="min-h-screen w-full bg-[#303030]/80 backdrop-blur-[1px]">
+      <div className="min-h-screen w-full bg-void-section/80 backdrop-blur-[1px]">
         <AboutHeroSection />
         <NarrativeSection />
         <DifferentiatorsSection />

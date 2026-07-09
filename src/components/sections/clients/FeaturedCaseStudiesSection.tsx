@@ -11,37 +11,73 @@ const caseCardColors: CardColor[] = [
     border: "rgba(0, 148, 199, 0.25)",
     hover: "rgba(0, 148, 199, 0.5)",
     accent: "rgba(0, 148, 199, 0.6)",
-    bg: "#303030",
+    bg: "var(--card-bg)",
   },
   {
     border: "rgba(0, 148, 199, 0.25)",
     hover: "rgba(0, 148, 199, 0.5)",
     accent: "rgba(0, 148, 199, 0.6)",
-    bg: "#303030",
+    bg: "var(--card-bg)",
   },
   {
     border: "rgba(0, 148, 199, 0.25)",
     hover: "rgba(0, 148, 199, 0.5)",
     accent: "rgba(0, 148, 199, 0.6)",
-    bg: "#303030",
+    bg: "var(--card-bg)",
   },
   {
     border: "rgba(0, 148, 199, 0.25)",
     hover: "rgba(0, 148, 199, 0.5)",
     accent: "rgba(0, 148, 199, 0.6)",
-    bg: "#303030",
+    bg: "var(--card-bg)",
   },
   {
     border: "rgba(0, 148, 199, 0.3)",
     hover: "rgba(0, 148, 199, 0.55)",
     accent: "rgba(0, 148, 199, 0.65)",
-    bg: "#303030",
+    bg: "var(--card-bg)",
   },
   {
     border: "rgba(0, 148, 199, 0.3)",
     hover: "rgba(0, 148, 199, 0.55)",
     accent: "rgba(0, 148, 199, 0.65)",
-    bg: "#303030",
+    bg: "var(--card-bg)",
+  },
+  {
+    border: "rgba(0, 148, 199, 0.25)",
+    hover: "rgba(0, 148, 199, 0.5)",
+    accent: "rgba(0, 148, 199, 0.6)",
+    bg: "var(--card-bg)",
+  },
+  {
+    border: "rgba(0, 148, 199, 0.25)",
+    hover: "rgba(0, 148, 199, 0.5)",
+    accent: "rgba(0, 148, 199, 0.6)",
+    bg: "var(--card-bg)",
+  },
+  {
+    border: "rgba(0, 148, 199, 0.25)",
+    hover: "rgba(0, 148, 199, 0.5)",
+    accent: "rgba(0, 148, 199, 0.6)",
+    bg: "var(--card-bg)",
+  },
+  {
+    border: "rgba(0, 148, 199, 0.25)",
+    hover: "rgba(0, 148, 199, 0.5)",
+    accent: "rgba(0, 148, 199, 0.6)",
+    bg: "var(--card-bg)",
+  },
+  {
+    border: "rgba(0, 148, 199, 0.3)",
+    hover: "rgba(0, 148, 199, 0.55)",
+    accent: "rgba(0, 148, 199, 0.65)",
+    bg: "var(--card-bg)",
+  },
+  {
+    border: "rgba(0, 148, 199, 0.3)",
+    hover: "rgba(0, 148, 199, 0.55)",
+    accent: "rgba(0, 148, 199, 0.65)",
+    bg: "var(--card-bg)",
   },
 ];
 
@@ -54,7 +90,7 @@ const featured: FeaturedCase[] = [
     solution:
       "Secure, scalable payment architecture with real-time ledgers, fraud protection, and multi-currency settlements.",
     stack: ["React", "Node.js", "Web3.js", "AWS Secure Enclave", "PostgreSQL"],
-    gradient: "linear-gradient(135deg, #0094C7, #303030)",
+    gradient: "linear-gradient(135deg, #0094C7, #121212)",
   },
   {
     name: "Quik",
@@ -75,7 +111,7 @@ const featured: FeaturedCase[] = [
     solution:
       "Unified booking platform with real-time inventory, dynamic pricing, multi-language support, and AI-powered trip recommendations.",
     stack: ["Next.js", "Node.js", "GraphQL", "PostgreSQL", "Redis", "Docker"],
-    gradient: "linear-gradient(135deg, #0094C7, #303030)",
+    gradient: "linear-gradient(135deg, #0094C7, #121212)",
   },
   {
     name: "Digidrops",
@@ -86,7 +122,7 @@ const featured: FeaturedCase[] = [
     solution:
       "SocialFi platform with wallet-based identity, quest rewards, and gamified engagement.",
     stack: ["Next.js", "Solidity", "WalletConnect", "The Graph", "PostgreSQL", "Tailwind CSS"],
-    gradient: "linear-gradient(135deg, #0094C7, #303030)",
+    gradient: "linear-gradient(135deg, #0094C7, #121212)",
   },
   {
     name: "Diction Masters",
@@ -96,7 +132,7 @@ const featured: FeaturedCase[] = [
     solution:
       "Speech recognition pipeline with phoneme analysis, personalized learning, and NLP scoring.",
     stack: ["Python", "TensorFlow", "React Native", "WebSocket", "GCP"],
-    gradient: "linear-gradient(135deg, #0094C7, #303030)",
+    gradient: "linear-gradient(135deg, #0094C7, #121212)",
   },
   {
     name: "Waterpro LLC",
@@ -106,7 +142,57 @@ const featured: FeaturedCase[] = [
     solution:
       "IoT sensor network with real-time analytics for leak detection, maintenance prediction, and flow optimization.",
     stack: ["Go", "React", "InfluxDB", "MQTT", "Kubernetes"],
-    gradient: "linear-gradient(135deg, #0094C7, #303030)",
+    gradient: "linear-gradient(135deg, #0094C7, #121212)",
+  },
+  {
+    name: "Bepopula",
+    tag: "Web & Mobile Development",
+    headline: "Modern Digital Experience Platform.",
+    challenge: "Needed a full-stack web and mobile platform with seamless user experience.",
+    solution:
+      "End-to-end platform built with modern frameworks for web and mobile delivery.",
+    stack: ["Next.js", "React Native", "Node.js", "PostgreSQL", "Tailwind CSS"],
+    gradient: "linear-gradient(135deg, #0094C7, #121212)",
+  },
+  {
+    name: "Shoopa",
+    tag: "E-Commerce Infrastructure",
+    headline: "Multi-Vendor E-Commerce Platform.",
+    challenge: "Complex multi-vendor marketplace requiring scalable checkout and inventory.",
+    solution:
+      "Full e-commerce infrastructure with multi-vendor support, real-time inventory, and integrated payments.",
+    stack: ["Next.js", "Node.js", "Stripe", "PostgreSQL", "Redis"],
+    gradient: "linear-gradient(135deg, #0094C7, #121212)",
+  },
+  {
+    name: "SPC",
+    tag: "Enterprise SaaS",
+    headline: "Multi-Tenant Enterprise Platform.",
+    challenge: "Needed a secure, scalable SaaS platform with role-based access and analytics.",
+    solution:
+      "Enterprise SaaS with multi-tenant architecture, advanced analytics, and granular access controls.",
+    stack: ["React", "Node.js", "PostgreSQL", "Docker", "AWS"],
+    gradient: "linear-gradient(135deg, #0094C7, #121212)",
+  },
+  {
+    name: "TapN",
+    tag: "Fintech / Mobile Payments",
+    headline: "Contactless Payment Solution.",
+    challenge: "Seamless mobile-first payment experience for contactless transactions.",
+    solution:
+      "Mobile payment platform with NFC integration, real-time processing, and robust security.",
+    stack: ["React Native", "Node.js", "PostgreSQL", "WebSocket", "Paystack"],
+    gradient: "linear-gradient(135deg, #0094C7, #121212)",
+  },
+  {
+    name: "Usetiks",
+    tag: "Web3 / NFT Ticketing",
+    headline: "Blockchain-Verified Ticketing Platform.",
+    challenge: "Ticket fraud and lack of secondary market transparency.",
+    solution:
+      "NFT ticketing platform with blockchain-verified ownership, secure transfers, and secondary market trading.",
+    stack: ["Next.js", "Solidity", "WalletConnect", "The Graph", "PostgreSQL"],
+    gradient: "linear-gradient(135deg, #0094C7, #121212)",
   },
 ];
 
@@ -179,7 +265,7 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
       <div className="absolute inset-0" style={{ background: c.gradient, opacity: 0.85 }} />
       {c.name === "XPay" && (
         <Image
-          src="/assets/XPAY.png"
+          src="/assets/xpay.jpeg"
           alt="XPay Logo"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
@@ -206,7 +292,7 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
       )}
       {c.name === "Diction Masters" && (
         <Image
-          src="/assets/Diction_Masters.png"
+          src="/assets/diction_masters.jpeg"
           alt="Diction Masters Logo"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
@@ -217,6 +303,51 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
         <Image
           src="/assets/Waterpro_LLC.png"
           alt="Waterpro LLC Logo"
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-cover opacity-50"
+        />
+      )}
+      {c.name === "Bepopula" && (
+        <Image
+          src="/assets/bepopula.jpeg"
+          alt="Bepopula Logo"
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-cover opacity-50"
+        />
+      )}
+      {c.name === "Shoopa" && (
+        <Image
+          src="/assets/shoopa.jpeg"
+          alt="Shoopa Logo"
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-cover opacity-50"
+        />
+      )}
+      {c.name === "SPC" && (
+        <Image
+          src="/assets/spc.jpeg"
+          alt="SPC Logo"
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-cover opacity-50"
+        />
+      )}
+      {c.name === "TapN" && (
+        <Image
+          src="/assets/tapn.jpeg"
+          alt="TapN Logo"
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-cover opacity-50"
+        />
+      )}
+      {c.name === "Usetiks" && (
+        <Image
+          src="/assets/usetiks.jpeg"
+          alt="Usetiks Logo"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
           className="object-cover opacity-50"

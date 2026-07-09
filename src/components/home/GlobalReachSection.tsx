@@ -44,7 +44,7 @@ export function GlobalReachSection() {
               <defs>
                 <radialGradient id="globe">
                   <stop offset="0%" stopColor="#0094C7" stopOpacity="0.4" />
-                  <stop offset="100%" stopColor="#303030" stopOpacity="0" />
+                  <stop offset="100%" stopColor="#121212" stopOpacity="0" />
                 </radialGradient>
               </defs>
               <circle cx="200" cy="200" r="180" fill="url(#globe)" />

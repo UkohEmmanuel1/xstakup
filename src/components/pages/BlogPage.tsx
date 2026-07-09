@@ -9,37 +9,37 @@ const blogCardColors = [
     border: "rgba(0, 148, 199, 0.25)",
     hover: "rgba(0, 148, 199, 0.5)",
     accent: "rgba(0, 148, 199, 0.6)",
-    bg: "#303030",
+    bg: "var(--card-bg)",
   },
   {
     border: "rgba(0, 148, 199, 0.25)",
     hover: "rgba(0, 148, 199, 0.5)",
     accent: "rgba(0, 148, 199, 0.6)",
-    bg: "#303030",
+    bg: "var(--card-bg)",
   },
   {
     border: "rgba(0, 148, 199, 0.25)",
     hover: "rgba(0, 148, 199, 0.5)",
     accent: "rgba(0, 148, 199, 0.6)",
-    bg: "#303030",
+    bg: "var(--card-bg)",
   },
   {
     border: "rgba(0, 148, 199, 0.25)",
     hover: "rgba(0, 148, 199, 0.5)",
     accent: "rgba(0, 148, 199, 0.6)",
-    bg: "#303030",
+    bg: "var(--card-bg)",
   },
   {
     border: "rgba(0, 148, 199, 0.3)",
     hover: "rgba(0, 148, 199, 0.55)",
     accent: "rgba(0, 148, 199, 0.65)",
-    bg: "#303030",
+    bg: "var(--card-bg)",
   },
   {
     border: "rgba(0, 148, 199, 0.25)",
     hover: "rgba(0, 148, 199, 0.5)",
     accent: "rgba(0, 148, 199, 0.6)",
-    bg: "#303030",
+    bg: "var(--card-bg)",
   },
 ];
 
@@ -95,7 +95,7 @@ export function BlogPage() {
       className="min-h-screen w-full bg-cover bg-center bg-no-repeat max-lg:bg-scroll bg-fixed"
       style={{ backgroundImage: "url('/assets/background.png')" }}
     >
-      <div className="min-h-screen w-full bg-[#303030]/80 backdrop-blur-[1px]">
+      <div className="min-h-screen w-full bg-void-section/80 backdrop-blur-[1px]">
         <SubPageHero
           title="Engineering insights"
           subtitle="Deep dives on architecture, system design, AI, and Web3 development."

@@ -2,32 +2,20 @@
 
 import Image from "next/image";
 import type { CaseStudy } from "@/types";
-import type { CardColor } from "@/types";
 
 interface DeploymentCardProps {
   caseStudy: CaseStudy;
   gradient: string;
-  color?: CardColor;
 }
 
-export function DeploymentCard({ caseStudy, gradient, color }: DeploymentCardProps) {
-  const c = color ?? {
-    border: "rgba(0, 148, 199, 0.25)",
-    hover: "rgba(0, 148, 199, 0.5)",
-    accent: "rgba(0, 148, 199, 0.6)",
-    bg: "#303030",
-  };
-
+export function DeploymentCard({ caseStudy, gradient }: DeploymentCardProps) {
   return (
-    <div
-      className="flex flex-col h-full min-h-[200px] overflow-hidden rounded-xl"
-      style={{ border: `1px solid ${c.border}`, background: c.bg }}
-    >
+    <div className="border border-card-border bg-card-bg rounded-xl h-full min-h-[200px] md:min-h-[260px] flex flex-col overflow-hidden">
       <div
-        className="relative w-full h-36 md:h-44 overflow-hidden"
+        className="relative w-full h-36 md:h-44 overflow-hidden flex-shrink-0"
         style={{ background: gradient }}
       >
-        <div className="absolute inset-0 bg-[#303030]/20" />
+        <div className="absolute inset-0 bg-overlay" />
         {caseStudy.image && (
           <Image
             src={caseStudy.image}
@@ -39,10 +27,7 @@ export function DeploymentCard({ caseStudy, gradient, color }: DeploymentCardPro
         )}
       </div>
       <div className="flex flex-col flex-grow p-8 md:p-10">
-        <span
-          className="text-xs font-semibold uppercase tracking-wider"
-          style={{ color: c.accent }}
-        >
+        <span className="text-xs font-semibold uppercase tracking-wider text-card-accent">
           {caseStudy.tag}
         </span>
         <h3 className="mt-2 text-xl font-semibold text-white">{caseStudy.title}</h3>

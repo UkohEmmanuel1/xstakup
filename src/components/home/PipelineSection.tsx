@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { AnimatedSection, staggerContainer } from "@/components/common";
 import { PipelineCard } from "./PipelineCard";
-import { pipeline, pipelineCardColors } from "@/data/home";
+import { pipeline } from "@/data/home";
 
 export function PipelineSection() {
   return (
@@ -24,8 +24,8 @@ export function PipelineSection() {
             viewport={{ once: true }}
             className="mt-16 grid grid-cols-1 gap-5 md:gap-6 md:grid-cols-2 lg:grid-cols-4"
           >
-            {pipeline.map((s, i) => (
-              <PipelineCard key={s.number} step={s} color={pipelineCardColors[i]} />
+            {pipeline.map((s) => (
+              <PipelineCard key={s.number} step={s} />
             ))}
           </motion.div>
         </div>

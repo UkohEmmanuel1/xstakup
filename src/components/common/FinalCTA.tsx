@@ -5,11 +5,12 @@ import { PrimaryCTA } from "@/components/common/Button";
 
 export function FinalCTA() {
   return (
-    <section className="relative z-30 overflow-hidden">
+    <section className="relative z-30 overflow-hidden border-t border-section-border">
       <div
         className="absolute inset-0 pointer-events-none animate-gradient-shift"
         style={{
-          background: "linear-gradient(135deg, #303030 0%, #303030 30%, #0094C7 60%, #303030 100%)",
+          background:
+            "linear-gradient(135deg, var(--void-section) 0%, var(--void-section) 30%, #0094C7 60%, var(--void-section) 100%)",
           opacity: 0.15,
         }}
       />
@@ -22,7 +23,7 @@ export function FinalCTA() {
       <motion.div
         animate={{ scale: [1, 1.15, 1], opacity: [0.3, 0.5, 0.3] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
-        className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-[#303030]/20 blur-3xl pointer-events-none"
+        className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-void-section/20 blur-3xl pointer-events-none"
       />
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 py-16 md:py-24">

@@ -73,23 +73,51 @@ export const cases: CaseStudy[] = [
     title: "XPay",
     tag: "Fintech / Web3",
     description: "Crypto, gift card, and fiat payment infrastructure with real-time settlement.",
-    image: "/assets/XPAY.png",
+    image: "/assets/xpay.jpeg",
   },
   {
     title: "Quik",
     tag: "AI / NLP",
     description: "AI-powered booking app that syncs availability and automates communication.",
+    image: "/assets/quikai.jpeg",
   },
   {
-    title: "Digidrops",
-    tag: "Web3 / SocialFi",
-    description:
-      "SocialFi platform with wallet-based identity, quest rewards, and gamified engagement.",
-    image: "/assets/digidrps.png",
+    title: "Bepopula",
+    tag: "Web / Mobile",
+    description: "Full-stack web and mobile platform built for modern digital experiences.",
+    image: "/assets/bepopula.jpeg",
+  },
+  {
+    title: "Shoopa",
+    tag: "E-Commerce",
+    description: "Scalable e-commerce infrastructure with multi-vendor support and payment orchestration.",
+    image: "/assets/shoopa.jpeg",
+  },
+  {
+    title: "SPC",
+    tag: "Enterprise SaaS",
+    description: "Enterprise-grade SaaS platform with multi-tenant architecture and advanced analytics.",
+    image: "/assets/spc.jpeg",
+  },
+  {
+    title: "TapN",
+    tag: "Fintech / Mobile",
+    description: "Mobile-first payment solution enabling seamless contactless transactions.",
+    image: "/assets/tapn.jpeg",
+  },
+  {
+    title: "Usetiks",
+    tag: "Web3 / NFT",
+    description: "NFT ticketing platform with blockchain-verified ownership and secondary market trading.",
+    image: "/assets/usetiks.jpeg",
   },
 ];
 
 export const caseGradients = [
+  "linear-gradient(135deg, #0094C7, #303030)",
+  "linear-gradient(135deg, #0094C7, #303030)",
+  "linear-gradient(135deg, #0094C7, #303030)",
+  "linear-gradient(135deg, #0094C7, #303030)",
   "linear-gradient(135deg, #0094C7, #303030)",
   "linear-gradient(135deg, #0094C7, #303030)",
   "linear-gradient(135deg, #0094C7, #303030)",
@@ -114,7 +142,7 @@ export const marqueeItems = [
 
 export const pipelineCardColors = Array(4).fill(cardColor);
 export const expertiseCardColors = Array(8).fill(cardColor);
-export const deploymentCardColors = Array(3).fill(cardColor);
+export const deploymentCardColors = Array(7).fill(cardColor);
 export const tweetCardColors = Array(4).fill(cardColor);
 
 export const stats: StatsItem[] = [

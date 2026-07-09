@@ -42,6 +42,13 @@
   --color-void-section: var(--void-section);
   --color-void-surface: var(--void-surface);
   --color-card-solid-bg: var(--card-solid-bg);
+
+  --color-card-bg: var(--card-bg);
+  --color-card-border: var(--card-border);
+  --color-card-hover: var(--card-hover);
+  --color-card-accent: var(--card-accent);
+  --color-overlay: var(--overlay);
+  --color-section-border: var(--section-border);
 }
 
 :root {
@@ -77,6 +84,13 @@
   --void-section: #303030;
   --void-surface: #303030;
   --card-solid-bg: #303030;
+
+  --card-bg: #303030;
+  --card-border: rgba(0, 148, 199, 0.25);
+  --card-hover: rgba(0, 148, 199, 0.5);
+  --card-accent: rgba(0, 148, 199, 0.6);
+  --overlay: rgba(0, 0, 0, 0.7);
+  --section-border: rgba(255, 255, 255, 0.06);
 
   --gradient-blue: linear-gradient(135deg, #0094c7, #006080);
   --gradient-aura: radial-gradient(
@@ -118,13 +132,13 @@
 
 @layer utilities {
   .glass {
-    background: color-mix(in srgb, #303030 70%, transparent);
+    background: color-mix(in srgb, var(--card-bg) 70%, transparent);
     backdrop-filter: blur(16px) saturate(140%);
     -webkit-backdrop-filter: blur(16px) saturate(140%);
     border: 1px solid color-mix(in srgb, #0094c7 12%, transparent);
   }
   .glass-strong {
-    background: color-mix(in srgb, #303030 85%, transparent);
+    background: color-mix(in srgb, var(--card-bg) 85%, transparent);
     backdrop-filter: blur(20px) saturate(160%);
     -webkit-backdrop-filter: blur(20px) saturate(160%);
     border: 1px solid color-mix(in srgb, #0094c7 15%, transparent);

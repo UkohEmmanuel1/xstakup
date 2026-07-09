@@ -45,9 +45,44 @@ export const expertiseCases: CaseStudy[] = [
     description:
       "AI-powered precision agriculture with crop yield predictions, supply chain optimization, and satellite imagery.",
   },
+  {
+    title: "Bepopula",
+    tag: "Web / Mobile",
+    description:
+      "Full-stack web and mobile platform built for modern digital experiences.",
+  },
+  {
+    title: "Shoopa",
+    tag: "E-Commerce",
+    description:
+      "Scalable e-commerce infrastructure with multi-vendor support and payment orchestration.",
+  },
+  {
+    title: "SPC",
+    tag: "Enterprise SaaS",
+    description:
+      "Enterprise-grade SaaS platform with multi-tenant architecture and advanced analytics.",
+  },
+  {
+    title: "TapN",
+    tag: "Fintech / Mobile",
+    description:
+      "Mobile-first payment solution enabling seamless contactless transactions.",
+  },
+  {
+    title: "Usetiks",
+    tag: "Web3 / NFT",
+    description:
+      "NFT ticketing platform with blockchain-verified ownership and secondary market trading.",
+  },
 ];
 
 export const expertiseCaseGradients = [
+  "linear-gradient(135deg, #0094C7, #303030)",
+  "linear-gradient(135deg, #0094C7, #303030)",
+  "linear-gradient(135deg, #0094C7, #303030)",
+  "linear-gradient(135deg, #0094C7, #303030)",
+  "linear-gradient(135deg, #0094C7, #303030)",
   "linear-gradient(135deg, #0094C7, #303030)",
   "linear-gradient(135deg, #0094C7, #303030)",
   "linear-gradient(135deg, #0094C7, #303030)",
@@ -58,6 +93,11 @@ export const expertiseCaseGradients = [
 
 export const expertiseCaseColors = [
   cardColorExpertise,
+  cardColor,
+  cardColor,
+  cardColor,
+  cardColor,
+  cardColorAlt,
   cardColor,
   cardColor,
   cardColor,
