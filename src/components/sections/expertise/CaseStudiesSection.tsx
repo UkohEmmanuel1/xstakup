@@ -59,7 +59,7 @@ export function CaseStudiesSection() {
                         alt={`${c.title} logo`}
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
-                        className="object-contain opacity-80"
+                        className="object-cover opacity-80"
                       />
                     )}
                     <span className="absolute top-3 left-3 rounded-lg bg-[#303030]/90 backdrop-blur-md px-3 py-1.5 shadow-lg border-l-2 border-blue text-blue text-xs font-bold uppercase tracking-wider z-10">

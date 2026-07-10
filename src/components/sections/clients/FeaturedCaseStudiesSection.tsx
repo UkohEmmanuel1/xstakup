@@ -268,7 +268,7 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
           alt="XPay Logo"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-contain opacity-50"
+          className="object-cover opacity-50"
         />
       )}
       {c.name === "Lolliters" && (
@@ -277,7 +277,7 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
           alt="Lolliters Logo"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-contain opacity-50"
+          className="object-cover opacity-50"
         />
       )}
       {c.name === "Digidrops" && (
@@ -286,7 +286,7 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
           alt="Digidrops Logo"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-contain opacity-50"
+          className="object-cover opacity-50"
         />
       )}
       {c.name === "Diction Masters" && (
@@ -295,7 +295,7 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
           alt="Diction Masters Logo"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-contain opacity-50"
+          className="object-cover opacity-50"
         />
       )}
       {c.name === "Waterpro LLC" && (
@@ -304,7 +304,7 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
           alt="Waterpro LLC Logo"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-contain opacity-50"
+          className="object-cover opacity-50"
         />
       )}
       {c.name === "Bepopula" && (
@@ -313,7 +313,7 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
           alt="Bepopula Logo"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-contain opacity-50"
+          className="object-cover opacity-50"
         />
       )}
       {c.name === "Shoopa" && (
@@ -322,7 +322,7 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
           alt="Shoopa Logo"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-contain opacity-50"
+          className="object-cover opacity-50"
         />
       )}
       {c.name === "SPC" && (
@@ -331,7 +331,7 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
           alt="SPC Logo"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-contain opacity-50"
+          className="object-cover opacity-50"
         />
       )}
       {c.name === "TapN" && (
@@ -340,7 +340,7 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
           alt="TapN Logo"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-contain opacity-50"
+          className="object-cover opacity-50"
         />
       )}
       {c.name === "Usetiks" && (
@@ -349,7 +349,7 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
           alt="Usetiks Logo"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-contain opacity-50"
+          className="object-cover opacity-50"
         />
       )}
     </div>
