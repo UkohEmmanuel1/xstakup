@@ -1,10 +1,20 @@
 "use client";
 
+import { useMemo } from "react";
 import { motion } from "framer-motion";
 import { AnimatedSection, staggerContainer, staggerItem } from "@/components/common";
 import { expertise, expertiseCardColors } from "@/data/home";
 
 export function ExpertiseDetailSection() {
+  const randomSix = useMemo(() => {
+    const shuffled = [...expertise];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled.slice(0, 6);
+  }, []);
+
   return (
     <AnimatedSection>
       <section
@@ -27,7 +37,7 @@ export function ExpertiseDetailSection() {
             viewport={{ once: true }}
             className="grid gap-5 md:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
           >
-            {expertise.map((e, i) => {
+            {randomSix.map((e, i) => {
               const c = expertiseCardColors[i % expertiseCardColors.length];
               return (
                 <motion.div

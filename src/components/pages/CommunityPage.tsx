@@ -4,9 +4,9 @@ import {
   EventsSection,
   BenefitsSection,
   OpenSourceSection,
-  TestimonialsSection,
 } from "@/components/sections/community";
 import { FinalCTA } from "@/components/common";
+import { TestimonialSection } from "@/components/home";
 
 export function CommunityPage() {
   return (
@@ -22,7 +22,7 @@ export function CommunityPage() {
         <EventsSection />
         <BenefitsSection />
         <OpenSourceSection />
-        <TestimonialsSection />
+        <TestimonialSection />
         <FinalCTA />
       </div>
     </main>

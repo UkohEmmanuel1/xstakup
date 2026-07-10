@@ -1,8 +1,9 @@
 "use client";
 
 import { PageHero } from "@/components/common/PageHero";
-import { AnimatedSection, CaseCard, CTAButton, FinalCTA } from "@/components/common";
-import { caseStudies } from "@/data";
+import { AnimatedSection, CTAButton, FinalCTA } from "@/components/common";
+import { DeploymentCard } from "@/components/home/DeploymentCard";
+import { cases, caseGradients } from "@/data/home";
 
 export function WorkPageComponent() {
   return (
@@ -26,9 +27,9 @@ export function WorkPageComponent() {
               What we build
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
-            {caseStudies.map((c, i) => (
-              <CaseCard key={c.title} item={c} index={i} />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+            {cases.map((c, i) => (
+              <DeploymentCard key={c.title} caseStudy={c} gradient={caseGradients[i]} />
             ))}
           </div>
         </div>

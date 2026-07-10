@@ -22,7 +22,7 @@ export function SubPageHero({
 }: SubPageHeroProps) {
   return (
     <section
-      className="relative overflow-hidden py-8 md:py-12 lg:py-16 bg-cover bg-center bg-no-repeat max-w-full"
+      className="relative overflow-hidden py-20 md:py-24 lg:py-28 bg-cover bg-center bg-no-repeat max-w-full"
       style={{ backgroundImage: `url('${bgImage}')` }}
     >
       <div className="absolute inset-0 bg-overlay/85" />

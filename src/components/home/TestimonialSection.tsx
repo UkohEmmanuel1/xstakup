@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { AnimatedSection } from "@/components/common";
 import { tweetCardColors } from "@/data/home";
 import type { CardColor } from "@/types";
@@ -9,7 +10,7 @@ const tweets = [
     name: "Adaeze Okonkwo",
     handle: "@adaokonkwo",
     role: "CTO, XPay",
-    avatar: "bg-gradient-to-tr from-[#0094C7] to-card-bg",
+    image: "/assets/female_1.jfif",
     text: "XStakUp isn't a vendor; they're embedded in our roadmap. They shipped our payment infrastructure faster and more securely than any in-house team we'd hired. They engineer like founders.",
     time: "2:14 PM · May 25, 2026",
     metrics: { replies: "12", reposts: "48", likes: "342", views: "12K" },
@@ -18,7 +19,7 @@ const tweets = [
     name: "Tunde Rahman",
     handle: "@tunderahman",
     role: "Founder, Quik",
-    avatar: "bg-gradient-to-tr from-[#0094C7] to-card-bg",
+    image: "/assets/male_1.jpg",
     text: "We needed our NLP booking systems up in 3 weeks. The engineering velocity out of the XStakUp laboratory is actually terrifying. No drop in code architecture quality either. Complete professionals.",
     time: "9:05 AM · Apr 18, 2026",
     metrics: { replies: "8", reposts: "29", likes: "194", views: "8.4K" },
@@ -27,7 +28,7 @@ const tweets = [
     name: "Elena Rostova",
     handle: "@elenadev",
     role: "VP of Product, FTRX",
-    avatar: "bg-gradient-to-tr from-[#0094C7] to-card-bg",
+    image: "/assets/female_2.jpg",
     text: "Most outsourcing studios just write what you tell them. XStakUp pushed back on our cloud deployment topology, saved us 40% on monthly AWS compute overhead, and shipped an immutable multi-region pipeline.",
     time: "11:42 AM · May 2, 2026",
     metrics: { replies: "15", reposts: "84", likes: "512", views: "24K" },
@@ -36,7 +37,7 @@ const tweets = [
     name: "Marcus Sterling",
     handle: "@marcusfintech",
     role: "Director, Cashflow Africa",
-    avatar: "bg-gradient-to-tr from-[#0094C7] to-card-bg",
+    image: "/assets/male_2.jpg",
     text: "Cross-border B2B ledgering infrastructure requires absolute structural fault tolerance. XStakUp decoupled our state processing engines flawlessly. Zero settlement errors across 5M+ volume transactions.",
     time: "4:30 PM · Mar 14, 2026",
     metrics: { replies: "4", reposts: "19", likes: "118", views: "5.1K" },
@@ -145,7 +146,7 @@ function TweetCard({
       <div>
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className={`h-10 w-10 rounded-full ${t.avatar} flex-shrink-0`} />
+            <Image src={t.image} alt={t.name} width={40} height={40} className="rounded-full object-cover flex-shrink-0" />
             <div className="leading-tight">
               <div className="flex items-center gap-1">
                 <p className="font-semibold text-sm text-white">{t.name}</p>
@@ -193,10 +194,11 @@ function TweetCard({
 export function TestimonialSection() {
   return (
     <AnimatedSection>
-      <section className="py-16 md:py-24 border-y border-white/[0.06]">
+      <section className="relative py-16 md:py-24 overflow-hidden">
+        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none" />
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-12">
-            <h2 className="mt-4 text-2xl md:text-5xl font-bold text-white">
+            <h2 className="mt-4 text-3xl md:text-5xl font-bold text-white">
               Client Success Stories
             </h2>
             <p className="mt-3 text-white/80 max-w-xl">
