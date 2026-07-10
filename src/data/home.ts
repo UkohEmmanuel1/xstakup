@@ -90,13 +90,15 @@ export const cases: CaseStudy[] = [
   {
     title: "Shoopa",
     tag: "E-Commerce",
-    description: "Scalable e-commerce infrastructure with multi-vendor support and payment orchestration.",
+    description:
+      "Scalable e-commerce infrastructure with multi-vendor support and payment orchestration.",
     image: "/assets/shoopa.jpeg",
   },
   {
     title: "SPC",
     tag: "Enterprise SaaS",
-    description: "Enterprise-grade SaaS platform with multi-tenant architecture and advanced analytics.",
+    description:
+      "Enterprise-grade SaaS platform with multi-tenant architecture and advanced analytics.",
     image: "/assets/spc.jpeg",
   },
   {
@@ -108,7 +110,8 @@ export const cases: CaseStudy[] = [
   {
     title: "Usetiks",
     tag: "Web3 / NFT",
-    description: "NFT ticketing platform with blockchain-verified ownership and secondary market trading.",
+    description:
+      "NFT ticketing platform with blockchain-verified ownership and secondary market trading.",
     image: "/assets/usetiks.jpeg",
   },
 ];

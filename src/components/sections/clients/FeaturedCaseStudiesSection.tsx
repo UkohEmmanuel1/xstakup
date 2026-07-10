@@ -149,8 +149,7 @@ const featured: FeaturedCase[] = [
     tag: "Web & Mobile Development",
     headline: "Modern Digital Experience Platform.",
     challenge: "Needed a full-stack web and mobile platform with seamless user experience.",
-    solution:
-      "End-to-end platform built with modern frameworks for web and mobile delivery.",
+    solution: "End-to-end platform built with modern frameworks for web and mobile delivery.",
     stack: ["Next.js", "React Native", "Node.js", "PostgreSQL", "Tailwind CSS"],
     gradient: "linear-gradient(135deg, #0094C7, #121212)",
   },

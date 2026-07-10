@@ -146,7 +146,13 @@ function TweetCard({
       <div>
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <Image src={t.image} alt={t.name} width={40} height={40} className="rounded-full object-cover flex-shrink-0" />
+            <Image
+              src={t.image}
+              alt={t.name}
+              width={40}
+              height={40}
+              className="rounded-full object-cover flex-shrink-0"
+            />
             <div className="leading-tight">
               <div className="flex items-center gap-1">
                 <p className="font-semibold text-sm text-white">{t.name}</p>

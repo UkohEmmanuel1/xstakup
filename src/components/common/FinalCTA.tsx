@@ -30,12 +30,7 @@ export function FinalCTA() {
             className="relative h-48 md:h-64 rounded-2xl overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-blue/40 to-void-section z-10" />
-            <Image
-              src="/assets/cta.jpg"
-              alt=""
-              fill
-              className="object-cover"
-            />
+            <Image src="/assets/cta.jpg" alt="" fill className="object-cover" />
           </motion.div>
 
           <motion.div

@@ -8,8 +8,10 @@ import { pipeline } from "@/data/home";
 export function PipelineSection() {
   return (
     <AnimatedSection>
-      <section className="relative py-16 md:py-24 overflow-hidden bg-cover bg-center bg-no-repeat"
-               style={{ backgroundImage: "url('/assets/background.png')" }}>
+      <section
+        className="relative py-16 md:py-24 overflow-hidden bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/assets/background.png')" }}
+      >
         <div className="absolute inset-0 bg-void-section/80 backdrop-blur-[1px]" />
         <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none" />
         <div className="relative z-10 mx-auto max-w-7xl px-6">

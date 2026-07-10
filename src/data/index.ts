@@ -279,7 +279,8 @@ export const caseStudiesFull: CaseStudyFull[] = [
     industry: "E-Commerce",
     platform: "Web App",
     tags: ["E-Commerce", "Marketplace", "Payments"],
-    summary: "Scalable e-commerce infrastructure with multi-vendor support and payment orchestration.",
+    summary:
+      "Scalable e-commerce infrastructure with multi-vendor support and payment orchestration.",
     problem: "Complex multi-vendor marketplace requiring scalable checkout and inventory.",
     goal: "Full e-commerce platform with multi-vendor capabilities.",
     scope: "Vendor onboarding, listings, checkout, payments, and admin.",
@@ -302,7 +303,8 @@ export const caseStudiesFull: CaseStudyFull[] = [
     industry: "Enterprise SaaS",
     platform: "Web App",
     tags: ["SaaS", "Enterprise", "Analytics"],
-    summary: "Enterprise-grade SaaS platform with multi-tenant architecture and advanced analytics.",
+    summary:
+      "Enterprise-grade SaaS platform with multi-tenant architecture and advanced analytics.",
     problem: "Needed a secure, scalable SaaS platform with role-based access.",
     goal: "Multi-tenant enterprise platform with granular access controls.",
     scope: "Tenant management, RBAC, analytics, and infrastructure.",
@@ -348,7 +350,8 @@ export const caseStudiesFull: CaseStudyFull[] = [
     industry: "Web3",
     platform: "Web App",
     tags: ["Web3", "NFT", "Blockchain"],
-    summary: "NFT ticketing platform with blockchain-verified ownership and secondary market trading.",
+    summary:
+      "NFT ticketing platform with blockchain-verified ownership and secondary market trading.",
     problem: "Ticket fraud and lack of transparent secondary market.",
     goal: "Blockchain-based ticketing with verified ownership and trading.",
     scope: "NFT minting, ticket marketplace, wallet integration, and analytics.",

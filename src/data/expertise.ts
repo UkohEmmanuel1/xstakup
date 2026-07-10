@@ -26,8 +26,7 @@ export const expertiseCases: CaseStudy[] = [
   {
     title: "Bepopula",
     tag: "Web / Mobile",
-    description:
-      "Full-stack web and mobile platform built for modern digital experiences.",
+    description: "Full-stack web and mobile platform built for modern digital experiences.",
     image: "/assets/bepopula.jpeg",
   },
   {
@@ -47,8 +46,7 @@ export const expertiseCases: CaseStudy[] = [
   {
     title: "TapN",
     tag: "Fintech / Mobile",
-    description:
-      "Mobile-first payment solution enabling seamless contactless transactions.",
+    description: "Mobile-first payment solution enabling seamless contactless transactions.",
     image: "/assets/tapn.jpeg",
   },
   {
