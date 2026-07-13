@@ -67,7 +67,7 @@ function FooterBrand() {
         </div>
       </Link>
       <p className="mt-4 text-sm text-muted-foreground max-w-sm">
-        We architect scalable web, mobile, AI, and Web3 systems for market-leading businesses.
+        A leading software development agency architecting scalable web, mobile, AI, and Web3 systems that transform businesses with cutting-edge technology.
       </p>
       <div className="mt-6 space-y-1 text-sm">
         <p className="text-xs uppercase tracking-widest text-muted-foreground">Engineering HQ</p>

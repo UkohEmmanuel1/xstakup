@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { AnimatedSection, slideFromLeft, slideFromRight } from "@/components/common";
+import { companyStory } from "@/data/about";
 
 export function NarrativeSection() {
   return (
@@ -15,11 +16,19 @@ export function NarrativeSection() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <h2 className="mt-4 text-3xl md:text-4xl font-bold tracking-tight text-white">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs uppercase tracking-widest border border-[#0094C7]/30 text-[#0094C7] mb-4">
+              Est. {companyStory.founded}
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
               Engineering Excellence
             </h2>
+            <h3 className="mt-2 text-lg text-white/60">
+              {companyStory.headquarters} &middot; {companyStory.group}
+            </h3>
             <div className="mt-6 space-y-4 text-white/80 leading-relaxed">
-              <p>Enterprise-grade solutions built to scale.</p>
+              {companyStory.paragraphs.map((p, i) => (
+                <p key={i}>{p}</p>
+              ))}
             </div>
           </motion.div>
 

@@ -5,61 +5,97 @@ export interface BlogPost {
   author: string;
   slug: string;
   tags: string[];
+  featured?: boolean;
+  category: string;
 }
 
 export const blogPosts: BlogPost[] = [
   {
-    title: "Building Resilient Distributed Systems in the African Fintech Landscape",
+    title: "Building Scalable Web Applications with React and Node.js",
     excerpt:
-      "Lessons from architecting payment infrastructure for high throughput, multi-currency settlement, and variable network reliability.",
-    date: "2026-05-12",
+      "A comprehensive guide to architecting high-performance web applications using React for the frontend and Node.js for the backend, covering state management, API design, and deployment strategies.",
+    date: "2026-06-10",
     author: "Engineering Team",
-    slug: "resilient-distributed-systems-fintech-africa",
-    tags: ["Architecture", "Fintech", "Distributed Systems"],
+    slug: "scalable-web-applications-react-nodejs",
+    tags: ["Web Development", "React", "Node.js"],
+    featured: true,
+    category: "development",
   },
   {
-    title: "A Practical Guide to Deploying LLMs in Production",
+    title: "AI Integration in Software Development: Practical Applications",
     excerpt:
-      "From model selection to inference optimization, monitoring, and cost management — shipping AI features that work at scale.",
-    date: "2026-04-28",
+      "Discover how AI is transforming software development workflows — from code generation and testing to intelligent automation — and learn practical ways to integrate LLMs into your projects.",
+    date: "2026-05-28",
     author: "Engineering Team",
-    slug: "practical-guide-llms-production",
-    tags: ["AI", "MLOps", "Infrastructure"],
+    slug: "ai-integration-software-development",
+    tags: ["AI", "Machine Learning", "Development"],
+    featured: true,
+    category: "ai",
   },
   {
-    title: "Smart Contract Security: Common Vulnerabilities and How to Avoid Them",
+    title: "Microservices Architecture: A Complete Guide",
     excerpt:
-      "Overview of frequently exploited smart contract vulnerabilities and auditing patterns that prevent them in production DeFi.",
-    date: "2026-04-10",
+      "Dive deep into microservices architecture, exploring benefits, challenges, and implementation strategies for building scalable, maintainable applications in production.",
+    date: "2026-05-15",
     author: "Engineering Team",
-    slug: "smart-contract-security-vulnerabilities",
-    tags: ["Web3", "Security", "Solidity"],
+    slug: "microservices-architecture-complete-guide",
+    tags: ["Architecture", "Microservices", "Cloud"],
+    featured: true,
+    category: "cloud",
   },
   {
-    title: "Designing Data Intensive Applications for Pan African Scale",
+    title: "Cybersecurity Best Practices for Modern Applications",
     excerpt:
-      "Data partitioning, replication, and consistency models for systems serving users across 10+ African countries.",
-    date: "2026-03-22",
+      "Essential security practices every development team should implement to protect applications and user data — from secure authentication to vulnerability scanning and incident response.",
+    date: "2026-04-30",
     author: "Engineering Team",
-    slug: "data-intensive-applications-pan-african",
-    tags: ["Architecture", "Data", "Backend"],
+    slug: "cybersecurity-best-practices",
+    tags: ["Security", "Best Practices", "DevSecOps"],
+    featured: false,
+    category: "security",
   },
   {
-    title: "The DevSecOps Playbook for Regulated Industries",
+    title: "Cloud-Native Development: Best Practices and Tools",
     excerpt:
-      "Embedding security into every stage of the software delivery lifecycle for fintech, healthtech, and government clients.",
-    date: "2026-03-05",
+      "Learn how to build applications designed specifically for cloud environments using containers, Kubernetes, serverless computing, and modern DevOps methodologies.",
+    date: "2026-04-18",
     author: "Engineering Team",
-    slug: "devsecops-playbook-regulated-industries",
-    tags: ["DevSecOps", "Security", "Compliance"],
+    slug: "cloud-native-development-practices",
+    tags: ["Cloud Native", "Kubernetes", "DevOps"],
+    featured: false,
+    category: "cloud",
   },
   {
-    title: "Monorepo Strategies for Growing Engineering Teams",
+    title: "The Future of Mobile Development with React Native",
     excerpt:
-      "Why we chose monorepo architecture, how we structure packages, and the tooling that keeps builds fast as the team scales.",
-    date: "2026-02-18",
+      "Explore how React Native is reshaping cross-platform mobile development, with practical patterns for performance optimization, native modules, and shared codebases.",
+    date: "2026-04-05",
     author: "Engineering Team",
-    slug: "monorepo-strategies-growing-teams",
-    tags: ["Engineering", "Tooling", "Architecture"],
+    slug: "future-mobile-development-react-native",
+    tags: ["React Native", "Mobile", "Cross-Platform"],
+    featured: false,
+    category: "mobile",
+  },
+  {
+    title: "Mobile App Performance Optimization Techniques",
+    excerpt:
+      "Comprehensive guide to optimizing mobile app performance — covering code optimization, memory management, network efficiency, and user experience improvements for iOS and Android.",
+    date: "2026-03-20",
+    author: "Engineering Team",
+    slug: "mobile-app-performance-optimization",
+    tags: ["Mobile", "Performance", "Optimization"],
+    featured: false,
+    category: "mobile",
+  },
+  {
+    title: "The Business Case for Digital Transformation",
+    excerpt:
+      "Understanding the strategic importance of digital transformation and how to build a compelling business case for technology investments that drive real ROI.",
+    date: "2026-03-08",
+    author: "Engineering Team",
+    slug: "business-case-digital-transformation",
+    tags: ["Business", "Strategy", "Digital Transformation"],
+    featured: false,
+    category: "business",
   },
 ];

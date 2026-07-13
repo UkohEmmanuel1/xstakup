@@ -24,12 +24,6 @@ export const expertiseCases: CaseStudy[] = [
     image: "/assets/quikai.jpeg",
   },
   {
-    title: "Bepopula",
-    tag: "Web / Mobile",
-    description: "Full-stack web and mobile platform built for modern digital experiences.",
-    image: "/assets/bepopula.jpeg",
-  },
-  {
     title: "Shoopa",
     tag: "E-Commerce",
     description:
@@ -65,7 +59,6 @@ export const expertiseCaseGradients = [
   "linear-gradient(135deg, #0094C7, #303030)",
   "linear-gradient(135deg, #0094C7, #303030)",
   "linear-gradient(135deg, #0094C7, #303030)",
-  "linear-gradient(135deg, #0094C7, #303030)",
 ];
 
 export const expertiseCaseColors = [
@@ -75,5 +68,4 @@ export const expertiseCaseColors = [
   cardColor,
   cardColor,
   cardColor,
-  cardColorAlt,
 ];

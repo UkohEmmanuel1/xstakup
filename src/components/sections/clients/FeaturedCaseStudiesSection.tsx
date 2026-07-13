@@ -67,18 +67,6 @@ const caseCardColors: CardColor[] = [
     accent: "rgba(0, 148, 199, 0.6)",
     bg: "var(--card-bg)",
   },
-  {
-    border: "rgba(0, 148, 199, 0.3)",
-    hover: "rgba(0, 148, 199, 0.55)",
-    accent: "rgba(0, 148, 199, 0.65)",
-    bg: "var(--card-bg)",
-  },
-  {
-    border: "rgba(0, 148, 199, 0.3)",
-    hover: "rgba(0, 148, 199, 0.55)",
-    accent: "rgba(0, 148, 199, 0.65)",
-    bg: "var(--card-bg)",
-  },
 ];
 
 const featured: FeaturedCase[] = [
@@ -149,16 +137,6 @@ const featured: FeaturedCase[] = [
     stack: ["Go", "React", "InfluxDB", "MQTT", "Kubernetes"],
     gradient: "linear-gradient(135deg, #0094C7, #121212)",
     image: "/assets/waterpro_llc.png",
-  },
-  {
-    name: "Bepopula",
-    tag: "Web & Mobile Development",
-    headline: "Modern Digital Experience Platform.",
-    challenge: "Needed a full-stack web and mobile platform with seamless user experience.",
-    solution: "End-to-end platform built with modern frameworks for web and mobile delivery.",
-    stack: ["Next.js", "React Native", "Node.js", "PostgreSQL", "Tailwind CSS"],
-    gradient: "linear-gradient(135deg, #0094C7, #121212)",
-    image: "/assets/bepopula.jpeg",
   },
   {
     name: "Shoopa",

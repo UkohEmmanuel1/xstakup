@@ -1,9 +1,11 @@
 import {
   AboutHeroSection,
   NarrativeSection,
+  MissionVisionSection,
   DifferentiatorsSection,
   ValuesSection,
   LeadershipSection,
+  GlobalFootprintSection,
 } from "@/components/sections/about";
 import { FinalCTA } from "@/components/common";
 
@@ -18,9 +20,11 @@ export function AboutPage() {
       <div className="min-h-screen w-full bg-void-section/80 backdrop-blur-[1px]">
         <AboutHeroSection />
         <NarrativeSection />
+        <MissionVisionSection />
         <DifferentiatorsSection />
         <ValuesSection />
         <LeadershipSection />
+        <GlobalFootprintSection />
         <FinalCTA />
       </div>
     </main>

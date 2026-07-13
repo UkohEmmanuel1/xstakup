@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import { AboutPage } from "@/components/pages";
 
 export const metadata: Metadata = {
-  title: "About XStakUp | Enterprise Software Engineering Team",
+  title: "About XStakUp | Leading Software Development Agency",
   description:
-    "Learn about XStakUp, a team of dedicated software engineers, architects, and strategists building enterprise technical infrastructure. Part of the FTRX Group, specializing in fintech, AI, Web3, and scalable cloud architecture.",
+    "Learn about XStakUp, a leading software development agency building custom enterprise solutions. Founded 2020 in Lagos, Nigeria, we specialize in web, mobile, AI, and Web3 infrastructure for global businesses. Part of the FTRX Group.",
   openGraph: {
-    title: "About XStakUp | Enterprise Software Engineering Team",
+    title: "About XStakUp | Leading Software Development Agency",
     description:
-      "Dedicated engineering partners building market-leading enterprise software. Specializing in fintech, AI, and scalable cloud architecture.",
+      "A leading software development agency transforming businesses with cutting-edge web, mobile, AI, and Web3 solutions. Your dedicated engineering partner for scalable, production-grade systems.",
   },
 };
 

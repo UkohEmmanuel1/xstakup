@@ -40,10 +40,10 @@ export function FinalCTA() {
             transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
           >
             <h2 className="text-2xl md:text-5xl font-bold text-white tracking-tight">
-              Start Your Project
+              Let&apos;s Build Something Amazing
             </h2>
             <p className="mt-5 text-white/80 max-w-xl text-base md:text-lg">
-              Production-grade web, mobile, AI & Web3 solutions.
+              Transform your business with cutting-edge software solutions. Production-grade web, mobile, AI & Web3 — built for scale.
             </p>
             <div className="mt-10">
               <PrimaryCTA>Initialize Your Build</PrimaryCTA>

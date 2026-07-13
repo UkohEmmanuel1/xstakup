@@ -32,7 +32,7 @@ export function AboutSnapshot() {
               About XStakUp
             </h2>
             <p className="mt-4 text-base text-muted-foreground leading-relaxed">
-              Full-stack engineering, cloud infrastructure, and technical strategy.
+              A leading software development agency delivering full-stack engineering, cloud infrastructure, and technical strategy that transforms businesses with cutting-edge technology.
             </p>
           </div>
           <div className="flex-1 grid grid-cols-1 sm:grid-cols-3 gap-5 md:gap-6">

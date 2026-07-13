@@ -1,6 +1,18 @@
 import type { Differentiator, ValueItem, Leader, CardColor } from "@/types";
 import { cardColor, cardColorAlt } from "@/data";
 
+export const companyStory = {
+  founded: "2020",
+  headquarters: "Lagos, Nigeria",
+  group: "FTRX Group",
+  paragraphs: [
+    "Founded in 2020 and headquartered in Lagos, Nigeria, XStakUp is a leading software development agency that architects custom enterprise solutions for businesses worldwide. As part of the FTRX Group, we combine deep technical expertise with a commitment to transforming businesses through cutting-edge technology.",
+    "Our team of dedicated software engineers, architects, and strategists specializes in web development, mobile applications, AI integration, and Web3 infrastructure. We partner with ambitious businesses to build production-grade systems that scale from MVP to millions of users  delivering measurable outcomes at every stage of growth.",
+    "What sets XStakUp apart is our product-first mindset. We don't just write code  we understand your business goals, your users, and your market before we write a single line. From fintech and AI to blockchain and cloud architecture, every solution we deliver is engineered for performance, security, and long-term success.",
+    "With a global talent network and offices serving clients across Africa, Europe, and North America, XStakUp provides round-the-clock engineering velocity. Our DevSecOps practices, AI-first approach, and commitment to 99.9% uptime ensure that the systems we build don't just work  they lead markets.",
+  ],
+};
+
 export const missionVisionItems = [
   {
     title: "Our Mission",
@@ -10,7 +22,7 @@ export const missionVisionItems = [
   {
     title: "Our Vision",
     description:
-      "The most trusted global engineering partner for high-scale digital platforms, setting the standard for uptime, security, and innovation.",
+      "The most trusted global engineering partner for high scale digital platforms, setting the standard for uptime, security, and innovation.",
   },
 ];
 
@@ -21,7 +33,7 @@ export const differentiators: Differentiator[] = [
   },
   {
     title: "Uncompromising Security",
-    description: "Security isn't a feature — it's the foundation of every line we ship.",
+    description: "Security isn't a feature  it's the foundation of every line we ship.",
   },
   {
     title: "99.9% Engineering Rigor",
@@ -33,11 +45,11 @@ export const differentiators: Differentiator[] = [
   },
   {
     title: "AI First Approach",
-    description: "AI integrated into every layer — from code generation to predictive ops.",
+    description: "AI integrated into every layer  from code generation to predictive ops.",
   },
   {
     title: "Global Talent Network",
-    description: "Distributed team delivering round-the-clock engineering velocity.",
+    description: "Distributed team delivering round the clock engineering velocity.",
   },
 ];
 

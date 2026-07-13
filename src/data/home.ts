@@ -82,12 +82,6 @@ export const cases: CaseStudy[] = [
     image: "/assets/quikai.jpeg",
   },
   {
-    title: "Bepopula",
-    tag: "Web / Mobile",
-    description: "Full-stack web and mobile platform built for modern digital experiences.",
-    image: "/assets/bepopula.jpeg",
-  },
-  {
     title: "Shoopa",
     tag: "E-Commerce",
     description:
@@ -123,7 +117,6 @@ export const caseGradients = [
   "linear-gradient(135deg, #0094C7, #303030)",
   "linear-gradient(135deg, #0094C7, #303030)",
   "linear-gradient(135deg, #0094C7, #303030)",
-  "linear-gradient(135deg, #0094C7, #303030)",
 ];
 
 export const marqueeItems = [
@@ -145,7 +138,7 @@ export const marqueeItems = [
 
 export const pipelineCardColors = Array(4).fill(cardColor);
 export const expertiseCardColors = Array(8).fill(cardColor);
-export const deploymentCardColors = Array(7).fill(cardColor);
+export const deploymentCardColors = Array(6).fill(cardColor);
 export const tweetCardColors = Array(4).fill(cardColor);
 
 export const stats: StatsItem[] = [

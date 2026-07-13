@@ -16,11 +16,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "XStakUp | Enterprise Software Development Company | Web, Mobile, AI & Web3",
-    template: "%s | XStakUp - Enterprise Software Development",
+    default: "XStakUp | Leading Software Development Agency | Web, Mobile, AI & Web3",
+    template: "%s | XStakUp - Software Development Agency",
   },
   description:
-    "XStakUp is a leading custom enterprise software development company. We architect scalable web applications, mobile apps, AI solutions, and Web3 infrastructure for businesses worldwide. Based in Lagos, Nigeria.",
+    "XStakUp is a leading custom enterprise software development company. We architect scalable web applications, mobile apps, AI solutions, and Web3 infrastructure that transform businesses with cutting-edge technology. Based in Lagos, Nigeria.",
   keywords: [
     "enterprise software development",
     "custom software development company",
@@ -43,9 +43,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "XStakUp",
-    title: "XStakUp | Enterprise Software Development Company",
+    title: "XStakUp | Leading Software Development Agency",
     description:
-      "Custom enterprise software development for web, mobile, AI, and Web3. Your dedicated engineering team for scalable, production-grade systems.",
+      "Leading custom enterprise software development for web, mobile, AI, and Web3. Transform your business with cutting-edge technology and a dedicated engineering team.",
     images: [
       {
         url: "/assets/home.webp",
@@ -57,9 +57,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "XStakUp | Enterprise Software Development Company",
+    title: "XStakUp | Leading Software Development Agency",
     description:
-      "Custom enterprise software development for web, mobile, AI, and Web3. Your dedicated engineering team.",
+      "Leading custom enterprise software development for web, mobile, AI, and Web3. Transform your business with cutting-edge technology.",
     images: ["/assets/home.webp"],
   },
   robots: { index: true, follow: true },
@@ -81,7 +81,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               url: "https://xstakup.com",
               logo: "https://xstakup.com/assets/xstakup-logo-2.webp",
               description:
-                "Custom enterprise software development company. Web, mobile, AI, and Web3 development services.",
+                "Leading custom enterprise software development company specializing in web, mobile, AI, and Web3 solutions that transform businesses with cutting-edge technology.",
               foundingDate: "2020",
               address: {
                 "@type": "PostalAddress",
