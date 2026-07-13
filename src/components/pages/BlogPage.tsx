@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Search, Clock, User, BookOpen, ArrowRight } from "lucide-react";
-import { FinalCTA, AnimatedSection } from "@/components/common";
+import { FinalCTA, AnimatedSection, SubPageHero } from "@/components/common";
 import { blogPosts } from "@/data/blog";
 
 const categories = [
@@ -109,28 +109,11 @@ export function BlogPage() {
       style={{ backgroundImage: "url('/assets/background.png')" }}
     >
       <div className="min-h-screen w-full bg-void-section/80 backdrop-blur-[1px]">
-        <section className="py-20 md:py-28 px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7 }}
-              className="rounded-3xl p-8 md:p-16"
-              style={{ background: "var(--card-bg)", border: "1px solid rgba(0, 148, 199, 0.2)" }}
-            >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-8" style={{ border: "1px solid rgba(0, 148, 199, 0.3)", color: "#0094C7" }}>
-                <BookOpen size={16} />
-                Insights, Tutorials & Industry Trends
-              </div>
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-[#0094C7] bg-clip-text text-transparent">
-                XStakUp Blog
-              </h1>
-              <p className="text-lg md:text-xl text-white/80 max-w-4xl mx-auto leading-relaxed">
-                Stay ahead of the curve with expert insights, technical tutorials, and industry trends from our team of experienced developers and technology leaders.
-              </p>
-            </motion.div>
-          </div>
-        </section>
+        <SubPageHero
+          title="XStakUp Blog"
+          subtitle="Stay ahead of the curve with expert insights, technical tutorials, and industry trends from our team of experienced developers and technology leaders."
+          bgImage="/assets/blog.webp"
+        />
 
         {featuredPosts.length > 0 && (
           <AnimatedSection>
