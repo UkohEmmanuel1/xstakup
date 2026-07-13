@@ -79,7 +79,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@type": "Organization",
               name: "XStakUp",
               url: "https://xstakup.com",
-              logo: "https://xstakup.com/assets/foot_logo.webp",
+              logo: "https://xstakup.com/assets/xstakup-logo-2.webp",
               description:
                 "Custom enterprise software development company. Web, mobile, AI, and Web3 development services.",
               foundingDate: "2020",

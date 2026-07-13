@@ -53,6 +53,7 @@ export interface FeaturedCase {
   solution: string;
   stack: string[];
   gradient: string;
+  image?: string;
 }
 
 export interface EcosystemItem {

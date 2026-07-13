@@ -31,7 +31,7 @@ export function NarrativeSection() {
             className="relative aspect-square max-w-md mx-auto w-full flex items-center justify-center"
           >
             <Image
-              src="/assets/Brandidentity.webp"
+              src="/assets/brandidentity.webp"
               alt="XStakUp Brand Identity"
               className="object-contain max-h-full w-auto drop-shadow-lg"
               priority
