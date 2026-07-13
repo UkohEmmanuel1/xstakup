@@ -27,7 +27,7 @@ export function HeroSection() {
         />
         <div className="absolute inset-0 bg-[#303030]/20" />
         <div className="absolute inset-0 grid-pattern opacity-20" />
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[#303030]" />
+        <div className="hidden md:absolute md:inset-0 bg-gradient-to-r from-transparent via-transparent to-[#303030]" />
       </motion.div>
 
       {/* Text column */}
