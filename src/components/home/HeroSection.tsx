@@ -25,7 +25,7 @@ export function HeroSection() {
           playsInline
           aria-label="XStakUp enterprise software development showcase"
         />
-        <div className="absolute inset-0 bg-[#303030]/40" />
+        <div className="absolute inset-0 bg-[#303030]/20" />
         <div className="absolute inset-0 grid-pattern opacity-20" />
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[#303030]" />
       </motion.div>

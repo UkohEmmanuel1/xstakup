@@ -250,14 +250,13 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
         className="absolute top-0 left-3 right-3 h-[2px] rounded-full"
         style={{ background: color.accent }}
       />
-      <div className="absolute inset-0" style={{ background: c.gradient, opacity: 0.85 }} />
       {c.image && (
         <Image
           src={c.image}
           alt={`${c.name} Logo`}
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-cover opacity-50"
+          className="object-cover"
         />
       )}
     </div>
