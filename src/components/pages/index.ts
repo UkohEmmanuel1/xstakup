@@ -14,3 +14,5 @@ export { ServiceDetailPageComponent as ServiceDetailPage } from "./ServiceDetail
 export { ServicesPageComponent as ServicesPage } from "./ServicesPage";
 export { WorkDetailPageComponent as WorkDetailPage } from "./WorkDetailPage";
 export { WorkPageComponent as WorkPage } from "./WorkPage";
+export { TermsPage } from "./TermsPage";
+export { PrivacyPage } from "./PrivacyPage";

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { Linkedin, Instagram, X } from "lucide-react";
 import { socialLinks } from "@/data";
 
@@ -139,8 +140,8 @@ function FooterBottom() {
         © 2026 XStakUp. An FTRX Group Company. All rights reserved.
       </p>
       <div className="flex gap-6 text-xs text-muted-foreground">
-        <span>Terms & Conditions</span>
-        <span>Privacy Policy</span>
+        <Link href="/terms" className="hover:text-blue transition-colors">Terms & Conditions</Link>
+        <Link href="/privacy" className="hover:text-blue transition-colors">Privacy Policy</Link>
       </div>
     </motion.div>
   );
