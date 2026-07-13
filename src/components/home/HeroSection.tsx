@@ -11,7 +11,11 @@ export function HeroSection() {
   return (
     <section className="relative overflow-hidden md:min-h-[90vh] block md:grid md:grid-cols-[1fr_1.2fr] items-stretch max-w-full">
       {/* Video - full background on mobile, left column on desktop */}
-      <motion.div ref={ref} className="absolute inset-0 md:relative md:inset-auto overflow-hidden h-full" style={{ scale }}>
+      <motion.div
+        ref={ref}
+        className="absolute inset-0 md:relative md:inset-auto overflow-hidden h-full"
+        style={{ scale }}
+      >
         <video
           className="absolute inset-0 w-full h-full object-cover block"
           src="/assets/hero.mp4"

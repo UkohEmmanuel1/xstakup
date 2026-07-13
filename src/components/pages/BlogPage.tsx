@@ -17,14 +17,46 @@ const categories = [
 ] as const;
 
 const cardColors = [
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)" },
-  { border: "rgba(0, 148, 199, 0.3)", hover: "rgba(0, 148, 199, 0.55)", accent: "rgba(0, 148, 199, 0.65)" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)" },
-  { border: "rgba(0, 148, 199, 0.3)", hover: "rgba(0, 148, 199, 0.55)", accent: "rgba(0, 148, 199, 0.65)" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)" },
-  { border: "rgba(0, 148, 199, 0.25)", hover: "rgba(0, 148, 199, 0.5)", accent: "rgba(0, 148, 199, 0.6)" },
+  {
+    border: "rgba(0, 148, 199, 0.25)",
+    hover: "rgba(0, 148, 199, 0.5)",
+    accent: "rgba(0, 148, 199, 0.6)",
+  },
+  {
+    border: "rgba(0, 148, 199, 0.25)",
+    hover: "rgba(0, 148, 199, 0.5)",
+    accent: "rgba(0, 148, 199, 0.6)",
+  },
+  {
+    border: "rgba(0, 148, 199, 0.3)",
+    hover: "rgba(0, 148, 199, 0.55)",
+    accent: "rgba(0, 148, 199, 0.65)",
+  },
+  {
+    border: "rgba(0, 148, 199, 0.25)",
+    hover: "rgba(0, 148, 199, 0.5)",
+    accent: "rgba(0, 148, 199, 0.6)",
+  },
+  {
+    border: "rgba(0, 148, 199, 0.25)",
+    hover: "rgba(0, 148, 199, 0.5)",
+    accent: "rgba(0, 148, 199, 0.6)",
+  },
+  {
+    border: "rgba(0, 148, 199, 0.3)",
+    hover: "rgba(0, 148, 199, 0.55)",
+    accent: "rgba(0, 148, 199, 0.65)",
+  },
+  {
+    border: "rgba(0, 148, 199, 0.25)",
+    hover: "rgba(0, 148, 199, 0.5)",
+    accent: "rgba(0, 148, 199, 0.6)",
+  },
+  {
+    border: "rgba(0, 148, 199, 0.25)",
+    hover: "rgba(0, 148, 199, 0.5)",
+    accent: "rgba(0, 148, 199, 0.6)",
+  },
 ];
 
 function formatDate(dateStr: string) {
@@ -35,7 +67,15 @@ function formatDate(dateStr: string) {
   });
 }
 
-function BlogPostCard({ post, index, featured }: { post: typeof blogPosts[number]; index: number; featured?: boolean }) {
+function BlogPostCard({
+  post,
+  index,
+  featured,
+}: {
+  post: (typeof blogPosts)[number];
+  index: number;
+  featured?: boolean;
+}) {
   const c = cardColors[index % cardColors.length];
 
   return (
@@ -50,7 +90,10 @@ function BlogPostCard({ post, index, featured }: { post: typeof blogPosts[number
       <div className="p-6 md:p-8 flex flex-col h-full">
         <div className="flex items-center gap-2 mb-3 flex-wrap">
           {featured && (
-            <span className="text-[10px] uppercase tracking-widest font-bold px-2 py-0.5 rounded-full text-white" style={{ background: c.accent }}>
+            <span
+              className="text-[10px] uppercase tracking-widest font-bold px-2 py-0.5 rounded-full text-white"
+              style={{ background: c.accent }}
+            >
               Featured
             </span>
           )}
@@ -67,7 +110,9 @@ function BlogPostCard({ post, index, featured }: { post: typeof blogPosts[number
         <h3 className="text-lg md:text-xl font-bold text-white leading-snug group-hover:text-[#0094C7] transition-colors duration-300">
           {post.title}
         </h3>
-        <p className="mt-3 text-sm text-white/70 leading-relaxed flex-1 line-clamp-3">{post.excerpt}</p>
+        <p className="mt-3 text-sm text-white/70 leading-relaxed flex-1 line-clamp-3">
+          {post.excerpt}
+        </p>
         <div className="mt-5 pt-4 border-t border-white/10 flex items-center justify-between text-xs text-white/50">
           <div className="flex items-center gap-3">
             <span className="flex items-center gap-1">
@@ -124,7 +169,8 @@ export function BlogPage() {
                     Featured <span className="text-gradient-blue">Articles</span>
                   </h2>
                   <p className="mt-4 text-white/70 text-lg max-w-3xl mx-auto">
-                    Our most popular and impactful articles covering the latest in software development and technology.
+                    Our most popular and impactful articles covering the latest in software
+                    development and technology.
                   </p>
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 md:gap-6">
@@ -140,7 +186,13 @@ export function BlogPage() {
         <AnimatedSection>
           <section className="py-16 md:py-20">
             <div className="mx-auto max-w-7xl px-6">
-              <div className="rounded-2xl p-6 mb-12" style={{ border: "1px solid rgba(0, 148, 199, 0.15)", background: "var(--card-bg)" }}>
+              <div
+                className="rounded-2xl p-6 mb-12"
+                style={{
+                  border: "1px solid rgba(0, 148, 199, 0.15)",
+                  background: "var(--card-bg)",
+                }}
+              >
                 <div className="flex flex-col lg:flex-row gap-4 items-center">
                   <div className="flex-1 relative w-full">
                     <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-white/40" />
@@ -150,7 +202,10 @@ export function BlogPage() {
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
                       className="w-full pl-10 pr-4 py-3 rounded-lg text-white placeholder-white/50 focus:outline-none focus:ring-2"
-                      style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)" }}
+                      style={{
+                        background: "rgba(255,255,255,0.05)",
+                        border: "1px solid rgba(255,255,255,0.1)",
+                      }}
                     />
                   </div>
                   <div className="flex items-center gap-2 flex-wrap">
@@ -165,8 +220,12 @@ export function BlogPage() {
                             : "text-white/60 hover:text-white"
                         }`}
                         style={{
-                          background: activeCategory === cat.id ? "linear-gradient(135deg, #0094C7, #06b6d4)" : "rgba(255,255,255,0.05)",
-                          border: activeCategory === cat.id ? "none" : "1px solid rgba(255,255,255,0.1)",
+                          background:
+                            activeCategory === cat.id
+                              ? "linear-gradient(135deg, #0094C7, #06b6d4)"
+                              : "rgba(255,255,255,0.05)",
+                          border:
+                            activeCategory === cat.id ? "none" : "1px solid rgba(255,255,255,0.1)",
                         }}
                       >
                         {cat.label}
@@ -180,7 +239,9 @@ export function BlogPage() {
                 <h2 className="text-3xl md:text-4xl font-bold">
                   All <span className="text-gradient-blue">Articles</span>
                 </h2>
-                <p className="mt-2 text-white/60 text-sm">{filtered.length} article{filtered.length !== 1 ? "s" : ""} found</p>
+                <p className="mt-2 text-white/60 text-sm">
+                  {filtered.length} article{filtered.length !== 1 ? "s" : ""} found
+                </p>
               </div>
 
               {filtered.length > 0 ? (
@@ -191,10 +252,18 @@ export function BlogPage() {
                 </div>
               ) : (
                 <div className="text-center py-16">
-                  <div className="rounded-2xl p-12 inline-block" style={{ border: "1px solid rgba(0, 148, 199, 0.15)", background: "var(--card-bg)" }}>
+                  <div
+                    className="rounded-2xl p-12 inline-block"
+                    style={{
+                      border: "1px solid rgba(0, 148, 199, 0.15)",
+                      background: "var(--card-bg)",
+                    }}
+                  >
                     <Search className="w-12 h-12 text-white/20 mx-auto mb-4" />
                     <h3 className="text-xl font-semibold text-white mb-2">No articles found</h3>
-                    <p className="text-white/60">Try adjusting your search terms or browse different categories.</p>
+                    <p className="text-white/60">
+                      Try adjusting your search terms or browse different categories.
+                    </p>
                   </div>
                 </div>
               )}
@@ -204,18 +273,25 @@ export function BlogPage() {
 
         <section className="py-16 md:py-20 px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
-            <div className="rounded-3xl p-8 md:p-16" style={{ border: "1px solid rgba(0, 148, 199, 0.2)", background: "var(--card-bg)" }}>
+            <div
+              className="rounded-3xl p-8 md:p-16"
+              style={{ border: "1px solid rgba(0, 148, 199, 0.2)", background: "var(--card-bg)" }}
+            >
               <BookOpen className="w-12 h-12 text-[#0094C7] mx-auto mb-6" />
               <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Stay Updated</h2>
               <p className="text-lg text-white/70 mb-8 max-w-2xl mx-auto">
-                Get the latest insights on software development, industry trends, and technology innovations delivered straight to your inbox.
+                Get the latest insights on software development, industry trends, and technology
+                innovations delivered straight to your inbox.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
                 <input
                   type="email"
                   placeholder="Enter your email"
                   className="flex-1 px-4 py-3 rounded-lg text-white placeholder-white/50 focus:outline-none focus:ring-2"
-                  style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)" }}
+                  style={{
+                    background: "rgba(255,255,255,0.05)",
+                    border: "1px solid rgba(255,255,255,0.1)",
+                  }}
                 />
                 <button
                   className="px-6 py-3 rounded-lg font-semibold text-white transition-all duration-300 hover:opacity-90"

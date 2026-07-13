@@ -43,7 +43,8 @@ export function FinalCTA() {
               Let&apos;s Build Something Amazing
             </h2>
             <p className="mt-5 text-white/80 max-w-xl text-base md:text-lg">
-              Transform your business with cutting-edge software solutions. Production-grade web, mobile, AI & Web3 — built for scale.
+              Transform your business with cutting-edge software solutions. Production-grade web,
+              mobile, AI & Web3 — built for scale.
             </p>
             <div className="mt-10">
               <PrimaryCTA>Initialize Your Build</PrimaryCTA>

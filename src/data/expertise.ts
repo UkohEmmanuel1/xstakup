@@ -1,5 +1,5 @@
 import type { StatsItem, CaseStudy } from "@/types";
-import { cardColor, cardColorAlt, cardColorExpertise } from "@/data";
+import { cardColor, cardColorExpertise } from "@/data";
 
 export const expertiseStats: StatsItem[] = [
   { value: "200+", label: "Projects Shipped" },
