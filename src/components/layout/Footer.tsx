@@ -56,13 +56,13 @@ function FooterBrand() {
       className="lg:col-span-2"
     >
       <Link href="/" className="flex items-center gap-2">
-        <div className="relative h-14 w-14 md:h-16 md:w-16 rounded-xl bg-white/5 backdrop-blur-sm">
+        <div className="relative h-14 w-14 md:h-16 md:w-16">
           <Image
             src="/assets/xstakup_logo.png"
             alt="XStakUp footer logo"
             fill
             sizes="64px"
-            className="object-contain drop-shadow-lg brightness-150"
+            className="object-contain"
           />
         </div>
       </Link>
