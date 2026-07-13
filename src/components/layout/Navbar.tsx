@@ -33,13 +33,13 @@ function Logo({ onClose }: { onClose: () => void }) {
         whileHover={{ scale: 1.05, rotate: -2 }}
         className="relative h-16 w-16 md:h-24 md:w-24 flex-shrink-0"
       >
-        <div className="absolute inset-0 flex items-center justify-center overflow-hidden rounded-xl bg-white/5 backdrop-blur-sm">
+        <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
           <Image
             src="/assets/xstakup-logo-2.webp"
             alt="XStakUp Logo"
             fill
             sizes="96px"
-            className="object-contain select-none drop-shadow-lg brightness-150"
+            className="object-contain select-none"
           />
         </div>
       </motion.div>
