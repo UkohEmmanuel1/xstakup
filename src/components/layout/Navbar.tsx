@@ -35,7 +35,7 @@ function Logo({ onClose }: { onClose: () => void }) {
       >
         <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
           <Image
-            src="/assets/xstakup-logo-2.webp"
+            src="/assets/xstakup_logo.png"
             alt="XStakUp Logo"
             fill
             sizes="96px"
