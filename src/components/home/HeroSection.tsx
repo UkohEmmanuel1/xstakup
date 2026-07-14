@@ -31,7 +31,7 @@ export function HeroSection() {
       </motion.div>
 
       {/* Text column */}
-      <div className="relative z-10 flex items-center justify-start px-6 md:px-10 py-16 md:py-24 min-h-screen md:min-h-0">
+      <div className="relative z-10 flex items-center justify-start px-6 md:px-10 py-16 md:py-24">
         <motion.div
           initial={{ opacity: 0, scale: 0.97 }}
           animate={{ opacity: 1, scale: 1 }}
