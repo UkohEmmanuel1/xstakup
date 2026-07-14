@@ -1,3 +1,5 @@
+"use client";
+
 import { AnimatedSection } from "@/components/common";
 import { marqueeItems } from "@/data/home";
 

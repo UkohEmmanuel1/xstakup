@@ -139,8 +139,12 @@ function FooterBottom() {
         © 2026 XStakUp. An FTRX Group Company. All rights reserved.
       </p>
       <div className="flex gap-6 text-xs text-muted-foreground">
-        <Link href="/terms" className="hover:text-blue transition-colors">Terms & Conditions</Link>
-        <Link href="/privacy" className="hover:text-blue transition-colors">Privacy Policy</Link>
+        <Link href="/terms" className="hover:text-blue transition-colors">
+          Terms & Conditions
+        </Link>
+        <Link href="/privacy" className="hover:text-blue transition-colors">
+          Privacy Policy
+        </Link>
       </div>
     </motion.div>
   );

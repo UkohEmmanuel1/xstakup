@@ -84,11 +84,12 @@ export function PrivacyPage() {
             <div className="mx-auto max-w-4xl px-6">
               <div
                 className="rounded-2xl p-8 md:p-12"
-                style={{ border: "1px solid rgba(0, 148, 199, 0.15)", background: "var(--card-bg)" }}
+                style={{
+                  border: "1px solid rgba(0, 148, 199, 0.15)",
+                  background: "var(--card-bg)",
+                }}
               >
-                <p className="text-sm text-white/60 mb-10">
-                  Last updated: July 2026
-                </p>
+                <p className="text-sm text-white/60 mb-10">Last updated: July 2026</p>
                 <div className="space-y-10">
                   {sections.map((section, i) => (
                     <motion.div
