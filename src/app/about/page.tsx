@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About XStakUp | Leading Software Development Agency",
     description:
-      "A leading software development agency transforming businesses with cutting-edge web, mobile, AI, and Web3 solutions. Your dedicated engineering partner for scalable, production-grade systems.",
+      "A leading software development agency transforming businesses with cutting edge web, mobile, AI, and Web3 solutions. Your dedicated engineering partner for scalable, production-grade systems.",
   },
 };
 
