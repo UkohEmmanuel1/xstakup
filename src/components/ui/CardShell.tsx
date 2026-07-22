@@ -19,15 +19,13 @@ export function CardShell({
   asButton = false,
   onClick,
 }: CardShellProps) {
-  const base = `rounded-xl border border-card-border bg-card-bg p-8 md:p-10 h-full min-h-[200px] md:min-h-[260px] flex flex-col relative transition-all ${className}`;
-  const hoverClasses = hover ? "hover:-translate-y-0.5 hover:border-card-hover" : "";
+  const base = `rounded-xl border border-border bg-card p-8 md:p-10 h-full min-h-[200px] md:min-h-[260px] flex flex-col relative transition-all ${className}`;
+  const hoverClasses = hover ? "hover:-translate-y-0.5 hover:border-blue/30" : "";
   const buttonClasses = asButton ? "cursor-pointer text-left w-full" : "";
 
   const content = (
     <>
-      {accent && (
-        <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full bg-card-accent" />
-      )}
+      {accent && <div className="absolute top-0 left-3 right-3 h-[2px] rounded-full bg-blue" />}
       {children}
     </>
   );

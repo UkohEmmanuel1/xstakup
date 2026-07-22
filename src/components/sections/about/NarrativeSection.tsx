@@ -8,8 +8,8 @@ import { companyStory } from "@/data/about";
 export function NarrativeSection() {
   return (
     <AnimatedSection>
-      <section className="bg-[var(--void-section)] border-border border-y py-16 md:py-24 overflow-hidden">
-        <div className="mx-auto max-w-7xl px-6 grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6 items-center">
+      <section className="bg-[var(--void-section)] border-border border-y overflow-hidden">
+        <div className="section-container grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6 items-center">
           <motion.div
             variants={slideFromLeft}
             initial="hidden"
@@ -22,10 +22,10 @@ export function NarrativeSection() {
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
               Engineering Excellence
             </h2>
-            <h3 className="mt-2 text-lg text-white/60">
+            <h3 className="mt-2 text-lg text-muted-foreground">
               {companyStory.headquarters} &middot; {companyStory.group}
             </h3>
-            <div className="mt-6 space-y-4 text-white/80 leading-relaxed">
+            <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
               {companyStory.paragraphs.map((p, i) => (
                 <p key={i}>{p}</p>
               ))}
@@ -42,7 +42,7 @@ export function NarrativeSection() {
             <Image
               src="/assets/brandidentity.webp"
               alt="XStakUp Brand Identity"
-              className="object-contain max-h-full w-auto drop-shadow-lg"
+              className="object-contain object-top"
               priority
               width={400}
               height={400}

@@ -21,26 +21,26 @@ const columns = [
     links: [
       { to: "/about", label: "About" },
       { to: "/careers", label: "Careers" },
-      { to: "/blog", label: "Blog" },
+      { to: "/insights", label: "Insights" },
       { to: "/community", label: "Community" },
     ],
   },
   {
-    title: "Expertise",
+    title: "Services",
     links: [
-      { to: "/expertise", label: "Product Engineering" },
-      { to: "/expertise", label: "Web3 & Blockchain" },
-      { to: "/expertise", label: "AI & Machine Learning" },
-      { to: "/expertise", label: "Fintech Solutions" },
+      { to: "/services/product-engineering", label: "Product Engineering" },
+      { to: "/services/web3-blockchain", label: "Web3 & Blockchain" },
+      { to: "/services/ai-automation", label: "AI & Machine Learning" },
+      { to: "/services/fintech-solutions", label: "Fintech Solutions" },
     ],
   },
   {
     title: "Work",
     links: [
-      { to: "/clients", label: "Client Deployments" },
-      { to: "/clients", label: "XPay" },
-      { to: "/clients", label: "Quik" },
-      { to: "/clients", label: "Cashflow Africa" },
+      { to: "/work", label: "All Case Studies" },
+      { to: "/work/xpay", label: "XPay" },
+      { to: "/work/quik-ai", label: "QuikAi" },
+      { to: "/work/digidrops", label: "Digidrops" },
     ],
   },
 ] as const;
@@ -152,22 +152,10 @@ function FooterBottom() {
 
 export function Footer() {
   return (
-    <motion.footer
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6 }}
-      className="relative border-t border-border bg-[color:var(--void-section)]"
-    >
-      <motion.div
-        initial={{ scaleX: 0 }}
-        whileInView={{ scaleX: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-blue/40 to-transparent origin-left"
-      />
-      <div className="mx-auto max-w-7xl px-6 py-10 md:py-16">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-5 lg:gap-12">
+    <footer className="relative border-t border-border bg-[color:var(--void-section)]">
+      <div className="section-divider" />
+      <div className="mx-auto max-w-7xl px-6 py-12 md:py-16">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-5 lg:gap-12">
           <FooterBrand />
           {columns.map((col, idx) => (
             <FooterColumn key={col.title} col={col} index={idx} />
@@ -175,6 +163,6 @@ export function Footer() {
         </div>
         <FooterBottom />
       </div>
-    </motion.footer>
+    </footer>
   );
 }

@@ -55,40 +55,40 @@
   --radius: 0.75rem;
 
   --blue: #0094c7;
-  --mist: #ffffff;
-  --steel: #303030;
-  --obsidian: #303030;
-  --surface: #303030;
+  --mist: #f0f0f0;
+  --steel: #1a1a1a;
+  --obsidian: #0a0a0a;
+  --surface: #1a1a1a;
 
-  --background: #303030;
-  --foreground: #ffffff;
-  --card: #303030;
-  --card-foreground: #ffffff;
-  --popover: #303030;
-  --popover-foreground: #ffffff;
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --card: #1a1a1a;
+  --card-foreground: #ededed;
+  --popover: #1a1a1a;
+  --popover-foreground: #ededed;
   --primary: #0094c7;
-  --primary-foreground: #303030;
-  --secondary: #303030;
-  --secondary-foreground: #ffffff;
-  --muted: #303030;
-  --muted-foreground: #ffffff;
+  --primary-foreground: #ffffff;
+  --secondary: #141414;
+  --secondary-foreground: #d0d0d0;
+  --muted: #141414;
+  --muted-foreground: #9ca3af;
   --accent: #0094c7;
-  --accent-foreground: #303030;
-  --destructive: #0094c7;
+  --accent-foreground: #ffffff;
+  --destructive: #ef4444;
   --destructive-foreground: #ffffff;
-  --border: #0094c7;
-  --input: #0094c7;
+  --border: rgba(255, 255, 255, 0.08);
+  --input: rgba(255, 255, 255, 0.12);
   --ring: #0094c7;
 
-  --void-main: #303030;
-  --void-section: #303030;
-  --void-surface: #303030;
-  --card-solid-bg: #303030;
+  --void-main: #0a0a0a;
+  --void-section: #111111;
+  --void-surface: #1a1a1a;
+  --card-solid-bg: #1a1a1a;
 
-  --card-bg: #303030;
-  --card-border: rgba(0, 148, 199, 0.25);
-  --card-hover: rgba(0, 148, 199, 0.5);
-  --card-accent: rgba(0, 148, 199, 0.6);
+  --card-bg: rgba(255, 255, 255, 0.03);
+  --card-border: rgba(255, 255, 255, 0.08);
+  --card-hover: rgba(255, 255, 255, 0.12);
+  --card-accent: #0094c7;
   --overlay: rgba(0, 0, 0, 0.7);
   --section-border: rgba(255, 255, 255, 0.06);
 
@@ -131,6 +131,51 @@
 }
 
 @layer utilities {
+  .section-container {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  @media (min-width: 768px) {
+    .section-container {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+
+  .section-header {
+    margin-bottom: 3rem;
+  }
+  .section-header h2,
+  .section-header .section-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--foreground);
+  }
+  @media (min-width: 768px) {
+    .section-header h2,
+    .section-header .section-title {
+      font-size: 3rem;
+    }
+  }
+  .section-header p,
+  .section-header .section-subtitle {
+    margin-top: 0.75rem;
+    color: var(--muted-foreground);
+    max-width: 36rem;
+  }
+
+  .section-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.08), transparent);
+    pointer-events: none;
+  }
+
   .glass {
     background: color-mix(in srgb, var(--card-bg) 70%, transparent);
     backdrop-filter: blur(16px) saturate(140%);

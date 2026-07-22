@@ -12,23 +12,23 @@ interface StatsStripProps {
 export function StatsStrip({ items, className }: StatsStripProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30 }}
+      initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.7, delay: 0.2 }}
-      className={`${className ?? "mt-20"} grid grid-cols-2 md:grid-cols-4 gap-px overflow-hidden rounded-xl glass w-full max-w-4xl`}
+      transition={{ duration: 0.5, delay: 0.2 }}
+      className={`${className ?? ""} grid grid-cols-2 md:grid-cols-4 gap-px overflow-hidden rounded-xl border border-border bg-border w-full max-w-4xl`}
     >
       {items.map((s, i) => (
         <motion.div
           key={s.label}
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
-          className="px-4 py-4 md:px-6 md:py-6 bg-[color:var(--void-surface)]/50"
+          transition={{ duration: 0.4, delay: 0.15 + i * 0.08 }}
+          className="px-4 py-4 md:px-6 md:py-6 bg-[color:var(--void-surface)]"
         >
           <Counter value={s.value} />
-          <p className="mt-1 text-xs uppercase tracking-widest text-white/80">{s.label}</p>
+          <p className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">{s.label}</p>
         </motion.div>
       ))}
     </motion.div>

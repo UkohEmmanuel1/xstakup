@@ -14,8 +14,8 @@ const metrics = [
 export function ImpactMarqueeSection() {
   return (
     <AnimatedSection>
-      <section className="py-16 md:py-24 border-y border-border overflow-hidden">
-        <div className="mx-auto max-w-7xl px-6">
+      <section className="border-y border-border overflow-hidden">
+        <div className="section-container">
           <motion.div
             variants={staggerContainer}
             initial="hidden"
@@ -38,7 +38,7 @@ export function ImpactMarqueeSection() {
                     style={{ background: c.accent }}
                   />
                   <div className="text-3xl md:text-4xl font-bold text-gradient-blue">{m.value}</div>
-                  <div className="mt-2 text-sm text-white/60 uppercase tracking-wide">
+                  <div className="mt-2 text-sm text-muted-foreground uppercase tracking-wide">
                     {m.label}
                   </div>
                 </motion.div>

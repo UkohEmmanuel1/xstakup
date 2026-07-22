@@ -56,26 +56,30 @@ export function InsightsDetailPageComponent({ slug }: Props) {
         </div>
       </PageHero>
 
-      <AnimatedSection className="py-16 md:py-24 border-b border-border">
-        <div className="mx-auto max-w-3xl px-6">
-          <p className="text-base text-muted-foreground leading-relaxed mb-8">{post.excerpt}</p>
-          <div className="prose prose-sm max-w-none text-foreground/80">
-            <p className="text-base leading-relaxed">
-              This article is being written. Check back soon for the full post.
-            </p>
-            <p className="text-base leading-relaxed mt-4">
-              In the meantime, feel free to{" "}
-              <Link href="/contact" className="text-blue hover:underline">
-                reach out to us
-              </Link>{" "}
-              if you&apos;d like to discuss this topic or have questions about your product.
-            </p>
+      <AnimatedSection>
+        <section className="relative bg-[color:var(--void-surface)]">
+          <div className="section-divider" />
+          <div className="mx-auto max-w-3xl px-6 py-16 md:py-24">
+            <p className="text-base text-muted-foreground leading-relaxed mb-8">{post.excerpt}</p>
+            <div className="text-foreground/80">
+              <p className="text-base leading-relaxed">
+                This article is being written. Check back soon for the full post.
+              </p>
+              <p className="text-base leading-relaxed mt-4">
+                In the meantime, feel free to{" "}
+                <Link href="/contact" className="text-blue hover:underline">
+                  reach out to us
+                </Link>{" "}
+                if you&apos;d like to discuss this topic or have questions about your product.
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
       </AnimatedSection>
 
-      <section className="py-16 md:py-24 border-b border-border">
-        <div className="mx-auto max-w-3xl px-6">
+      <section className="relative bg-[color:var(--void-section)]">
+        <div className="section-divider" />
+        <div className="mx-auto max-w-3xl px-6 py-16 md:py-24">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>
               {prev && (

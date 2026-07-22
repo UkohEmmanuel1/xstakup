@@ -1,29 +1,31 @@
 // src/components/home/FeaturedDeployments.tsx
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { AnimatedSection, staggerContainer } from "@/components/common";
 import { CTAButton } from "@/components/common/CTAButton";
 import { DeploymentCard } from "./DeploymentCard";
-import { cases, caseGradients } from "@/data/home";
+import { cases as casesData, caseGradients as caseGradientsData } from "@/data/home";
 
 export function FeaturedDeployments() {
+  const [shuffled] = useState(() => {
+    const items = casesData.map((c, i) => ({ caseStudy: c, gradient: caseGradientsData[i] }));
+    for (let i = items.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [items[i], items[j]] = [items[j], items[i]];
+    }
+    return items.slice(0, 3);
+  });
+
   return (
     <AnimatedSection>
-      <section
-        className="relative py-16 md:py-24 overflow-hidden bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/assets/background.png')" }}
-      >
-        <div className="absolute inset-0 bg-void-section/80 backdrop-blur-[1px]" />
-        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none" />
-        <div className="relative z-10 mx-auto max-w-7xl px-6">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-            <div>
-              <h2 className="mt-4 text-3xl md:text-5xl font-bold text-white">Case Studies</h2>
-              <p className="mt-3 text-white/80 max-w-lg">
-                Fintech infrastructure, AI platforms, and Web3 applications built for scale.
-              </p>
-            </div>
+      <section className="relative overflow-hidden bg-[color:var(--void-section)]">
+        <div className="section-divider" />
+        <div className="section-container">
+          <div className="section-header">
+            <h2>Case Studies</h2>
+            <p>Fintech infrastructure, AI platforms, and Web3 applications built for scale.</p>
           </div>
 
           <motion.div
@@ -31,10 +33,10 @@ export function FeaturedDeployments() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid grid-cols-1 gap-5 md:gap-6 sm:grid-cols-2 md:grid-cols-3"
+            className="grid grid-cols-1 gap-5 md:gap-6 sm:grid-cols-2 lg:grid-cols-3"
           >
-            {cases.slice(0, 3).map((c, i) => (
-              <DeploymentCard key={c.title} caseStudy={c} gradient={caseGradients[i]} />
+            {shuffled.map(({ caseStudy, gradient }) => (
+              <DeploymentCard key={caseStudy.title} caseStudy={caseStudy} gradient={gradient} />
             ))}
           </motion.div>
           <div className="mt-10 text-center">

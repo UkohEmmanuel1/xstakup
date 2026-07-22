@@ -1,23 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useScrollZoom } from "@/hooks/useScrollZoom";
 import { StatsStrip } from "./StatsStrip";
 import { stats } from "@/data/home";
 
 export function HeroSection() {
-  const { ref, scale } = useScrollZoom([0, 1], [1, 1.2]);
-
   return (
-    <section className="relative overflow-hidden md:min-h-[90vh] block md:grid md:grid-cols-[1fr_1.2fr] items-stretch max-w-full">
-      {/* Video - full background on mobile, left column on desktop */}
-      <motion.div
-        ref={ref}
-        className="absolute inset-0 md:relative md:inset-auto overflow-hidden h-full"
-        style={{ scale }}
-      >
+    <section className="grid md:grid-cols-2 min-h-[85vh]">
+      <div className="relative overflow-hidden">
         <video
-          className="absolute inset-0 w-full h-full object-cover block"
+          className="absolute inset-0 w-full h-full object-cover"
           src="/assets/hero.mp4"
           autoPlay
           loop
@@ -25,51 +17,50 @@ export function HeroSection() {
           playsInline
           aria-label="XStakUp enterprise software development showcase"
         />
-        <div className="absolute inset-0 bg-[#303030]/20" />
+        <div className="absolute inset-0 bg-[color:var(--void-main)]/50" />
         <div className="absolute inset-0 grid-pattern opacity-20" />
-        <div className="hidden md:absolute md:inset-0 bg-gradient-to-r from-transparent via-transparent to-[#303030]" />
-      </motion.div>
+      </div>
 
-      {/* Text column */}
-      <div className="relative z-10 flex items-center justify-start px-6 md:px-10 py-16 md:py-24">
+      <div className="relative bg-[color:var(--void-main)] flex items-center">
         <motion.div
-          initial={{ opacity: 0, scale: 0.97 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
-          className="flex flex-col items-start text-left max-w-xl"
-        >
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
+          animate={{ scale: [1, 1.1, 1], opacity: [0.12, 0.25, 0.12] }}
+          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute top-1/4 -left-20 h-[500px] w-[600px] rounded-full bg-blue/20 blur-[140px] pointer-events-none"
+          aria-hidden
+        />
+
+        <div className="relative z-10 px-6 md:px-12 py-24 md:py-32 w-full">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="font-serif text-4xl sm:text-6xl md:text-8xl font-bold tracking-tight leading-[1.05]"
+            transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
           >
-            <span className="text-white">Custom Enterprise</span>
-            <br />
-            <span className="text-gradient-blue">Software Development</span>
-          </motion.h1>
+            <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight leading-[1.05]">
+              <span className="text-foreground">Custom Enterprise</span>
+              <br />
+              <span className="text-gradient-blue">Software Development</span>
+            </h1>
+          </motion.div>
 
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.35 }}
-            className="mt-8 max-w-2xl text-base md:text-lg text-white/60 font-light tracking-wide"
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="mt-6 max-w-2xl text-base md:text-lg text-muted-foreground"
           >
             Dedicated engineering for web, mobile, AI, and Web3. We build production-grade systems
             that transform your business with cutting-edge technology.
           </motion.p>
 
-          <StatsStrip items={stats} className="mt-8 md:mt-14" />
-        </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.35 }}
+          >
+            <StatsStrip items={stats} className="mt-10 md:mt-14" />
+          </motion.div>
+        </div>
       </div>
-
-      {/* Orb glow behind text column */}
-      <motion.div
-        animate={{ scale: [1, 1.1, 1], opacity: [0.15, 0.3, 0.15] }}
-        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-20 right-1/4 h-[400px] w-[500px] md:h-[600px] md:w-[800px] rounded-full bg-blue/30 blur-[80px] md:blur-[140px] pointer-events-none"
-        aria-hidden
-      />
     </section>
   );
 }

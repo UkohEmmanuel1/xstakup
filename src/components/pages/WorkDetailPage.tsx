@@ -45,7 +45,7 @@ export function WorkDetailPageComponent({ slug }: Props) {
           <span className="text-xs font-medium text-blue bg-blue/10 px-3 py-1 rounded-full">
             {study.industry}
           </span>
-          <span className="text-xs text-white/60">{study.platform}</span>
+          <span className="text-xs text-muted-foreground">{study.platform}</span>
           {study.tags.map((t) => (
             <span key={t} className="text-xs text-white/50 bg-white/5 px-2.5 py-0.5 rounded-full">
               {t}
@@ -54,70 +54,74 @@ export function WorkDetailPageComponent({ slug }: Props) {
         </div>
       </PageHero>
 
-      <AnimatedSection className="py-16 md:py-24 border-b border-border">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
-              <h2 className="mt-4 text-2xl md:text-3xl font-heading font-bold text-foreground tracking-tight">
-                The challenge
-              </h2>
-              <p className="mt-4 text-base text-muted-foreground leading-relaxed">
-                {study.problem}
-              </p>
-            </div>
-            <div>
-              <h2 className="mt-4 text-2xl md:text-3xl font-heading font-bold text-foreground tracking-tight">
-                Our goal
-              </h2>
-              <p className="mt-4 text-base text-muted-foreground leading-relaxed">{study.goal}</p>
+      <AnimatedSection>
+        <section className="relative bg-[color:var(--void-surface)]">
+          <div className="section-divider" />
+          <div className="section-container">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              <div>
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground tracking-tight">
+                  The challenge
+                </h2>
+                <p className="mt-4 text-base text-muted-foreground leading-relaxed">
+                  {study.problem}
+                </p>
+              </div>
+              <div>
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground tracking-tight">
+                  Our goal
+                </h2>
+                <p className="mt-4 text-base text-muted-foreground leading-relaxed">{study.goal}</p>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
       </AnimatedSection>
 
       {study.scope && (
-        <AnimatedSection className="py-16 md:py-24 border-b border-border bg-muted/30">
-          <div className="mx-auto max-w-7xl px-6">
-            <div className="text-center mb-12">
-              <h2 className="mt-4 text-2xl md:text-4xl font-heading font-bold text-foreground tracking-tight">
-                Scope overview
-              </h2>
-              <p className="mt-4 text-base text-muted-foreground max-w-2xl mx-auto">
-                {study.scope}
-              </p>
+        <AnimatedSection>
+          <section className="relative bg-[color:var(--void-section)]">
+            <div className="section-divider" />
+            <div className="section-container">
+              <div className="section-header text-center">
+                <h2 className="section-title">Scope overview</h2>
+                <p className="section-subtitle mx-auto">{study.scope}</p>
+              </div>
             </div>
-          </div>
+          </section>
         </AnimatedSection>
       )}
 
       {study.features && study.features.length > 0 && (
-        <AnimatedSection className="py-16 md:py-24 border-b border-border">
-          <div className="mx-auto max-w-7xl px-6">
-            <div className="text-center mb-12">
-              <h2 className="mt-4 text-2xl md:text-4xl font-heading font-bold text-foreground tracking-tight">
-                Key features
-              </h2>
+        <AnimatedSection>
+          <section className="relative bg-[color:var(--void-surface)]">
+            <div className="section-divider" />
+            <div className="section-container">
+              <div className="section-header text-center">
+                <h2 className="section-title">Key features</h2>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 max-w-4xl mx-auto">
+                {study.features.map((f) => (
+                  <div key={f} className="flex items-start gap-3 text-sm text-foreground/80">
+                    <CheckCircle size={16} className="text-blue flex-shrink-0 mt-0.5" />
+                    {f}
+                  </div>
+                ))}
+              </div>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 max-w-4xl mx-auto">
-              {study.features.map((f) => (
-                <div key={f} className="flex items-start gap-3 text-sm text-foreground/80">
-                  <CheckCircle size={16} className="text-blue flex-shrink-0 mt-0.5" />
-                  {f}
-                </div>
-              ))}
-            </div>
-          </div>
+          </section>
         </AnimatedSection>
       )}
 
       {study.techStack && study.techStack.length > 0 && (
-        <AnimatedSection className="py-16 md:py-24 border-b border-border bg-muted/30">
-          <div className="mx-auto max-w-7xl px-6">
-            <div className="text-center">
-              <h2 className="mt-4 text-2xl md:text-4xl font-heading font-bold text-foreground tracking-tight">
-                Tech stack
-              </h2>
-              <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+        <AnimatedSection>
+          <section className="relative bg-[color:var(--void-section)]">
+            <div className="section-divider" />
+            <div className="section-container">
+              <div className="section-header text-center">
+                <h2 className="section-title">Tech stack</h2>
+              </div>
+              <div className="flex flex-wrap items-center justify-center gap-3">
                 {study.techStack.map((t) => (
                   <span
                     key={t}
@@ -128,27 +132,29 @@ export function WorkDetailPageComponent({ slug }: Props) {
                 ))}
               </div>
             </div>
-          </div>
+          </section>
         </AnimatedSection>
       )}
 
       {study.outcome && (
-        <AnimatedSection className="py-16 md:py-24 border-b border-border">
-          <div className="mx-auto max-w-7xl px-6">
-            <div className="text-center max-w-3xl mx-auto">
-              <h2 className="mt-4 text-2xl md:text-4xl font-heading font-bold text-foreground tracking-tight">
-                The result
-              </h2>
-              <p className="mt-6 text-base text-muted-foreground leading-relaxed">
-                {study.outcome}
-              </p>
+        <AnimatedSection>
+          <section className="relative bg-[color:var(--void-surface)]">
+            <div className="section-divider" />
+            <div className="section-container">
+              <div className="section-header text-center max-w-3xl mx-auto">
+                <h2 className="section-title">The result</h2>
+                <p className="section-subtitle mx-auto text-base leading-relaxed">
+                  {study.outcome}
+                </p>
+              </div>
             </div>
-          </div>
+          </section>
         </AnimatedSection>
       )}
 
-      <section className="py-16 md:py-24 border-b border-border">
-        <div className="mx-auto max-w-7xl px-6">
+      <section className="relative bg-[color:var(--void-section)]">
+        <div className="section-divider" />
+        <div className="section-container">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
             <div>
               {prev && (

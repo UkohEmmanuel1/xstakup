@@ -25,7 +25,7 @@ export function ContactInfoPanel() {
       <h1 className="mt-6 text-4xl md:text-5xl font-bold tracking-tight">
         Let's <span className="text-gradient-blue">Build Together</span>
       </h1>
-      <p className="mt-6 text-white/80">A senior engineer responds within 24 hours.</p>
+      <p className="mt-6 text-muted-foreground">A senior engineer responds within 24 hours.</p>
       <motion.div
         initial="hidden"
         animate="visible"

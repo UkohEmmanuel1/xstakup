@@ -18,15 +18,13 @@ export function CaseStudiesSection() {
 
   return (
     <AnimatedSection>
-      <section className="py-16 md:py-24 overflow-hidden">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="mt-4 text-3xl md:text-5xl font-bold">
+      <section className="overflow-hidden">
+        <div className="section-container">
+          <div className="section-header text-center max-w-2xl mx-auto">
+            <h2 className="section-title">
               Case <span className="text-gradient-blue">Studies</span>
             </h2>
-            <p className="mt-4 text-white/70 text-base md:text-lg">
-              Real systems for fintech, AI & Web3.
-            </p>
+            <p className="section-subtitle">Real systems for fintech, AI & Web3.</p>
           </div>
           <motion.div
             variants={staggerContainer}
@@ -42,7 +40,7 @@ export function CaseStudiesSection() {
                   key={c.title}
                   variants={staggerItem}
                   whileHover={{ y: -4, borderColor: color.hover }}
-                  className="border border-card-border bg-card-bg rounded-xl overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-0.5 hover:border-card-hover"
+                  className="border border-border bg-card rounded-xl overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-0.5"
                 >
                   <div
                     className="relative w-full h-56 md:h-72 overflow-hidden flex-shrink-0"
@@ -68,7 +66,7 @@ export function CaseStudiesSection() {
                   </div>
                   <div className="flex flex-col flex-grow p-4 md:p-6">
                     <h3 className="text-xl font-semibold text-white">{c.title}</h3>
-                    <p className="mt-2 text-base text-white/80 line-clamp-3 leading-relaxed flex-grow">
+                    <p className="mt-2 text-base text-muted-foreground line-clamp-3 leading-relaxed flex-grow">
                       {c.description}
                     </p>
                   </div>

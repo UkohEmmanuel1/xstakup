@@ -7,10 +7,10 @@ import { leaders, leaderGradients, leaderCardColors } from "@/data/about";
 export function LeadershipSection() {
   return (
     <AnimatedSection>
-      <section className="py-16 md:py-24 bg-[color:var(--void-section)] border-y border-border overflow-hidden">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="mt-4 text-3xl md:text-5xl font-bold">
+      <section className="bg-[color:var(--void-section)] border-y border-border overflow-hidden">
+        <div className="section-container">
+          <div className="section-header text-center max-w-2xl mx-auto">
+            <h2 className="section-title">
               Leadership <span className="text-gradient-blue">Team</span>
             </h2>
           </div>
@@ -38,7 +38,7 @@ export function LeadershipSection() {
                     <div className="absolute inset-0 grid-pattern opacity-25" />
                     <motion.div
                       whileHover={{ scale: 1.1 }}
-                      className="absolute inset-0 flex items-center justify-center text-6xl text-white/80"
+                      className="absolute inset-0 flex items-center justify-center text-6xl text-muted-foreground"
                     >
                       {l.name.charAt(0)}
                     </motion.div>
@@ -55,7 +55,7 @@ export function LeadershipSection() {
                     >
                       {l.role}
                     </p>
-                    <p className="mt-3 text-sm text-white/70">{l.bio}</p>
+                    <p className="mt-3 text-sm text-muted-foreground">{l.bio}</p>
                   </div>
                 </motion.div>
               );

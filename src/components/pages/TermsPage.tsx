@@ -63,51 +63,40 @@ const sections = [
 
 export function TermsPage() {
   return (
-    <main
-      className="min-h-screen w-full bg-cover bg-center bg-no-repeat bg-fixed"
-      style={{ backgroundImage: "url('/assets/background.png')" }}
-    >
-      <div className="min-h-screen w-full bg-void-section/80 backdrop-blur-[1px]">
-        <SubPageHero
-          title="Terms & Conditions"
-          subtitle="Please read these terms carefully before using our services. These terms govern your relationship with XStakUp, an FTRX Group Company."
-          bgImage="/assets/about.webp"
-        />
+    <main className="min-h-screen w-full">
+      <SubPageHero
+        title="Terms & Conditions"
+        subtitle="Please read these terms carefully before using our services. These terms govern your relationship with XStakUp, an FTRX Group Company."
+        bgImage="/assets/about.webp"
+      />
 
-        <AnimatedSection>
-          <section className="py-16 md:py-24">
-            <div className="mx-auto max-w-4xl px-6">
-              <div
-                className="rounded-2xl p-8 md:p-12"
-                style={{
-                  border: "1px solid rgba(0, 148, 199, 0.15)",
-                  background: "var(--card-bg)",
-                }}
-              >
-                <p className="text-sm text-white/60 mb-10">Last updated: July 2026</p>
-                <div className="space-y-10">
-                  {sections.map((section, i) => (
-                    <motion.div
-                      key={i}
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.4, delay: i * 0.05 }}
-                    >
-                      <h2 className="text-xl md:text-2xl font-bold text-white mb-3">
-                        {section.title}
-                      </h2>
-                      <p className="text-white/70 leading-relaxed">{section.content}</p>
-                    </motion.div>
-                  ))}
-                </div>
+      <AnimatedSection>
+        <section className="py-16 md:py-24">
+          <div className="mx-auto max-w-4xl px-6">
+            <div className="rounded-2xl p-8 md:p-12 border border-border bg-card">
+              <p className="text-sm text-muted-foreground mb-10">Last updated: July 2026</p>
+              <div className="space-y-10">
+                {sections.map((section, i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, y: 16 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: i * 0.05 }}
+                  >
+                    <h2 className="text-xl md:text-2xl font-bold text-foreground mb-3">
+                      {section.title}
+                    </h2>
+                    <p className="text-muted-foreground leading-relaxed">{section.content}</p>
+                  </motion.div>
+                ))}
               </div>
             </div>
-          </section>
-        </AnimatedSection>
+          </div>
+        </section>
+      </AnimatedSection>
 
-        <FinalCTA />
-      </div>
+      <FinalCTA />
     </main>
   );
 }

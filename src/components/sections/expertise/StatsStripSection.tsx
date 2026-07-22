@@ -8,8 +8,8 @@ import { statCardColors } from "@/data/careers";
 export function StatsStripSection() {
   return (
     <AnimatedSection>
-      <section className="py-16 md:py-24 overflow-hidden">
-        <div className="mx-auto max-w-7xl px-6">
+      <section className="overflow-hidden">
+        <div className="section-container">
           <motion.div
             variants={staggerContainer}
             initial="hidden"
@@ -34,7 +34,7 @@ export function StatsStripSection() {
                   <div className="text-3xl md:text-4xl font-bold text-gradient-blue">
                     {stat.value}
                   </div>
-                  <div className="mt-2 text-sm text-white/60 uppercase tracking-wide">
+                  <div className="mt-2 text-sm text-muted-foreground uppercase tracking-wide">
                     {stat.label}
                   </div>
                 </motion.div>

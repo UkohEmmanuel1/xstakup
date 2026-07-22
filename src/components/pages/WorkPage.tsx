@@ -20,48 +20,52 @@ export function WorkPageComponent() {
         </CTAButton>
       </PageHero>
 
-      <AnimatedSection className="py-16 md:py-24 border-b border-border">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="text-center mb-12">
-            <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight max-w-3xl mx-auto">
-              What we build
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
-            {cases.map((c, i) => (
-              <DeploymentCard key={c.title} caseStudy={c} gradient={caseGradients[i]} />
-            ))}
-          </div>
-        </div>
-      </AnimatedSection>
-
-      <AnimatedSection className="py-16 md:py-24 border-b border-border bg-muted/30">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="flex flex-col lg:flex-row gap-12 items-start">
-            <div className="flex-1 max-w-xl">
-              <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground tracking-tight">
-                Cross-industry capabilities.
-              </h2>
+      <AnimatedSection>
+        <section className="relative bg-[color:var(--void-surface)]">
+          <div className="section-divider" />
+          <div className="section-container">
+            <div className="section-header text-center">
+              <h2 className="section-title">What we build</h2>
             </div>
-            <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-6">
-              {[
-                "Fintech & Payment Platforms",
-                "AI & Automation Systems",
-                "Web3 & Blockchain dApps",
-                "Mobile Applications",
-                "SaaS Platforms",
-                "EdTech Systems",
-                "Marketplaces",
-                "Internal Dashboards & Tools",
-              ].map((item) => (
-                <div key={item} className="flex items-center gap-3 text-sm text-foreground/80">
-                  <span className="h-2 w-2 rounded-full bg-blue flex-shrink-0" />
-                  {item}
-                </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+              {cases.map((c, i) => (
+                <DeploymentCard key={c.title} caseStudy={c} gradient={caseGradients[i]} />
               ))}
             </div>
           </div>
-        </div>
+        </section>
+      </AnimatedSection>
+
+      <AnimatedSection>
+        <section className="relative bg-[color:var(--void-section)]">
+          <div className="section-divider" />
+          <div className="section-container">
+            <div className="flex flex-col lg:flex-row gap-12 items-start">
+              <div className="flex-1 max-w-xl">
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
+                  Cross-industry capabilities.
+                </h2>
+              </div>
+              <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-6">
+                {[
+                  "Fintech & Payment Platforms",
+                  "AI & Automation Systems",
+                  "Web3 & Blockchain dApps",
+                  "Mobile Applications",
+                  "SaaS Platforms",
+                  "EdTech Systems",
+                  "Marketplaces",
+                  "Internal Dashboards & Tools",
+                ].map((item) => (
+                  <div key={item} className="flex items-center gap-3 text-sm text-foreground/80">
+                    <span className="h-2 w-2 rounded-full bg-blue flex-shrink-0" />
+                    {item}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
       </AnimatedSection>
 
       <FinalCTA />

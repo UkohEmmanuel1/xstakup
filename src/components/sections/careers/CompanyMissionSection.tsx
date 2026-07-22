@@ -8,14 +8,14 @@ import { statCardColors } from "@/data/careers";
 export function CompanyMissionSection() {
   return (
     <AnimatedSection>
-      <section className="py-16 md:py-24 overflow-hidden">
-        <div className="mx-auto max-w-7xl px-6">
+      <section className="overflow-hidden">
+        <div className="section-container">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="mt-4 text-3xl md:text-5xl font-bold">
                 Africa&apos;s <span className="text-gradient-blue">Digital Future</span>
               </h2>
-              <div className="mt-6 space-y-6 text-white/70 text-base md:text-lg leading-relaxed">
+              <div className="mt-6 space-y-6 text-muted-foreground text-base md:text-lg leading-relaxed">
                 <p>
                   World-class infrastructure and expertise powering Africa&apos;s enterprise-scale
                   innovations.
@@ -71,7 +71,7 @@ export function CompanyMissionSection() {
                   <div className="text-3xl md:text-4xl font-bold text-gradient-blue">
                     {stat.value}
                   </div>
-                  <div className="mt-2 text-sm text-white/60 uppercase tracking-wide">
+                  <div className="mt-2 text-sm text-muted-foreground uppercase tracking-wide">
                     {stat.label}
                   </div>
                 </motion.div>

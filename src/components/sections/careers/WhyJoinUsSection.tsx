@@ -7,15 +7,13 @@ import { benefits, benefitCardColors } from "@/data/careers";
 export function WhyJoinUsSection() {
   return (
     <AnimatedSection>
-      <section className="py-16 md:py-24 overflow-hidden bg-void-section">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="mt-4 text-3xl md:text-5xl font-bold">
+      <section className="overflow-hidden bg-void-section">
+        <div className="section-container">
+          <div className="section-header text-center max-w-2xl mx-auto">
+            <h2 className="section-title">
               Perks <span className="text-gradient-blue">& Culture</span>
             </h2>
-            <p className="mt-4 text-white/70 text-base md:text-lg">
-              Engineering thrives on culture.
-            </p>
+            <p className="section-subtitle">Engineering thrives on culture.</p>
           </div>
           <motion.div
             variants={staggerContainer}
@@ -42,7 +40,9 @@ export function WhyJoinUsSection() {
                     {b.icon}
                   </div>
                   <h3 className="mt-4 text-lg font-semibold text-white">{b.title}</h3>
-                  <p className="mt-2 text-base text-white/70 leading-relaxed">{b.description}</p>
+                  <p className="mt-2 text-base text-muted-foreground leading-relaxed">
+                    {b.description}
+                  </p>
                 </motion.div>
               );
             })}

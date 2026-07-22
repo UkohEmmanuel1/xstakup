@@ -17,18 +17,13 @@ export function ExpertiseDetailSection() {
 
   return (
     <AnimatedSection>
-      <section
-        id="expertise"
-        className="py-16 md:py-24 bg-void-section border-y border-border overflow-hidden"
-      >
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="mt-4 text-3xl md:text-5xl font-bold">
+      <section id="expertise" className="bg-void-section border-y border-border overflow-hidden">
+        <div className="section-container">
+          <div className="section-header text-center max-w-2xl mx-auto">
+            <h2 className="section-title">
               Engineering <span className="text-gradient-blue">Disciplines</span>
             </h2>
-            <p className="mt-4 text-white/70 text-base md:text-lg">
-              Eight production-grade engineering disciplines.
-            </p>
+            <p className="section-subtitle">Eight production-grade engineering disciplines.</p>
           </div>
           <motion.div
             variants={staggerContainer}
@@ -55,7 +50,9 @@ export function ExpertiseDetailSection() {
                     {e.icon}
                   </div>
                   <h3 className="mt-4 text-lg font-semibold text-white">{e.title}</h3>
-                  <p className="mt-2 text-base text-white/80 leading-relaxed">{e.description}</p>
+                  <p className="mt-2 text-base text-muted-foreground leading-relaxed">
+                    {e.description}
+                  </p>
                 </motion.div>
               );
             })}

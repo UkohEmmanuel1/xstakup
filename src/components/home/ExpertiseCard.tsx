@@ -16,16 +16,14 @@ export function ExpertiseCard({ item }: ExpertiseCardProps) {
         <motion.div
           animate={{ y: [0, -4, 0] }}
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-          className="text-3xl text-card-accent/80"
+          className="text-3xl text-blue/80"
         >
           {item.icon}
         </motion.div>
-        <h3 className="mt-5 text-lg font-semibold text-white">{item.title}</h3>
-        <p className="mt-2 text-base text-white/80 leading-relaxed">{item.description}</p>
+        <h3 className="mt-5 text-lg font-semibold text-foreground">{item.title}</h3>
+        <p className="mt-2 text-base text-muted-foreground leading-relaxed">{item.description}</p>
         <div className="mt-auto pt-6">
-          <span className="text-xs text-card-accent font-medium tracking-wider">
-            EXPLORE &rarr;
-          </span>
+          <span className="text-xs text-blue font-medium tracking-wider">EXPLORE &rarr;</span>
         </div>
       </CardShell>
     </motion.div>

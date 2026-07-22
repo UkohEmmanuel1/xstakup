@@ -19,17 +19,12 @@ export function PrimaryCTA({
   href = "/contact",
 }: PrimaryCTAProps) {
   return (
-    <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }} className="inline-block">
+    <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} className="inline-block">
       <Link
         href={href}
-        className="inline-flex items-center gap-2 rounded-md bg-blue-gradient px-6 py-3.5 text-base font-medium text-white shadow-blue hover:shadow-glow transition-shadow relative overflow-hidden group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        className="inline-flex items-center gap-2 rounded-lg bg-blue-gradient px-6 py-3 text-sm font-medium text-white shadow-blue hover:shadow-glow transition-all relative overflow-hidden group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
       >
-        <motion.span
-          className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"
-          initial={{ x: "-100%" }}
-          whileHover={{ x: "200%" }}
-          transition={{ duration: 0.6 }}
-        />
+        <span className="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-colors" />
         <span className="relative z-10">{children}</span>
       </Link>
     </motion.div>
@@ -38,10 +33,10 @@ export function PrimaryCTA({
 
 export function OutlineCTA({ children, href }: OutlineCTAProps) {
   return (
-    <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} className="inline-block">
+    <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="inline-block">
       <Link
         href={href}
-        className="inline-flex items-center gap-2 rounded-md border border-border bg-transparent px-6 py-3.5 text-base font-medium text-foreground hover:border-blue hover:text-blue transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        className="inline-flex items-center gap-2 rounded-lg border border-border bg-transparent px-6 py-3 text-sm font-medium text-foreground hover:border-blue hover:text-blue transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
       >
         <span>{children}</span>
       </Link>

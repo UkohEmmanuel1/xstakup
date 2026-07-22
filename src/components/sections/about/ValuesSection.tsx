@@ -7,10 +7,10 @@ import { values, valueCardColors } from "@/data/about";
 export function ValuesSection() {
   return (
     <AnimatedSection>
-      <section className="py-16 md:py-24 overflow-hidden">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="mt-4 text-3xl md:text-5xl font-bold">
+      <section className="overflow-hidden">
+        <div className="section-container">
+          <div className="section-header text-center max-w-2xl mx-auto">
+            <h2 className="section-title">
               Core <span className="text-gradient-blue">Values</span>
             </h2>
           </div>
@@ -39,7 +39,9 @@ export function ValuesSection() {
                     {v.icon}
                   </div>
                   <h3 className="mt-4 text-lg font-semibold text-white">{v.title}</h3>
-                  <p className="mt-2 text-base text-white/80 leading-relaxed">{v.description}</p>
+                  <p className="mt-2 text-base text-muted-foreground leading-relaxed">
+                    {v.description}
+                  </p>
                 </motion.div>
               );
             })}

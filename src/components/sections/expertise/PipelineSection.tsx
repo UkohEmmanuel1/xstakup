@@ -7,15 +7,13 @@ import { pipeline, pipelineCardColors } from "@/data/home";
 export function PipelineSection() {
   return (
     <AnimatedSection>
-      <section className="py-16 md:py-24 bg-void-section border-y border-border overflow-hidden">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="max-w-2xl mb-12">
-            <h2 className="mt-4 text-2xl md:text-5xl font-bold">
+      <section className="bg-void-section border-y border-border overflow-hidden">
+        <div className="section-container">
+          <div className="section-header max-w-2xl">
+            <h2 className="section-title">
               Development <span className="text-gradient-blue">Pipeline</span>
             </h2>
-            <p className="mt-4 text-white/80 max-w-xl">
-              Strategy to deployment: web, mobile, AI & Web3.
-            </p>
+            <p className="section-subtitle">Strategy to deployment: web, mobile, AI & Web3.</p>
           </div>
           <motion.div
             variants={staggerContainer}
@@ -42,7 +40,9 @@ export function PipelineSection() {
                     {s.number}
                   </div>
                   <h3 className="mt-4 text-xl font-semibold text-white">{s.title}</h3>
-                  <p className="mt-3 text-base text-white/80 leading-relaxed">{s.description}</p>
+                  <p className="mt-3 text-base text-muted-foreground leading-relaxed">
+                    {s.description}
+                  </p>
                   <div
                     className="mt-6 h-px"
                     style={{ background: `linear-gradient(to right, ${c.accent}, transparent)` }}

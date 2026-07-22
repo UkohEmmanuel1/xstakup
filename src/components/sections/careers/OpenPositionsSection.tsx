@@ -16,17 +16,14 @@ export function OpenPositionsSection() {
 
   return (
     <AnimatedSection>
-      <section
-        id="open-positions"
-        className="py-16 md:py-24 border-y border-border overflow-hidden"
-      >
-        <div className="mx-auto max-w-7xl px-6">
+      <section id="open-positions" className="border-y border-border overflow-hidden">
+        <div className="section-container">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
             <div>
-              <h2 className="mt-4 text-2xl md:text-5xl font-bold">
+              <h2 className="section-title">
                 Open <span className="text-gradient-blue">Roles</span>
               </h2>
-              <p className="mt-3 text-white/80 max-w-lg">Engineers shipping elite code.</p>
+              <p className="section-subtitle">Engineers shipping elite code.</p>
             </div>
           </div>
 
@@ -38,7 +35,7 @@ export function OpenPositionsSection() {
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all cursor-pointer ${
                   activeDept === dept
                     ? "bg-blue-gradient text-white shadow-blue"
-                    : "bg-card-solid-bg text-white/60 hover:text-white border border-white/10"
+                    : "bg-card-solid-bg text-muted-foreground hover:text-white border border-white/10"
                 }`}
               >
                 {dept}
@@ -47,7 +44,7 @@ export function OpenPositionsSection() {
           </div>
 
           {filtered.length === 0 && (
-            <p className="text-center text-white/50 py-12">
+            <p className="text-center text-muted-foreground py-12">
               No open positions in this department right now. Check back soon.
             </p>
           )}
@@ -88,7 +85,7 @@ export function OpenPositionsSection() {
                       {job.type}
                     </span>
                   </div>
-                  <p className="mt-3 text-white/60 text-sm leading-relaxed flex-grow">
+                  <p className="mt-3 text-muted-foreground text-sm leading-relaxed flex-grow">
                     {job.description}
                   </p>
                   <div className="mt-5">

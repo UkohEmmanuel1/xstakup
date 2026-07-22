@@ -14,16 +14,13 @@ const typeBadge: Record<string, string> = {
 export function EventsSection() {
   return (
     <AnimatedSection>
-      <section
-        id="events"
-        className="py-16 md:py-24 bg-void-section border-y border-border overflow-hidden"
-      >
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="mt-4 text-3xl md:text-5xl font-bold">
+      <section id="events" className="bg-void-section border-y border-border overflow-hidden">
+        <div className="section-container">
+          <div className="section-header text-center max-w-2xl mx-auto">
+            <h2 className="section-title">
               Developer <span className="text-gradient-blue">Events</span>
             </h2>
-            <p className="mt-4 text-white/70 text-base md:text-lg">Events for every engineer.</p>
+            <p className="section-subtitle">Events for every engineer.</p>
           </div>
           <motion.div
             variants={staggerContainer}
@@ -60,7 +57,7 @@ export function EventsSection() {
                   <p className="mt-1 text-sm" style={{ color: c.hover }}>
                     {ev.date}
                   </p>
-                  <p className="mt-3 text-white/60 text-sm leading-relaxed flex-grow">
+                  <p className="mt-3 text-muted-foreground text-sm leading-relaxed flex-grow">
                     {ev.description}
                   </p>
                 </motion.div>

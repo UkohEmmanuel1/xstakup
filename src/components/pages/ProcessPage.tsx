@@ -110,27 +110,24 @@ export function ProcessPageComponent() {
         </CTAButton>
       </PageHero>
 
-      <div className="py-16 md:py-24 border-b border-border">
-        <div className="mx-auto max-w-7xl px-6">
+      <section className="relative bg-[color:var(--void-surface)]">
+        <div className="section-divider" />
+        <div className="section-container">
           <div className="space-y-8">
             {steps.map((step, i) => (
               <motion.div
                 key={step.num}
-                initial={{ opacity: 0, y: 20, scale: 0.95 }}
-                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.08 }}
                 className="grid grid-cols-1 md:grid-cols-5 gap-5 md:gap-6 rounded-xl border border-border bg-card p-8 md:p-10"
               >
                 <div className="md:col-span-1">
-                  <span className="text-4xl md:text-5xl font-heading font-bold text-blue/20">
-                    {step.num}
-                  </span>
+                  <span className="text-4xl md:text-5xl font-bold text-blue/20">{step.num}</span>
                 </div>
                 <div className="md:col-span-2">
-                  <h3 className="text-xl md:text-2xl font-heading font-bold text-foreground">
-                    {step.title}
-                  </h3>
+                  <h3 className="text-xl md:text-2xl font-bold text-foreground">{step.title}</h3>
                   <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{step.desc}</p>
                 </div>
                 <div className="md:col-span-2">
@@ -147,7 +144,7 @@ export function ProcessPageComponent() {
             ))}
           </div>
         </div>
-      </div>
+      </section>
 
       <FinalCTA />
     </main>

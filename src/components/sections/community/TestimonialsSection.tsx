@@ -6,13 +6,13 @@ import { communityTestimonials, testimonialCardColors } from "@/data/community";
 export function TestimonialsSection() {
   return (
     <AnimatedSection>
-      <section className="py-16 md:py-24 overflow-hidden">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-5xl font-bold">
+      <section className="overflow-hidden">
+        <div className="section-container">
+          <div className="section-header text-center max-w-2xl mx-auto">
+            <h2 className="section-title">
               Member <span className="text-gradient-blue">Testimonials</span>
             </h2>
-            <p className="mt-4 text-white/70 text-base md:text-lg">From engineers and founders.</p>
+            <p className="section-subtitle">From engineers and founders.</p>
           </div>
         </div>
         <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]">
@@ -50,7 +50,7 @@ export function TestimonialsSection() {
                         </div>
                         <div>
                           <p className="font-semibold text-sm text-white">{t.name}</p>
-                          <p className="text-xs text-white/60">
+                          <p className="text-xs text-muted-foreground">
                             {t.handle} · {t.role}
                           </p>
                         </div>
@@ -84,7 +84,7 @@ export function TestimonialsSection() {
                           </div>
                           <div>
                             <p className="font-semibold text-sm text-white">{t.name}</p>
-                            <p className="text-xs text-white/60">
+                            <p className="text-xs text-muted-foreground">
                               {t.handle} · {t.role}
                             </p>
                           </div>

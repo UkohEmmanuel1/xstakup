@@ -7,12 +7,12 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 const links = [
+  { to: "/", label: "Home" },
   { to: "/about", label: "About" },
-  { to: "/clients", label: "Clients" },
-  { to: "/expertise", label: "Expertise" },
-  { to: "/community", label: "Community" },
-  { to: "/careers", label: "Careers" },
-  { to: "/blog", label: "Blog" },
+  { to: "/services", label: "Services" },
+  { to: "/work", label: "Case Studies" },
+  { to: "/insights", label: "Insights" },
+  { to: "/contact", label: "Contact" },
 ] as const;
 
 const menuVariants = {
@@ -30,15 +30,15 @@ function Logo({ onClose }: { onClose: () => void }) {
   return (
     <Link href="/" className="flex items-center z-50" onClick={onClose}>
       <motion.div
-        whileHover={{ scale: 1.05, rotate: -2 }}
-        className="relative h-16 w-16 md:h-24 md:w-24 flex-shrink-0"
+        whileHover={{ scale: 1.05 }}
+        className="relative h-12 w-12 md:h-16 md:w-16 flex-shrink-0"
       >
         <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
           <Image
             src="/assets/xstakup_logo.png"
             alt="XStakUp Logo"
             fill
-            sizes="96px"
+            sizes="64px"
             className="object-contain select-none"
           />
         </div>
@@ -47,7 +47,7 @@ function Logo({ onClose }: { onClose: () => void }) {
   );
 }
 
-function DesktopNav({ pathname, scrolled }: { pathname: string; scrolled: boolean }) {
+function DesktopNav({ pathname }: { pathname: string }) {
   return (
     <nav className="hidden md:flex items-center gap-1">
       {links.map((l) => (
@@ -56,12 +56,13 @@ function DesktopNav({ pathname, scrolled }: { pathname: string; scrolled: boolea
           href={l.to}
           className={`px-3 py-2 text-sm transition-colors relative group ${
             pathname === l.to
-              ? `${scrolled ? "text-foreground" : "text-white"} font-medium`
-              : `${scrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`
+              ? "text-foreground font-medium"
+              : "text-muted-foreground hover:text-foreground"
           }`}
         >
           {l.label}
-          <span className="absolute bottom-0 left-3 right-3 h-px bg-blue scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+          {pathname === l.to && <span className="absolute bottom-0 left-3 right-3 h-px bg-blue" />}
+          <span className="absolute bottom-0 left-3 right-3 h-px bg-blue/50 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
         </Link>
       ))}
     </nav>
@@ -98,9 +99,9 @@ function MobileNav({
                 <Link
                   href={l.to}
                   onClick={onClose}
-                  className={`py-2.5 text-base border-b border-border/10 last:border-0 transition-colors block ${
+                  className={`py-2.5 text-base transition-colors block ${
                     pathname === l.to
-                      ? "text-foreground font-semibold border-l-2 border-blue pl-3"
+                      ? "text-foreground font-semibold"
                       : "text-muted-foreground hover:text-foreground"
                   }`}
                 >
@@ -171,7 +172,7 @@ export function Navbar() {
     >
       <div className="mx-auto flex h-16 md:h-20 max-w-7xl items-center justify-between px-6">
         <Logo onClose={() => setOpen(false)} />
-        <DesktopNav pathname={pathname} scrolled={scrolled} />
+        <DesktopNav pathname={pathname} />
 
         <div className="flex items-center gap-3 z-50">
           <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>

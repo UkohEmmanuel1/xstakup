@@ -135,7 +135,7 @@ function TweetCard({
 
   return (
     <div
-      className="w-[350px] md:w-[420px] max-w-[85vw] flex-shrink-0 rounded-xl p-6 shadow-sm transition-all duration-300 flex flex-col justify-between border border-card-border bg-card-bg"
+      className="w-[350px] md:w-[420px] max-w-[85vw] flex-shrink-0 rounded-xl p-6 transition-all duration-300 flex flex-col justify-between border border-border bg-card"
       onMouseEnter={(e) => {
         e.currentTarget.style.borderColor = c.hover;
       }}
@@ -155,34 +155,32 @@ function TweetCard({
             />
             <div className="leading-tight">
               <div className="flex items-center gap-1">
-                <p className="font-semibold text-sm text-white">{t.name}</p>
+                <p className="font-semibold text-sm text-foreground">{t.name}</p>
                 {verifiedBadge}
               </div>
-              <p className="text-xs text-white/80">{t.handle}</p>
+              <p className="text-xs text-muted-foreground">{t.handle}</p>
             </div>
           </div>
-          <span className="text-xs text-white/40 font-bold">X</span>
+          <span className="text-xs text-muted-foreground/40 font-bold">X</span>
         </div>
-        <p className="mt-4 text-base leading-relaxed text-white/90 font-sans tracking-normal">
-          {t.text}
-        </p>
+        <p className="mt-4 text-base leading-relaxed text-foreground/90">{t.text}</p>
       </div>
       <div>
-        <div className="mt-4 pt-3 border-t border-border/20 flex items-center justify-between text-xs text-white/80">
+        <div className="mt-4 pt-3 border-t border-border/20 flex items-center justify-between text-xs text-muted-foreground">
           <span>{t.time}</span>
           <span className="text-blue/80 font-semibold">{t.role}</span>
         </div>
         {showMetrics && (
-          <div className="mt-3 pt-2 border-t border-border/10 flex items-center justify-between text-white/70 text-xs">
-            <div className="flex items-center gap-1.5 hover:text-[#0094C7] transition-colors">
+          <div className="mt-3 pt-2 border-t border-border/10 flex items-center justify-between text-muted-foreground text-xs">
+            <div className="flex items-center gap-1.5 hover:text-blue transition-colors">
               {replyIcon}
               <span>{t.metrics.replies}</span>
             </div>
-            <div className="flex items-center gap-1.5 hover:text-[#0094C7] transition-colors">
+            <div className="flex items-center gap-1.5 hover:text-blue transition-colors">
               {repostIcon}
               <span>{t.metrics.reposts}</span>
             </div>
-            <div className="flex items-center gap-1.5 hover:text-[#0094C7] transition-colors">
+            <div className="flex items-center gap-1.5 hover:text-blue transition-colors">
               {heartIcon}
               <span>{t.metrics.likes}</span>
             </div>
@@ -200,16 +198,12 @@ function TweetCard({
 export function TestimonialSection() {
   return (
     <AnimatedSection>
-      <section className="relative py-16 md:py-24 overflow-hidden">
-        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none" />
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="mb-12">
-            <h2 className="mt-4 text-3xl md:text-5xl font-bold text-white">
-              Client Success Stories
-            </h2>
-            <p className="mt-3 text-white/80 max-w-xl">
-              Trusted by CTOs, founders, and product leaders.
-            </p>
+      <section className="relative overflow-hidden bg-[color:var(--void-surface)]">
+        <div className="section-divider" />
+        <div className="section-container">
+          <div className="section-header">
+            <h2>Client Success Stories</h2>
+            <p>Trusted by CTOs, founders, and product leaders.</p>
           </div>
 
           <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]">

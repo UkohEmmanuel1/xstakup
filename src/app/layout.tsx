@@ -107,7 +107,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="bg-noise" />
         <Providers>
           <Navbar />
-          <main className="pt-16">{children}</main>
+          <main className="pt-16 md:pt-20">{children}</main>
           <Footer />
         </Providers>
       </body>

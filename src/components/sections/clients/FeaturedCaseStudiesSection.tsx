@@ -213,11 +213,11 @@ function CaseStudyContent({ c, reverse }: { c: FeaturedCase; reverse: boolean })
       <div className="mt-6 space-y-5">
         <div>
           <p className="text-xs uppercase tracking-widest text-white/50">The Challenge</p>
-          <p className="mt-2 text-white/70 leading-relaxed">{c.challenge}</p>
+          <p className="mt-2 text-muted-foreground leading-relaxed">{c.challenge}</p>
         </div>
         <div>
           <p className="text-xs uppercase tracking-widest text-white/50">The Solution</p>
-          <p className="mt-2 text-white/70 leading-relaxed">{c.solution}</p>
+          <p className="mt-2 text-muted-foreground leading-relaxed">{c.solution}</p>
         </div>
         <div>
           <p className="text-xs uppercase tracking-widest text-white/50">Tech Stack</p>
@@ -225,7 +225,7 @@ function CaseStudyContent({ c, reverse }: { c: FeaturedCase; reverse: boolean })
             {c.stack.map((s) => (
               <span
                 key={s}
-                className="text-xs px-2.5 py-1 rounded border border-white/10 bg-white/5 text-white/70"
+                className="text-xs px-2.5 py-1 rounded border border-white/10 bg-white/5 text-muted-foreground"
               >
                 {s}
               </span>
@@ -256,7 +256,7 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
           alt={`${c.name} Logo`}
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-contain p-4"
+          className="object-contain object-top p-4"
         />
       )}
     </div>
@@ -266,11 +266,8 @@ function CaseStudyMockupPanel({ c, color }: { c: FeaturedCase; color: CardColor 
 export function FeaturedCaseStudiesSection() {
   return (
     <AnimatedSection>
-      <section
-        id="cases"
-        className="py-16 md:py-24 bg-void-section border-y border-border overflow-hidden"
-      >
-        <div className="mx-auto max-w-7xl px-6 space-y-16 md:space-y-32">
+      <section id="cases" className="bg-void-section border-y border-border overflow-hidden">
+        <div className="section-container space-y-16 md:space-y-32">
           {featured.map((c, i) => {
             const reverse = i % 2 === 1;
             const color = caseCardColors[i % caseCardColors.length];

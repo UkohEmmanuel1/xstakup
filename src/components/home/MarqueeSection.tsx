@@ -6,17 +6,19 @@ import { marqueeItems } from "@/data/home";
 export function MarqueeSection() {
   return (
     <AnimatedSection>
-      <section className="py-16 md:py-24 relative bg-[color:var(--void-section)] overflow-hidden">
-        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none" />
-        <div className="mx-auto max-w-7xl px-6 mb-12 text-center">
-          <h2 className="mt-4 text-3xl md:text-5xl font-bold max-w-3xl mx-auto">Our Tech Stack</h2>
-          <p className="mt-3 text-foreground/80 max-w-xl mx-auto">
-            Modern frameworks, cloud infrastructure, blockchain protocols, and AI platforms.
-          </p>
+      <section className="relative bg-[color:var(--void-section)] overflow-hidden">
+        <div className="section-divider" />
+        <div className="section-container">
+          <div className="section-header text-center">
+            <h2 className="section-title">Our Tech Stack</h2>
+            <p className="section-subtitle mx-auto">
+              Modern frameworks, cloud infrastructure, blockchain protocols, and AI platforms.
+            </p>
+          </div>
         </div>
-        <div className="relative">
-          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-background to-transparent z-10" />
-          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-background to-transparent z-10" />
+        <div className="relative pb-16 md:pb-24">
+          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[color:var(--void-section)] to-transparent z-10" />
+          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[color:var(--void-section)] to-transparent z-10" />
           <div
             className="flex animate-marquee gap-6 md:gap-12 w-max group hover:[animation-play-state:paused]"
             role="list"
@@ -26,7 +28,7 @@ export function MarqueeSection() {
               <div
                 key={i}
                 role="listitem"
-                className="flex items-center gap-3 px-6 py-3 rounded-lg bg-white/10 backdrop-blur-md border border-white/15"
+                className="flex items-center gap-3 px-6 py-3 rounded-lg bg-white/[0.05] backdrop-blur-md border border-border"
               >
                 <span className="h-2 w-2 rounded-full bg-blue" />
                 <span className="text-sm whitespace-nowrap text-foreground/80">{item}</span>
@@ -36,7 +38,7 @@ export function MarqueeSection() {
               {marqueeItems.map((item, i) => (
                 <div
                   key={`dup-${i}`}
-                  className="flex items-center gap-3 px-6 py-3 rounded-lg bg-white/10 backdrop-blur-md border border-white/15"
+                  className="flex items-center gap-3 px-6 py-3 rounded-lg bg-white/[0.05] backdrop-blur-md border border-border"
                 >
                   <span className="h-2 w-2 rounded-full bg-blue" />
                   <span className="text-sm whitespace-nowrap text-foreground/80">{item}</span>

@@ -7,15 +7,13 @@ import { communityProjects, projectCardColors } from "@/data/community";
 export function OpenSourceSection() {
   return (
     <AnimatedSection>
-      <section className="py-16 md:py-24 bg-void-section border-y border-border overflow-hidden">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="mt-4 text-3xl md:text-5xl font-bold">
+      <section className="bg-void-section border-y border-border overflow-hidden">
+        <div className="section-container">
+          <div className="section-header text-center max-w-2xl mx-auto">
+            <h2 className="section-title">
               Community <span className="text-gradient-blue">Projects</span>
             </h2>
-            <p className="mt-4 text-white/70 text-base md:text-lg">
-              Tools for Africa's engineering ecosystem.
-            </p>
+            <p className="section-subtitle">Tools for Africa's engineering ecosystem.</p>
           </div>
           <motion.div
             variants={staggerContainer}
@@ -39,7 +37,7 @@ export function OpenSourceSection() {
                     style={{ background: c.accent }}
                   />
                   <h3 className="text-xl font-semibold text-white">{proj.name}</h3>
-                  <p className="mt-3 text-white/60 text-sm leading-relaxed flex-grow">
+                  <p className="mt-3 text-muted-foreground text-sm leading-relaxed flex-grow">
                     {proj.description}
                   </p>
                   <div className="mt-5 flex flex-wrap gap-2">

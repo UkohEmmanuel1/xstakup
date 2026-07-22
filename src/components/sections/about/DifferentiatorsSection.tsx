@@ -9,11 +9,11 @@ export function DifferentiatorsSection() {
     <AnimatedSection>
       <section
         id="differentiators"
-        className="py-16 md:py-24 bg-[color:var(--void-section)] border-y border-border overflow-hidden"
+        className="bg-[color:var(--void-section)] border-y border-border overflow-hidden"
       >
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="max-w-2xl mb-12">
-            <h2 className="mt-4 text-2xl md:text-5xl font-bold">
+        <div className="section-container">
+          <div className="section-header max-w-2xl">
+            <h2 className="section-title">
               Key <span className="text-gradient-blue">Differentiators</span>
             </h2>
           </div>
@@ -42,7 +42,9 @@ export function DifferentiatorsSection() {
                     0{i + 1}
                   </div>
                   <h3 className="mt-4 text-lg font-semibold text-white">{d.title}</h3>
-                  <p className="mt-3 text-base text-white/80 leading-relaxed">{d.description}</p>
+                  <p className="mt-3 text-base text-muted-foreground leading-relaxed">
+                    {d.description}
+                  </p>
                 </motion.div>
               );
             })}
