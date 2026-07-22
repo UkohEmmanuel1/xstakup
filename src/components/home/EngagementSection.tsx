@@ -1,9 +1,21 @@
 "use client";
 
+import { useState } from "react";
 import { AnimatedSection, EngagementCard } from "@/components/common";
 import { engagementModels } from "@/data";
 
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 export function EngagementSection() {
+  const [items] = useState(() => shuffle(engagementModels).slice(0, 3));
+
   return (
     <AnimatedSection className="py-16 md:py-24 border-b border-border">
       <div className="mx-auto max-w-7xl px-6">
@@ -12,8 +24,8 @@ export function EngagementSection() {
             Engagement Models
           </h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5 md:gap-6">
-          {engagementModels.map((em, i) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
+          {items.map((em, i) => (
             <EngagementCard key={em.title} item={em} index={i} />
           ))}
         </div>
