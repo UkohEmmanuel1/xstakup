@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { Code, Globe, Smartphone, Cloud, Brain, Wallet, Hexagon, Server } from "lucide-react";
 import type { ServiceItem } from "@/types";
 
@@ -45,13 +44,6 @@ export function ServiceCard({ service, index }: Props) {
             </li>
           ))}
         </ul>
-        <Link
-          href={service.slug}
-          className="text-sm font-medium text-blue hover:text-blue/80 transition-colors inline-flex items-center gap-1 group/link"
-        >
-          Learn more
-          <span>&rarr;</span>
-        </Link>
       </div>
     </motion.div>
   );

@@ -104,9 +104,23 @@ export const cases: CaseStudy[] = [
       "NFT ticketing platform with blockchain-verified ownership and secondary market trading.",
     image: "/assets/usetiks.jpeg",
   },
+  {
+    title: "Digidrops",
+    tag: "Web3 / Social",
+    description: "Web3 SocialFi platform with wallet login and NFT passes.",
+    image: "/assets/digidrps.png",
+  },
+  {
+    title: "Diction Masters",
+    tag: "EdTech",
+    description: "Pronunciation coaching with real-time speech analysis and personalized paths.",
+    image: "/assets/diction_masters.jpeg",
+  },
 ];
 
 export const caseGradients = [
+  "linear-gradient(135deg, #0094C7, #303030)",
+  "linear-gradient(135deg, #0094C7, #303030)",
   "linear-gradient(135deg, #0094C7, #303030)",
   "linear-gradient(135deg, #0094C7, #303030)",
   "linear-gradient(135deg, #0094C7, #303030)",
@@ -134,7 +148,7 @@ export const marqueeItems = [
 
 export const pipelineCardColors = Array(4).fill(cardColor);
 export const expertiseCardColors = Array(8).fill(cardColor);
-export const deploymentCardColors = Array(6).fill(cardColor);
+export const deploymentCardColors = Array(8).fill(cardColor);
 export const tweetCardColors = Array(4).fill(cardColor);
 
 export const stats: StatsItem[] = [
