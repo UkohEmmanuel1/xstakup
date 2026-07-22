@@ -13,19 +13,6 @@ export const companyStory = {
   ],
 };
 
-export const missionVisionItems = [
-  {
-    title: "Our Mission",
-    description:
-      "World-class technical infrastructure and engineering expertise that empowers businesses to scale without limits.",
-  },
-  {
-    title: "Our Vision",
-    description:
-      "The most trusted global engineering partner for high scale digital platforms, setting the standard for uptime, security, and innovation.",
-  },
-];
-
 export const differentiators: Differentiator[] = [
   {
     title: "Client First Architecture",
@@ -111,8 +98,6 @@ export const leaderGradients = [
   "linear-gradient(135deg, #0094C7, #303030)",
   "linear-gradient(135deg, #0094C7, #303030)",
 ];
-
-export const mvCardColors: CardColor[] = [cardColor, cardColor];
 
 export const differentiatorCardColors: CardColor[] = [
   cardColor,
