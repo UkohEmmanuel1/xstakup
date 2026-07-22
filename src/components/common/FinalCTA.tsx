@@ -5,9 +5,9 @@ import { PrimaryCTA } from "@/components/common/Button";
 
 export function FinalCTA() {
   return (
-    <section className="relative overflow-hidden border-t border-section-border bg-[color:var(--void-section)]">
-      <div className="section-divider" />
-      <div className="absolute inset-0 bg-gradient-to-b from-blue/5 to-transparent pointer-events-none" />
+    <section className="relative overflow-hidden bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/assets/cta.jpg')" }}>
+      <div className="absolute inset-0 bg-[color:var(--void-main)]/90" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--void-main)] via-transparent to-[color:var(--void-main)]/50" />
       <div className="relative z-10 mx-auto max-w-7xl px-6 py-20 md:py-28">
         <div className="max-w-2xl mx-auto text-center">
           <motion.div

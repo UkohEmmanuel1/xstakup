@@ -12,7 +12,6 @@ const links = [
   { to: "/services", label: "Services" },
   { to: "/work", label: "Case Studies" },
   { to: "/insights", label: "Insights" },
-  { to: "/contact", label: "Contact" },
 ] as const;
 
 const menuVariants = {

@@ -1,6 +1,6 @@
 "use client";
 
-import { SubPageHero, AnimatedSection, FinalCTA } from "@/components/common";
+import { AnimatedSection, FinalCTA } from "@/components/common";
 import { motion } from "framer-motion";
 
 const sections = [
@@ -69,12 +69,6 @@ const sections = [
 export function PrivacyPage() {
   return (
     <main className="min-h-screen w-full">
-      <SubPageHero
-        title="Privacy Policy"
-        subtitle="We are committed to protecting your privacy. This policy explains how we collect, use, and safeguard your personal information when you use our services or visit our website."
-        bgImage="/assets/about.webp"
-      />
-
       <AnimatedSection>
         <section className="py-16 md:py-24">
           <div className="mx-auto max-w-4xl px-6">

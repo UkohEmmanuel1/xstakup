@@ -1,6 +1,6 @@
 "use client";
 
-import { SubPageHero, AnimatedSection, FinalCTA } from "@/components/common";
+import { AnimatedSection, FinalCTA } from "@/components/common";
 import { motion } from "framer-motion";
 
 const sections = [
@@ -64,12 +64,6 @@ const sections = [
 export function TermsPage() {
   return (
     <main className="min-h-screen w-full">
-      <SubPageHero
-        title="Terms & Conditions"
-        subtitle="Please read these terms carefully before using our services. These terms govern your relationship with XStakUp, an FTRX Group Company."
-        bgImage="/assets/about.webp"
-      />
-
       <AnimatedSection>
         <section className="py-16 md:py-24">
           <div className="mx-auto max-w-4xl px-6">

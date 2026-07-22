@@ -3,23 +3,19 @@ import { cardColor } from "@/data";
 
 export const pipeline: PipelineStep[] = [
   {
-    number: "01",
     title: "Software Strategy & Planning",
     description:
       "Technical roadmapping and requirements analysis aligned with your business goals.",
   },
   {
-    number: "02",
     title: "Architecture & UX Design",
     description: "Scalable architecture with user-centered UI/UX for your audience and growth.",
   },
   {
-    number: "03",
     title: "Full Stack Development",
     description: "Full-stack development across web, mobile, and Web3 using modern frameworks.",
   },
   {
-    number: "04",
     title: "DevSecOps & Deployment",
     description: "Secure CI/CD, cloud infrastructure, monitoring, and 99.9% uptime maintenance.",
   },

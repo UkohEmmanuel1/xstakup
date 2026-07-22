@@ -29,48 +29,57 @@ export function InsightsPageComponent() {
         </CTAButton>
       </PageHero>
 
-      <AnimatedSection>
-        <section className="relative bg-[color:var(--void-surface)]">
-          <div className="section-divider" />
-          <div className="section-container">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
-              {blogPosts.map((post, i) => (
-                <motion.div
-                  key={post.slug}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: i * 0.08 }}
-                >
-                  <Link
-                    href={`/insights/${post.slug}`}
-                    className="group block rounded-xl border border-border bg-card p-8 md:p-10 hover:shadow-card-hover transition-all h-full"
-                  >
-                    <div className="flex flex-wrap gap-2 mb-3">
-                      {post.tags.slice(0, 2).map((t) => (
-                        <span
-                          key={t}
-                          className="text-xs text-muted-foreground bg-muted px-2 py-0.5 rounded-md"
-                        >
-                          {t}
-                        </span>
-                      ))}
-                    </div>
-                    <h3 className="text-base font-bold text-foreground group-hover:text-blue transition-colors mb-2">
-                      {post.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground line-clamp-3">{post.excerpt}</p>
-                    <div className="mt-4 flex items-center justify-between text-xs text-muted-foreground">
-                      <span>{formatDate(post.date)}</span>
-                      <span>{post.author}</span>
-                    </div>
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-      </AnimatedSection>
+      <div
+        className="relative overflow-hidden bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/assets/blog.webp')" }}
+      >
+        <div className="absolute inset-0 bg-[color:var(--void-main)]/90" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--void-main)] via-transparent to-[color:var(--void-main)]/50" />
+        <div className="relative">
+          <AnimatedSection>
+            <section className="relative">
+              <div className="section-divider" />
+              <div className="section-container">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+                  {blogPosts.map((post, i) => (
+                    <motion.div
+                      key={post.slug}
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5, delay: i * 0.08 }}
+                    >
+                      <Link
+                        href={`/insights/${post.slug}`}
+                        className="group block rounded-xl border border-border bg-card p-8 md:p-10 hover:shadow-card-hover transition-all h-full"
+                      >
+                        <div className="flex flex-wrap gap-2 mb-3">
+                          {post.tags.slice(0, 2).map((t) => (
+                            <span
+                              key={t}
+                              className="text-xs text-muted-foreground bg-muted px-2 py-0.5 rounded-md"
+                            >
+                              {t}
+                            </span>
+                          ))}
+                        </div>
+                        <h3 className="text-base font-bold text-foreground group-hover:text-blue transition-colors mb-2">
+                          {post.title}
+                        </h3>
+                        <p className="text-sm text-muted-foreground line-clamp-3">{post.excerpt}</p>
+                        <div className="mt-4 flex items-center justify-between text-xs text-muted-foreground">
+                          <span>{formatDate(post.date)}</span>
+                          <span>{post.author}</span>
+                        </div>
+                      </Link>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+            </section>
+          </AnimatedSection>
+        </div>
+      </div>
 
       <FinalCTA />
     </main>
