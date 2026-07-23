@@ -36,41 +36,6 @@ export function WorkPageComponent() {
         </section>
       </AnimatedSection>
 
-      <AnimatedSection>
-        <section className="relative bg-[color:var(--void-section)]">
-          <div className="section-divider" />
-          <div className="section-container">
-            <div className="flex flex-col lg:flex-row gap-12 items-start">
-              <div className="flex-1 max-w-xl">
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
-                  Cross-industry capabilities.
-                </h2>
-              </div>
-              <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-6">
-                {[
-                  "Fintech & Payment Platforms",
-                  "AI & Automation Systems",
-                  "Web3 & Blockchain dApps",
-                  "Mobile Applications",
-                  "SaaS Platforms",
-                  "EdTech Systems",
-                  "Marketplaces",
-                  "Internal Dashboards & Tools",
-                ].map((item) => (
-                  <div
-                    key={item}
-                    className="flex items-center gap-3 text-sm text-foreground/80"
-                  >
-                    <span className="h-2 w-2 rounded-full bg-blue flex-shrink-0" />
-                    {item}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-      </AnimatedSection>
-
       <FinalCTA />
     </main>
   );

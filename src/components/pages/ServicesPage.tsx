@@ -103,7 +103,9 @@ export function ServicesPageComponent() {
                         </div>
                         <div className="flex-1 rounded-xl border border-border bg-card p-6 hover:shadow-card-hover transition-all duration-300 hover:border-blue/30 hover:-translate-y-0.5">
                           <h3 className="text-xl font-bold text-foreground">{item.title}</h3>
-                          <p className="mt-2 text-base text-muted-foreground leading-relaxed">{item.desc}</p>
+                          <p className="mt-2 text-base text-muted-foreground leading-relaxed">
+                            {item.desc}
+                          </p>
                         </div>
                       </div>
 
@@ -117,9 +119,15 @@ export function ServicesPageComponent() {
                               transition={{ duration: 0.5, delay: i * 0.15 }}
                               className="w-[42%] rounded-xl border border-border bg-card p-8 hover:shadow-card-hover transition-all duration-300 hover:border-blue/30 hover:-translate-y-0.5"
                             >
-                              <span className="text-xs font-bold text-blue/60 uppercase tracking-wider">{item.step}</span>
-                              <h3 className="text-xl font-bold text-foreground mt-2">{item.title}</h3>
-                              <p className="mt-2 text-base text-muted-foreground leading-relaxed">{item.desc}</p>
+                              <span className="text-xs font-bold text-blue/60 uppercase tracking-wider">
+                                {item.step}
+                              </span>
+                              <h3 className="text-xl font-bold text-foreground mt-2">
+                                {item.title}
+                              </h3>
+                              <p className="mt-2 text-base text-muted-foreground leading-relaxed">
+                                {item.desc}
+                              </p>
                             </motion.div>
                             <div className="flex-shrink-0 w-6 mx-auto" />
                           </>
@@ -133,9 +141,15 @@ export function ServicesPageComponent() {
                               transition={{ duration: 0.5, delay: i * 0.15 }}
                               className="w-[42%] ml-auto rounded-xl border border-border bg-card p-8 hover:shadow-card-hover transition-all duration-300 hover:border-blue/30 hover:-translate-y-0.5"
                             >
-                              <span className="text-xs font-bold text-blue/60 uppercase tracking-wider">{item.step}</span>
-                              <h3 className="text-xl font-bold text-foreground mt-2">{item.title}</h3>
-                              <p className="mt-2 text-base text-muted-foreground leading-relaxed">{item.desc}</p>
+                              <span className="text-xs font-bold text-blue/60 uppercase tracking-wider">
+                                {item.step}
+                              </span>
+                              <h3 className="text-xl font-bold text-foreground mt-2">
+                                {item.title}
+                              </h3>
+                              <p className="mt-2 text-base text-muted-foreground leading-relaxed">
+                                {item.desc}
+                              </p>
                             </motion.div>
                           </>
                         )}

@@ -6,22 +6,22 @@ import { stats } from "@/data/home";
 
 export function HeroSection() {
   return (
-    <section className="grid md:grid-cols-2 min-h-[85vh]">
-      <div className="relative overflow-hidden">
-        <video
-          className="absolute inset-0 w-full h-full object-cover"
-          src="/assets/hero.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-          aria-label="XStakUp enterprise software development showcase"
-        />
-        <div className="absolute inset-0 bg-[color:var(--void-main)]/50" />
-        <div className="absolute inset-0 grid-pattern opacity-20" />
-      </div>
+    <section className="relative grid md:grid-cols-2 min-h-[85vh]">
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        src="/assets/hero.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        aria-label="XStakUp enterprise software development showcase"
+      />
+      <div className="absolute inset-0 bg-[color:var(--void-main)]/50" />
+      <div className="absolute inset-0 grid-pattern opacity-20" />
 
-      <div className="relative bg-[color:var(--void-main)] flex items-center">
+      <div className="relative hidden md:block" />
+
+      <div className="relative bg-[color:var(--void-main)]/80 md:bg-[color:var(--void-main)] flex items-center">
         <motion.div
           animate={{ scale: [1, 1.1, 1], opacity: [0.12, 0.25, 0.12] }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
