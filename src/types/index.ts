@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 
 export interface PipelineStep {
-  number: string;
+  number?: string;
   title: string;
   description: string;
 }
