@@ -36,7 +36,7 @@ export function PipelineSection() {
             className="grid grid-cols-1 gap-5 md:gap-6 md:grid-cols-3"
           >
             {items.map((s) => (
-              <PipelineCard key={s.number} step={s} />
+              <PipelineCard key={s.title} step={s} />
             ))}
           </motion.div>
         </div>

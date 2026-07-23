@@ -13,7 +13,6 @@ export function PipelineCard({ step }: PipelineCardProps) {
   return (
     <motion.div variants={staggerItem} className="h-full">
       <CardShell accent hover>
-        <div className="text-xs text-blue">{step.number}</div>
         <h3 className="mt-4 text-xl font-semibold text-foreground">{step.title}</h3>
         <p className="mt-3 text-base text-muted-foreground leading-relaxed">{step.description}</p>
         <div className="mt-auto pt-6">
