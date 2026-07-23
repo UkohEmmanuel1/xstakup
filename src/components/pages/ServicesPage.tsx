@@ -33,7 +33,7 @@ export function ServicesPageComponent() {
     <main>
       <PageHero
         title="Full-stack development services."
-        subtitle="From strategy to deployment — we design, build, and scale digital products."
+        subtitle="From strategy to deployment we design, build, and scale digital products."
       >
         <CTAButton
           href="/contact"
@@ -69,7 +69,7 @@ export function ServicesPageComponent() {
             <div className="section-header text-center">
               <h2 className="section-title">Our delivery approach.</h2>
               <p className="section-subtitle mx-auto max-w-2xl">
-                A proven 4-phase process from discovery to ongoing support.
+                A proven 4 phase process from discovery to ongoing support.
               </p>
             </div>
 
