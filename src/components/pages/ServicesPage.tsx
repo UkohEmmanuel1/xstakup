@@ -76,23 +76,23 @@ export function ServicesPageComponent() {
             <div className="relative mx-auto max-w-5xl">
               <svg
                 className="absolute left-1/2 top-0 -translate-x-1/2 w-6 h-full hidden md:block"
-                viewBox="0 0 24 500"
+                viewBox="0 0 24 800"
                 preserveAspectRatio="xMidYMax meet"
               >
                 <path
-                  d="M 12,0 C 12,40 2,60 12,100 C 22,140 12,160 12,200 C 12,240 2,260 12,300 C 22,340 12,360 12,420"
+                  d="M 12,0 C 12,60 2,90 12,130 C 22,170 12,190 12,230 C 22,270 12,290 12,330 C 22,370 12,390 12,430 C 22,470 12,490 12,530 C 22,570 12,590 12,630 C 22,670 12,690 12,730 C 22,770 12,790 12,800"
                   fill="none"
                   stroke="#0094C7"
                   strokeWidth="2"
                   opacity="0.4"
                 />
-                <circle cx="12" cy="100" r="5" fill="#0094C7" />
-                <circle cx="12" cy="200" r="5" fill="#0094C7" />
-                <circle cx="12" cy="300" r="5" fill="#0094C7" />
-                <circle cx="12" cy="400" r="5" fill="#0094C7" />
+                <circle cx="12" cy="130" r="5" fill="#0094C7" />
+                <circle cx="12" cy="330" r="5" fill="#0094C7" />
+                <circle cx="12" cy="530" r="5" fill="#0094C7" />
+                <circle cx="12" cy="730" r="5" fill="#0094C7" />
               </svg>
 
-              <div className="space-y-12 md:space-y-24">
+              <div className="space-y-8 md:space-y-16">
                 {deliverySteps.map((item, i) => {
                   const isLeft = i % 2 === 0;
                   return (
