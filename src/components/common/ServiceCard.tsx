@@ -1,18 +1,27 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code, Globe, Smartphone, Cloud, Brain, Wallet, Hexagon, Server } from "lucide-react";
 import type { ServiceItem } from "@/types";
+import {
+  CodeIcon,
+  GlobeIcon,
+  SmartphoneIcon,
+  CloudIcon,
+  BrainIcon,
+  WalletIcon,
+  HexagonIcon,
+  ServerIcon,
+} from "@/components/common/Icons";
 
 const iconMap: Record<string, React.ElementType> = {
-  code: Code,
-  globe: Globe,
-  smartphone: Smartphone,
-  cloud: Cloud,
-  brain: Brain,
-  wallet: Wallet,
-  hexagon: Hexagon,
-  server: Server,
+  code: CodeIcon,
+  globe: GlobeIcon,
+  smartphone: SmartphoneIcon,
+  cloud: CloudIcon,
+  brain: BrainIcon,
+  wallet: WalletIcon,
+  hexagon: HexagonIcon,
+  server: ServerIcon,
 };
 
 interface Props {
@@ -21,7 +30,7 @@ interface Props {
 }
 
 export function ServiceCard({ service, index }: Props) {
-  const Icon = iconMap[service.icon] || Code;
+  const Icon = iconMap[service.icon] || CodeIcon;
 
   return (
     <motion.div

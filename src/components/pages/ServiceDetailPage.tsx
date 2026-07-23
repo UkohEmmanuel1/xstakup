@@ -6,17 +6,26 @@ import { ArrowLeft, CheckCircle } from "lucide-react";
 import { PageHero } from "@/components/common/PageHero";
 import { AnimatedSection, CTAButton, FinalCTA } from "@/components/common";
 import { services } from "@/data";
-import { Code, Globe, Smartphone, Cloud, Brain, Wallet, Hexagon, Server } from "lucide-react";
+import {
+  CodeIcon,
+  GlobeIcon,
+  SmartphoneIcon,
+  CloudIcon,
+  BrainIcon,
+  WalletIcon,
+  HexagonIcon,
+  ServerIcon,
+} from "@/components/common/Icons";
 
 const iconMap: Record<string, React.ElementType> = {
-  code: Code,
-  globe: Globe,
-  smartphone: Smartphone,
-  cloud: Cloud,
-  brain: Brain,
-  wallet: Wallet,
-  hexagon: Hexagon,
-  server: Server,
+  code: CodeIcon,
+  globe: GlobeIcon,
+  smartphone: SmartphoneIcon,
+  cloud: CloudIcon,
+  brain: BrainIcon,
+  wallet: WalletIcon,
+  hexagon: HexagonIcon,
+  server: ServerIcon,
 };
 
 interface Props {
@@ -45,7 +54,7 @@ export function ServiceDetailPageComponent({ serviceId }: Props) {
     );
   }
 
-  const Icon = iconMap[service.icon] || Code;
+  const Icon = iconMap[service.icon] || CodeIcon;
 
   return (
     <main>

@@ -1,31 +1,31 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Building2,
-  Cloud,
-  Sparkles,
-  Hexagon,
-  BookOpen,
-  ShoppingCart,
-  Truck,
-  Camera,
-  Briefcase,
-  Store,
-} from "lucide-react";
 import type { IndustryItem } from "@/types";
+import {
+  BuildingIcon,
+  CloudIcon,
+  SparklesIcon,
+  HexagonIcon,
+  BookOpenIcon,
+  CartIcon,
+  TruckIcon,
+  CameraIcon,
+  BriefcaseIcon,
+  StoreIcon,
+} from "@/components/common/Icons";
 
 const iconMap: Record<string, React.ElementType> = {
-  "building-bank": Building2,
-  cloud: Cloud,
-  sparkles: Sparkles,
-  hexagon: Hexagon,
-  "book-open": BookOpen,
-  "shopping-cart": ShoppingCart,
-  truck: Truck,
-  camera: Camera,
-  briefcase: Briefcase,
-  store: Store,
+  "building-bank": BuildingIcon,
+  cloud: CloudIcon,
+  sparkles: SparklesIcon,
+  hexagon: HexagonIcon,
+  "book-open": BookOpenIcon,
+  "shopping-cart": CartIcon,
+  truck: TruckIcon,
+  camera: CameraIcon,
+  briefcase: BriefcaseIcon,
+  store: StoreIcon,
 };
 
 interface Props {
@@ -34,7 +34,7 @@ interface Props {
 }
 
 export function IndustryCard({ item, index }: Props) {
-  const Icon = iconMap[item.icon] || Building2;
+  const Icon = iconMap[item.icon] || BuildingIcon;
 
   return (
     <motion.div
