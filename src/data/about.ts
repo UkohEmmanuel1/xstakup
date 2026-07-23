@@ -6,7 +6,7 @@ export const companyStory = {
   headquarters: "Lagos, Nigeria",
   group: "FTRX Group",
   paragraphs: [
-    "Founded in 2020 and headquartered in Lagos, Nigeria, XStakUp is a leading software development agency that architects custom enterprise solutions for businesses worldwide. As part of the FTRX Group, we combine deep technical expertise with a commitment to transforming businesses through cutting-edge technology.",
+    "Founded in 2020 and headquartered in Lagos, Nigeria, XStakUp is a leading software development agency that architects custom enterprise solutions for businesses worldwide. As part of the FTRX Group, we combine deep technical expertise with a commitment to transforming businesses through cutting edge technology.",
     "Our team of dedicated software engineers, architects, and strategists specializes in web development, mobile applications, AI integration, and Web3 infrastructure. We partner with ambitious businesses to build production-grade systems that scale from MVP to millions of users  delivering measurable outcomes at every stage of growth.",
     "What sets XStakUp apart is our product-first mindset. We don't just write code  we understand your business goals, your users, and your market before we write a single line. From fintech and AI to blockchain and cloud architecture, every solution we deliver is engineered for performance, security, and long-term success.",
     "With a global talent network and offices serving clients across Africa, Europe, and North America, XStakUp provides round-the-clock engineering velocity. Our DevSecOps practices, AI-first approach, and commitment to 99.9% uptime ensure that the systems we build don't just work  they lead markets.",
@@ -73,7 +73,7 @@ export const leaders: Leader[] = [
   {
     name: "Glory Umukoro",
     role: "Founder & CEO",
-    bio: "Vision-led founder driving XStakUp's growth and engineering culture across Africa and global markets.",
+    bio: "Vision led founder driving XStakUp's growth and engineering culture across Africa and global markets.",
   },
   {
     name: "Adaobi Nwosu",

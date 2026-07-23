@@ -24,7 +24,7 @@ export const pipeline: PipelineStep[] = [
 export const expertise: ExpertiseItem[] = [
   {
     title: "Product Engineering",
-    description: "End-to-end software development from concept to launch.",
+    description: "End to end software development from concept to launch.",
     icon: "◇",
   },
   {
@@ -34,12 +34,12 @@ export const expertise: ExpertiseItem[] = [
   },
   {
     title: "Web & SaaS Development",
-    description: "High-performance web apps and scalable SaaS platforms.",
+    description: "High performance web apps and scalable SaaS platforms.",
     icon: "▤",
   },
   {
     title: "Mobile Development",
-    description: "Native iOS and Android apps with cross-platform expertise.",
+    description: "Native iOS and Android apps with cross platform expertise.",
     icon: "▢",
   },
   {
@@ -54,7 +54,7 @@ export const expertise: ExpertiseItem[] = [
   },
   {
     title: "CTO as a Service",
-    description: "On-demand technical leadership and architecture guidance.",
+    description: "On demand technical leadership and architecture guidance.",
     icon: "◈",
   },
   {
@@ -68,40 +68,40 @@ export const cases: CaseStudy[] = [
   {
     title: "XPay",
     tag: "Fintech / Web3",
-    description: "Crypto, gift card, and fiat payment infrastructure with real-time settlement.",
+    description: "Crypto, gift card, and fiat payment infrastructure with real time settlement.",
     image: "/assets/xpay.jpeg",
   },
   {
     title: "Quik",
     tag: "AI / NLP",
-    description: "AI-powered booking app that syncs availability and automates communication.",
+    description: "AI powered booking app that syncs availability and automates communication.",
     image: "/assets/quikai.jpeg",
   },
   {
     title: "Shoopa",
     tag: "E-Commerce",
     description:
-      "Scalable e-commerce infrastructure with multi-vendor support and payment orchestration.",
+      "Scalable e-commerce infrastructure with multi vendor support and payment orchestration.",
     image: "/assets/shoopa.jpeg",
   },
   {
     title: "SPC",
     tag: "Enterprise SaaS",
     description:
-      "Enterprise-grade SaaS platform with multi-tenant architecture and advanced analytics.",
+      "Enterprise grade SaaS platform with multi tenant architecture and advanced analytics.",
     image: "/assets/spc.jpeg",
   },
   {
     title: "TapN",
     tag: "Fintech / Mobile",
-    description: "Mobile-first payment solution enabling seamless contactless transactions.",
+    description: "Mobile first payment solution enabling seamless contactless transactions.",
     image: "/assets/tapn.jpeg",
   },
   {
     title: "Usetiks",
     tag: "Web3 / NFT",
     description:
-      "NFT ticketing platform with blockchain-verified ownership and secondary market trading.",
+      "NFT ticketing platform with blockchain verified ownership and secondary market trading.",
     image: "/assets/usetiks.jpeg",
   },
   {

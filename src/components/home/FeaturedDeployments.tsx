@@ -41,7 +41,7 @@ export function FeaturedDeployments() {
           </motion.div>
           <div className="mt-10 text-center">
             <CTAButton href="/work" variant="outline">
-              View All Case Studies &rarr;
+              View All Case Studies
             </CTAButton>
           </div>
         </div>

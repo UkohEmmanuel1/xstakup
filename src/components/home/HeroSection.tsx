@@ -48,8 +48,8 @@ export function HeroSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-6 max-w-2xl text-base md:text-lg text-muted-foreground"
           >
-            Dedicated engineering for web, mobile, AI, and Web3. We build production-grade systems
-            that transform your business with cutting-edge technology.
+            Dedicated engineering for web, mobile, AI, and Web3. We build production grade systems
+            that transform your business with cutting edge technology.
           </motion.p>
 
           <motion.div

@@ -34,20 +34,20 @@ export const expertiseCases: CaseStudy[] = [
     title: "SPC",
     tag: "Enterprise SaaS",
     description:
-      "Enterprise-grade SaaS platform with multi-tenant architecture and advanced analytics.",
+      "Enterprise grade SaaS platform with multi tenant architecture and advanced analytics.",
     image: "/assets/spc.jpeg",
   },
   {
     title: "TapN",
     tag: "Fintech / Mobile",
-    description: "Mobile-first payment solution enabling seamless contactless transactions.",
+    description: "Mobile first payment solution enabling seamless contactless transactions.",
     image: "/assets/tapn.jpeg",
   },
   {
     title: "Usetiks",
     tag: "Web3 / NFT",
     description:
-      "NFT ticketing platform with blockchain-verified ownership and secondary market trading.",
+      "NFT ticketing platform with blockchain verified ownership and secondary market trading.",
     image: "/assets/usetiks.jpeg",
   },
 ];

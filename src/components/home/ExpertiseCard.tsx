@@ -22,7 +22,6 @@ export function ExpertiseCard({ item }: ExpertiseCardProps) {
         </motion.div>
         <h3 className="mt-5 text-lg font-semibold text-foreground">{item.title}</h3>
         <p className="mt-2 text-base text-muted-foreground leading-relaxed">{item.description}</p>
-
       </CardShell>
     </motion.div>
   );
