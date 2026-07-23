@@ -2,8 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { PageHero } from "@/components/common/PageHero";
-import { AnimatedSection, CTAButton, FinalCTA } from "@/components/common";
+import { AnimatedSection, SubPageHero, FinalCTA } from "@/components/common";
 import { blogPosts } from "@/data/blog";
 
 function formatDate(dateStr: string) {
@@ -17,17 +16,13 @@ function formatDate(dateStr: string) {
 export function InsightsPageComponent() {
   return (
     <main>
-      <PageHero
+      <SubPageHero
         title="Engineering & product insights."
         subtitle="Practical insights on building software that works and scales."
-      >
-        <CTAButton
-          href="/contact"
-          className="bg-gradient-primary text-white shadow-lg shadow-electric/25"
-        >
-          Start a Project
-        </CTAButton>
-      </PageHero>
+        ctaText="Start a Project"
+        ctaHref="/contact"
+        bgImage="/assets/blog.webp"
+      />
 
       <AnimatedSection>
         <section className="relative bg-[color:var(--void-surface)]">

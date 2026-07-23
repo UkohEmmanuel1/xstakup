@@ -1,8 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { PageHero } from "@/components/common/PageHero";
-import { AnimatedSection, ServiceCard, CTAButton, FinalCTA } from "@/components/common";
+import { AnimatedSection, ServiceCard, SubPageHero, FinalCTA } from "@/components/common";
 import { services } from "@/data";
 
 const deliverySteps = [
@@ -31,17 +30,13 @@ const deliverySteps = [
 export function ServicesPageComponent() {
   return (
     <main>
-      <PageHero
+      <SubPageHero
         title="Full-stack development services."
         subtitle="From strategy to deployment we design, build, and scale digital products."
-      >
-        <CTAButton
-          href="/contact"
-          className="bg-gradient-primary text-white shadow-lg shadow-electric/25"
-        >
-          Start a Project
-        </CTAButton>
-      </PageHero>
+        ctaText="Start a Project"
+        ctaHref="/contact"
+        bgImage="/assets/brandidentity.webp"
+      />
 
       <AnimatedSection>
         <section className="relative bg-[color:var(--void-surface)]">

@@ -1,24 +1,19 @@
 "use client";
 
-import { PageHero } from "@/components/common/PageHero";
-import { AnimatedSection, CTAButton, FinalCTA } from "@/components/common";
+import { AnimatedSection, SubPageHero, FinalCTA } from "@/components/common";
 import { DeploymentCard } from "@/components/home/DeploymentCard";
 import { cases, caseGradients } from "@/data/home";
 
 export function WorkPageComponent() {
   return (
     <main>
-      <PageHero
+      <SubPageHero
         title="Proven product engineering."
         subtitle="Case studies across fintech, AI, Web3, SaaS, and mobile."
-      >
-        <CTAButton
-          href="/contact"
-          className="bg-gradient-primary text-white shadow-lg shadow-electric/25"
-        >
-          Start a Project
-        </CTAButton>
-      </PageHero>
+        ctaText="Start a Project"
+        ctaHref="/contact"
+        bgImage="/assets/career.webp"
+      />
 
       <AnimatedSection>
         <section className="relative bg-[color:var(--void-surface)]">
