@@ -63,7 +63,7 @@ export function ServicesPageComponent() {
       </AnimatedSection>
 
       <AnimatedSection>
-        <section className="relative bg-[color:var(--void-section)]">
+        <section className="relative bg-[color:var(--void-section)] overflow-hidden">
           <div className="section-divider" />
           <div className="section-container">
             <div className="section-header text-center">
@@ -73,38 +73,76 @@ export function ServicesPageComponent() {
               </p>
             </div>
 
-            <div className="relative mx-auto max-w-3xl">
-              <div className="absolute left-6 top-0 bottom-12 w-px bg-gradient-to-b from-blue/40 via-blue/20 to-transparent hidden md:block" />
+            <div className="relative mx-auto max-w-5xl">
+              <svg
+                className="absolute left-1/2 top-0 -translate-x-1/2 w-6 h-full hidden md:block"
+                viewBox="0 0 24 500"
+                preserveAspectRatio="xMidYMax meet"
+              >
+                <path
+                  d="M 12,0 C 12,40 2,60 12,100 C 22,140 12,160 12,200 C 12,240 2,260 12,300 C 22,340 12,360 12,420"
+                  fill="none"
+                  stroke="#0094C7"
+                  strokeWidth="2"
+                  opacity="0.4"
+                />
+                <circle cx="12" cy="100" r="5" fill="#0094C7" />
+                <circle cx="12" cy="200" r="5" fill="#0094C7" />
+                <circle cx="12" cy="300" r="5" fill="#0094C7" />
+                <circle cx="12" cy="400" r="5" fill="#0094C7" />
+              </svg>
 
-              <div className="space-y-8 md:space-y-10">
-                {deliverySteps.map((item, i) => (
-                  <motion.div
-                    key={item.step}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: i * 0.15 }}
-                    className="relative pl-16 md:pl-20"
-                  >
-                    <div className="absolute left-4 md:left-4 top-1.5 w-3.5 h-3.5 rounded-full bg-blue border-4 border-card shadow-md z-10 hidden md:block" />
+              <div className="space-y-12 md:space-y-24">
+                {deliverySteps.map((item, i) => {
+                  const isLeft = i % 2 === 0;
+                  return (
+                    <div key={item.step} className="relative">
+                      <div className="md:hidden flex items-start gap-4">
+                        <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-blue/10 border border-blue/20 flex items-center justify-center mt-1">
+                          <span className="text-sm font-bold text-blue">{item.step}</span>
+                        </div>
+                        <div className="flex-1 rounded-xl border border-border bg-card p-6 hover:shadow-card-hover transition-all duration-300 hover:border-blue/30 hover:-translate-y-0.5">
+                          <h3 className="text-xl font-bold text-foreground">{item.title}</h3>
+                          <p className="mt-2 text-base text-muted-foreground leading-relaxed">{item.desc}</p>
+                        </div>
+                      </div>
 
-                    <div className="absolute left-0 top-0 w-11 h-11 rounded-xl bg-blue/10 border border-blue/20 flex items-center justify-center md:hidden">
-                      <span className="text-sm font-bold text-blue">{item.step}</span>
+                      <div className="hidden md:flex items-start">
+                        {isLeft ? (
+                          <>
+                            <motion.div
+                              initial={{ opacity: 0, x: -20 }}
+                              whileInView={{ opacity: 1, x: 0 }}
+                              viewport={{ once: true }}
+                              transition={{ duration: 0.5, delay: i * 0.15 }}
+                              className="w-[42%] rounded-xl border border-border bg-card p-8 hover:shadow-card-hover transition-all duration-300 hover:border-blue/30 hover:-translate-y-0.5"
+                            >
+                              <span className="text-xs font-bold text-blue/60 uppercase tracking-wider">{item.step}</span>
+                              <h3 className="text-xl font-bold text-foreground mt-2">{item.title}</h3>
+                              <p className="mt-2 text-base text-muted-foreground leading-relaxed">{item.desc}</p>
+                            </motion.div>
+                            <div className="flex-shrink-0 w-6 mx-auto" />
+                          </>
+                        ) : (
+                          <>
+                            <div className="flex-shrink-0 w-6 mx-auto" />
+                            <motion.div
+                              initial={{ opacity: 0, x: 20 }}
+                              whileInView={{ opacity: 1, x: 0 }}
+                              viewport={{ once: true }}
+                              transition={{ duration: 0.5, delay: i * 0.15 }}
+                              className="w-[42%] ml-auto rounded-xl border border-border bg-card p-8 hover:shadow-card-hover transition-all duration-300 hover:border-blue/30 hover:-translate-y-0.5"
+                            >
+                              <span className="text-xs font-bold text-blue/60 uppercase tracking-wider">{item.step}</span>
+                              <h3 className="text-xl font-bold text-foreground mt-2">{item.title}</h3>
+                              <p className="mt-2 text-base text-muted-foreground leading-relaxed">{item.desc}</p>
+                            </motion.div>
+                          </>
+                        )}
+                      </div>
                     </div>
-
-                    <div className="group rounded-xl border border-border bg-card p-6 md:p-8 hover:shadow-card-hover transition-all duration-300 hover:border-blue/30 hover:-translate-y-0.5">
-                      <span className="hidden md:inline-flex text-xs font-bold text-blue/60 uppercase tracking-wider mb-2">
-                        {item.step}
-                      </span>
-                      <h3 className="text-xl font-bold text-foreground group-hover:text-blue transition-colors">
-                        {item.title}
-                      </h3>
-                      <p className="mt-2 text-base text-muted-foreground leading-relaxed">
-                        {item.desc}
-                      </p>
-                    </div>
-                  </motion.div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           </div>
