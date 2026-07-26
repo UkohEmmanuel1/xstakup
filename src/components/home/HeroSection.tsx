@@ -6,7 +6,7 @@ import { stats } from "@/data/home";
 
 export function HeroSection() {
   return (
-    <section className="relative grid md:grid-cols-2 min-h-[85vh]">
+    <section className="relative grid md:grid-cols-2 min-h-[70vh] md:min-h-[85vh]">
       <video
         className="absolute inset-0 w-full h-full object-cover"
         src="/assets/hero.mp4"
@@ -29,7 +29,7 @@ export function HeroSection() {
           aria-hidden
         />
 
-        <div className="relative z-10 px-6 md:px-12 py-24 md:py-32 w-full">
+        <div className="relative z-10 px-6 md:px-12 py-16 md:py-32 w-full">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
